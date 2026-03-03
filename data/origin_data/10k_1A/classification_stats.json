@@ -1,0 +1,164 @@
+{
+  "total_classified": 751370,
+  "category_distribution": {
+    "Non-ESG": {
+      "count": 556463,
+      "pct": 74.06
+    },
+    "Corporate Governance": {
+      "count": 84577,
+      "pct": 11.26
+    },
+    "Product Liability": {
+      "count": 32863,
+      "pct": 4.37
+    },
+    "Human Capital": {
+      "count": 28028,
+      "pct": 3.73
+    },
+    "Business Ethics & Values": {
+      "count": 18307,
+      "pct": 2.44
+    },
+    "Climate Change": {
+      "count": 15390,
+      "pct": 2.05
+    },
+    "Pollution & Waste": {
+      "count": 7538,
+      "pct": 1.0
+    },
+    "Community Relations": {
+      "count": 4422,
+      "pct": 0.59
+    },
+    "Natural Capital": {
+      "count": 3782,
+      "pct": 0.5
+    }
+  },
+  "esg_vs_non_esg": {
+    "ESG": {
+      "count": 194907,
+      "pct": 25.94
+    },
+    "Non-ESG": {
+      "count": 556463,
+      "pct": 74.06
+    }
+  },
+  "per_year": {
+    "2015": {
+      "Non-ESG": 45550,
+      "Business Ethics & Values": 1492,
+      "Human Capital": 1931,
+      "Corporate Governance": 7012,
+      "Product Liability": 2337,
+      "Pollution & Waste": 788,
+      "Natural Capital": 350,
+      "Community Relations": 303,
+      "Climate Change": 1043
+    },
+    "2016": {
+      "Non-ESG": 49037,
+      "Business Ethics & Values": 1552,
+      "Human Capital": 1942,
+      "Corporate Governance": 7503,
+      "Product Liability": 2417,
+      "Pollution & Waste": 758,
+      "Natural Capital": 340,
+      "Climate Change": 1061,
+      "Community Relations": 306
+    },
+    "2017": {
+      "Non-ESG": 55189,
+      "Human Capital": 1913,
+      "Corporate Governance": 8394,
+      "Business Ethics & Values": 1645,
+      "Product Liability": 2544,
+      "Pollution & Waste": 722,
+      "Natural Capital": 306,
+      "Climate Change": 1004,
+      "Community Relations": 313
+    },
+    "2018": {
+      "Non-ESG": 59656,
+      "Human Capital": 1941,
+      "Corporate Governance": 8460,
+      "Product Liability": 2904,
+      "Business Ethics & Values": 1747,
+      "Natural Capital": 320,
+      "Community Relations": 335,
+      "Climate Change": 1078,
+      "Pollution & Waste": 720
+    },
+    "2019": {
+      "Non-ESG": 59423,
+      "Human Capital": 2063,
+      "Corporate Governance": 8353,
+      "Product Liability": 3214,
+      "Business Ethics & Values": 1728,
+      "Climate Change": 1125,
+      "Natural Capital": 339,
+      "Community Relations": 344,
+      "Pollution & Waste": 736
+    },
+    "2020": {
+      "Product Liability": 3244,
+      "Non-ESG": 61153,
+      "Human Capital": 2226,
+      "Corporate Governance": 9298,
+      "Business Ethics & Values": 1759,
+      "Climate Change": 1255,
+      "Natural Capital": 357,
+      "Community Relations": 444,
+      "Pollution & Waste": 725
+    },
+    "2021": {
+      "Product Liability": 3500,
+      "Non-ESG": 60506,
+      "Human Capital": 3970,
+      "Corporate Governance": 9220,
+      "Business Ethics & Values": 2011,
+      "Natural Capital": 360,
+      "Climate Change": 1509,
+      "Community Relations": 682,
+      "Pollution & Waste": 717
+    },
+    "2022": {
+      "Community Relations": 669,
+      "Non-ESG": 59515,
+      "Human Capital": 4300,
+      "Corporate Governance": 9275,
+      "Product Liability": 3925,
+      "Business Ethics & Values": 2080,
+      "Climate Change": 2272,
+      "Pollution & Waste": 779,
+      "Natural Capital": 503
+    },
+    "2023": {
+      "Non-ESG": 53155,
+      "Human Capital": 3979,
+      "Product Liability": 4132,
+      "Corporate Governance": 8299,
+      "Business Ethics & Values": 2122,
+      "Climate Change": 2472,
+      "Pollution & Waste": 779,
+      "Community Relations": 554,
+      "Natural Capital": 430
+    },
+    "2024": {
+      "Non-ESG": 53279,
+      "Human Capital": 3763,
+      "Product Liability": 4646,
+      "Corporate Governance": 8763,
+      "Business Ethics & Values": 2171,
+      "Climate Change": 2571,
+      "Pollution & Waste": 814,
+      "Community Relations": 472,
+      "Natural Capital": 477
+    }
+  },
+  "avg_confidence": 0.9018
+}
