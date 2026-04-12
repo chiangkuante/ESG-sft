@@ -19,13 +19,11 @@ unsloth_training_checkpoints/
 # Raw 10-K data (too large)
 data/origin_data/10k_raw/
 data/raw/
-data/processed/p2
 data/processed/z*
 data/processed/step1_parsing/paragraphs.json
 data/processed/step2_classification/classified.json
 
 # results
-results/step5_cv_p2
 results/z*
 
 # Large intermediate files (can be regenerated from pipeline)

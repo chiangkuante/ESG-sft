@@ -59,7 +59,6 @@ Using 3-Fold instead of 5-Fold because rare classes (Pollution & Waste 5, Commun
 - `data/processed/step2_classification/classified.json` — FinBERT predictions on full ~160K pool
 - `data/processed/step2_classification/classification_stats.json` — FinBERT prediction distribution stats
 - `data/origin_data/10k_1A/project-16-at-2026-03-31-11-52-a8826fd3.csv` — 500-sample human-annotated dataset
-- `data/processed/p2/step4_cv/` — 3-fold split definition 及 per-fold SFT 訓練資料（p2 版本，**已棄用**）
 
 ## Model Fine-tuning (Unsloth)
 - **Gemma 4 4B** (`unsloth/gemma-4-E4B-it`): `FastModel` API, chat template "gemma-4", remove BOS prefix
