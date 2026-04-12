@@ -11,15 +11,15 @@ CATEGORY_DEFINITIONS = dedent(
 
     Pollution and Waste: This topic includes discussions about toxic emissions, packaging materials, and electronic waste. For toxic emissions and waste, we include discussions of pollution, contamination, and emission of toxic and carcinogenic substances and wastewater. For packaging materials and waste, we include discussions of product packaging content and end-of-life recycling or disposal of packaging materials. We include discussions about the recycling and removal of end-of-life electronic products for electronic waste.
 
-    Human Capital: This topic includes discussions about labor management, health and safety, human capital development and training, and supply chain labor standards. For labor management, we include discussions workforce management, risk of workflow disruptions, labor productivity issues, employee diversity, and pay equality (non-executive). For health and safety, we include discussions of employee health and safety (H&S) programs such as H&S policies and their implementations, H&S training, and safety certifications. For human capital development and training, we include discussions of the ability to attract, retain, and develop human capital based on benefits, training, development programs, and employee engagement provided. For supply chain labor standards, we include discussions of supply chain production disruptions and brand value damage due to sub-standard treatment of workers in the company’s supply chain or reliance on raw materials that originate in areas associated with severe human rights and labor rights issues (e.g., slave labor and child labor).
+    Human Capital: This topic includes discussions about labor management, health and safety, human capital development and training, and supply chain labor standards. For labor management, we include discussions workforce management, risk of workflow disruptions, labor productivity issues, employee diversity, and pay equality (non-executive). For health and safety, we include discussions of employee health and safety (H&S) programs such as H&S policies and their implementations, H&S training, and safety certifications. For human capital development and training, we include discussions of the ability to attract, retain, and develop human capital based on benefits, training, development programs, and employee engagement provided. For supply chain labor standards, we include discussions of supply chain production disruptions and brand value damage due to sub-standard treatment of workers in the company's supply chain or reliance on raw materials that originate in areas associated with severe human rights and labor rights issues (e.g., slave labor and child labor).
 
-    Product Liability: This topic includes discussing product safety and quality, privacy and data security, chemical safety, consumer financial protection, and health and demographic risk. For product safety and quality, we include discussion of product recalls, losing customer trust through product quality concerns, or product safety and quality certifications. For privacy and data security, we have discussions of data security breaches, the controversial use of personal data, and company data privacy policies and data security management systems. For chemical safety, we include discussions of the use or presence of chemicals of concern and procedures relating to chemical safety and its impact on customers. For consumer financial protection, we include discussions of the transparency of financial products based on borrowers’ ability to repay and initiatives to protect customers through product transparency. For health and demographic risk, we include discussions of public health trends and demographic changes, growth opportunities in the market for healthier products, and improved nutritional profiles.
+    Product Liability: This topic includes discussing product safety and quality, privacy and data security, chemical safety, consumer financial protection, and health and demographic risk. For product safety and quality, we include discussion of product recalls, losing customer trust through product quality concerns, or product safety and quality certifications. For privacy and data security, we have discussions of data security breaches, the controversial use of personal data, and company data privacy policies and data security management systems. For chemical safety, we include discussions of the use or presence of chemicals of concern and procedures relating to chemical safety and its impact on customers. For consumer financial protection, we include discussions of the transparency of financial products based on borrowers' ability to repay and initiatives to protect customers through product transparency. For health and demographic risk, we include discussions of public health trends and demographic changes, growth opportunities in the market for healthier products, and improved nutritional profiles.
 
-    Community Relations: This topic includes discussions of a firm’s interaction with its local communities, including access to communications, access to finance, and access to healthcare. We include discussions about opportunities in historically underserved markets, such as developing countries and underserved populations, and relevant philanthropic efforts.
+    Community Relations: This topic includes discussions of a firm's interaction with its local communities, including access to communications, access to finance, and access to healthcare. We include discussions about opportunities in historically underserved markets, such as developing countries and underserved populations, and relevant philanthropic efforts.
 
-    Corporate Governance: This topic includes discussions on shareholders and ownership, board of directors, executive pay, and internal controls. For shareholders and ownership, we include discussions regarding ownership structure, control structure, and shareholders. For the board of directors, we include discussions of the board’s independence from management, board skills and diversity, and board effectiveness. For executive pay, we include CEO and other executives’ pay practices and specific pay figures, performance incentives, and overall pay plan design. For internal control, we consider internal controls, audit matters, audit committee matters, and internal audit matters.
+    Corporate Governance: This topic includes discussions on shareholders and ownership, board of directors, executive pay, and internal controls. For shareholders and ownership, we include discussions regarding ownership structure, control structure, and shareholders. For the board of directors, we include discussions of the board's independence from management, board skills and diversity, and board effectiveness. For executive pay, we include CEO and other executives' pay practices and specific pay figures, performance incentives, and overall pay plan design. For internal control, we consider internal controls, audit matters, audit committee matters, and internal audit matters.
 
-    Business Ethics and Values: This topic includes discussions about ethical components such as a firm’s values and controversies. We include discussions about the ethical conduct of business, fraud, corruption, bribery, fiduciary responsibilities, conflicts of interest, misrepresentation, bias, negligence, political contributions, negative accounting events, and other behaviors which may have ethical components.
+    Business Ethics and Values: This topic includes discussions about ethical components such as a firm's values and controversies. We include discussions about the ethical conduct of business, fraud, corruption, bribery, fiduciary responsibilities, conflicts of interest, misrepresentation, bias, negligence, political contributions, negative accounting events, and other behaviors which may have ethical components.
 
     Non-ESG: The paragraph does not primarily discuss any of the ESG categories above."""
 )
@@ -38,12 +38,17 @@ VALID_CATEGORY_NAMES = dedent(
     - Non-ESG"""
 )
 
+# [CHANGED] Removed "lean toward Non-ESG" rule that was causing systematic
+# ESG -> Non-ESG misclassification (63% of all errors).
+# Added: explicit instruction to look past generic headings and focus on
+# paragraph body content, since real 10-K headings are often vague.
 CLASSIFICATION_RULES = dedent(
     """\
     Classification rules:
     - Choose the SINGLE most relevant category.
     - Only classify as an ESG category if the paragraph primarily discusses that topic.
-    - If uncertain between an ESG category and Non-ESG, lean toward Non-ESG.
+    - Classify as Non-ESG only when the paragraph genuinely lacks substantive ESG content, not merely because the heading is generic or the ESG signal is indirect.
+    - Base your decision on the paragraph body, not the risk-factor heading. Real 10-K headings are often vague (e.g., "Regulatory Risks") and do not reliably indicate the category.
     - Focus on the main risk discussed in the paragraph, not incidental keywords."""
 )
 
@@ -78,13 +83,16 @@ CLASSIFY_USER_TEMPLATE = dedent(
 )
 
 
+# [CHANGED] Reasoning prompt now:
+# 1. Flags potential gold-label errors instead of blindly defending them
+# 2. Asks reasoning to reference paragraph body content, not just heading
 REASONING_SYSTEM_PROMPT = dedent(
     """\
     You are generating high-quality training rationales for ESG classification of U.S. 10-K Item 1A risk-factor paragraphs.
 
     Requirements:
-    - Use the provided gold label as correct.
-    - Explain which phrases or concepts support the label.
+    - Start by checking whether the gold label is plausible given the paragraph content. If the paragraph clearly belongs to a different category or is obviously mislabeled, begin the reasoning with "The gold label of <label> is incorrect because" and explain what the correct label should be.
+    - If the gold label is correct, explain which phrases or concepts in the paragraph body support it. Reference specific content from the paragraph, not just the heading.
     - Briefly rule out the most plausible alternative categories when useful.
     - Do not use markdown, bullet points, XML, or JSON inside the reasoning text itself.
     - Return valid JSON only when requested."""
@@ -105,16 +113,19 @@ def build_reasoning_batch_prompt(batch: list[dict[str, str]]) -> str:
             )
         )
 
+    # [CHANGED] Added instruction to flag mislabeled items and focus on body content
     return dedent(
         f"""\
         Generate one reasoning paragraph for each item below.
 
         Output format:
         - Return a JSON array.
-        - Each object must contain exactly: paragraph_id, reasoning.
+        - Each object must contain exactly: paragraph_id, reasoning, label_correct.
         - Keep the same paragraph_id values.
+        - label_correct: set to true if the gold label matches the paragraph content, false if it appears mislabeled.
         - Each reasoning should be 3-5 sentences, concise but specific.
-        - Each reasoning should explain why the gold label is correct using the definitions below.
+        - Reference specific phrases from the paragraph body (not just the heading) to justify the label.
+        - If the gold label appears incorrect, explain why and state what the correct label should be.
 
         Category definitions:
         {CATEGORY_DEFINITIONS}

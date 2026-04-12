@@ -173,10 +173,10 @@ step5_cv:
       per_device_train_batch_size: 2
       gradient_accumulation_steps: 4
       warmup_steps: 5
-      num_train_epochs: 5
+      num_train_epochs: 7
       learning_rate: 2e-4
       optim: adamw_8bit
-      weight_decay: 0.001
+      weight_decay: 0.01
       lr_scheduler_type: linear
       random_state: 3407
       max_seq_length: 2048
@@ -198,6 +198,7 @@ step5_cv:
       # variant_name: label_only
       # variant_name: human_only
       variant_name: synthetic_only
+      non_esg_cap: 150
 
     xyz_plot:
       enabled: true

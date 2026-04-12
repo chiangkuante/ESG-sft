@@ -236,11 +236,14 @@ def get_ablation_cfg(finetune_cfg: dict) -> dict:
             "synthetic_only": False,
             "variant_name": "default",
         }
+    raw_cap = raw.get("non_esg_cap")
+    non_esg_cap = int(raw_cap) if raw_cap is not None else None
     return {
         "label_only": bool(raw.get("label_only", False)),
         "human_only": bool(raw.get("human_only", False)),
         "synthetic_only": bool(raw.get("synthetic_only", False)),
         "variant_name": str(raw.get("variant_name", "default")).strip() or "default",
+        "non_esg_cap": non_esg_cap,
     }
 
 
@@ -622,7 +625,28 @@ def filter_train_dataset_for_ablation(dataset_sft, ablation_cfg: dict, fold_idx:
             len(filtered),
             original_size,
         )
-        return filtered
+        dataset_sft = filtered
+
+    non_esg_cap = ablation_cfg.get("non_esg_cap")
+    if non_esg_cap is not None:
+        non_esg_indices = [i for i, s in enumerate(dataset_sft) if s["label"] == "Non-ESG"]
+        if len(non_esg_indices) > non_esg_cap:
+            import random as _random
+            rng = _random.Random(42)
+            drop_indices = set(rng.sample(non_esg_indices, len(non_esg_indices) - non_esg_cap))
+            keep_indices = [i for i in range(len(dataset_sft)) if i not in drop_indices]
+            before = len(dataset_sft)
+            dataset_sft = dataset_sft.select(keep_indices)
+            logger.info(
+                "Non-ESG cap=%s applied for fold %s: Non-ESG %s -> %s, total %s -> %s",
+                non_esg_cap,
+                fold_idx,
+                len(non_esg_indices),
+                non_esg_cap,
+                before,
+                len(dataset_sft),
+            )
+
     return dataset_sft
 
 

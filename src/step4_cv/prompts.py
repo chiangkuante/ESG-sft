@@ -24,6 +24,8 @@ Business Ethics & Values: Discussion of fraud, corruption, bribery, misconduct, 
 Non-ESG: Paragraph does not primarily discuss any of the above ESG topics."""
 
 
+# [CHANGED] Added critical heading style rules and anti-leakage instructions.
+# Previously 75-94% of synthetic headings contained category keywords vs 0-6% in real data.
 SYNTHETIC_SYSTEM_PROMPT = """You are generating high-quality synthetic training data for ESG risk classification on U.S. 10-K Item 1A risk-factor paragraphs.
 
 Requirements:
@@ -35,6 +37,12 @@ Requirements:
 - Every item must contain: risk_heading, paragraph_text, combined_text, label, generation_notes.
 - combined_text must equal risk_heading + "\\n" + paragraph_text.
 - label must be exactly one of the valid ESG labels.
+
+CRITICAL heading rules:
+- risk_heading must use GENERIC 10-K style headings that do NOT reveal the ESG category.
+- DO NOT put category-specific keywords in the heading. For example, a Pollution & Waste paragraph must NOT have a heading like "Environmental Compliance and Waste Handling Risks". Instead use headings like "Regulatory and Compliance Risks", "Operational and Legal Risks", or "Risks Related to Our Manufacturing Operations".
+- Real 10-K headings are typically vague and broad, such as: "Business and Operating Risks", "Regulatory Risks", "Legal and Compliance Risks", "Risks Related to Our Operations", "Risks Relating to Laws and Regulations", "General Risk Factors".
+- The ESG signal must come from the paragraph body, not the heading.
 """
 
 
@@ -64,6 +72,7 @@ def build_synthetic_user_prompt(
         else "Focus on diverse but clear in-class examples."
     )
 
+    # [CHANGED] Added heading style examples and diversity requirements
     return f"""Generate {needed_count} synthetic 10-K Item 1A paragraphs for the label "{label}".
 
 Valid labels:
@@ -75,11 +84,20 @@ Category definitions:
 Generation guidance:
 - Output a JSON array with exactly {needed_count} objects.
 - Each object must have keys: risk_heading, paragraph_text, combined_text, label, generation_notes.
-- risk_heading should look like a plausible risk-factor heading.
 - paragraph_text should read like a realistic 10-K risk paragraph, typically 120-260 words.
 - Avoid company-specific names copied from the seeds.
 - Avoid boilerplate placeholders like "Company X".
 - {boundary_line}
+
+Heading style rules (CRITICAL):
+- risk_heading MUST be a generic, category-neutral heading that does NOT contain keywords specific to "{label}".
+- Use headings like real 10-K filings: "Business and Operating Risks", "Regulatory Risks", "Legal and Compliance Risks", "Risks Related to Our Operations", "General Risk Factors", "Risks Relating to Laws and Regulations", "Operational Risks", "Strategic and Business Risks".
+- The heading alone should NOT allow a reader to guess the ESG category. The ESG signal must come entirely from the paragraph body.
+
+Diversity requirements:
+- Vary the industry context across samples (e.g., manufacturing, tech, healthcare, finance, energy, retail, transportation).
+- Vary how directly the ESG topic is referenced. Some paragraphs should mention the topic explicitly, others should describe the substantive risk without using textbook ESG terminology.
+- Vary paragraph structure: some should lead with the risk, others with regulatory context, others with business impact.
 
 Seed examples for style and label boundary:
 
