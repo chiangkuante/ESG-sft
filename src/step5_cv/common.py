@@ -155,7 +155,7 @@ def build_eval_messages(item: dict[str, Any], model_type: str) -> list[dict[str,
         definitions=CATEGORY_DEFINITIONS,
         text=item["combined_text"],
     )
-    if model_type in {"llama", "gemma", "gemma26b"}:
+    if model_type in {"llama", "gemma"}:
         return [
             {"role": "system", "content": INFERENCE_SYSTEM_PROMPT},
             {"role": "user", "content": user_content},

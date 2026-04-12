@@ -59,19 +59,37 @@ Using 3-Fold instead of 5-Fold because rare classes (Pollution & Waste 5, Commun
 - `data/processed/step2_classification/classified.json` — FinBERT predictions on full ~160K pool
 - `data/processed/step2_classification/classification_stats.json` — FinBERT prediction distribution stats
 - `data/origin_data/10k_1A/project-16-at-2026-03-31-11-52-a8826fd3.csv` — 500-sample human-annotated dataset
-- `data/processed/step7_cv/cv_folds.json` — 3-fold split definition
+- `data/processed/p2/step4_cv/` — 3-fold split definition 及 per-fold SFT 訓練資料（p2 版本，**已棄用**）
 
 ## Model Fine-tuning (Unsloth)
-- **Gemma 3 4B**: `FastModel` API, `finetune_vision_layers=False`, chat template "gemma-3", remove BOS prefix
-- **Llama 3.2 3B**: `FastLanguageModel` API, `target_modules` list, chat template "llama-3.1", `DataCollatorForSeq2Seq`
-- **Qwen 3.5 4B**: `FastVisionModel` API, text-only vision format, `UnslothVisionDataCollator`
-- **Ministral 3B**: `FastVisionModel` API, text-only vision format, `UnslothVisionDataCollator`
+- **Gemma 4 4B** (`unsloth/gemma-4-E4B-it`): `FastModel` API, chat template "gemma-4", remove BOS prefix
+- **Llama 3.2 3B** (`unsloth/Llama-3.2-3B-Instruct`): `FastLanguageModel` API, `target_modules` list, chat template "llama-3.1", `DataCollatorForSeq2Seq`, `standardize_sharegpt` preprocessing
+- **Qwen 3.5 4B** (`unsloth/Qwen3.5-4B`): `FastVisionModel` API, text-only vision format, `UnslothVisionDataCollator`
+- **Ministral 3B** (`unsloth/Ministral-3-3B-Instruct-2512`): `FastVisionModel` API, text-only vision format, `UnslothVisionDataCollator`
 
 ### Unified Hyperparameters (per Unsloth official notebooks)
-- LoRA: r=16, alpha=16, dropout=0, bias="none"
-- Training: lr=2e-4, batch=2, grad_accum=4, epochs=1, warmup_steps=5
+- LoRA: r=32, alpha=32, dropout=0, bias="none"
+- Training: lr=2e-4, batch=2, grad_accum=4, num_train_epochs=5, warmup_steps=5
 - Optimizer: adamw_8bit, weight_decay=0.001, lr_scheduler=linear
 - random_state/seed: 3407, max_seq_length: 2048
+
+### X/Y/Z Plot (Multi-Epoch Scan)
+- 功能：在 fold_0 上對多個 epoch checkpoint 執行推論，找到最佳 epoch
+- 配置：`finetune.xyz_plot.epochs: [7, 9, 11, 13, 15]`
+- 輸出：`xyz_plot_summary.json`，記錄各 epoch 的 accuracy/macro_f1/weighted_f1/kappa 及 `sweet_spot_macro_f1`
+
+### Checkpoint Strategy
+`finetune.inference.checkpoint_strategy` 四種模式：
+- `final`：使用最終 checkpoint（預設）
+- `latest`：最後一個 epoch 的 checkpoint
+- `epoch`：指定 `checkpoint_epoch` 值
+- `best_epoch`：由 X/Y/Z 掃描結果決定（依 `best_epoch_metric` 指標，預設 macro_f1）
+
+### API LLM Inference Models
+用於推論對比（不做 LoRA 訓練）：
+- **Gemini 3 Flash Preview**: 1K rpm, 2M tpm, 10K rpd
+- **GPT-5.4-mini-2026-03-17**: 10K rpm, 10M tpm, 1B tpd
+- **Claude Sonnet 4.6**: 1K rpm, 450K input_tpm, 90K output_tpm
 
 ## ESG Categories (9 classes)
 Climate Change, Natural Capital, Pollution & Waste, Human Capital, Product Liability, Community Relations, Corporate Governance, Business Ethics & Values, Non-ESG
@@ -83,10 +101,14 @@ Climate Change, Natural Capital, Pollution & Waste, Human Capital, Product Liabi
 - **Caveat**: Rare class per-class F1 may fluctuate due to small validation counts (1-2 per fold)
 
 ## Ablation Studies
-- **No pseudo-labels**: Human annotations + LLM synthetic only
-- **No LLM synthetic**: Human annotations + pseudo-labels only (no class balancing)
-- **Different alpha values**: Compare alpha = 0.3, 0.5, 0.7
-- **Different base models**: Compare Gemma 3 4B, Qwen 3.5 4B, Llama 3.2 3B, Ministral 3B
+
+透過 `config.yaml` 的 `finetune.ablation` 布林旗標與 `variant_name` 控制（對應輸出目錄名稱）：
+
+- **`label_only`**: 移除訓練資料中的 `<reasoning>` 標籤，assistant 回應格式簡化為 `Label: {label}`，測試 chain-of-thought 推理的貢獻
+- **`human_only`**: 只使用人工標註資料（~333 筆/fold），排除偽標籤與合成資料，對應「No pseudo-labels + No LLM synthetic」
+- **`synthetic_only`**: 只保留 human + synthetic 資料，排除偽標籤，對應「No pseudo-labels」
+- **不同 alpha 值**: 比較 alpha = 0.3, 0.5, 0.7 對類別平衡的影響
+- **不同基礎模型**: 比較 Gemma 4 4B、Qwen 3.5 4B、Llama 3.2 3B、Ministral 3B
 
 ## References
 - Conneau, A., et al. (2020). Unsupervised Cross-lingual Representation Learning at Scale. *ACL 2020*.

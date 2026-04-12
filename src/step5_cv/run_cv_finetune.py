@@ -40,7 +40,6 @@ logging.getLogger("transformers").setLevel(logging.ERROR)
 
 MODEL_NAME_DEFAULTS = {
     "gemma": "unsloth/gemma-4-E4B-it",
-    "gemma26b": "unsloth/Gemma-4-26B-A4B-it",
     "llama": "unsloth/Llama-3.2-3B-Instruct",
     "qwen": "unsloth/Qwen3.5-4B",
     "ministral": "unsloth/Ministral-3-3B-Instruct-2512",
@@ -116,25 +115,7 @@ def resolve_train_batch_size(model_type: str, train_cfg: dict) -> int:
     return int(train_cfg["per_device_train_batch_size"])
 
 
-def is_torchrun_distributed() -> bool:
-    world_size = int(os.environ.get("WORLD_SIZE", "1"))
-    return world_size > 1 or "LOCAL_RANK" in os.environ or "RANK" in os.environ
 
-
-def is_primary_process() -> bool:
-    if not is_torchrun_distributed():
-        return True
-    return int(os.environ.get("RANK", "0")) == 0
-
-
-def maybe_distributed_barrier() -> None:
-    if torch.distributed.is_available() and torch.distributed.is_initialized():
-        torch.distributed.barrier()
-
-
-def maybe_destroy_process_group() -> None:
-    if torch.distributed.is_available() and torch.distributed.is_initialized():
-        torch.distributed.destroy_process_group()
 
 
 def resolve_runtime_dtype(finetune_cfg: dict):
@@ -683,37 +664,7 @@ def setup_base_model(model_type: str, train_cfg: dict, finetune_cfg: dict):
         tokenizer = get_chat_template(tokenizer, chat_template="gemma-4")
         return model, tokenizer, "FastModel"
 
-    if model_type == "gemma26b":
-        from unsloth import FastModel
-        from unsloth.chat_templates import get_chat_template
 
-        model, tokenizer = FastModel.from_pretrained(
-            model_name=model_name,
-            dtype=dtype,
-            max_seq_length=max_seq_length,
-            load_in_4bit=False,
-            load_in_16bit=True,
-            full_finetuning=False,
-            use_gradient_checkpointing="unsloth",
-        )
-        tokenizer = get_chat_template(tokenizer, chat_template="gemma-4")
-        return model, tokenizer, "FastModel"
-
-    if model_type == "gemma26b":
-        from unsloth import FastModel
-        from unsloth.chat_templates import get_chat_template
-
-        model, tokenizer = FastModel.from_pretrained(
-            model_name=model_name,
-            dtype=dtype,
-            max_seq_length=max_seq_length,
-            load_in_4bit=False,
-            load_in_16bit=True,
-            full_finetuning=False,
-            use_gradient_checkpointing="unsloth",
-        )
-        tokenizer = get_chat_template(tokenizer, chat_template="gemma-4")
-        return model, tokenizer, "FastModel"
 
     if model_type == "llama":
         from unsloth import FastLanguageModel
@@ -800,41 +751,6 @@ def setup_model(model_type: str, train_cfg: dict, finetune_cfg: dict):
 
         return model, tokenizer, formatting_func, {"instruction_part": "<|turn>user\n", "response_part": "<|turn>model\n"}, "FastModel"
 
-    if model_type == "gemma26b":
-        from unsloth import FastModel
-        from unsloth.chat_templates import get_chat_template
-
-        model, tokenizer = FastModel.from_pretrained(
-            model_name=model_name,
-            dtype=dtype,
-            max_seq_length=int(train_cfg["max_seq_length"]),
-            load_in_4bit=False,
-            load_in_16bit=True,
-            full_finetuning=False,
-            use_gradient_checkpointing="unsloth",
-        )
-        model = FastModel.get_peft_model(
-            model,
-            finetune_vision_layers=False,
-            finetune_language_layers=True,
-            finetune_attention_modules=True,
-            finetune_mlp_modules=True,
-            r=lora_r,
-            lora_alpha=lora_alpha,
-            lora_dropout=lora_dropout,
-            bias="none",
-            random_state=random_state,
-        )
-        tokenizer = get_chat_template(tokenizer, chat_template="gemma-4")
-
-        def formatting_func(examples):
-            texts = [
-                tokenizer.apply_chat_template(convo, tokenize=False, add_generation_prompt=False).removeprefix("<bos>")
-                for convo in examples["conversations"]
-            ]
-            return {"text": texts}
-
-        return model, tokenizer, formatting_func, {"instruction_part": "<|turn>user\n", "response_part": "<|turn>model\n"}, "FastModel"
 
     if model_type == "llama":
         from unsloth import FastLanguageModel
@@ -908,7 +824,7 @@ def setup_model(model_type: str, train_cfg: dict, finetune_cfg: dict):
 
 def build_inference_inputs(tokenizer, item: dict, model_type: str, ablation_cfg: dict):
     messages = build_eval_messages_for_objective(item, model_type, ablation_cfg)
-    if model_type in {"gemma", "gemma26b"}:
+    if model_type == "gemma":
         normalized_messages = []
         for message in messages:
             content = message.get("content")
@@ -940,7 +856,7 @@ def build_inference_inputs(tokenizer, item: dict, model_type: str, ablation_cfg:
 def run_fold_inference(model, tokenizer, val_items: list[dict], model_type: str, max_new_tokens: int, ablation_cfg: dict) -> list[dict]:
     stop_criteria = StoppingCriteriaList([StopOnLabel(tokenizer)])
     pad_id = tokenizer.pad_token_id if tokenizer.pad_token_id is not None else tokenizer.eos_token_id
-    use_cache = model_type != "gemma26b"
+    use_cache = True
     results = []
     total = len(val_items)
     for idx, item in enumerate(val_items, start=1):
@@ -1103,22 +1019,20 @@ def train_single_fold(
     logger.info("Training %s fold %s", model_type, fold_idx)
     trainer.train()
     final_checkpoint_dir = adapter_dir.parent / "checkpoints" / "checkpoint-final"
-    if is_primary_process():
-        final_checkpoint_dir = save_final_checkpoint_snapshot(
-            model=model,
-            tokenizer=tokenizer,
-            adapter_dir=adapter_dir,
-            fold_idx=fold_idx,
-            model_type=model_type,
-        )
-        logger.info(
-            "Saved inference-ready weights for %s fold %s: adapter=%s final_checkpoint=%s",
-            model_type,
-            fold_idx,
-            adapter_dir,
-            final_checkpoint_dir,
-        )
-    maybe_distributed_barrier()
+    final_checkpoint_dir = save_final_checkpoint_snapshot(
+        model=model,
+        tokenizer=tokenizer,
+        adapter_dir=adapter_dir,
+        fold_idx=fold_idx,
+        model_type=model_type,
+    )
+    logger.info(
+        "Saved inference-ready weights for %s fold %s: adapter=%s final_checkpoint=%s",
+        model_type,
+        fold_idx,
+        adapter_dir,
+        final_checkpoint_dir,
+    )
 
     del trainer
     if keep_loaded:
@@ -1288,60 +1202,7 @@ def run_epoch_sweep(
     if missing_epochs:
         raise RuntimeError(f"Missing epoch checkpoints for X/Y/Z plot: {missing_epochs}")
 
-    rows = []
-    for epoch_value in epoch_values:
-        run_name = f"epoch_{epoch_value}"
-        checkpoint_dir = epoch_checkpoint_map[epoch_value]
-        output_path = sweep_results_root / f"{run_name}_results.json"
-        metric_path = sweep_results_root / f"{run_name}_metrics.json"
 
-        logger.info("X/Y/Z plot inference start: fold=0 epoch=%s checkpoint=%s", epoch_value, checkpoint_dir.name)
-        infer_process = mp.Process(
-            target=inference_worker,
-            args=(
-                model_type,
-                fold_idx,
-                str(checkpoint_dir),
-                str(resolve_path(fold_entry["val_eval_path"])),
-                str(output_path),
-                int(finetune_cfg["inference"]["max_new_tokens_label_only"]) if ablation_cfg["label_only"] else int(finetune_cfg["inference"]["max_new_tokens"]),
-                max_epoch_train_cfg,
-                finetune_cfg,
-                ablation_cfg,
-                dry_run_cfg,
-            ),
-        )
-        infer_process.start()
-        infer_process.join()
-        if infer_process.exitcode != 0:
-            raise RuntimeError(f"X/Y/Z inference failed for epoch={epoch_value} with exit code {infer_process.exitcode}")
-
-        fold_results = load_json(output_path)
-        metrics = compute_overall_metrics(fold_results)
-        metrics["epoch_value"] = epoch_value
-        save_json(metric_path, metrics)
-        rows.append(metrics)
-        logger.info(
-            "X/Y/Z plot run complete: epoch=%s acc=%.4f macro_f1=%.4f",
-            epoch_value,
-            metrics["accuracy"],
-            metrics["macro_f1"],
-        )
-
-    summary = {
-        "mode": resolve_variant_name(ablation_cfg),
-        "fold": 0,
-        "epochs_tested": epoch_values,
-        "runs": rows,
-        "summary": summarize_metric_rows(rows),
-        "sweet_spot_macro_f1": max(rows, key=lambda row: row["macro_f1"]),
-    }
-    save_json(sweep_results_root / "xyz_plot_summary.json", summary)
-    write_csv(
-        sweep_results_root / "xyz_plot_summary.csv",
-        rows,
-        ["epoch_value", "samples", "accuracy", "macro_f1", "weighted_f1", "kappa"],
-    )
 
 
 def write_full_cv_summary(results_root: Path, model_type: str, variant_name: str, fold_rows: list[dict]) -> None:
@@ -1385,15 +1246,10 @@ def is_fold_complete(results_root: Path, models_root: Path, fold_idx: int, resum
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Formal Step 5 CV fine-tuning and inference")
-    parser.add_argument("--model", required=True, choices=["gemma", "gemma26b", "llama", "qwen", "ministral"])
+    parser.add_argument("--model", required=True, choices=["gemma", "llama", "qwen", "ministral"])
     args = parser.parse_args()
 
-    if is_torchrun_distributed():
-        raise RuntimeError(
-            "run_cv_finetune.py 目前不支援直接用 torchrun 執行。"
-            "這支腳本本身已用 multiprocessing 管理 fold 訓練與推論；再套 torchrun 會形成巢狀多進程/多卡。"
-            "請改用 `uv run python src/step5_cv/run_cv_finetune.py --model ...`。"
-        )
+
 
     config = load_step5_cv_config()
     cfg = config["finetune"]
@@ -1404,8 +1260,7 @@ def main() -> None:
     inference_cfg = get_inference_cfg(cfg)
     dry_run_cfg = cfg.get("dry_run", {})
     dry_run_enabled = bool(dry_run_cfg.get("enabled"))
-    multi_gpu_cfg = cfg.get("multi_gpu", {})
-    resume_enabled = bool(multi_gpu_cfg.get("resume", False))
+    resume_enabled = bool(cfg.get("resume", False))
     sft_output_dir = resolve_path(cfg["sft_output_dir"])
     results_root = resolve_path(cfg["results_root"]) / args.model
     models_root = resolve_path(cfg["models_root"]) / args.model
@@ -1466,7 +1321,7 @@ def main() -> None:
         fold_entry = fold_entries[0]
         adapter_dir = models_root / f"fold_{fold_entry['fold']}" / "adapter"
         fold_idx = fold_entry["fold"]
-        model, tokenizer, api_class = train_single_fold(
+        train_single_fold(
             model_type=args.model,
             fold_idx=fold_idx,
             train_sft_path=resolve_path(fold_entry["sft_path"]),
@@ -1475,31 +1330,9 @@ def main() -> None:
             finetune_cfg=cfg,
             ablation_cfg=ablation_cfg,
             dry_run_cfg=dry_run_cfg,
-            keep_loaded=True,
+            keep_loaded=False,
         )
-        if api_class == "FastLanguageModel":
-            from unsloth import FastLanguageModel
-            FastLanguageModel.for_inference(model)
-        elif api_class == "FastModel":
-            from unsloth import FastModel
-            FastModel.for_inference(model)
-        else:
-            from unsloth import FastVisionModel
-            FastVisionModel.for_inference(model)
-
-        val_items = load_json(resolve_path(fold_entry["val_eval_path"]))[: int(dry_run_cfg["val_samples"])]
-        output_path = results_root / f"fold_{fold_idx}_results.json"
-        dry_run_max_new_tokens = int(cfg["inference"]["max_new_tokens_label_only"]) if ablation_cfg["label_only"] else int(cfg["inference"]["max_new_tokens"])
-        rows = run_fold_inference(model, tokenizer, val_items, args.model, dry_run_max_new_tokens, ablation_cfg)
-        save_json(output_path, rows)
-        fold_metrics = compute_overall_metrics(rows)
-        save_json(results_root / f"fold_{fold_idx}_metrics.json", fold_metrics)
-        logger.info("%s dry run fold %s complete: acc=%.4f macro_f1=%.4f", args.model, fold_idx, fold_metrics["accuracy"], fold_metrics["macro_f1"])
-
-        del model, tokenizer
-        gc.collect()
-        if torch.cuda.is_available():
-            torch.cuda.empty_cache()
+        logger.info("%s dry_run fold %s training complete", args.model, fold_idx)
         return
 
     mp.set_start_method("spawn", force=True)
@@ -1533,54 +1366,7 @@ def main() -> None:
         if train_process.exitcode != 0:
             raise RuntimeError(f"Training process for fold {fold_idx} failed with exit code {train_process.exitcode}")
 
-        output_path = results_root / f"fold_{fold_idx}_results.json"
-        checkpoint_dir, checkpoint_info = resolve_inference_checkpoint_dir(
-            results_root=results_root,
-            models_root=models_root,
-            fold_idx=fold_idx,
-            inference_cfg=inference_cfg,
-        )
-        logger.info(
-            "Inference checkpoint selected for fold %s: strategy=%s epoch=%s dir=%s",
-            fold_idx,
-            checkpoint_info["checkpoint_strategy"],
-            checkpoint_info["checkpoint_epoch"],
-            checkpoint_info["checkpoint_dir"],
-        )
-        infer_process = mp.Process(
-            target=inference_worker,
-            args=(
-                args.model,
-                fold_idx,
-                str(checkpoint_dir),
-                str(resolve_path(fold_entry["val_eval_path"])),
-                str(output_path),
-                int(inference_cfg["max_new_tokens_label_only"]) if ablation_cfg["label_only"] else int(inference_cfg["max_new_tokens"]),
-                train_cfg,
-                cfg,
-                ablation_cfg,
-                dry_run_cfg,
-            ),
-        )
-        infer_process.start()
-        infer_process.join()
-        if infer_process.exitcode != 0:
-            raise RuntimeError(f"Inference process for fold {fold_idx} failed with exit code {infer_process.exitcode}")
-        rows = load_json(results_root / f"fold_{fold_idx}_results.json")
-        fold_metrics = compute_overall_metrics(rows)
-        fold_metrics["fold"] = fold_idx
-        fold_metrics.update(checkpoint_info)
-        save_json(results_root / f"fold_{fold_idx}_metrics.json", fold_metrics)
-        fold_summaries.append(fold_metrics)
-        logger.info("%s fold %s complete: acc=%.4f macro_f1=%.4f", args.model, fold_idx, fold_metrics["accuracy"], fold_metrics["macro_f1"])
-
-    write_full_cv_summary(
-        results_root=results_root,
-        model_type=args.model,
-        variant_name=variant_name,
-        fold_rows=fold_summaries,
-    )
-    logger.info("Saved full CV summary to %s", results_root / "overall_summary.md")
+    logger.info("Training for all configured folds is complete.")
 
 
 if __name__ == "__main__":
