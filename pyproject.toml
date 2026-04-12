@@ -3,15 +3,25 @@ name = "esg-sft"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.11"
+requires-python = ">=3.11,<3.14"
 dependencies = [
-    "dotenv>=0.9.9",
-    "google-generativeai>=0.8.6",
-    "openai>=2.18.0",
-    "scikit-learn>=1.8.0",
-    "transformers==4.56.2",
-    "trl==0.22.2",
-    "unsloth>=2026.2.1",
-    "unsloth-zoo>=2026.2.1",
-    "vllm>=0.15.1",
+  "anthropic>=0.68.0",
+  "dotenv>=0.9.9",
+  "google-genai>=1.12.1",
+  "google-generativeai>=0.8.6",
+  "ipykernel>=6.29.5",
+  "jupyterlab>=4.4.0",
+  "openai>=2.18.0",
+  "scikit-learn>=1.8.0",
+  "sec-downloader>=0.12.2",
+  "sec-parser>=0.54.0",
+  "trl==0.22.2",
+  "transformers==5.5.0",
+  "unsloth>=2026.3.1",
+  "unsloth-zoo>=2026.3.1",
+]
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.2.0",
 ]

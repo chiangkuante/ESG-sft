@@ -1,35 +1,35 @@
 {
-  "total_paragraphs": 751370,
-  "skipped_files": 0,
-  "error_files": 0,
-  "char_count_mean": 925.7,
-  "char_count_median": 1010.0,
-  "char_count_min": 100,
-  "char_count_max": 51508,
-  "char_count_stdev": 576.0,
-  "unique_tickers": 410,
-  "year_distribution": {
-    "2015": 60806,
-    "2016": 64916,
-    "2017": 72030,
-    "2018": 77161,
-    "2019": 77325,
-    "2020": 80461,
-    "2021": 82475,
-    "2022": 83318,
-    "2023": 75922,
-    "2024": 76956
-  },
-  "top_10_companies": {
-    "EXC": 13853,
-    "C": 11902,
-    "HIG": 10623,
-    "PEG": 8757,
-    "NRG": 8509,
-    "MS": 8035,
-    "NTRS": 7650,
-    "TRV": 7274,
-    "FITB": 6949,
-    "AIZ": 6936
-  }
+ "total_paragraphs": 751370,
+ "skipped_files": 0,
+ "error_files": 0,
+ "char_count_mean": 925.7,
+ "char_count_median": 1010.0,
+ "char_count_min": 100,
+ "char_count_max": 51508,
+ "char_count_stdev": 576.0,
+ "unique_tickers": 410,
+ "year_distribution": {
+  "2015": 60806,
+  "2016": 64916,
+  "2017": 72030,
+  "2018": 77161,
+  "2019": 77325,
+  "2020": 80461,
+  "2021": 82475,
+  "2022": 83318,
+  "2023": 75922,
+  "2024": 76956
+ },
+ "top_10_companies": {
+  "EXC": 13853,
+  "C": 11902,
+  "HIG": 10623,
+  "PEG": 8757,
+  "NRG": 8509,
+  "MS": 8035,
+  "NTRS": 7650,
+  "TRV": 7274,
+  "FITB": 6949,
+  "AIZ": 6936
+ }
 }

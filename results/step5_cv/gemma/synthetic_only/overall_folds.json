@@ -1,0 +1,35 @@
+[
+  {
+    "samples": 167,
+    "accuracy": 0.7545,
+    "macro_f1": 0.5296,
+    "weighted_f1": 0.7457,
+    "kappa": 0.5909,
+    "fold": 0,
+    "checkpoint_strategy": "final",
+    "checkpoint_epoch": null,
+    "checkpoint_dir": "/home/wa1ter/ESG-sft/models/step5_cv/gemma/synthetic_only/fold_0/checkpoints/checkpoint-final"
+  },
+  {
+    "samples": 167,
+    "accuracy": 0.8084,
+    "macro_f1": 0.5543,
+    "weighted_f1": 0.7958,
+    "kappa": 0.6656,
+    "fold": 1,
+    "checkpoint_strategy": "final",
+    "checkpoint_epoch": null,
+    "checkpoint_dir": "/home/wa1ter/ESG-sft/models/step5_cv/gemma/synthetic_only/fold_1/checkpoints/checkpoint-final"
+  },
+  {
+    "samples": 166,
+    "accuracy": 0.8012,
+    "macro_f1": 0.5222,
+    "weighted_f1": 0.8061,
+    "kappa": 0.6777,
+    "fold": 2,
+    "checkpoint_strategy": "final",
+    "checkpoint_epoch": null,
+    "checkpoint_dir": "/home/wa1ter/ESG-sft/models/step5_cv/gemma/synthetic_only/fold_2/checkpoints/checkpoint-final"
+  }
+]

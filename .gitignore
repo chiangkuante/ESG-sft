@@ -18,6 +18,15 @@ unsloth_training_checkpoints/
 
 # Raw 10-K data (too large)
 data/origin_data/10k_raw/
+data/raw/
+data/processed/p2
+data/processed/z*
+data/processed/step1_parsing/paragraphs.json
+data/processed/step2_classification/classified.json
+
+# results
+results/step5_cv_p2
+results/z*
 
 # Large intermediate files (can be regenerated from pipeline)
 data/origin_data/10k_1A/paragraphs.csv
@@ -26,9 +35,19 @@ data/origin_data/10k_1A/classified.csv
 data/origin_data/10k_1A/classified.json
 data/origin_data/10k_1A/classified_checkpoint.csv
 
-# Empty directories
-data/reason_data/
+# 模型檔案與權重 (Models and Checkpoints)
+models/
+*.safetensors
+*.bin
 
 # IDE / Editor
 .claude/
 .gemini/
+
+# checkpoints
+unsloth_compiled_cache/
+.ipynb_checkpoints/
+
+# 系統層級或暫存設定 (System files & caches)
+.DS_Store
+.pyre_configuration

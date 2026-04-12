@@ -1,0 +1,25 @@
+{
+  "folds": [
+    {
+      "fold": 0,
+      "sft_size": 4148,
+      "excluded_size": 0,
+      "sft_path": "data/processed/step5_sft/fold_0/train_sft_text.json",
+      "val_eval_path": "data/processed/step5_sft/fold_0/val_eval.json"
+    },
+    {
+      "fold": 1,
+      "sft_size": 4148,
+      "excluded_size": 0,
+      "sft_path": "data/processed/step5_sft/fold_1/train_sft_text.json",
+      "val_eval_path": "data/processed/step5_sft/fold_1/val_eval.json"
+    },
+    {
+      "fold": 2,
+      "sft_size": 4148,
+      "excluded_size": 0,
+      "sft_path": "data/processed/step5_sft/fold_2/train_sft_text.json",
+      "val_eval_path": "data/processed/step5_sft/fold_2/val_eval.json"
+    }
+  ]
+}

@@ -1,0 +1,1004 @@
+[
+  {
+    "paragraph_id": "TPL_2022_RISK_045",
+    "raw_output": "Reasoning: This paragraph discusses corporate governance mechanisms embedded in the certificate of incorporation and bylaws of a Delaware corporation, specifically those intended to deter coercive takeover attempts. It details provisions such as the ability of remaining directors to fill vacancies, limitations on stockholders calling a special meeting, rules for presenting proposals or nominating directors, and Section 203 of the DGCL, which can delay or prevent a change of control for three years after acquiring over 15% of the voting stock. The entire focus is on how the board and shareholder control are structured to manage potential hostile takeovers, which is a core aspect of corporate governance. While it mentions \"takeover bids\" and \"amalgamation or consolidation,\" these are legal control mechanisms, not ESG topics like climate, pollution, human capital, or community relations.\nLabel: Corporate Governance",
+    "parsed_label": "Corporate Governance",
+    "ground_truth_label": "Corporate Governance"
+  },
+  {
+    "paragraph_id": "BKNG_2022_RISK_079",
+    "raw_output": "Reasoning: This paragraph discusses the legal, tax, regulatory, compliance, and reputational risks associated with complying with the Package Directive and other consumer protection regulations. It details the costly and complex nature of compliance, potential limitations on offerings, and adverse effects of unfavorable regulations or interpretations on business operations and growth. It also provides a specific example of a Turkish court ruling requiring registration for Turkish hotels, which directly illustrates regulatory compliance risk affecting market access. While it mentions financial guarantees and consumer protections, the core theme is regulatory burden and enforcement, which aligns best with Business Ethics & Values rather than the other ESG categories.\nLabel: Business Ethics & Values",
+    "parsed_label": "Business Ethics & Values",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "FRT_2022_RISK_043",
+    "raw_output": "Reasoning: The paragraph explicitly discusses risks from cyber attacks that could cause loss of confidential information and other business disruptions. It details reliance on information technology systems for processing transactions and managing the business, and describes attacks attempting unauthorized access to data and systems, including attacks on third-party IT services like payroll. It also lists preventative and mitigating measures (password encryption, MFA, firewalls, anti-virus, backups, penetration testing) and acknowledges no guarantee of success. The core risk is a data security breach and operational disruption from cyber threats, which aligns directly with the Product Liability definition's inclusion of \"privacy and data security.\"\nLabel: Product Liability",
+    "parsed_label": "Product Liability",
+    "ground_truth_label": "Product Liability"
+  },
+  {
+    "paragraph_id": "AVGO_2022_RISK_040",
+    "raw_output": "Reasoning: This paragraph discusses risks related to business transactions, including the VMware Merger's regulatory approval timelines and burdensome conditions, as well as the risks of divestitures, wind-downs, exits from minority investments, and the resulting effects on cash flows and operations. It also covers integration and post-transaction risks such as the inability to sell businesses on acceptable terms, disruption to other parts of the business, potential loss of employees or customers, and unanticipated liabilities. While \"loss of employees\" is mentioned, the paragraph's primary focus is on transaction execution, financial outcomes, and legal/regulatory hurdles rather than ongoing human capital management, health and safety, or labor standards. Therefore, it does not primarily fit any of the ESG categories, making Non-ESG the best fit.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "ODFL_2022_RISK_018",
+    "raw_output": "Reasoning: The paragraph primarily discusses intense competition in the transportation services industry, including downward pricing pressures, the inability to collect fuel surcharges, customer consolidation of freight shipments, and the need for increased investment in technology to remain competitive. It also mentions that some customers may perceive the company's \"ESG profile\" as less robust than competitors', which could influence their carrier selection, but this is only a minor competitive consideration among numerous operational and financial risks. There is no substantive discussion of specific ESG topics such as carbon emissions, water stress, biodiversity, toxic pollution, labor standards, human rights, board structure, or business ethics. Because the core risk is market and operational profitability, the best fit is Non-ESG.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "CDW_2022_RISK_015",
+    "raw_output": "Reasoning: This paragraph explicitly discusses \"Breaches of data security and the failure to protect our information technology systems from cybersecurity threats\" as an adverse business impact. Data security failures are directly linked to the \"privacy and data security\" aspect of the Product Liability category definition. While it is framed as a general business risk, the specific ESG topic it maps to is the security and privacy of company information systems. Therefore, Product Liability is the best fit among the given options.\nLabel: Product Liability",
+    "parsed_label": "Product Liability",
+    "ground_truth_label": "Product Liability"
+  },
+  {
+    "paragraph_id": "KMI_2022_RISK_023",
+    "raw_output": "Reasoning: The paragraph discusses the high degree of business and financial risk in developing and operating oil and gas properties, including speculative acquisition and development judgments, inability to predict production potential, and the possibility of wells being uneconomic due to encountering water or other deleterious substances. It also mentions operational risks like equipment failures, fires, explosions, blowouts, cratering, and \"pollution and other environmental risks,\" as well as production being unmarketable if contaminated with water or other deleterious substances. While it mentions \"pollution and other environmental risks,\" it does so as one of many geological, operational, and market factors that can delay or prevent profitable completion, rather than focusing on specific pollution control, waste management, or toxic emissions compliance. The dominant theme is inherent commodity extraction business and financial uncertainty, making Pollution & Waste or Climate Change less fitting than the Non-ESG category.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Pollution & Waste"
+  },
+  {
+    "paragraph_id": "MTCH_2022_RISK_020",
+    "raw_output": "Reasoning: The paragraph explicitly discusses the company's dependence on its \"key personnel\" and its \"continued ability to identify, hire, develop, motivate, and retain highly skilled individuals across the globe.\" It highlights \"intense competition for well-qualified employees\" and the importance of \"effective succession planning\" to ensure \"smooth transitions involving senior management.\" These points are central to Human Capital management—attracting, retaining, and developing the talent needed to execute strategy. While it mentions business execution broadly, the root risk is talent continuity rather than market, financial, or governance issues.\nLabel: Human Capital",
+    "parsed_label": "Human Capital",
+    "ground_truth_label": "Human Capital"
+  },
+  {
+    "paragraph_id": "MSI_2022_RISK_064",
+    "raw_output": "Reasoning: This paragraph is entirely focused on macroeconomic and geopolitical risks affecting the company's business, financial condition, results of operations, and cash flows. It uses broad terms like \"global economic and political conditions\" and \"continue to unfavorably impact\" the business without mentioning any specific ESG topic such as climate transition, pollution, resource use, labor practices, community relations, or governance/ethics. Because the risk is purely financial/business condition related, it does not fit any of the defined ESG categories. Therefore, the correct label is Non-ESG.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "LYB_2022_RISK_033",
+    "raw_output": "Reasoning: This paragraph primarily discusses risks related to the global economy and multinational operations, including substantial capital and other costs to comply with regulations, increased security costs or insurance premiums, and challenges to compliance with customs, currency exchange control, and transfer pricing regulations. It also covers laws that limit or may limit subsidiaries' ability to transfer cash, which could adversely affect competitiveness. While it mentions obtaining a portion of principal raw materials from international sources subject to these same risks, the focus remains on international business regulation and financial controls rather than specific environmental impacts of sourcing (like deforestation or water stress) or labor practices. Therefore, the best fit is Non-ESG.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "LULU_2021_RISK_025",
+    "raw_output": "Reasoning: This paragraph discusses the operational risk of not being able to successfully open new store locations in a timely manner, which would harm results of operations. It is purely business execution and market expansion risk without any environmental, social, or governance dimensions. It does not mention emissions, water, biodiversity, pollution, labor practices, community relations, product safety/privacy, or ethical misconduct. Therefore, the best fit is Non-ESG.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "MNST_2022_RISK_049",
+    "raw_output": "Reasoning: This paragraph discusses macroeconomic and financial market risks, including Brexit and its resulting changes in tariffs, importation restrictions, currency volatility, and the impact of political/economic shifts on trade and markets. It also details counterparty credit risk related to defaults by financial institutions in derivatives and custody of cash, especially during downturns. None of the ESG topics are primarily addressed: there is no discussion of climate change, natural capital (water, biodiversity, land use, raw materials), pollution or waste, human capital (labor standards, health and safety, training), product liability (safety, privacy, chemical safety), community relations, or corporate governance/business ethics. The content is purely financial/market risk analysis. Therefore, the best fit is Non-ESG.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "TTWO_2022_RISK_082",
+    "raw_output": "Reasoning: The paragraph primarily discusses risks to proprietary software, including piracy, unauthorized copying, exploitation or misappropriation of intellectual property, and the resulting reputational damage. It also mentions vulnerabilities in application design and platforms that could lead to lost revenues or increased costs to respond technologically. While these issues relate to product integrity and security, they are framed in terms of business profitability and competitive disadvantage rather than direct consumer safety, data privacy breaches, or regulated product quality failures that typically map to Product Liability. The core concern is IP theft and software cheating/cracking, which aligns more closely with Business Ethics & Values in the context of protecting proprietary assets and fair play in digital ecosystems.\nLabel: Business Ethics & Values",
+    "parsed_label": "Business Ethics & Values",
+    "ground_truth_label": "Corporate Governance"
+  },
+  {
+    "paragraph_id": "HSIC_2022_RISK_014",
+    "raw_output": "Reasoning: This paragraph provides extensive biographical details about the company's Chief Financial Officer and Chief General Auditor, including their prior roles at PepsiCo and PricewaterhouseCoopers LLP, certifications, and appointment dates. It focuses entirely on the qualifications and career progression of key financial and internal control personnel. While the titles mentioned (CFO, Chief General Auditor) relate to governance and internal oversight, the content does not discuss the company's actual governance structure, board effectiveness, committee oversight, or internal control risks. Therefore, it is best classified as Non-ESG because it is purely an executive background disclosure rather than an ESG risk discussion.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Corporate Governance"
+  },
+  {
+    "paragraph_id": "ABBV_2022_RISK_002",
+    "raw_output": "Reasoning: This paragraph discusses the adverse impact of public health outbreaks, epidemics, or pandemics, specifically COVID-19, on AbbVie's operations, including manufacturing, supply chain, sales, marketing, and clinical trial activities. It also mentions modifying business practices such as instituting remote work for many employees and the uncertainty of future government travel bans or lockdowns. The primary focus is on the operational and financial disruption caused by a global health crisis affecting the company's ability to conduct business and serve patients/customers. While it mentions employee impacts (remote work), it does not focus on labor standards, health and safety programs, or human capital development in a dedicated sense, nor does it address climate, pollution, natural capital, or governance/ethics. Therefore, the best fit is Non-ESG.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Human Capital"
+  },
+  {
+    "paragraph_id": "ENPH_2023_RISK_157",
+    "raw_output": "Reasoning: The paragraph lists various catastrophic business disruption risks, including \"natural disasters (including as a result of climate change),\" \"public health events,\" and \"significant disruptions of information technology systems, data security breaches.\" While it mentions data security breaches, the primary focus is on broad business continuity and macroeconomic/geopolitical factors affecting revenue and financial condition, not on a specific ESG topic like product data privacy policy failures or toxic emissions. It also mentions earthquake and wildfire proximity as examples of natural disasters, which are climate-related hazards but not discussed in terms of the company's mitigation efforts or footprint in the context of the Natural Capital or Climate Change topics. Because the risks are presented as general, high-impact business interruptions rather than specific ESG impacts (e.g., water stress, biodiversity loss, labor rights, specific pollution controls), the best fit is Non-ESG.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Climate Change"
+  },
+  {
+    "paragraph_id": "GEN_2021_RISK_068",
+    "raw_output": "Reasoning: This paragraph discusses the various factors that could adversely affect the company's effective tax rate, including changes to U.S. federal and international tax laws, tax regulations, tax rulings, tax assessments, and disputes with tax authorities. The entire content is focused on tax uncertainty and financial reporting outcomes like income tax expense and cash flows. It does not mention any ESG topics such as climate change, water or biodiversity, pollution or waste, labor and human capital, community relations, product safety or data privacy, or business ethics/governance controversies. Therefore, the best fit is Non-ESG.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "BXP_2023_RISK_094",
+    "raw_output": "Reasoning: This paragraph discusses the financial structure and tax status of BXP as a REIT, specifically the requirement to distribute at least 90% of taxable income annually and the associated excise tax. It details the financing maneuvers (short-term borrowing, long-term debt, asset sales, JVs, or equity issuance) needed to meet distribution requirements despite timing differences in income receipt and recognition. The risks are purely related to liquidity and maintaining REIT status, not to environmental impacts, social practices, labor conditions, product safety, community relations, or internal governance/ethics. Therefore, the best fit is Non-ESG.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "SNA_2021_RISK_011",
+    "raw_output": "Reasoning: The paragraph discusses the business risk of failing to adequately protect intellectual property or facing infringement claims, which could adversely affect business, reputation, financial condition, and cash flows. This is primarily a legal and competitive business risk related to IP protection, not an ESG topic like climate, water/land/biodiversity, pollution/waste, human capital, product safety/privacy/chemical safety, community relations, corporate governance, or business ethics. While IP can sometimes intersect with ethics or governance, the text itself is purely about infringement and protection failure. Therefore, the best fit is Non-ESG.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "FDX_2021_RISK_025",
+    "raw_output": "Reasoning: This paragraph is primarily about Human Capital management risks stemming from the labor-intensive nature of the business and external factors affecting labor availability and cost. It details risks related to the availability of qualified workers, inflation, unemployment rates, prevailing wage rates, behavioral changes, insurance costs, and evolving employment and labor laws (including minimum wage increases). It also connects these challenges to higher costs in 2021 and expectations for 2022, as well as increased wage rates and personnel costs in response to the COVID-19 pandemic. While it mentions \"safety levels of our operations,\" the focus remains on the broader labor market and workforce cost/availability pressures rather than specific health and safety programs or environmental topics.\nLabel: Human Capital",
+    "parsed_label": "Human Capital",
+    "ground_truth_label": "Human Capital"
+  },
+  {
+    "paragraph_id": "DELL_2021_RISK_037",
+    "raw_output": "Reasoning: This paragraph discusses the adverse effect of indebtedness on the company's financial condition, focusing on significant interest and debt service payments that consume a large portion of cash flow from operations. It details the company's aggregate principal amount of indebtedness, available borrowing under revolving credit facilities, exposure to interest rate fluctuations, potential inability to refinance, and restrictive covenants that could trigger an event of default. The content is purely about financial leverage, liquidity, and debt covenants, with no mention of environmental impacts, resource use, pollution, labor practices, human capital development, community relations, or governance/ethics. Therefore, the best fit is Non-ESG.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "ALL_2022_RISK_027",
+    "raw_output": "Reasoning: This paragraph discusses how adverse capital and credit market conditions restrict liquidity and access to financing. It details the factors influencing the company's ability to obtain credit, including market conditions, general credit availability, credit ratings, lenders' perceptions, and the cost of capital. The risk is purely financial/market access risk, with no discernible link to environmental impacts (Climate Change, Natural Capital, Pollution & Waste), social impacts (Human Capital, Community Relations), product safety/data privacy (Product Liability), or internal governance/ethics (Corporate Governance, Business Ethics & Values). Therefore, the best fit is Non-ESG.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "MPC_2022_RISK_047",
+    "raw_output": "Reasoning: This paragraph discusses corporate governance documents, specifically the certificate of incorporation and amended bylaws, and how their provisions can \"discourage, delay or prevent a change in control of us that a stockholder may consider favorable.\" It details mechanisms like a three-class staggered board, limitations on calling special meetings, supermajority vote requirements, director removal for cause, and staggered share issuances that allow the board to issue shares friendly to current management. These are classic anti-takeover provisions designed to maintain existing control and management continuity. The focus is entirely on shareholder control mechanisms embedded in the company's foundational governance documents, making Corporate Governance the correct label over any other ESG category.\nLabel: Corporate Governance",
+    "parsed_label": "Corporate Governance",
+    "ground_truth_label": "Corporate Governance"
+  },
+  {
+    "paragraph_id": "ADSK_2022_RISK_070",
+    "raw_output": "Reasoning: This paragraph focuses entirely on the evolving landscape of data protection regulation in the UK post-Brexit, including the UK GDPR, the Data Protection Act 2018, and associated fines. It details the implications of the SCCs for personal data transfers in and out of the EU/UK, the potential revocation of adequacy decisions, and the increased compliance burdens such as new SCCs and data localization requirements. These are direct risks related to compliance with laws governing the processing and transfer of personal data, which falls under the \"privacy and data security\" aspect of Product Liability. While it discusses costs and contractual changes, the core risk is legal exposure for failing to protect personal data, not any other ESG topic like climate, water, pollution, or human capital.\nLabel: Product Liability",
+    "parsed_label": "Product Liability",
+    "ground_truth_label": "Product Liability"
+  },
+  {
+    "paragraph_id": "LNT_2022_RISK_014",
+    "raw_output": "Reasoning: The paragraph discusses financial risks related to tax liability and the generation of production tax credits and investment tax credits from wind and planned solar facilities. It focuses on how changes in tax rates, minimum corporate income tax, and disagreements on in-service dates or qualifying cost parameters can reduce incentives and negatively impact financial condition. While it mentions wind and solar generation, the primary risk driver is the financial structure of government incentives rather than operational emissions reduction, renewable energy deployment strategy, or broader climate impact management. Therefore, it does not fit the Climate Change definition as well as Non-ESG.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "FFIV_2021_RISK_018",
+    "raw_output": "Reasoning: This paragraph discusses the risk of decreasing average selling prices, increasing costs, and negative impacts on revenues and profits due to competitive pricing pressures and shifts to consumption-based models. The focus is entirely on commercial and operational economics—pricing power, cost reduction, and the need for timely product development to maintain margins. It does not mention environmental impacts (like emissions or water), land use or biodiversity, pollution or waste, labor practices, human capital development, community relations, board/internal controls, or business ethics. Therefore, the best fit is Non-ESG.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "NVDA_2021_RISK_006",
+    "raw_output": "Reasoning: This paragraph discusses dependence on third parties for manufacturing, assembly, testing, and packaging, which reduces control over product quantity and quality and could harm the business. It specifically mentions reliance on foundries for semiconductor wafers and independent subcontractors for assembly, testing, and packaging, highlighting risks to the production process and final product delivery schedule. These points directly relate to product quality and the manufacturing chain that determines whether the product is safe and meets specifications, which aligns best with Product Liability's \"product safety and quality\" definition. While it mentions long-term procurement and capacity commitments, the core risk is quality and delivery failure stemming from reliance on external parties in the production chain.\nLabel: Product Liability",
+    "parsed_label": "Product Liability",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "MAA_2022_RISK_078",
+    "raw_output": "Reasoning: This paragraph discusses the approval rights of the Operating Partnership's unitholders regarding the sale of properties contributed by them. The mention of \"unitholders\" and their required approval for certain transactions directly relates to the ownership and control structure of the business entity. This is a core concept of Corporate Governance, specifically concerning shareholder/unitholder decision-making power. While it is brief and lacks operational ESG topics, it is clearly about how the firm is owned and controlled, making Corporate Governance the best fit over any other category.\nLabel: Corporate Governance",
+    "parsed_label": "Corporate Governance",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "GS_2022_RISK_042",
+    "raw_output": "Reasoning: The paragraph primarily discusses the security of mobile and cloud services against cyber attacks, including the potential failure of encryption and other protective measures. It details the risk of interception, misuse, or mishandling of personal, confidential, and proprietary information transmitted electronically, which could lead to legal liability, regulatory action, and reputational harm. This directly maps to the \"privacy and data security\" aspect of the Product Liability category. While it mentions \"losses as a result of ineffective risk management processes,\" the core ESG concern is the failure to safeguard data and the resulting breach of confidentiality obligations, not climate, natural capital, pollution, human capital, community relations, or corporate governance.\nLabel: Product Liability",
+    "parsed_label": "Product Liability",
+    "ground_truth_label": "Product Liability"
+  },
+  {
+    "paragraph_id": "HPQ_2021_RISK_068",
+    "raw_output": "Reasoning: This paragraph discusses macroeconomic, industry, and financial risks, specifically the impact of currencies other than the U.S. dollar on results reported in USD. It details how global economic events like trade disputes, sanctions, and emerging market volatility can cause currency fluctuations, adversely affecting net revenue growth, margins, and the effectiveness of hedging strategies. The entire discussion is about financial exposure to currency risk and derivatives used to mitigate it. None of the ESG topics—climate change, natural capital, pollution and waste, human capital, product liability, community relations, corporate governance, or business ethics—are primarily addressed. Therefore, the correct label is Non-ESG.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "AFL_2022_RISK_030",
+    "raw_output": "Reasoning: The paragraph explicitly discusses \"Major public health issues, including COVID-19 and any resulting economic effects\" and how the pandemic could adversely impact the Company's financial condition and results of operations. It also mentions the pandemic's effect on operations and those of vendors and counterparties, as well as the Company's response with \"return to work plans\" for its employees. Because the primary risk driver is a public health crisis (pandemic) and its direct impact on human capital (employee health and return-to-work strategies), Human Capital is the best fit. While there are economic effects mentioned, the focus remains on the human element of the business continuity plan.\nLabel: Human Capital",
+    "parsed_label": "Human Capital",
+    "ground_truth_label": "Human Capital"
+  },
+  {
+    "paragraph_id": "LUV_2023_RISK_003",
+    "raw_output": "Reasoning: The paragraph lists several operational risks, including dependence on Boeing for aircraft manufacturing, FAA certification delays, labor-intensive nature and potential conflict with unionized employees, single-engine supplier risk, security concerns (terrorist attacks), core station service disruptions, and \"materially adversely disrupted by extreme weather events.\" The mention of extreme weather events is the only direct link to climate-related physical risks among the ESG categories. However, the paragraph does not discuss carbon emissions, climate adaptation initiatives, renewable energy, or ecological design features; it is a broad operational continuity risk statement. Because the majority of the content relates to manufacturing/supplier/regulatory certification, labor relations, and security/service disruptions rather than specific environmental stewardship or climate mitigation/adaptation, the best fit is Non-ESG.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Human Capital"
+  },
+  {
+    "paragraph_id": "AZO_2021_RISK_011",
+    "raw_output": "Reasoning: The paragraph discusses risks related to sourcing products from outside the U.S., including disruptions in maritime lanes, port labor disputes, and instability in supplier countries that could affect the price or flow of goods. It also mentions supplier failures to meet standards, labor practices of suppliers, and labor problems like strikes or slowdowns that could increase labor costs. While it touches on tariffs and trade sanctions, the core ESG linkage is the human element within the supply chain (labor practices of suppliers and their labor problems) that can damage brand value and cause operational shortages. The other categories are less fitting because there is no primary discussion of climate, water/biodiversity, pollution/waste, or governance/ethics.\nLabel: Human Capital",
+    "parsed_label": "Human Capital",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "USB_2024_RISK_011",
+    "raw_output": "Reasoning: This paragraph is a boilerplate cross-reference directing the reader to Note 23 for details on \"Litigation and Regulatory Matters.\" It contains no substantive discussion of ESG topics such as climate risk, natural capital use, pollution/waste, human capital management, product liability, community relations, corporate governance structures, or business ethics controversies. Because it is purely procedural and legal-filing oriented, it does not primarily discuss any of the defined ESG themes. Therefore, the best fit is Non-ESG.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "CTSH_2022_RISK_023",
+    "raw_output": "Reasoning: This paragraph is primarily about the company's exposure to a vast and evolving web of legal and regulatory requirements across numerous jurisdictions, including trade controls, sanctions, immigration, content requirements, tariffs, taxation, antitrust, and crucially, anti-corruption laws (the FCPA and the U.K. Bribery Act). It details the compliance costs and risks of violating these laws, including enforcement actions, audits, investigations, and civil or criminal penalties such as fines, debarment, or prohibition from government contracting. It also mentions significant financial and managerial resources dedicated to maintaining internal control over financial reporting and the ongoing risk of material weaknesses. Because the anti-corruption and general adherence to laws in conducting business are central to the risk described, the label Business Ethics & Values is the best fit.\nLabel: Business Ethics & Values",
+    "parsed_label": "Business Ethics & Values",
+    "ground_truth_label": "Business Ethics & Values"
+  },
+  {
+    "paragraph_id": "KHC_2022_RISK_064",
+    "raw_output": "Reasoning: This paragraph discusses dividend payments being at the sole discretion of the Board of Directors and dependent on various factors, including the company's financial condition and legal requirements under Delaware law. It emphasizes that stockholders cannot rely on dividends for a return on investment and that realization of a gain depends on common stock price appreciation. The focus is on the powers and decisions of the Board regarding shareholder returns, which aligns best with the Corporate Governance definition's inclusion of the board's role in shareholder matters. While it mentions financial conditions, the ESG link is structural control (Board discretion) rather than any specific ESG impact like climate, water, labor, or pollution.\nLabel: Corporate Governance",
+    "parsed_label": "Corporate Governance",
+    "ground_truth_label": "Corporate Governance"
+  },
+  {
+    "paragraph_id": "MCHP_2021_RISK_070",
+    "raw_output": "Reasoning: The paragraph focuses entirely on the risks associated with obtaining, maintaining, and defending intellectual property rights, including patentability, scope and strength of granted patents, interference proceedings, and enforcement in foreign countries. It discusses the cost and uncertainty of IP protection and the potential loss of market and revenue opportunities due to third-party infringement. While cybersecurity and privacy are mentioned in the topic definition for Product Liability, they are not discussed in the paragraph itself; the paragraph is purely about patents, trademarks, and copyrights. Therefore, the best fit is Non-ESG.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "WYNN_2022_RISK_085",
+    "raw_output": "Reasoning: This paragraph explicitly discusses conflicts of interest because certain directors and officers are also directors of Wynn Macau, Limited. The existence of dual directorships creates a situation where personal or external interests could improperly influence their duties to the company, which is a core Corporate Governance concern. It does not primarily address any other ESG topic such as environmental impacts, human capital, pollution, or product liability. Therefore, Corporate Governance is the most fitting label.\nLabel: Corporate Governance",
+    "parsed_label": "Corporate Governance",
+    "ground_truth_label": "Business Ethics & Values"
+  },
+  {
+    "paragraph_id": "BMY_2022_RISK_080",
+    "raw_output": "Reasoning: This paragraph discusses how COVID-19 variants continue to cause delays in the initiation and enrollment of patients in clinical trials. The primary risk is operational and financial uncertainty regarding the timing of pipeline development programs and expected future revenues/cash flows. While clinical trials relate to human health, the risk is framed around pandemic-driven operational slowdowns and financial projections rather than specific patient outcomes, drug safety, or broader public health trends impacting the company's business model. It does not discuss emissions, water/biodiversity, pollution/waste, labor standards, community relations, governance, or business ethics. Therefore, the best fit is Non-ESG.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "AMD_2022_RISK_044",
+    "raw_output": "Reasoning: This paragraph discusses that the company's products are complex and may have security vulnerabilities leading to the loss, corruption, theft or misuse of confidential data or system performance issues. It details reliance on vendors and third parties to deploy mitigations and explains that these relationships and their implementation delays could adversely affect revenue. Crucially, it concludes by stating the company may be subject to claims and litigation related to security vulnerabilities and adverse publicity and brand damage. The core risk is data security and product security vulnerabilities leading to liability, which aligns best with the Product Liability definition's inclusion of privacy and data security.\nLabel: Product Liability",
+    "parsed_label": "Product Liability",
+    "ground_truth_label": "Product Liability"
+  },
+  {
+    "paragraph_id": "POOL_2022_RISK_028",
+    "raw_output": "Reasoning: This paragraph is classified as Non-ESG because it provides a very broad statement about compliance with \"employment, environmental, health, transportation, safety and other governmental regulations.\" It does not discuss any specific ESG topic in detail, such as carbon emissions, water stress, biodiversity, toxic emissions/waste, labor standards, human rights in the supply chain, community relations, or board/executive governance failures. The risk is purely regulatory cost and enforcement uncertainty across many domains. While \"environmental\" is mentioned, it is not tied to any specific Natural Capital, Pollution & Waste, or Climate Change issue defined in the guidelines. Therefore, the best fit is Non-ESG.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Business Ethics & Values"
+  },
+  {
+    "paragraph_id": "NOW_2022_RISK_066",
+    "raw_output": "Reasoning: This paragraph discusses risks to the company's financial performance and financial position, specifically how a decrease in new subscriptions, expansion contracts, or renewals may be offset by changes in billing duration and collections. The language is purely financial and operational revenue/cash flow focused, with no mention of environmental impacts, resource use, pollution, human capital issues (labor, health/safety, development), community relations, governance structures, or business ethics. It does not touch on product safety, data privacy, chemical safety, or consumer financial protection. Therefore, the best fit is Non-ESG.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "CCL_2022_RISK_049",
+    "raw_output": "Reasoning: This paragraph is purely factual, listing the locations of the Carnival Corporation's headquarters and larger shoreside locations as of November 30, 2021. It contains no discussion of ESG topics such as climate change initiatives, natural capital use (water, biodiversity, land), pollution or waste management, human capital issues (labor standards, health and safety, training), product liability, community relations, corporate governance structures, or business ethics. Because it is an asset/location disclosure without an associated ESG risk discussion, the best fit is Non-ESG.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "KEY_2022_RISK_013",
+    "raw_output": "Reasoning: The paragraph defines operational risk broadly, including the risk of loss from human error, inadequate internal processes, internal controls, systems, and external events. It specifically highlights escalating and more sophisticated employee fraud and other internal control failures, as well as compliance and legal risk from violations of laws, rules, regulations, prescribed practices, or \"ethical standards.\" It also mentions operational risk from outsourcing vendor failures and the resulting losses such as regulatory intervention or sanctions. The inclusion of \"ethical standards\" within the definition of operational risk makes Business Ethics & Values the best fit among the given ESG categories, as it addresses misconduct and adherence to codes of conduct.\nLabel: Business Ethics & Values",
+    "parsed_label": "Business Ethics & Values",
+    "ground_truth_label": "Business Ethics & Values"
+  },
+  {
+    "paragraph_id": "DPZ_2021_RISK_040",
+    "raw_output": "Reasoning: This paragraph discusses substantial indebtedness, its consequences on the ability to satisfy debt obligations, vulnerability to adverse economic conditions, cash flow dedication to debt payments, and limitations on planning flexibility. It also details exposure to floating interest rates based on LIBOR and the uncertainty surrounding its existence after 2021, which could force renegotiation of loans and increase interest expense. These are classic financial leverage and interest rate risks, not risks primarily related to environmental impact, natural capital, pollution/waste, human capital, product liability, community relations, or corporate governance/business ethics. The mention of SOFR is purely financial market-related. Therefore, the Non-ESG label is the best fit.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "APH_2022_RISK_030",
+    "raw_output": "Reasoning: The paragraph primarily discusses intellectual property infringement claims and litigation from third parties, as well as customer claims, litigation, and regulatory proceedings against the company. It lists various types of legal exposure, including \"government investigations,\" \"intellectual property infringement,\" and \"unfair sales practices,\" but it does not focus on any single ESG theme like labor standards, climate impact, water/biodiversity, or toxic emissions. While it mentions \"compliance with environmental laws\" as one of several potential claims, it is mentioned only in passing among a laundry list of legal matters and is not the main risk driver. The dominant theme is general legal and commercial litigation risk, making Business Ethics & Values the closest fit among the provided options, as it covers ethical/legal conduct and controversies.\nLabel: Business Ethics & Values",
+    "parsed_label": "Business Ethics & Values",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "IBM_2022_RISK_021",
+    "raw_output": "Reasoning: This paragraph discusses the company's lack of active trading in its debt or equity securities and provides no assurances regarding their liquidity or value. The risk is purely financial market and liquidity risk related to its own securities, with no connection to environmental impacts, resource use, pollution, labor practices, community relations, product safety, or internal governance/ethics. It is a standard risk disclosure for a non-marketable issuer. Therefore, the best fit is Non-ESG.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "EG_2022_RISK_015",
+    "raw_output": "Reasoning: This paragraph discusses the risk of engaging in gainful occupation in Bermuda without a work permit, detailing the permit issuance process, the six-year term limit, and the current validity of the company's permits. It also provides a detailed financial risk disclosure regarding exposure to interest rate, credit, and market risks affecting investment values and income. The core subject is legal authorization to work in a specific jurisdiction and the financial market exposure of investments, with no discussion of environmental impacts, labor standards beyond basic employment authorization, pollution, human capital development, or governance/ethics. Because the primary risks are immigration/work authorization and financial market performance, the best fit is Non-ESG.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Human Capital"
+  },
+  {
+    "paragraph_id": "ETN_2022_RISK_010",
+    "raw_output": "Reasoning: The paragraph discusses operational risks related to \"significant shortages, price increases, or supplier insolvencies\" affecting the \"raw materials and components\" Eaton uses. While it mentions input costs and competitive positions, it does not specify the environmental impact of these shortages (e.g., water stress, biodiversity, sustainable sourcing practices, or toxic emissions). Because the focus is on general supply chain availability and commodity pricing rather than the specific environmental or social aspects defined for Natural Capital or Pollution & Waste, it does not fit those categories well. It is primarily an operational/financial input cost risk, making Non-ESG the best fit.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "RF_2022_RISK_048",
+    "raw_output": "Reasoning: This paragraph focuses entirely on the evolving nature of cyber threats and the significant resources required to modify or enhance defense layers, investigate and remediate vulnerabilities, and respond to security breaches. It details risks from third-party patch failures, sophisticated attackers, fraudulent inducement of sensitive information, and disruptions to physical infrastructure or operating systems. The resulting consequences listed are customer attrition, regulatory fines, civil litigation, penalties, reputational damage, and remediation costs, all stemming from a failure of information security. While privacy/data security is mentioned as the core breach risk, the paragraph is not primarily about product safety, chemical safety, or consumer financial protection, so the best fit among the provided labels is Product Liability (which includes privacy and data security).\nLabel: Product Liability",
+    "parsed_label": "Product Liability",
+    "ground_truth_label": "Product Liability"
+  },
+  {
+    "paragraph_id": "NWSA_2021_RISK_017",
+    "raw_output": "Reasoning: This paragraph discusses the company's Pay-TV business dependence on a single or limited number of suppliers for key products and services, and how a reduction or interruption in that supply or a significant price increase could adversely affect business and financial condition. The risk is purely operational and commercial, relating to supply chain continuity and input costs for its service offerings. It does not mention environmental impacts (Climate Change, Natural Capital, Pollution & Waste), labor practices (Human Capital), product safety or data/privacy (Product Liability), community interactions (Community Relations), board/control structures or ethical issues (Corporate Governance, Business Ethics & Values). Therefore, the best fit is Non-ESG.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "CHTR_2022_RISK_001",
+    "raw_output": "Reasoning: This paragraph is extremely high-level and discusses the competitive business environment's effect on attracting and retaining customers and overall business operations and financial results. It contains no specific ESG topics such as climate impacts, water or biodiversity, pollution or waste, labor practices, human capital development, community relations, board structure, or business ethics. The language is purely commercial and operational risk without the ESG substance required for any specific label. Therefore, the best fit is Non-ESG.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "AIZ_2023_RISK_122",
+    "raw_output": "Reasoning: This paragraph discusses corporate governance mechanisms embedded in the certificate of incorporation and by-laws that can delay, defer, prevent, or make a takeover attempt more difficult. It specifically references Delaware General Corporation Law Section 203, which limits the ability of an \"interested stockholder\" (owning 15% or more of the voting stock) to engage in business combinations. It also details restrictions on stockholders' ability to replace or remove directors, call special meetings, or act by written consent, as well as advance notice requirements for proposals and nominations. These provisions are fundamentally about shareholder control and the structure of board power, making Corporate Governance the correct label over any other ESG category.\nLabel: Corporate Governance",
+    "parsed_label": "Corporate Governance",
+    "ground_truth_label": "Corporate Governance"
+  },
+  {
+    "paragraph_id": "PWR_2022_RISK_020",
+    "raw_output": "Reasoning: This paragraph discusses general risks affecting project timing and profitability, including additional costs, revenue reductions or delays, and liquidated damages or project termination. It is entirely focused on commercial and operational execution risks rather than any specific ESG topic such as climate impacts, water or biodiversity, pollution and waste, labor and human capital, product safety or data privacy, community relations, or corporate governance/ethics. Since none of the defined ESG themes are primarily addressed, the Non-ESG label is the correct choice.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "CF_2022_RISK_047",
+    "raw_output": "Reasoning: The paragraph discusses the slow development and potential failure of green and blue ammonia markets, as well as the technical, economic, and timeline risks associated with building or converting facilities. Crucially, it specifies that blue ammonia production depends on third-party carbon capture and storage wells, which are immature technologies subject to permitting and operational risks that could delay viability or create long-term liabilities. The explicit mention of \"carbon capture and storage wells\" and the associated risks to the low-carbon ammonia pathway places this firmly in the Climate Change domain. While it mentions construction and production costs, the underlying risk driver is the development and viability of carbon capture infrastructure.\nLabel: Climate Change",
+    "parsed_label": "Climate Change",
+    "ground_truth_label": "Climate Change"
+  },
+  {
+    "paragraph_id": "ACGL_2022_RISK_045",
+    "raw_output": "Reasoning: This paragraph discusses restructuring and new mandates from the FHFA to ensure \"sustainable lending standards\" and to submit \"Equitable Housing Plans\" aimed at addressing barriers to \"sustainable housing opportunities\" and advancing equity in housing finance. The focus on sustainable lending, affordable/equitable housing finance, and risk management within the GSEs' portfolios aligns most closely with the Community Relations aspect of ESG, which includes interactions with local communities and efforts to address systemic inequities. While it mentions loan types and underwriting standards, the ESG lens is on community/housing access outcomes rather than purely financial market mechanics. The other categories are less fitting: it does not primarily discuss climate, natural capital, pollution/waste, human capital, product liability, or corporate governance/ethics.\nLabel: Community Relations",
+    "parsed_label": "Community Relations",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "PANW_2022_RISK_132",
+    "raw_output": "Reasoning: This paragraph lists general business risks, including earthquakes, fire, power outages, floods, health risks, and terrorism, as well as interruption by man-made problems. These are physical and societal risks to operations and are not primarily categorized under the provided ESG topics. They do not discuss climate change mitigation or adaptation (e.g., carbon efficiency, renewables, ecological design), natural capital issues (water stress, biodiversity, land use, raw materials sourcing), pollution and waste (toxic emissions, packaging, e-waste), human capital (labor standards, health and safety programs, training), product liability (product safety, data security, chemical safety), community relations, corporate governance, or business ethics. Since the risks are broad business continuity threats without a specific ESG focus, the Non-ESG label is the best fit.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "VRTX_2023_RISK_126",
+    "raw_output": "Reasoning: This paragraph discusses the high volatility of the company's common stock price and the numerous factors that could adversely affect its future market price. It lists market-specific drivers such as quarterly earnings releases, FDA actions, clinical trial results, government policy and regulation (including drug pricing and tax reform), technological innovations, competitor developments, and macroeconomic conditions like COVID-19, inflation, and interest rate fluctuations. None of these risks primarily relate to environmental impacts, natural capital, pollution/waste, labor practices, human capital development, community relations, governance structures, or business ethics. The focus is purely on financial market and business development uncertainty. Therefore, the Non-ESG label is the best fit.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "UHS_2022_RISK_002",
+    "raw_output": "Reasoning: The paragraph begins by stating the company owns 7 inpatient acute care hospitals and 22 inpatient behavioral healthcare facilities, which immediately grounds the discussion in the provision of healthcare services. Although the paragraph is incomplete, the context is clearly about healthcare operations and the services provided to patients. Among the provided ESG categories, \"Product Liability\" includes discussions of public health trends and demographic changes, growth opportunities in the market for healthier products, and improved nutritional profiles, making it the closest fit to a healthcare service provider. The risk is inherently tied to the quality and safety of the medical care delivered. The other categories are less relevant: Climate Change is not mentioned, and Natural Capital is not discussed.\nLabel: Product Liability",
+    "parsed_label": "Product Liability",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "AXON_2022_RISK_040",
+    "raw_output": "Reasoning: This paragraph focuses on international data transfer restrictions and laws governing how the company can process and receive critical data across jurisdictions and among its products and services. It discusses the invalidation of legal mechanisms for transferring data from other countries to the U.S., prohibitions on sharing data among its products/services, and new legislation imposing local storage and processing requirements. The core risk is non-compliance with data protection legislation leading to significant penalties and adverse effects on service delivery and financial results. This aligns directly with the Product Liability definition's inclusion of privacy and data security risks, not with any other ESG category.\nLabel: Product Liability",
+    "parsed_label": "Product Liability",
+    "ground_truth_label": "Product Liability"
+  },
+  {
+    "paragraph_id": "GPN_2022_RISK_025",
+    "raw_output": "Reasoning: This paragraph discusses the risk of a decline in the use of cards and other digital payments as a payment mechanism for consumers and other adverse developments in the card industry. The risk is purely business model and industry adoption related to payment technology, with no mention of environmental impacts, resource use, pollution, human capital issues, community relations, governance, or business ethics. It also does not relate to product safety, data privacy/security, chemical safety, or consumer financial protection in a regulatory sense. Therefore, the best fit is Non-ESG.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "CHD_2022_RISK_051",
+    "raw_output": "Reasoning: This paragraph focuses entirely on the risk of inadequacy, interruption, theft or loss of data, malicious attack, and security failures of information technology systems. It explicitly mentions compromising the \"security, confidentiality or privacy of sensitive data residing on our systems,\" and details cyber-attacks like ransomware, denial of service, and phishing that could lead to \"unauthorized access, disclosure and misuse of consumer, customer, employee, vendor or Company information.\" The resulting harm is reputational and relates directly to the security and privacy of personal data handled by the company. This aligns best with the Product Liability definition's inclusion of \"privacy and data security,\" rather than any other ESG category like human capital or corporate governance.\nLabel: Product Liability",
+    "parsed_label": "Product Liability",
+    "ground_truth_label": "Community Relations"
+  },
+  {
+    "paragraph_id": "LH_2022_RISK_024",
+    "raw_output": "Reasoning: The paragraph discusses how healthcare reform and changes to payment and reimbursement systems, including an increase in capitated reimbursement mechanisms, could materially affect the company's revenues, profitability, and cash flow. It details how payment models shift the risk of increased test utilization to the commercial laboratory provider, directly impacting the company's financial performance. While it mentions clinical laboratory services and testing utilization, the core risk is structural payment uncertainty within the healthcare market rather than any specific ESG topic like pollution, human capital, or community relations. Therefore, it is best classified as Non-ESG.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "CVX_2022_RISK_003",
+    "raw_output": "Reasoning: The paragraph primarily discusses the operational and financial risks associated with crude oil prices, including influences like global supply/demand, geopolitical risks, weather disruptions, and the \"pace of energy transition.\" While it mentions governmental regulations and policies regarding oil and gas reserves, the focus remains on commodity price volatility and its impact on upstream and downstream earnings, cash flows, liquidity, and capital expenditure programs. It does not specifically detail carbon emissions management, water stress, biodiversity, toxic pollution/waste, labor standards, community relations, board structure, or business ethics. Because the dominant theme is macro-energy market and commodity price risk, the best fit is Non-ESG.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Pollution & Waste"
+  },
+  {
+    "paragraph_id": "NRG_2023_RISK_012",
+    "raw_output": "Reasoning: This paragraph focuses entirely on market competition in the wholesale and retail electricity businesses, including rivalry for customers, pricing incentives, the advantage of incumbent utilities, and the risk of older plants becoming uneconomical and retiring. It also compares NRG's plants to newer or more efficient competitor plants and discusses competitors' liquidity, access to credit, cost structures, risk management, marketing resources, and subsidies. There is no mention of environmental impacts (like carbon efficiency, renewables, water, biodiversity, or pollution), social issues (like labor standards or community relations), or governance/ethics. The content is purely industry and competitive business risk, making the Non-ESG label the best fit.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "DOV_2022_RISK_005",
+    "raw_output": "Reasoning: This paragraph primarily discusses labor relations and the risk of strikes, union or works council campaigns, and other labor disputes that could disrupt productivity and operations. It also details intense competition for skilled personnel, sustained labor shortages, increased turnover, and the resulting higher salaries, wages, and overtime costs to attract and retain employees. The focus is on workforce availability, retention, and the ability to staff manufacturing facilities efficiently, which aligns directly with the Human Capital category's themes of labor management and workforce stability. While it mentions financial condition and cash flows, these are secondary impacts of labor unrest and shortages, not the primary ESG topic.\nLabel: Human Capital",
+    "parsed_label": "Human Capital",
+    "ground_truth_label": "Human Capital"
+  },
+  {
+    "paragraph_id": "IT_2022_RISK_015",
+    "raw_output": "Reasoning: This paragraph explicitly discusses cybersecurity risks, including the theft or loss of personal data, system failure or compromise leading to disclosure, and exposure to cyber attacks like malware deployment, DDoS attacks, and advanced threats. It also notes that any breach could seriously limit product consumption and attendances at conferences, and would harm reputation and brand. The core concern is the failure of data protection measures and the resulting exposure of users' personal data, which aligns directly with the \"privacy and data security\" aspect of Product Liability. While it mentions employees and vendors, the primary ESG topic is the security and privacy of customer and user data, not labor practices or environmental impacts.\nLabel: Product Liability",
+    "parsed_label": "Product Liability",
+    "ground_truth_label": "Product Liability"
+  },
+  {
+    "paragraph_id": "HPE_2022_RISK_031",
+    "raw_output": "Reasoning: The paragraph states that quality issues can \"impair our relationships with new or existing customers and adversely affect our brand and reputation,\" which could then harm operating results. This directly relates to Product Liability because quality is a core component of product safety and quality expectations in the provided definition. The consequence—loss of customer trust and brand damage—is a classic quality/safety-related liability risk. While \"relationships\" could touch Community Relations or general Business Risk, the context is maintaining customer trust through product quality, making Product Liability the most precise fit among the given options.\nLabel: Product Liability",
+    "parsed_label": "Product Liability",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "FANG_2022_RISK_011",
+    "raw_output": "Reasoning: This paragraph is a high-level business risk description for the oil and natural gas industry, focusing on the capital intensity of exploration, development, production, and infrastructure spending. It details planned capital expenditures for drilling, completion, and midstream assets, financing methods (borrowings, cash from operations, equity and debt offerings), and the variables that affect cash flow and access to capital (proved reserves, production volumes, sales prices, acquisition costs, credit facility availability). While it mentions \"investments in water disposal infrastructure,\" it does so purely as part of overall CAPEX planning for oil and gas production, not in the context of broader water stress management, conservation, or pollution control beyond disposal. Because the dominant theme is financing and operational spending drivers in the hydrocarbon sector, it does not primarily map to any specific ESG category like Climate Change initiatives, Natural Capital management, or Pollution & Waste. Therefore, the best fit is Non-ESG.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "HSY_2022_RISK_006",
+    "raw_output": "Reasoning: This paragraph is a high-level risk statement that mentions potential negative impacts on reputation or brand image from issues concerning \"the quality and safety of our products, ingredients or packaging, human and workplace rights, and other environmental, social or governance matters.\" Because it explicitly includes \"human and workplace rights\" as one of the core reputational triggers, it aligns most closely with the Human Capital category's focus on labor management and human rights in the supply chain. While it mentions \"other environmental, social or governance matters,\" the specific inclusion of human and workplace rights makes Human Capital the primary driver for this classification over a broader Business Ethics & Values or Non-ESG label.\nLabel: Human Capital",
+    "parsed_label": "Human Capital",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "CFG_2022_RISK_057",
+    "raw_output": "Reasoning: This paragraph discusses the broad and intense regulatory oversight of the financial services industry, including statutes and regulations aimed at protecting depositors, consumers of financial products, and the financial system. It details how changes in interpretation or enforcement could affect costs, the types of services offered, and acquisition ability, as well as the possibility of admissions of wrongdoing, criminal pleas, civil litigation, penalties, and limitations on business activities. The focus is on compliance with complex financial regulations and the severe reputational and legal consequences of regulatory enforcement actions. While it mentions consumer protection, the primary risk is systemic and regulatory compliance across many agencies, which aligns best with Corporate Governance rather than the other categories.\nLabel: Corporate Governance",
+    "parsed_label": "Corporate Governance",
+    "ground_truth_label": "Business Ethics & Values"
+  },
+  {
+    "paragraph_id": "INTU_2021_RISK_055",
+    "raw_output": "Reasoning: This paragraph focuses entirely on legal and compliance risks related to privacy, security, and data protection laws. It details potential consequences of noncompliance, including restrictions on the use or storage of personal information, mandatory customer or worker notification of a security breach, costly business modifications, investigations, claims, and significant fines or penalties. It also mentions ongoing, significant expenses to maintain compliance with privacy and security standards. While it mentions modifying current or future products or services, the core risk is data privacy and security breach exposure, which aligns best with the Product Liability definition's inclusion of privacy and data security.\nLabel: Product Liability",
+    "parsed_label": "Product Liability",
+    "ground_truth_label": "Product Liability"
+  },
+  {
+    "paragraph_id": "COO_2021_RISK_016",
+    "raw_output": "Reasoning: The paragraph focuses entirely on increasing frequency and sophistication of cybersecurity threats and the consequences of a successful attack. It details potential outcomes such as interruption of information technology systems, disruption of business operations, loss of confidential or protected data, excessive cost incurrence, and reputational harm. While data loss can touch on privacy (which is part of Product Liability), the paragraph's primary risk framing is a system breach/disruption event and its resulting business and financial harm, rather than a specific product safety, consumer financial protection, or chemical/health risk. It also does not discuss any of the other ESG topics like climate, natural capital, pollution/waste, human capital, community relations, or corporate governance/ethics. Therefore, the best fit is Non-ESG.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Product Liability"
+  },
+  {
+    "paragraph_id": "SJM_2021_RISK_048",
+    "raw_output": "Reasoning: The paragraph focuses entirely on income tax obligations, the evolution of tax laws and taxing regimes, the impact of proposed U.S. presidential administration tax rate increases, and the risk of adverse outcomes in tax controversies with the IRS. It also mentions reviews, examinations, and audits by tax authorities and how transaction geographies and timings influence the effective tax rate. While it mentions \"regulations and laws\" broadly, the core risk discussed is fiscal/tax uncertainty and enforcement, not environmental, social, labor, community, governance, or ethical conduct. Therefore, the best fit is Non-ESG.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "CE_2022_RISK_061",
+    "raw_output": "Reasoning: This paragraph discusses risks related to pension fund investment performance and the assumptions used in calculating pension costs and funded status. While pensions are an employee-benefit topic, the risk is framed around financial assumptions and investment returns affecting the liability's valuation, which is a financial reporting/risk management function rather than a direct discussion of labor management, health and safety, human capital development, or supply chain labor standards. It does not touch on diversity, pay equality, or working conditions. Therefore, it does not primarily fit the Human Capital category's defined scope. The closest fit might be Corporate Governance due to the financial oversight aspect of pension plan management, but it lacks any discussion of board structure, internal controls, or shareholder matters.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "BKR_2022_RISK_056",
+    "raw_output": "Reasoning: This paragraph primarily discusses a \"cyber attack or any other significant compromise or breach of our data security\" and the resulting negative consequences including reputational damage, customer relationships harm, management distraction, remediation/increased protection costs, litigation/regulatory action, fines and penalties. It also details contractual obligations and indemnity claims from customers following a breach. While it mentions insurance, the core risk is a failure of data security leading to a major incident, which aligns best with the \"privacy and data security\" aspect of Product Liability. It does not primarily discuss climate, natural capital, pollution/waste, human capital, community relations, or corporate governance/business ethics.\nLabel: Product Liability",
+    "parsed_label": "Product Liability",
+    "ground_truth_label": "Product Liability"
+  },
+  {
+    "paragraph_id": "VST_2023_RISK_116",
+    "raw_output": "Reasoning: This paragraph discusses the operational risk of losing key management and personnel, which would adversely affect the company's ability to operate its businesses. The focus is on human capital continuity and the reliance on specific individuals, which aligns with the Human Capital definition's inclusion of workforce management and key talent retention. It does not discuss environmental impacts, pollution, community relations, governance structures, or business ethics. Therefore, Human Capital is the best fit among the provided labels.\nLabel: Human Capital",
+    "parsed_label": "Human Capital",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "PFE_2022_RISK_008",
+    "raw_output": "Reasoning: This paragraph is entirely focused on the scientific and business process of drug and vaccine discovery and development, including the time-consuming, costly, and unpredictable nature of bringing new therapies to patients. It details R&D priorities, internal efforts, and external collaborations such as licensing, alliances, and acquisitions to incorporate promising chemical and biological lead molecules. There is no mention of environmental impacts (climate, water, biodiversity, pollution), social issues (labor, human capital development beyond basic employment), community relations, governance, or business ethics. Because the content is purely scientific/pharmaceutical R&D strategy, the best fit is Non-ESG.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "AWK_2022_RISK_031",
+    "raw_output": "Reasoning: This paragraph explicitly discusses \"Contamination of water supplies or our water service provided to our customers,\" which is a direct link to water quality and the resulting health and usage restrictions. It mentions exposure to \"substances not typically found in potable water supplies,\" service limitations, interruptions, and \"government enforcement actions,\" as well as reputational damage and private litigation. These elements fall squarely under the Natural Capital definition for water stress and the associated risks of contaminating or providing unsafe water. While Pollution & Waste could be considered due to contamination, the primary focus is on the integrity of the water resource and the resulting restrictions on its use, making Natural Capital the better fit.\nLabel: Natural Capital",
+    "parsed_label": "Natural Capital",
+    "ground_truth_label": "Natural Capital"
+  },
+  {
+    "paragraph_id": "CSX_2022_RISK_004",
+    "raw_output": "Reasoning: This paragraph discusses the broad regulatory and legislative risk of being subject to numerous agencies and the adverse impact of new or modified rules on operating costs, revenue, and efficiencies. It also explicitly states that noncompliance with applicable laws or regulations could erode public confidence and subject the company to fines, penalties, and other legal or regulatory sanctions. While it mentions \"health, safety, labor, environmental, tax, legal and other matters,\" the primary focus is on the compliance burden and the resulting legal/regulatory sanctions, not on a specific ESG topic like worker safety programs, biodiversity, or toxic emissions management. Because the language is high-level regulatory compliance risk rather than a deep dive into any single ESG domain, the best fit is Business Ethics & Values, which encompasses adherence to laws and codes of conduct.\nLabel: Business Ethics & Values",
+    "parsed_label": "Business Ethics & Values",
+    "ground_truth_label": "Business Ethics & Values"
+  },
+  {
+    "paragraph_id": "VTR_2022_RISK_083",
+    "raw_output": "Reasoning: This paragraph discusses the phasing out of LIBOR and the unpredictable impact of its discontinuation and reform on interest rates under existing or future debt agreements. It details the transition to SOFR and the potential disruption to contractual mechanics, liquidity, and pricing transparency in the credit markets. The entire discussion is about financial market benchmarks and their effect on debt costs, not on environmental, social, or governance topics. Therefore, the best fit is Non-ESG.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "ADM_2022_RISK_015",
+    "raw_output": "Reasoning: The paragraph primarily discusses how government policies, mandates, and trade agreements influence agricultural production, trade flows, and the viability of various commodities. It lists numerous economic and trade-related factors such as taxes, tariffs, duties, subsidies, exchange rates, import/export restrictions, and mandates on genetically modified organisms, traceability, and sustainable practices. While it mentions \"low carbon fuel mandates,\" it does so as one of many broad policy influences on operating results and market access, not as a focused discussion of the company's climate strategy, emissions reduction, or renewable energy adoption. The dominant theme is regulatory and trade uncertainty affecting commodity economics, making Non-ESG the best fit.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Climate Change"
+  },
+  {
+    "paragraph_id": "MET_2022_RISK_056",
+    "raw_output": "Reasoning: This paragraph discusses risks related to marketing and distributing products, specifically the ability of distributors to maintain or improve those relationships. It details scenarios where distributors may suspend, alter, reduce, or terminate agreements due to strategic changes, business performance declines, rating agency actions, or market-related concerns, and how their restructuring or renegotiation could harm distribution efforts. It also mentions that employees or agents may distribute products inappropriately or that customers may not understand them or their suitability. The core issue is commercial channel risk and execution of sales/marketing, not an ESG topic like emissions, water stress, biodiversity, pollution/waste, labor standards, human capital development, community relations, product safety/quality, data security, chemical safety, or corporate governance/ethics. Therefore, the best fit is Non-ESG.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "PSA_2022_RISK_035",
+    "raw_output": "Reasoning: This paragraph provides a high-level description of the company's self-storage real estate portfolio, including land, building values, mortgages, square footage, and facility configurations. It discusses the physical characteristics of the properties (single-story vs. high-density multi-story, climate control, office size), which is an asset description for financial statements. It does not discuss any ESG topics such as emissions or climate efficiency, water stress, biodiversity, pollution or waste management, labor practices, community engagement, board structure, or business ethics. Since the content is purely descriptive of the company's property assets for financial reporting, the best fit is Non-ESG.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Climate Change"
+  },
+  {
+    "paragraph_id": "VRSN_2022_RISK_034",
+    "raw_output": "Reasoning: This paragraph discusses the market demand and renewal rates for domain names, including the effect of technologies, internet practices, and price increases in the resale market. It also details how changes in compensation models for domain name advertising speculation have adversely affected demand. The risks are purely related to the operation of a registry and registrar business model in the domain name market. There is no mention of environmental impacts (climate, water, biodiversity, pollution), social issues (labor, human capital, community relations), or governance/ethics/product liability topics. Therefore, the best fit is Non-ESG.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Product Liability"
+  },
+  {
+    "paragraph_id": "SMCI_2021_RISK_011",
+    "raw_output": "Reasoning: This paragraph discusses the adverse effects of the COVID-19 pandemic on the company's business operations, financial condition, and results of operations. While it mentions impacts on employees, customers, vendors, and supply chain components like microprocessors and memory, the overall risk is macroeconomic and operational continuity driven by the pandemic's duration and global health/economic fallout. It does not primarily focus on a specific ESG topic such as carbon emissions, water stress, biodiversity, toxic pollution, labor rights in the supply chain, or board/ethics failures. The mention of \"health impact of the pandemic on our employees, including key personnel\" is secondary to the broad business disruption described. Therefore, the best fit is Non-ESG.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "OXY_2022_RISK_035",
+    "raw_output": "Reasoning: This paragraph discusses exposure to cyber risks due to increasing reliance on digital and industrial control technologies in oil and gas exploration, development, and production. It specifically mentions threats to information and industrial control systems, network disruptions, and breaches of data security that could disrupt operations, impede transaction processing and reporting, and cause unintentional disclosure of confidential information. It also notes potential damage to reputation from such breaches. The core risk is a failure or breach of data security systems, which aligns directly with the \"privacy and data security\" aspect of Product Liability. While it mentions operational impacts on the business, the ESG category focus is on data security and privacy breaches rather than climate, pollution, or human capital.\nLabel: Product Liability",
+    "parsed_label": "Product Liability",
+    "ground_truth_label": "Product Liability"
+  },
+  {
+    "paragraph_id": "REG_2022_RISK_044",
+    "raw_output": "Reasoning: This paragraph discusses the tax treatment of REIT dividends, specifically that they are generally not eligible for reduced tax rates and are taxed at ordinary income tax rates unless they are qualified dividends or returns of capital. It details the impact of the TCJA on domestic individual shareholders' ability to deduct up to 20% of ordinary dividends, which could effectively increase their federal tax rate. The risk described is financial/investment structure risk affecting investor perception and share price, with no connection to environmental, social, or governance topics like climate, water, biodiversity, pollution, labor, human capital development, community relations, product safety/privacy, or business ethics. Therefore, the best fit is Non-ESG.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Corporate Governance"
+  },
+  {
+    "paragraph_id": "AON_2023_RISK_090",
+    "raw_output": "Reasoning: This paragraph discusses the governance implications of the renewal periods under Irish law regarding statutory pre-emption rights, specifically mentioning that while a dis-application may be given for up to five years at each renewal, governance considerations may result in shorter renewal periods or fewer than the maximum sought or approved unissued shares. The focus is on the structure and mechanics of shareholder rights and their renewal terms under corporate law, which falls under Corporate Governance. It does not address any environmental, social, human capital, pollution, product liability, community, or business ethics topics.\nLabel: Corporate Governance",
+    "parsed_label": "Corporate Governance",
+    "ground_truth_label": "Corporate Governance"
+  },
+  {
+    "paragraph_id": "MMM_2022_RISK_020",
+    "raw_output": "Reasoning: This paragraph primarily discusses risks to the company's information technology networks and infrastructure, including vulnerabilities to cyberattacks, vendor security risks, and breaches of confidential or personal information. It explicitly mentions that the company collects and stores proprietary and confidential or personal information subject to privacy and cybersecurity laws, regulations, and customer-imposed controls. The detailed enumeration of threat actors, malware, ransomware, and service/cloud provider disruptions centers on the security and privacy of data assets. While it mentions employee training and remote working as contributing factors, the core risk is a security breach of personal data, which aligns best with the Product Liability definition concerning \"privacy and data security.\" The other categories (Climate Change, Natural Capital, Pollution & Waste, Human Capital, Community Relations, Corporate Governance, Business Ethics & Values) are not addressed.\nLabel: Product Liability",
+    "parsed_label": "Product Liability",
+    "ground_truth_label": "Product Liability"
+  },
+  {
+    "paragraph_id": "DLR_2022_RISK_061",
+    "raw_output": "Reasoning: This paragraph primarily discusses financial risks related to substantial debt, refinancing, interest rate risks, and the illiquidity of real estate investments. It also details structural limitations of a REIT regarding its ability to dispose of properties and the potential conflict between the Trust's duty to stockholders and its L.P. unitholders, which affects its ability to react promptly to market changes. While it mentions key personnel, the context is reliance on management to execute strategy related to capital structure and asset sales, not human capital management like labor standards, health and safety, or development/training. None of the ESG topics—climate, natural capital, pollution/waste, human capital (as defined), product liability, community relations, or business ethics—are the primary focus. Therefore, the best fit is Non-ESG.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Corporate Governance"
+  },
+  {
+    "paragraph_id": "MSCI_2022_RISK_080",
+    "raw_output": "Reasoning: This paragraph states that the company cannot guarantee it will continue its share repurchase program, which is a direct discussion of capital allocation decisions and share repurchase commitments to shareholders. The repurchase program is a key element of capital structure management and directly relates to how the company returns capital to its owners. None of the other ESG categories (Climate Change, Natural Capital, Pollution & Waste, Human Capital, Product Liability, Community Relations, Corporate Governance, or Business Ethics & Values) are addressed. Therefore, the best fit is Non-ESG.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "CBOE_2023_RISK_009",
+    "raw_output": "Reasoning: This paragraph lists various financial market risks, including the availability of short-term and long-term funding, perceived attractiveness of capital markets, alternative investment opportunities, trading activity, security price volatility, foreign currency transaction volumes, currency exchange rate movements, interest rate levels and volatility, and disruptions from terrorism, war, extreme weather events, pandemics, or other catastrophes. The risks are purely financial and market-structure related, with no primary discussion of environmental impacts (like carbon or water), pollution or waste, human capital management (like labor standards or safety), community relations, product safety/privacy/chemical safety, or corporate governance/ethics. Because it is a standard \"business risk\" disclosure focused on market liquidity and financial conditions, the Non-ESG label is the best fit.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "BRO_2022_RISK_011",
+    "raw_output": "Reasoning: This paragraph discusses revenue concentration risk related to a limited number of insurance companies, whose business losses could reduce profit-sharing commissions and guaranteed supplemental commissions. The risk is purely financial and market-share driven, concerning the performance and continuation of commission arrangements. It does not mention environmental impacts (Climate Change, Natural Capital), pollution or waste (Pollution & Waste), labor or human capital management (Human Capital), product safety or data/privacy (Product Liability), community interactions (Community Relations), board/internal control matters (Corporate Governance), or ethical controversies (Business Ethics & Values). Therefore, the best fit is Non-ESG.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "NEM_2023_RISK_102",
+    "raw_output": "Reasoning: This paragraph discusses political and economic risks in Suriname, including political instability, high debts to foreign creditors, significant inflation, hyperinflationary economy, and drastic increases in the cost of living impacting residents including employees. It also details the mineral agreement governing operations and the possibility of future requests for changes to that agreement by the government. While it mentions the company's 75% interest in the gold mine, the primary risk driver is macroeconomic and political instability in the host country, not a specific ESG topic like labor standards, biodiversity, water stress, or toxic emissions. The mention of employees' purchasing power is incidental to the broader country risk profile. Therefore, the best fit is Non-ESG.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Community Relations"
+  },
+  {
+    "paragraph_id": "ERIE_2022_RISK_028",
+    "raw_output": "Reasoning: This paragraph discusses Market, Capital, and Liquidity risks, including the risk of being unable to convert investment securities into cash on favorable terms or selling them at all. It details liquidity risk, reinvestment risk, and market volatility affecting both fixed income and equity portfolios. The language is purely financial/investment-management focused, dealing with asset valuation, market conditions, and cash flow timing. It does not mention environmental impacts (like climate or water), pollution or waste, human capital issues (like labor or safety), community relations, or governance/ethics. Therefore, the best fit is Non-ESG.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "CEG_2022_RISK_007",
+    "raw_output": "Reasoning: This paragraph discusses the financial risks associated with a credit rating downgrade below investment grade, including increased collateral requirements, higher borrowing costs, and adverse effects on liquidity. It also references specific financial requirements under NRC regulations for operating nuclear power plants. The core subject is credit quality and its impact on funding and collateralization, which falls under the Non-ESG category. It does not primarily discuss environmental topics (like emissions or water), social topics (like labor or community relations), or governance/ethics.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "AVGO_2021_RISK_041",
+    "raw_output": "Reasoning: This paragraph discusses substantial quarterly and annual fluctuations in operating results due to numerous factors, including customer product launch timing, end-user demand, the shift to cloud-based IT solutions, software contract timing, product development timelines, revenue recognition timing, seasonality, and regulatory changes like trade sanctions, customs duties, and tariffs. The risks are purely financial and market-driven, focusing on operational execution and revenue volatility. It does not mention environmental impacts (like emissions or water), biodiversity, pollution or waste, labor practices, human capital development, community relations, product safety/privacy/chemical safety, or corporate governance/ethics. Therefore, the best fit is Non-ESG.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "HST_2022_RISK_049",
+    "raw_output": "Reasoning: This paragraph discusses Maryland law and the Host Inc. charter provisions that limit a third party's ability to acquire control of Host Inc. It details restrictions on stock transfer and ownership, fixing the size of the Board of Directors, making director removal and vacancy filling difficult, and requiring a two-thirds stockholder vote for charter amendments that could alter control mechanisms. These are classic corporate governance and control mechanisms (amendment process, shareholder/board power balance) designed to inhibit a change in control. The focus is on structural impediments to hostile takeovers, not on environmental, social, or product-related risks. Therefore, Corporate Governance is the best fit.\nLabel: Corporate Governance",
+    "parsed_label": "Corporate Governance",
+    "ground_truth_label": "Corporate Governance"
+  },
+  {
+    "paragraph_id": "PNC_2022_RISK_048",
+    "raw_output": "Reasoning: This paragraph details risks related to data security breaches suffered by merchant customers, including the compromise of millions of user accounts and credentials. It describes how bad actors can use this information to gain access to the company's customers' accounts and details various cyber attacks such as ransomware, BEC scams, and DDoS attacks aimed at disrupting transaction processing. The core risk is the exposure of confidential customer financial information and user credentials due to security failures at counterparties. This aligns directly with the Product Liability definition's inclusion of \"privacy and data security,\" whereas other categories like Human Capital or Business Ethics are not the primary focus.\nLabel: Product Liability",
+    "parsed_label": "Product Liability",
+    "ground_truth_label": "Product Liability"
+  },
+  {
+    "paragraph_id": "CRM_2021_RISK_037",
+    "raw_output": "Reasoning: This paragraph discusses subscription and support revenue attrition risks, including customer decisions not to renew contracts, shorter renewal terms, downgrades to lower cost offerings, and difficulty predicting churn rates. It also mentions the impact of customer dissatisfaction, spending levels, competition, pricing increases, deteriorating economic conditions, and the COVID-19 pandemic on sales of additional features and services. The entire discussion is focused on commercial business model health and sales execution rather than any specific ESG topic like climate, natural capital, pollution/waste, human capital, product liability, community relations, corporate governance, or business ethics. Therefore, the Non-ESG label is the best fit.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "JBL_2021_RISK_044",
+    "raw_output": "Reasoning: This paragraph focuses entirely on tax risk, specifically transfer pricing rules, contemporaneous documentation, and Base Erosion and Profit Shifting proposals from the OECD that could reshape international tax rules. It discusses the risk that taxing authorities may not deem the company's documentation acceptable, leading to adverse tax outcomes. While tax can sometimes intersect with governance or ethics, the core issue here is the technical and legislative risk to effective tax rates, not any discussion of board oversight, internal controls, corruption, or ethical lapses. Therefore, the best fit is Non-ESG.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "FAST_2022_RISK_027",
+    "raw_output": "Reasoning: This paragraph discusses credit and liquidity risks, specifically how tight credit markets could make financing more costly and difficult to obtain, and how interest rate fluctuations could adversely affect results. It details the company's outstanding debt obligations, including notes under a master note agreement and loans under a revolving credit facility tied to LIBOR. It also notes the transition away from LIBOR and the potential increase in servicing costs if credit market volatility returns. The content is purely financial/market condition-based, with no discussion of environmental impacts, resource use, pollution, human capital management, community relations, product safety/privacy, or corporate ethics/governance structures. Therefore, the best fit is Non-ESG.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "APA_2022_RISK_024",
+    "raw_output": "Reasoning: The paragraph discusses risks related to reserves and leasehold acreage, specifically the need for discoveries or acquisitions of additional reserves to avoid a material decline in reserves and production. This is a purely geological/operational resource risk tied to the company's ability to extract hydrocarbons, with no mention of environmental impacts like water stress, biodiversity, land use management, emissions, pollution, or waste. It also does not touch on social issues like labor standards, community relations, or human capital development, nor on governance or business ethics. Therefore, the best fit is Non-ESG.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "EL_2021_RISK_016",
+    "raw_output": "Reasoning: This paragraph explicitly links business success to the \"quality, efficacy and safety of our products\" and states that if products are \"found to be defective or unsafe,\" the company could face \"product claims,\" \"deceptive\" claims, and become \"subject to liability or claims.\" It also highlights safety risks from \"counterfeit versions\" sold by third parties. These are direct discussions of product safety, quality, and resulting liability, which align with the Product Liability definition. While \"relationships with customers\" and \"brands\" are mentioned, the core risk driver is defective or unsafe products and deceptive claims.\nLabel: Product Liability",
+    "parsed_label": "Product Liability",
+    "ground_truth_label": "Product Liability"
+  },
+  {
+    "paragraph_id": "MHK_2022_RISK_056",
+    "raw_output": "Reasoning: This paragraph focuses entirely on the complexity and uncertainty of income tax provisions, including judgments about the application of tax laws, tax liabilities dependent on profit distribution among jurisdictions, and the impact of changes in tax legislation, rates, accounting principles, and deferred tax asset valuations. It discusses financial and liquidity risks stemming from effective tax rate changes and tax exposures. None of the ESG topics—climate change, natural capital, pollution and waste, human capital, product liability, community relations, corporate governance, or business ethics—are primarily addressed. Therefore, the best fit is Non-ESG.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "SBAC_2022_RISK_018",
+    "raw_output": "Reasoning: The paragraph primarily discusses business risks in acquiring and building towers, including increased competition, higher acquisition prices, difficulty negotiating deals, and limitations from competition laws. It also details how local zoning regulations, restrictive covenants, and international construction barriers can delay or halt projects. While zoning is mentioned, it is discussed purely as a barrier to commercial real estate development and financing/execution, not in the context of environmental stewardship, biodiversity, water stress, or pollution control. None of the ESG topics are central to the risk described, making Non-ESG the best fit.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "LVS_2022_RISK_022",
+    "raw_output": "Reasoning: This paragraph discusses foreign currency exchange rate fluctuations and their adverse effects on U.S. dollar financial results, including translation risks and the impact on dividends and distributions from foreign operations. It is purely a financial reporting and macroeconomic risk disclosure. It does not mention any ESG topics such as climate change, water or biodiversity, pollution or waste, labor standards, human capital development, community relations, product safety/privacy/chemical safety, or corporate governance/business ethics. Therefore, the best fit is Non-ESG.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "DOC_2022_RISK_038",
+    "raw_output": "Reasoning: The paragraph primarily discusses the risks of business integration following acquisitions, including monitoring an expanded portfolio of properties, the loss of key employees, workflow disruptions, inconsistencies in standards and controls, and unexpected liabilities. While it mentions environmental conditions requiring cleanup or remediation, this is listed as one type of assumed liability among many general acquisition integration risks, not as the central ESG theme of the paragraph. The dominant themes are operational and financial integration challenges, not climate, water/biodiversity, pollution/waste management, human capital development, labor standards, community relations, governance structure, or business ethics. Therefore, the best fit is Non-ESG.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Corporate Governance"
+  },
+  {
+    "paragraph_id": "AXP_2022_RISK_071",
+    "raw_output": "Reasoning: This paragraph focuses on the risk of failing to protect intellectual property and being unsuccessful in defending against infringement or misappropriation assertions. The primary concerns are legal outcomes regarding IP rights and their negative impact on revenue and profitability. While IP can intersect with business ethics in broader contexts, the text itself does not discuss fraud, corruption, bribery, conflicts of interest, or other specific ethical misconducts. It is therefore best classified as Non-ESG because it deals with legal and commercial asset protection rather than adherence to a company's values or ethical standards.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "ELV_2022_RISK_048",
+    "raw_output": "Reasoning: This paragraph discusses the legal and regulatory risks associated with maintaining and complying with license agreements with the BCBSA, which govern the use of Blue Cross and/or Blue Shield names and marks and the performance of administrative services. The core risk is non-compliance leading to termination of the license agreements, loss of the right to sell associated health insurance products, and the imposition of a \"Re-establishment Fee.\" While the content relates to a healthcare brand and its regulatory licensing, it does not touch on the ESG topics of climate, natural capital, pollution/waste, human capital, product safety/privacy/chemical safety, community relations, or corporate governance/business ethics. It is primarily a business continuity and contractual compliance risk. Therefore, the Non-ESG label is the best fit.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "MTB_2023_RISK_035",
+    "raw_output": "Reasoning: This paragraph focuses entirely on compliance with stringent capital and liquidity requirements imposed on bank holding companies by the Dodd-Frank Act and U.S. Basel III-based capital rules. It details the consequences of failing to meet these minimum requirements, including limitations on business activities like lending and acquisitions, potential dilutive capital increases, and constraints on dividend payments or capital returns to shareholders. The discussion is highly technical regarding regulatory capital adequacy and liquidity supervision, with no mention of environmental, social, human capital, pollution/waste, community relations, product liability, or business ethics. Because the risk is purely macroprudential regulation and capital structure, it fits the Non-ESG category.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "YUM_2022_RISK_009",
+    "raw_output": "Reasoning: This paragraph primarily discusses risks to the business from future health epidemics or pandemics, natural disasters, geopolitical events, terrorism, and civil unrest. It details how outbreaks of avian flu or swine flu could disrupt operations through employee illness and mandatory quarantine or disinfection of facilities, and how public concern could reduce poultry consumption and negatively affect sales. It also mentions adverse effects on the price and availability of poultry, impacting profit margins and revenues. While it mentions restaurants and public gatherings, the core risk driver is infectious disease and its resulting operational and supply chain impact, which aligns best with the Human Capital aspect of the provided definitions (employee health and safety programs and workforce disruption). The other categories are less fitting because there is no primary focus on climate, land/water, pollution/waste, product liability, community relations, governance, or business ethics.\nLabel: Human Capital",
+    "parsed_label": "Human Capital",
+    "ground_truth_label": "Human Capital"
+  },
+  {
+    "paragraph_id": "TER_2022_RISK_020",
+    "raw_output": "Reasoning: This paragraph is entirely focused on the company's debt structure, including the issuance of convertible senior unsecured notes, a revolving credit facility, repayment obligations, and the potential difficulty in servicing indebtedness or obtaining future financing. It discusses principal amounts, interest rates, conversion/repurchase features, maturity dates, and covenants that govern borrowing limits. There is no mention of environmental impacts (climate, water, biodiversity, pollution), social issues (labor, health/safety, community relations), or governance/ethics/product liability topics. The content is purely financial leverage and liquidity risk. Therefore, the best fit is Non-ESG.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "AWK_2023_RISK_092",
+    "raw_output": "Reasoning: The paragraph explicitly states that continued success depends on the ability to \"attract, hire and retain highly qualified, skilled and/or diverse talent.\" This is a direct match for the Human Capital topic definition which includes discussions about workforce management, attracting and retaining human capital, and employee diversity. The risk is framed around competition for talent and the ability to build and maintain a skilled workforce. While other categories might mention talent incidentally, this paragraph makes human capital the central theme.\nLabel: Human Capital",
+    "parsed_label": "Human Capital",
+    "ground_truth_label": "Human Capital"
+  },
+  {
+    "paragraph_id": "A_2021_RISK_061",
+    "raw_output": "Reasoning: The paragraph explicitly lists \"increasing severity or frequency of extreme weather events, or other climate-change related risks\" as threats to catastrophic loss of factories and facilities. It then provides the COVID-19 example as a direct impact of a climate-change related global public health crisis, which further ties the risk to the broader climate context. While it also discusses seismic activity and terrorism, the inclusion of climate-change related extreme weather as a primary driver among the listed hazards makes Climate Change the best fit. The focus is on the physical and systemic risks posed by climate change to business continuity, not on labor, pollution/waste, or governance.\nLabel: Climate Change",
+    "parsed_label": "Climate Change",
+    "ground_truth_label": "Climate Change"
+  },
+  {
+    "paragraph_id": "ACN_2021_RISK_051",
+    "raw_output": "Reasoning: The paragraph discusses risks specific to government contracting, including negative publicity stemming from allegations of improper or illegal activity. Even if allegations are inaccurate, the reputational damage is framed as an ethical/conduct failure within the government context. This aligns best with Business Ethics & Values because it addresses allegations of unethical or illegal conduct and the resulting integrity and reputation risk. It does not primarily discuss environmental impacts (Climate Change, Natural Capital, Pollution & Waste), labor practices (Human Capital), product safety or data privacy (Product Liability), community relations, or board/internal control structures (Corporate Governance).\nLabel: Business Ethics & Values",
+    "parsed_label": "Business Ethics & Values",
+    "ground_truth_label": "Business Ethics & Values"
+  },
+  {
+    "paragraph_id": "PEP_2022_RISK_009",
+    "raw_output": "Reasoning: This paragraph discusses general business risks related to competition, brand strength, market trends, and the company's ability to promote existing products, introduce new ones, adopt technologies like AI and data analytics, and respond to supply disruptions and pricing pressure. The risks are framed purely in terms of market share, sales growth, and required capital/marketing expenditures. It does not mention environmental impacts (like emissions or water), pollution or waste, human capital issues (like labor standards or safety), community relations, or governance/ethics. Therefore, it does not primarily fit any of the defined ESG categories.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "BLDR_2022_RISK_052",
+    "raw_output": "Reasoning: The paragraph discusses the company's financial structure, its plans for retaining earnings, dividend policy, and its ability to fund operations, acquisitions, share repurchases, and debt reduction. It explicitly mentions that the board of directors may approve future dividends after considering operating results, financial condition, cash needs, expansion plans, and debt restrictions. The focus on cash flow management, dividend declarations, and financial flexibility is characteristic of Corporate Governance (specifically the role of the board in shareholder returns), rather than any of the ESG topics like climate, water, pollution, human capital, or product liability.\nLabel: Corporate Governance",
+    "parsed_label": "Corporate Governance",
+    "ground_truth_label": "Corporate Governance"
+  },
+  {
+    "paragraph_id": "NDSN_2021_RISK_007",
+    "raw_output": "Reasoning: This paragraph discusses operational risk from disruptions in the supply of components and raw materials, including shortages, price increases, supplier allocation, production interruptions, exchange rate changes, and inflation. It also mentions broader supply chain disruptions like armed conflict, damaging weather, pandemics, and facility shutdowns that could delay production and shipments. The core theme is input availability and cost volatility affecting business and financial condition. While it mentions \"natural or man-made disruptions\" like pandemics, it does not specifically address the management of water stress, biodiversity, or sustainable sourcing practices as defined under Natural Capital. It also does not focus on pollution/waste, human capital labor standards, or governance/ethics. Therefore, the best fit is Non-ESG.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "SYY_2021_RISK_060",
+    "raw_output": "Reasoning: This paragraph discusses the transition away from LIBOR as an interest rate benchmark and the uncertainty surrounding its replacement, including potential changes to the cost of indebtedness. It focuses entirely on financial market mechanics—floating interest rates, interest rate swaps, and the cessation of USD LIBOR publications—and their impact on refinancing and borrowing costs. There is no mention of environmental impacts like carbon emissions, water stress, biodiversity, pollution, or waste, nor of social topics like labor standards, human capital development, or community relations. The content is purely financial/market risk, making the Non-ESG label the best fit.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "AMP_2022_RISK_008",
+    "raw_output": "Reasoning: This paragraph discusses market risks, specifically how changes in interest rates, prolonged periods of low or even negative rates may adversely affect the company's financial condition and operating results. The focus is entirely on macroeconomic and financial market conditions influencing borrowing costs and asset valuations, with no mention of environmental factors, resource use, pollution, human capital, community relations, product safety, or governance/ethics. Because the content is purely financial/market risk, it does not fit any of the provided ESG categories. Therefore, the correct label is Non-ESG.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "MU_2021_RISK_044",
+    "raw_output": "Reasoning: The paragraph primarily discusses the risk of failing to protect intellectual property and, crucially, the dependence on the ability to attract, develop, and retain highly skilled employees. It details the intense global competition for such talent and explains that a decline in operating results or stock price can adversely affect the company's ability to retain key employees whose compensation is partially dependent on the market price of common stock. The direct linkage between retaining knowledgeable human capital and maintaining competitive advantage (IP) makes Human Capital the best fit. While there are mentions of legal protections for IP and confidentiality agreements, the core ESG concern is talent retention and knowledge continuity, not governance, ethics, or environmental topics.\nLabel: Human Capital",
+    "parsed_label": "Human Capital",
+    "ground_truth_label": "Human Capital"
+  },
+  {
+    "paragraph_id": "AMCR_2021_RISK_062",
+    "raw_output": "Reasoning: This paragraph focuses entirely on the complexity of international tax laws, the judgment involved in determining global income tax provisions, and the risk of tax authority examinations and disagreements leading to additional tax assessments. It also discusses how future income taxes could be negatively impacted by the mix of earnings in different jurisdictions and by proposed tax rate increases or BEPS-related tax law changes. While tax is a governance and compliance topic, it is not discussed through the lens of board structure, internal controls, executive pay, or broader ethical conduct as defined for Corporate Governance or Business Ethics & Values. The primary subject is technical tax risk and uncertainty, making Non-ESG the best fit.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "ROST_2021_RISK_010",
+    "raw_output": "Reasoning: This paragraph discusses retail merchandising strategy, dependence on market availability, quantity, and quality of discounted brand name merchandise, buying opportunistically, lean inventory, and the impact of vendor inventory management and sales decisions on available stock. It also details macro supply chain constraints like shipping capacity, transportation costs, tariffs, trade relationships, tax policies, and natural disasters or public health issues (like COVID-19) that disrupt imports. While it mentions \"public health issues,\" the context is purely on how they affect the availability and cost of imported goods for retail sale, not on human capital health and safety programs or broader community health impacts. The core risk is commercial supply chain disruption affecting sales and margins, not an ESG topic as defined. Therefore, the best fit is Non-ESG.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Human Capital"
+  },
+  {
+    "paragraph_id": "TRMB_2021_RISK_051",
+    "raw_output": "Reasoning: This paragraph is a standard legal proceedings disclosure stating that there are no material legal proceedings other than ordinary routine litigation. It focuses on the existence and materiality of lawsuits involving the company or its subsidiaries, without referencing any specific ESG topic such as labor rights, environmental damage, product safety, or governance failures. Because the risk discussed is general litigation exposure rather than a specific ESG issue, the best fit is Non-ESG.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "IQV_2022_RISK_040",
+    "raw_output": "Reasoning: The paragraph discusses intellectual property infringement claims brought by third parties against the company or its clients. It details the costs of litigating such claims, the potential diversion of management resources, and the risk of injunctive relief limiting the company's ability to operate or market its services. It also mentions licensing agreements with restrictive terms, being required to implement costly redesigns, paying damages, and indemnifying counterparties under contracts. These are legal and commercial risks arising from alleged IP infringement and data usage, not ESG topics like climate, water/biodiversity, pollution/waste, labor standards, human capital development, community relations, or corporate governance/ethics. Therefore, the best fit is Non-ESG.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "EQR_2022_RISK_070",
+    "raw_output": "Reasoning: The paragraph discusses the competitive advantage of identifying, implementing, and maintaining information technology systems and the risk that failure to do so could negatively impact operations. It also mentions reliance on third-party vendors for maintenance, upgrades, and enhancements. The core risk is operational and competitive, centered on IT infrastructure and vendor relationships rather than any specific ESG topic like climate, water, biodiversity, pollution, human capital, community relations, product safety/privacy, or governance/ethics. Because it lacks primary discussion of any of the defined ESG themes, the Non-ESG label is the best fit.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "FIS_2022_RISK_093",
+    "raw_output": "Reasoning: This paragraph is a standard \"Forward-Looking Statements\" disclaimer required by securities laws. It defines what forward-looking statements are and lists numerous examples of anticipated financial outcomes, market conditions, and strategic plans, while also noting they involve risks and uncertainties. It does not discuss any specific ESG topic such as climate, water, biodiversity, pollution, labor practices, human capital development, community relations, product safety/privacy, or corporate governance/ethics. Since its sole function is to manage expectations about the future and limit liability for projections, it fits the Non-ESG category.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "MDLZ_2022_RISK_002",
+    "raw_output": "Reasoning: This paragraph discusses the strategic and operational risks of COVID-19 and other pandemics on revenues, travel retail, foodservice, and various product categories. It also highlights disruptions to the global supply chain, operations, and routes to market or those of suppliers and partners. While pandemics have clear human health impacts, the paragraph frames them primarily as macroeconomic and operational business continuity threats rather than specific risks to the company's human capital management, labor standards, or employee health and safety programs. It does not discuss emissions, water/biodiversity, pollution/waste, or governance/ethics. Therefore, the best fit is Non-ESG.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "HD_2021_RISK_019",
+    "raw_output": "Reasoning: This paragraph explicitly discusses the risk of failure to maintain the \"privacy and security of customer, associate, supplier and Company information,\" which could lead to \"substantial costs and reputational damage\" as well as \"litigation and enforcement actions.\" It also details the constantly changing \"regulatory environment related to data privacy and cybersecurity,\" the increasing complexity of implementation, and the consequences of non-compliance such as \"fines, sanctions, governmental investigations, lawsuits or reputational damage.\" These points align directly with the Product Liability definition's inclusion of \"privacy and data security\" and the risks of data breaches and privacy policy enforcement. While it mentions business practices and personalization limitations, the core risk is data security and privacy liability, not labor, climate, or pollution.\nLabel: Product Liability",
+    "parsed_label": "Product Liability",
+    "ground_truth_label": "Product Liability"
+  },
+  {
+    "paragraph_id": "NTRS_2023_RISK_003",
+    "raw_output": "Reasoning: The paragraph lists numerous operational risks, including failures of technological systems, security breaches from cyber-attacks, errors in service provision, dependence on technology infrastructure, third-party vendor failures, global operating risks, and cost control issues. It also mentions pandemics, natural disasters, global climate change, acts of terrorism, geopolitical tensions, and global conflicts as external factors that may negatively impact business and operations. While \"global climate change\" is mentioned, it is listed among broad macro risks alongside pandemics and geopolitical tensions, and the paragraph does not discuss specific climate mitigation, carbon efficiency, renewable energy adoption, or environmental technologies. Because the primary focus is on IT/security controls, process execution, vendor reliability, and general business continuity threats, the best fit is Non-ESG.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "PH_2021_RISK_011",
+    "raw_output": "Reasoning: This paragraph discusses competitive pressures that could eliminate existing advantages, leading to downward pricing pressure, margin declines, or market share losses. The risks are purely commercial and market-driven, focusing on the need to excel in quality, innovation, technology, manufacturing, distribution, delivery, price competitiveness, and customer experience. It does not mention environmental impacts (like emissions or water), resource sourcing, pollution or waste, labor practices, human capital development, community relations, board/internal controls, or business ethics. Therefore, the best fit is Non-ESG.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "INVH_2023_RISK_123",
+    "raw_output": "Reasoning: This paragraph discusses Maryland General Corporation Law provisions that can \"inhibit a third party from making a proposal to acquire us or impede a change in control,\" including \"business combination\" provisions requiring specific thresholds of stockholder ownership and voting rights. It also details \"control share\" provisions that give holders of such shares enhanced voting power contingent on acquiring specified percentages of the stock. These provisions are classic anti-takeover mechanisms embedded in corporate governance documents and shareholder rights. The risk described is structural to how control changes are effected and how existing stockholders can realize a premium, making Corporate Governance the most precise fit among the ESG categories.\nLabel: Corporate Governance",
+    "parsed_label": "Corporate Governance",
+    "ground_truth_label": "Corporate Governance"
+  },
+  {
+    "paragraph_id": "CL_2022_RISK_010",
+    "raw_output": "Reasoning: The paragraph explicitly discusses risks related to pandemics, epidemics, or similar widespread public health concerns, specifically naming COVID-19. This is a direct match for the \"Human Capital\" topic definition that includes discussions of employee health and safety programs and broader workforce health risks. The risk described is the material adverse effect on the business, results of operations, cash flows, and financial condition due to public health crises affecting people. While one might consider \"Pollution & Waste\" due to broader environmental impacts of pandemics, the focus here is on the human/health dimension of the risk to the company's operations and people, making Human Capital the best fit.\nLabel: Human Capital",
+    "parsed_label": "Human Capital",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "ENPH_2022_RISK_034",
+    "raw_output": "Reasoning: The paragraph discusses the company's success in marketing and selling \"AC module\" versions of its microinverter system depending on its ability to continue working closely with leading solar module manufacturers. The core topic is product development/market positioning within the solar energy sector, not the environmental impact of the product itself (like carbon efficiency or renewable integration) or any other ESG theme. It lacks any mention of emissions, water, biodiversity, pollution, labor practices, community relations, governance, or ethics. Therefore, the best fit is Non-ESG.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "WMB_2022_RISK_062",
+    "raw_output": "Reasoning: This paragraph discusses financial risk management through hedging activities, including various fixed-price, forward, physical purchase/sales contracts, futures, swaps, and options. It details the limitations of any single hedging arrangement, specifically that a forward contract will not hedge counterparty credit or performance risk, leaving unhedged risks. It also explains how mark-to-market accounting can cause volatility in reported net income when open positions are settled. The entire discussion is about managing market and counterparty risks on cash flows and results, not about environmental, social, or governance topics. Therefore, the best fit is Non-ESG.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "AEE_2022_RISK_007",
+    "raw_output": "Reasoning: The paragraph discusses Ameren Illinois' rate-making framework, including performance-based ROE incentives and penalties tied to electric energy-efficiency investments through 2025. It specifically mentions investments in electric energy-efficiency programs and the possibility of reduced savings goals if cost-effective programs are unavailable. Energy efficiency is a direct mechanism for reducing energy consumption and associated emissions, placing it within the Climate Change topic definition. While it also mentions natural gas delivery service and infrastructure investments, the climate relevance of the electric energy-efficiency commitment is the dominant theme.\nLabel: Climate Change",
+    "parsed_label": "Climate Change",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "AMAT_2021_RISK_049",
+    "raw_output": "Reasoning: This paragraph discusses the risks associated with implementing new or enhanced enterprise resource planning and related information systems. The core concerns are project execution risks, delays, difficulties in adoption, failure to achieve productivity or cost efficiencies, and resulting operational disruptions like order tracking, manufacturing/shipping, inventory management, supply chain management, human resource allocation, and financial data aggregation/reporting. While it mentions \"quality issues\" and \"reputational harm,\" these are business continuity risks stemming from IT implementation rather than specific ESG topics like labor standards, pollution, biodiversity, or climate impact. Therefore, the best fit is Non-ESG.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "FE_2022_RISK_003",
+    "raw_output": "Reasoning: This paragraph details a Deferred Prosecution Agreement (DPA) with the U.S. Attorney’s Office resolving an investigation into lobbying and governmental affairs activities concerning HB 6. It specifically mentions being charged with conspiring to commit honest services wire fraud and outlines three-year deferral of prosecution contingent upon several ongoing obligations. Crucially, it requires continued cooperation, payment of a criminal monetary penalty, public acknowledgment of the conduct, and the continued implementation and review of its compliance and ethics program, internal controls, policies, and procedures designed to prevent and detect violations of U.S. laws. The core risk is breaching the DPA's ethical and legal commitments, which falls squarely under Business Ethics & Values. While it mentions lobbying and governmental affairs, the ESG focus is on the criminal/ethical conduct alleged and the ongoing compliance monitoring rather than any environmental, social, or governance structure outside of ethics.\nLabel: Business Ethics & Values",
+    "parsed_label": "Business Ethics & Values",
+    "ground_truth_label": "Business Ethics & Values"
+  },
+  {
+    "paragraph_id": "EXC_2022_RISK_016",
+    "raw_output": "Reasoning: This paragraph discusses how federal and state RPS and/or energy conservation legislation could significantly impact the Utility Registrants. It specifically mentions mandates for the use of clean, renewable, and alternate fuel sources, as well as programs requiring the implementation of new technologies like smart meters and smart grid. These are direct policy drivers of renewable and clean energy standards, which fall under the Climate Change definition. The resulting impacts include increased capital expenditures, declines in customer energy consumption, and revenue declines, all of which are tied to the energy transition discussed in the category definition.\nLabel: Climate Change",
+    "parsed_label": "Climate Change",
+    "ground_truth_label": "Climate Change"
+  },
+  {
+    "paragraph_id": "EW_2022_RISK_005",
+    "raw_output": "Reasoning: The paragraph states that unsuccessful clinical trials or procedures relating to products could have a material adverse effect on prospects. This directly relates to product safety and quality risk, specifically the risk that medical treatments or devices may fail in trials or procedures. The inclusion of \"clinical trials or procedures\" and \"material adverse effect\" strongly aligns with the Product Liability definition's focus on product safety and quality concerns, including clinical/efficacy risks. While it is not about data privacy or chemical safety, the core issue is whether the product itself will be safe or effective enough to succeed commercially.\nLabel: Product Liability",
+    "parsed_label": "Product Liability",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "CAT_2022_RISK_016",
+    "raw_output": "Reasoning: This paragraph discusses the risks inherent in mergers, acquisitions, joint ventures, and divestitures, including failure to realize anticipated benefits, undiscovered or inadequately assessed transaction risks and liabilities, and unanticipated post-closing integration costs. The focus is on strategic transaction execution and financial integration risks rather than environmental, social, or governance topics. While due diligence touches on ESG risks generally, the paragraph itself does not specify any ESG material concerns like labor standards, pollution liabilities, climate transition risks, or community impacts. Therefore, the best fit is Non-ESG.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "DLTR_2021_RISK_044",
+    "raw_output": "Reasoning: This paragraph primarily discusses the governance dynamic between the company's Board of Directors and management team and its shareholders, specifically the risk of activist shareholders attempting to influence strategy or control. It details various activist tactics, including private engagement, publicity campaigns, proxy contests, forcing transactions unsupported by the Board, and litigation. The risks described—costly responses, operational disruption, diversion of the Board's attention, and interference with strategic execution—are fundamentally about maintaining effective board and management oversight in the face of shareholder challenges. While stock price volatility is mentioned, it is a consequence of governance contestation rather than a primary ESG topic like climate, human capital, or pollution.\nLabel: Corporate Governance",
+    "parsed_label": "Corporate Governance",
+    "ground_truth_label": "Corporate Governance"
+  },
+  {
+    "paragraph_id": "PNR_2022_RISK_014",
+    "raw_output": "Reasoning: The paragraph focuses entirely on cost and inflationary pressures across raw materials (metals, resins, electronics), logistics, and labor. It details how the company is trying to mitigate these increases through productivity improvements, selling price increases, and operational initiatives, but anticipates continued inflation. While \"labor costs\" and \"wages, pension, health care and insurance\" are mentioned, they are only in the context of general operating cost inflation, not in relation to labor standards, health and safety programs, or human capital development as defined by the Human Capital category. There is no discussion of emissions, water stress, biodiversity, pollution/waste, product safety, data privacy, or governance/ethics. Therefore, the best fit is Non-ESG.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "EQIX_2022_RISK_052",
+    "raw_output": "Reasoning: This paragraph discusses the adverse effect of future sales or issuances of common stock on the market price of the stock, specifically focusing on potential dilution for stockholders. It details the company's \"at the market\" equity offering program and the amount available, which is inherently related to capital structure and market perception of dilution risk. The risks described are purely financial market and shareholder dilution mechanics, with no connection to environmental, social, or governance topics like labor practices, pollution, community relations, or board oversight. Therefore, the best fit is Non-ESG.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "CTRA_2022_RISK_035",
+    "raw_output": "Reasoning: The paragraph explicitly links negative public perception regarding the oil and gas industry to climate change concerns, including methane and other greenhouse gas emissions, hydraulic fracturing, oil spills, and pipeline explosions. It details the resulting adverse business impacts such as increased costs, reduced demand for oil, natural gas, and NGL production, reduced profits, increased regulation, investigations, litigation, and negative impacts on stock price and access to capital markets. The focus is squarely on the climate change externalities and policy/market response to emissions, not on human capital, pollution/waste from a different industry context, or governance/ethics.\nLabel: Climate Change",
+    "parsed_label": "Climate Change",
+    "ground_truth_label": "Climate Change"
+  },
+  {
+    "paragraph_id": "BXP_2022_RISK_011",
+    "raw_output": "Reasoning: This paragraph discusses the uncertainty surrounding the duration and breadth of the COVID-19 pandemic's adverse impact on the business, financial condition, results of operations, cash flows, liquidity, and performance of tenants. While it mentions \"supply chain disruptions\" and \"labor market disruptions,\" these are presented as secondary, indirect economic and social impacts of the pandemic rather than as primary, ongoing ESG management topics like specific pollution controls, water stress, biodiversity, or labor rights violations. The core risk is macroeconomic and operational uncertainty driven by the pandemic's trajectory. Therefore, the best fit is Non-ESG.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "PSX_2022_RISK_004",
+    "raw_output": "Reasoning: This paragraph states that financial results are affected by changing commodity prices and margins for refined petroleum, petrochemical, and plastics products. The risk is purely market-driven, relating to input costs and product pricing rather than environmental impacts, resource use, pollution, or labor practices. It also does not discuss governance, ethics, community relations, or product safety/privacy. Since it lacks a primary ESG theme, the best fit is Non-ESG.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "KLAC_2022_RISK_104",
+    "raw_output": "Reasoning: This paragraph discusses risks related to breaching the terms of a settlement arrangement and subsequent government actions. The focus is on legal and contractual compliance outcomes with governments, not on environmental impacts, resource use, pollution, human capital management, product safety, community relations, board oversight, or business ethics controversies. It is a high-level legal/financial risk statement without the specific ESG substance required for any of the defined categories. Therefore, the best fit is Non-ESG.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "PODD_2022_RISK_014",
+    "raw_output": "Reasoning: This paragraph discusses intense competition in the medical device industry, specifically in the insulin delivery device market, and the competitive advantages of established leaders. It focuses on product development stages of new insulin \"patch\" pumps and smart pens, market positioning, reimbursement profiles, distribution networks, and R&D/clinical trial experience. While it mentions regulatory approval, the core risk is commercial and technological competition, not the company's environmental footprint, labor practices, community impact, or internal governance/ethics. Therefore, it does not primarily fit any of the defined ESG categories.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "EPAM_2022_RISK_011",
+    "raw_output": "Reasoning: This paragraph explicitly states that the company's success depends substantially on the continuing efforts of its senior executives and other key personnel, and that the business could be severely disrupted if it loses their services. This directly relates to Human Capital by focusing on the retention and availability of critical talent. It does not discuss environmental impacts, pollution, community relations, governance structures, or business ethics. Therefore, Human Capital is the most fitting label.\nLabel: Human Capital",
+    "parsed_label": "Human Capital",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "SRE_2023_RISK_072",
+    "raw_output": "Reasoning: This paragraph is extremely brief and only states that the occurrence of \"any of these events\" (without listing them) could reduce expected recovery and materially affect results of operations, financial condition, cash flows, and prospects. It contains no substantive discussion of environmental topics (like emissions, water, biodiversity, or pollution), social topics (like labor, health/safety, or community relations), governance structures, or business ethics. Because the risk is entirely outcome-oriented and lacks ESG-specific content, it must be classified as Non-ESG.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "SRE_2022_RISK_081",
+    "raw_output": "Reasoning: This paragraph is extremely brief and only mentions \"the Leak\" and \"significant costs, expenses and other liabilities\" that may not be recoverable through insurance. It lacks any context regarding the nature of the leak (e.g., methane, natural gas, industrial emissions, contamination), its environmental impact, its effect on human health, or any broader regulatory or operational context that would tie it to the defined ESG categories. Without this context, it cannot be classified as Climate Change, Natural Capital, Pollution & Waste, Human Capital, Product Liability, Community Relations, Corporate Governance, or Business Ethics & Values. Therefore, the best fit is Non-ESG.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "CMS_2022_RISK_025",
+    "raw_output": "Reasoning: The paragraph lists \"natural disasters, severe weather, wars, terrorist acts, civil unrest, vandalism, theft, cyber incidents, pandemics, and other catastrophic events\" as risks beyond the company's control that could severely damage assets and disrupt operations. While \"severe weather\" is mentioned, the paragraph does not discuss mitigation strategies like carbon efficiency, renewable energy adoption, or ecological building design, which are central to the Climate Change topic. It also does not discuss water stress, biodiversity, land use, or sourcing of raw materials, which are central to Natural Capital. The focus is on broad, extreme physical and societal disruptions and their resulting business impacts, making Non-ESG the best fit.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "TXT_2021_RISK_043",
+    "raw_output": "Reasoning: This paragraph explicitly discusses \"Increased regulation related to global climate change\" and how it could impose \"stricter limits on greenhouse gas emissions.\" It details that new laws or regulations could mandate significant operational restrictions and compliance requirements related to reducing or mitigating global warming. The direct focus on GHG emissions limits and climate change legislation makes the Climate Change label the most accurate fit. While it mentions business and financial impacts, the root cause and core risk are climate-related regulatory mandates.\nLabel: Climate Change",
+    "parsed_label": "Climate Change",
+    "ground_truth_label": "Climate Change"
+  },
+  {
+    "paragraph_id": "AMGN_2022_RISK_045",
+    "raw_output": "Reasoning: The paragraph focuses entirely on U.S. income tax provisions, tax rate application across jurisdictions, the significant judgment required in tax matters, and aggressive IRS examinations, audits, and proposed adjustments regarding profit allocation between U.S. entities. It details protracted disputes with tax authorities, administrative appeals, and a petition in Tax Court contesting deficiency notices. While taxes are an ESG-adjacent topic, the content is purely technical tax compliance and litigation, not about climate, natural capital, pollution/waste, human capital, product liability, community relations, governance structure, or business ethics. Therefore, the best fit is Non-ESG.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "CNP_2022_RISK_095",
+    "raw_output": "Reasoning: This paragraph discusses the risk that Houston Electric may be unable to restore transmission and distribution properties after loss or damage, and the negative financial impact of such events. The focus is on operational and financial resilience to physical damage, not on environmental stewardship (like emissions, water use, biodiversity, or pollution control), social impacts (like labor or community relations), or governance/ethics. It is a standard business continuity and financial risk disclosure. Therefore, the best fit is Non-ESG.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "DVA_2022_RISK_029",
+    "raw_output": "Reasoning: The paragraph discusses how reimbursement rates, contract terms, and restrictive plan designs by commercial payors could materially adversely affect the business, results of operations, financial condition, and cash flows. It details negotiations over coverage scope and duration, decreases in covered patients, and disputes over ESRD benefit coverage, including requirements for Medicare coverage. These are core aspects of healthcare payment models and access to specific treatments, which fall under the Product Liability definition's \"health and demographic risk.\" The risk is not primarily about climate, pollution, human capital, or governance, but about the financial sustainability of a service contingent on insurance coverage and payment terms.\nLabel: Product Liability",
+    "parsed_label": "Product Liability",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "NDAQ_2022_RISK_043",
+    "raw_output": "Reasoning: This paragraph discusses broad geopolitical, macroeconomic, and operational risks, including political, economic, and social uncertainties in certain countries, the possibility of catastrophic events interrupting critical business functions, and concentration of U.S. and European businesses in specific regions. It also lists various physical and cyber threats (terrorist attacks, natural disasters, pandemics, extreme weather, fire, power loss, telecommunications failures, human error, theft, sabotage, vandalism) and currency/exchange rate risk due to international operations. While it mentions business continuity plans, the focus remains on macro and operational resilience rather than specific ESG topics like labor standards, pollution controls, biodiversity, or board/ethics oversight. Therefore, the best fit is Non-ESG.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Product Liability"
+  },
+  {
+    "paragraph_id": "XYL_2022_RISK_059",
+    "raw_output": "Reasoning: This paragraph primarily discusses general legal and regulatory proceedings, including the risk of violating laws and regulations, incurring substantial liability, and damaging reputation. While it mentions remedies relating to \"environmental matters,\" \"tax,\" \"intellectual property,\" \"product liability,\" \"property damage,\" \"personal injury,\" \"privacy,\" and \"employment, labor and pensions,\" these are examples of types of disputes, not a focused discussion of a single ESG topic like pollution control, human rights in the supply chain, or climate transition risks. The core risk is the uncertainty of legal and regulatory outcomes and their adverse effect on business and financials. Because it lacks the specific focus of any single ESG category (e.g., water stress, biodiversity, toxic emissions, labor standards, or board/executive pay structure), it is best classified as Non-ESG.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Business Ethics & Values"
+  },
+  {
+    "paragraph_id": "DVN_2022_RISK_007",
+    "raw_output": "Reasoning: The paragraph discusses extensive governmental regulation impacting oil, gas, and NGL operations, including permits, conservation policies, reporting obligations, royalties, and taxes. It specifically mentions decommissioning obligations such as plugging and abandonment of wells and removal of production facilities, which are environmental restoration requirements. More broadly, it references policy shifts supporting a transition away from fossil fuels and imposing \"new and more onerous burdens on our industry and business.\" Because the core impact described is regulatory and policy-driven on environmental resource extraction and end-of-life site restoration, it aligns best with the Natural Capital category's focus on land and raw materials extraction constraints and environmental stewardship. While it mentions worker health and safety, the dominant theme is resource extraction regulation and environmental cleanup liability, not internal labor management.\nLabel: Natural Capital",
+    "parsed_label": "Natural Capital",
+    "ground_truth_label": "Human Capital"
+  },
+  {
+    "paragraph_id": "CTAS_2021_RISK_030",
+    "raw_output": "Reasoning: This paragraph focuses on the broad legal and regulatory compliance burden, specifically mentioning employment laws, minimum wage, overtime, working condition requirements, citizenship requirements, and transportation laws including OSHA. While OSHA is mentioned, the discussion is framed as a general compliance cost and risk of fines or revocation of operating authority for *any* failure to comply with applicable laws, rather than a specific discussion of the company's health and safety programs, training, or safety certifications. It does not discuss environmental topics like emissions, water, biodiversity, or pollution/waste management. Because the primary risk is the cost and penalty of non-compliance with a vast array of labor and operational laws, it fits Human Capital under the \"labor management\" umbrella more closely than any other category.\nLabel: Human Capital",
+    "parsed_label": "Human Capital",
+    "ground_truth_label": "Business Ethics & Values"
+  },
+  {
+    "paragraph_id": "CZR_2022_RISK_036",
+    "raw_output": "Reasoning: This paragraph discusses cybersecurity insurance coverage for expenses following a data breach, including notification, credit monitoring, investigation, crisis management, PR, and legal advice. While a data breach is a privacy/data security risk that could relate to Product Liability under the provided definition, the paragraph's focus is entirely on the *insurance response* to the event and the limitations of that coverage. It does not discuss the company's privacy policies, data security management systems, actual breach incidents, or the resulting harm to customers' personal data. Because the primary topic is risk mitigation via insurance rather than the underlying data privacy/security governance or resulting liability, the best fit is Non-ESG.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Product Liability"
+  },
+  {
+    "paragraph_id": "FCX_2023_RISK_037",
+    "raw_output": "Reasoning: This paragraph discusses preliminary discussions with the Indonesian government regarding the extension of a company's IUPK beyond 2041, which is a governmental/regulatory permitting and operational timeline risk. It does not mention any environmental topics like emissions, water stress, biodiversity, or pollution, nor does it cover labor practices, human capital development, community relations, product safety, data privacy, or business ethics. The risk is purely geopolitical and regulatory in nature regarding resource/project tenure. Therefore, the best fit is Non-ESG.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "DAL_2022_RISK_024",
+    "raw_output": "Reasoning: The paragraph discusses the risk that intangible and long-lived assets may never realize their full value, leading to impairments that could materially adversely affect operating results. This is a financial reporting and balance sheet risk related to asset valuation and recoverability, not an ESG topic like emissions, water stress, biodiversity, pollution, labor standards, human capital development, community relations, product safety/privacy, or corporate governance/ethics. There are no references to environmental impacts, social issues, governance structures, or business conduct. Therefore, the best fit is Non-ESG.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "TSLA_2022_RISK_020",
+    "raw_output": "Reasoning: The paragraph discusses strong competition for its products and services from established and new rivals, which is a purely business and market risk. It does not mention any environmental impacts (like emissions or water use), social issues (like labor practices or community relations), or governance/ethics failures. Because the content is limited to competitive positioning and growth challenges, it does not fit any of the defined ESG categories. Therefore, the correct label is Non-ESG.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  }
+]

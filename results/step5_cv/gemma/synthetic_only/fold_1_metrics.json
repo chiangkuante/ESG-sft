@@ -1,0 +1,11 @@
+{
+  "samples": 167,
+  "accuracy": 0.8084,
+  "macro_f1": 0.5543,
+  "weighted_f1": 0.7958,
+  "kappa": 0.6656,
+  "fold": 1,
+  "checkpoint_strategy": "final",
+  "checkpoint_epoch": null,
+  "checkpoint_dir": "/home/wa1ter/ESG-sft/models/step5_cv/gemma/synthetic_only/fold_1/checkpoints/checkpoint-final"
+}
