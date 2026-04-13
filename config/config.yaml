@@ -133,7 +133,7 @@ step5_cv:
       per_device_train_batch_size: 2
       gradient_accumulation_steps: 4
       warmup_steps: 5
-      num_train_epochs: 7
+      num_train_epochs: 15
       learning_rate: 2e-4
       optim: adamw_8bit
       weight_decay: 0.01
@@ -162,7 +162,7 @@ step5_cv:
 
     xyz_plot:
       enabled: true
-      epochs: [7, 9, 11, 13, 15]
+      epochs: [7,10,15]
 
     inference:
       checkpoint_strategy: final
