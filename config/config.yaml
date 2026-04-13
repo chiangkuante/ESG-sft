@@ -133,7 +133,7 @@ step5_cv:
       per_device_train_batch_size: 2
       gradient_accumulation_steps: 4
       warmup_steps: 5
-      num_train_epochs: 15
+      num_train_epochs: 5
       learning_rate: 2e-4
       optim: adamw_8bit
       weight_decay: 0.01
@@ -151,18 +151,18 @@ step5_cv:
       # label_only: false
       # synthetic_only: false
       # variant_name: default
-      # human_only: true
+      human_only: true
       # label_only: true
-      synthetic_only: true
+      # synthetic_only: true
       # variant_name: label_only_human_only
       # variant_name: label_only
-      # variant_name: human_only
-      variant_name: synthetic_only
+      variant_name: human_only
+      # variant_name: synthetic_only
       non_esg_cap: 150
 
     xyz_plot:
       enabled: true
-      epochs: [7,10,15]
+      epochs: [3,5,7]
 
     inference:
       checkpoint_strategy: final
