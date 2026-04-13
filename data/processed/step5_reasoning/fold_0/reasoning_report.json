@@ -1,37 +1,23 @@
 {
   "fold": 0,
   "train_pool_size": 4148,
-  "existing_complete": 4133,
-  "pending_count": 15,
+  "existing_complete": 4147,
+  "pending_count": 1,
   "generation_enabled": true,
   "failed_only": true,
   "batches": [
     {
       "batch_index": 0,
-      "requested_count": 10,
+      "requested_count": 1,
       "status": "success",
       "attempts": [
         {
           "attempt": 1,
-          "returned_count": 10,
-          "accepted_count": 10
+          "returned_count": 1,
+          "accepted_count": 1
         }
       ],
-      "accepted_count": 10,
-      "failed_count": 0
-    },
-    {
-      "batch_index": 1,
-      "requested_count": 5,
-      "status": "success",
-      "attempts": [
-        {
-          "attempt": 1,
-          "returned_count": 5,
-          "accepted_count": 5
-        }
-      ],
-      "accepted_count": 5,
+      "accepted_count": 1,
       "failed_count": 0
     }
   ],

@@ -1,14 +1,14 @@
 {
   "fold": 0,
   "provider": "openai",
-  "model": "gpt-5.4-nano-2026-03-17",
-  "existing_synthetic_total": 110,
+  "model": "gpt-5.4-mini-2026-03-17",
+  "existing_synthetic_total": 0,
   "labels": [
     {
       "label": "Climate Change",
       "requested_count": 175,
-      "existing_count": 110,
-      "generated_count": 65,
+      "existing_count": 0,
+      "generated_count": 175,
       "final_count": 175,
       "completed": true,
       "batches": [
@@ -16,28 +16,7 @@
           "batch_index": 0,
           "requested_count": 20,
           "generated_count": 20,
-          "remaining_after_batch": 45,
-          "attempts": [
-            {
-              "attempt": 1,
-              "status": "failed",
-              "requested_count": 20,
-              "error": "Extra data: line 7 column 4 (char 3229)"
-            },
-            {
-              "attempt": 2,
-              "status": "success",
-              "requested_count": 20,
-              "returned_count": 22,
-              "accepted_count": 20
-            }
-          ]
-        },
-        {
-          "batch_index": 1,
-          "requested_count": 20,
-          "generated_count": 20,
-          "remaining_after_batch": 25,
+          "remaining_after_batch": 155,
           "attempts": [
             {
               "attempt": 1,
@@ -49,10 +28,10 @@
           ]
         },
         {
-          "batch_index": 2,
+          "batch_index": 1,
           "requested_count": 20,
           "generated_count": 20,
-          "remaining_after_batch": 5,
+          "remaining_after_batch": 135,
           "attempts": [
             {
               "attempt": 1,
@@ -64,17 +43,107 @@
           ]
         },
         {
+          "batch_index": 2,
+          "requested_count": 20,
+          "generated_count": 20,
+          "remaining_after_batch": 115,
+          "attempts": [
+            {
+              "attempt": 1,
+              "status": "success",
+              "requested_count": 20,
+              "returned_count": 25,
+              "accepted_count": 20
+            }
+          ]
+        },
+        {
           "batch_index": 3,
-          "requested_count": 5,
-          "generated_count": 5,
+          "requested_count": 20,
+          "generated_count": 20,
+          "remaining_after_batch": 95,
+          "attempts": [
+            {
+              "attempt": 1,
+              "status": "success",
+              "requested_count": 20,
+              "returned_count": 20,
+              "accepted_count": 20
+            }
+          ]
+        },
+        {
+          "batch_index": 4,
+          "requested_count": 20,
+          "generated_count": 20,
+          "remaining_after_batch": 75,
+          "attempts": [
+            {
+              "attempt": 1,
+              "status": "success",
+              "requested_count": 20,
+              "returned_count": 22,
+              "accepted_count": 20
+            }
+          ]
+        },
+        {
+          "batch_index": 5,
+          "requested_count": 20,
+          "generated_count": 20,
+          "remaining_after_batch": 55,
+          "attempts": [
+            {
+              "attempt": 1,
+              "status": "success",
+              "requested_count": 20,
+              "returned_count": 21,
+              "accepted_count": 20
+            }
+          ]
+        },
+        {
+          "batch_index": 6,
+          "requested_count": 20,
+          "generated_count": 20,
+          "remaining_after_batch": 35,
+          "attempts": [
+            {
+              "attempt": 1,
+              "status": "success",
+              "requested_count": 20,
+              "returned_count": 22,
+              "accepted_count": 20
+            }
+          ]
+        },
+        {
+          "batch_index": 7,
+          "requested_count": 20,
+          "generated_count": 20,
+          "remaining_after_batch": 15,
+          "attempts": [
+            {
+              "attempt": 1,
+              "status": "success",
+              "requested_count": 20,
+              "returned_count": 21,
+              "accepted_count": 20
+            }
+          ]
+        },
+        {
+          "batch_index": 8,
+          "requested_count": 15,
+          "generated_count": 15,
           "remaining_after_batch": 0,
           "attempts": [
             {
               "attempt": 1,
               "status": "success",
-              "requested_count": 5,
-              "returned_count": 5,
-              "accepted_count": 5
+              "requested_count": 15,
+              "returned_count": 15,
+              "accepted_count": 15
             }
           ]
         }
@@ -98,7 +167,7 @@
               "attempt": 1,
               "status": "success",
               "requested_count": 20,
-              "returned_count": 25,
+              "returned_count": 21,
               "accepted_count": 20
             }
           ]
@@ -113,7 +182,7 @@
               "attempt": 1,
               "status": "success",
               "requested_count": 20,
-              "returned_count": 26,
+              "returned_count": 21,
               "accepted_count": 20
             }
           ]
@@ -128,7 +197,7 @@
               "attempt": 1,
               "status": "success",
               "requested_count": 20,
-              "returned_count": 24,
+              "returned_count": 25,
               "accepted_count": 20
             }
           ]
@@ -136,15 +205,15 @@
         {
           "batch_index": 3,
           "requested_count": 20,
-          "generated_count": 19,
-          "remaining_after_batch": 83,
+          "generated_count": 20,
+          "remaining_after_batch": 82,
           "attempts": [
             {
               "attempt": 1,
               "status": "success",
               "requested_count": 20,
-              "returned_count": 19,
-              "accepted_count": 19
+              "returned_count": 21,
+              "accepted_count": 20
             }
           ]
         },
@@ -152,13 +221,13 @@
           "batch_index": 4,
           "requested_count": 20,
           "generated_count": 20,
-          "remaining_after_batch": 63,
+          "remaining_after_batch": 62,
           "attempts": [
             {
               "attempt": 1,
               "status": "success",
               "requested_count": 20,
-              "returned_count": 27,
+              "returned_count": 25,
               "accepted_count": 20
             }
           ]
@@ -167,13 +236,13 @@
           "batch_index": 5,
           "requested_count": 20,
           "generated_count": 20,
-          "remaining_after_batch": 43,
+          "remaining_after_batch": 42,
           "attempts": [
             {
               "attempt": 1,
               "status": "success",
               "requested_count": 20,
-              "returned_count": 20,
+              "returned_count": 23,
               "accepted_count": 20
             }
           ]
@@ -182,13 +251,13 @@
           "batch_index": 6,
           "requested_count": 20,
           "generated_count": 20,
-          "remaining_after_batch": 23,
+          "remaining_after_batch": 22,
           "attempts": [
             {
               "attempt": 1,
               "status": "success",
               "requested_count": 20,
-              "returned_count": 26,
+              "returned_count": 23,
               "accepted_count": 20
             }
           ]
@@ -197,29 +266,29 @@
           "batch_index": 7,
           "requested_count": 20,
           "generated_count": 20,
-          "remaining_after_batch": 3,
+          "remaining_after_batch": 2,
           "attempts": [
             {
               "attempt": 1,
               "status": "success",
               "requested_count": 20,
-              "returned_count": 22,
+              "returned_count": 24,
               "accepted_count": 20
             }
           ]
         },
         {
           "batch_index": 8,
-          "requested_count": 3,
-          "generated_count": 3,
+          "requested_count": 2,
+          "generated_count": 2,
           "remaining_after_batch": 0,
           "attempts": [
             {
               "attempt": 1,
               "status": "success",
-              "requested_count": 3,
-              "returned_count": 3,
-              "accepted_count": 3
+              "requested_count": 2,
+              "returned_count": 2,
+              "accepted_count": 2
             }
           ]
         }
@@ -243,7 +312,7 @@
               "attempt": 1,
               "status": "success",
               "requested_count": 20,
-              "returned_count": 20,
+              "returned_count": 22,
               "accepted_count": 20
             }
           ]
@@ -258,7 +327,7 @@
               "attempt": 1,
               "status": "success",
               "requested_count": 20,
-              "returned_count": 20,
+              "returned_count": 23,
               "accepted_count": 20
             }
           ]
@@ -273,7 +342,7 @@
               "attempt": 1,
               "status": "success",
               "requested_count": 20,
-              "returned_count": 26,
+              "returned_count": 22,
               "accepted_count": 20
             }
           ]
@@ -288,7 +357,7 @@
               "attempt": 1,
               "status": "success",
               "requested_count": 20,
-              "returned_count": 21,
+              "returned_count": 24,
               "accepted_count": 20
             }
           ]
@@ -296,15 +365,15 @@
         {
           "batch_index": 4,
           "requested_count": 20,
-          "generated_count": 19,
-          "remaining_after_batch": 71,
+          "generated_count": 20,
+          "remaining_after_batch": 70,
           "attempts": [
             {
               "attempt": 1,
               "status": "success",
               "requested_count": 20,
-              "returned_count": 19,
-              "accepted_count": 19
+              "returned_count": 20,
+              "accepted_count": 20
             }
           ]
         },
@@ -312,7 +381,7 @@
           "batch_index": 5,
           "requested_count": 20,
           "generated_count": 20,
-          "remaining_after_batch": 51,
+          "remaining_after_batch": 50,
           "attempts": [
             {
               "attempt": 1,
@@ -327,13 +396,13 @@
           "batch_index": 6,
           "requested_count": 20,
           "generated_count": 20,
-          "remaining_after_batch": 31,
+          "remaining_after_batch": 30,
           "attempts": [
             {
               "attempt": 1,
               "status": "success",
               "requested_count": 20,
-              "returned_count": 25,
+              "returned_count": 22,
               "accepted_count": 20
             }
           ]
@@ -342,44 +411,29 @@
           "batch_index": 7,
           "requested_count": 20,
           "generated_count": 20,
-          "remaining_after_batch": 11,
+          "remaining_after_batch": 10,
           "attempts": [
             {
               "attempt": 1,
               "status": "success",
               "requested_count": 20,
-              "returned_count": 20,
+              "returned_count": 21,
               "accepted_count": 20
             }
           ]
         },
         {
           "batch_index": 8,
-          "requested_count": 11,
+          "requested_count": 10,
           "generated_count": 10,
-          "remaining_after_batch": 1,
-          "attempts": [
-            {
-              "attempt": 1,
-              "status": "success",
-              "requested_count": 11,
-              "returned_count": 10,
-              "accepted_count": 10
-            }
-          ]
-        },
-        {
-          "batch_index": 9,
-          "requested_count": 1,
-          "generated_count": 1,
           "remaining_after_batch": 0,
           "attempts": [
             {
               "attempt": 1,
               "status": "success",
-              "requested_count": 1,
-              "returned_count": 1,
-              "accepted_count": 1
+              "requested_count": 10,
+              "returned_count": 10,
+              "accepted_count": 10
             }
           ]
         }
@@ -403,7 +457,7 @@
               "attempt": 1,
               "status": "success",
               "requested_count": 20,
-              "returned_count": 21,
+              "returned_count": 22,
               "accepted_count": 20
             }
           ]
@@ -418,7 +472,7 @@
               "attempt": 1,
               "status": "success",
               "requested_count": 20,
-              "returned_count": 25,
+              "returned_count": 20,
               "accepted_count": 20
             }
           ]
@@ -433,7 +487,7 @@
               "attempt": 1,
               "status": "success",
               "requested_count": 20,
-              "returned_count": 21,
+              "returned_count": 23,
               "accepted_count": 20
             }
           ]
@@ -448,7 +502,7 @@
               "attempt": 1,
               "status": "success",
               "requested_count": 20,
-              "returned_count": 23,
+              "returned_count": 21,
               "accepted_count": 20
             }
           ]
@@ -463,7 +517,7 @@
               "attempt": 1,
               "status": "success",
               "requested_count": 20,
-              "returned_count": 25,
+              "returned_count": 20,
               "accepted_count": 20
             }
           ]
@@ -478,7 +532,7 @@
               "attempt": 1,
               "status": "success",
               "requested_count": 20,
-              "returned_count": 25,
+              "returned_count": 23,
               "accepted_count": 20
             }
           ]
@@ -493,7 +547,7 @@
               "attempt": 1,
               "status": "success",
               "requested_count": 20,
-              "returned_count": 21,
+              "returned_count": 23,
               "accepted_count": 20
             }
           ]
@@ -508,7 +562,7 @@
               "attempt": 1,
               "status": "success",
               "requested_count": 20,
-              "returned_count": 23,
+              "returned_count": 22,
               "accepted_count": 20
             }
           ]
@@ -546,15 +600,9 @@
           "attempts": [
             {
               "attempt": 1,
-              "status": "failed",
-              "requested_count": 20,
-              "error": "Extra data: line 7 column 4 (char 3196)"
-            },
-            {
-              "attempt": 2,
               "status": "success",
               "requested_count": 20,
-              "returned_count": 22,
+              "returned_count": 21,
               "accepted_count": 20
             }
           ]
@@ -584,7 +632,7 @@
               "attempt": 1,
               "status": "success",
               "requested_count": 20,
-              "returned_count": 26,
+              "returned_count": 22,
               "accepted_count": 20
             }
           ]
@@ -599,7 +647,7 @@
               "attempt": 1,
               "status": "success",
               "requested_count": 20,
-              "returned_count": 25,
+              "returned_count": 21,
               "accepted_count": 20
             }
           ]
@@ -612,21 +660,9 @@
           "attempts": [
             {
               "attempt": 1,
-              "status": "failed",
-              "requested_count": 20,
-              "error": "Extra data: line 7 column 4 (char 3036)"
-            },
-            {
-              "attempt": 2,
-              "status": "failed",
-              "requested_count": 20,
-              "error": "Extra data: line 7 column 4 (char 3145)"
-            },
-            {
-              "attempt": 3,
               "status": "success",
               "requested_count": 20,
-              "returned_count": 25,
+              "returned_count": 24,
               "accepted_count": 20
             }
           ]
@@ -641,7 +677,7 @@
               "attempt": 1,
               "status": "success",
               "requested_count": 20,
-              "returned_count": 26,
+              "returned_count": 22,
               "accepted_count": 20
             }
           ]
@@ -656,7 +692,7 @@
               "attempt": 1,
               "status": "success",
               "requested_count": 19,
-              "returned_count": 19,
+              "returned_count": 21,
               "accepted_count": 19
             }
           ]
@@ -681,7 +717,7 @@
               "attempt": 1,
               "status": "success",
               "requested_count": 20,
-              "returned_count": 20,
+              "returned_count": 25,
               "accepted_count": 20
             }
           ]
@@ -711,7 +747,7 @@
               "attempt": 1,
               "status": "success",
               "requested_count": 20,
-              "returned_count": 22,
+              "returned_count": 25,
               "accepted_count": 20
             }
           ]
@@ -726,7 +762,7 @@
               "attempt": 1,
               "status": "success",
               "requested_count": 20,
-              "returned_count": 21,
+              "returned_count": 24,
               "accepted_count": 20
             }
           ]
@@ -741,7 +777,7 @@
               "attempt": 1,
               "status": "success",
               "requested_count": 20,
-              "returned_count": 26,
+              "returned_count": 23,
               "accepted_count": 20
             }
           ]
@@ -756,7 +792,7 @@
               "attempt": 1,
               "status": "success",
               "requested_count": 20,
-              "returned_count": 20,
+              "returned_count": 26,
               "accepted_count": 20
             }
           ]
@@ -771,7 +807,7 @@
               "attempt": 1,
               "status": "success",
               "requested_count": 20,
-              "returned_count": 23,
+              "returned_count": 26,
               "accepted_count": 20
             }
           ]
@@ -786,7 +822,7 @@
               "attempt": 1,
               "status": "success",
               "requested_count": 20,
-              "returned_count": 20,
+              "returned_count": 25,
               "accepted_count": 20
             }
           ]
@@ -826,7 +862,7 @@
               "attempt": 1,
               "status": "success",
               "requested_count": 20,
-              "returned_count": 20,
+              "returned_count": 24,
               "accepted_count": 20
             }
           ]
@@ -841,7 +877,7 @@
               "attempt": 1,
               "status": "success",
               "requested_count": 20,
-              "returned_count": 20,
+              "returned_count": 23,
               "accepted_count": 20
             }
           ]
@@ -856,7 +892,7 @@
               "attempt": 1,
               "status": "success",
               "requested_count": 20,
-              "returned_count": 27,
+              "returned_count": 23,
               "accepted_count": 20
             }
           ]
@@ -871,7 +907,7 @@
               "attempt": 1,
               "status": "success",
               "requested_count": 20,
-              "returned_count": 20,
+              "returned_count": 22,
               "accepted_count": 20
             }
           ]
@@ -886,7 +922,7 @@
               "attempt": 1,
               "status": "success",
               "requested_count": 20,
-              "returned_count": 20,
+              "returned_count": 23,
               "accepted_count": 20
             }
           ]
@@ -901,7 +937,7 @@
               "attempt": 1,
               "status": "success",
               "requested_count": 20,
-              "returned_count": 20,
+              "returned_count": 24,
               "accepted_count": 20
             }
           ]
@@ -916,7 +952,7 @@
               "attempt": 1,
               "status": "success",
               "requested_count": 20,
-              "returned_count": 20,
+              "returned_count": 25,
               "accepted_count": 20
             }
           ]
@@ -931,7 +967,7 @@
               "attempt": 1,
               "status": "success",
               "requested_count": 20,
-              "returned_count": 20,
+              "returned_count": 24,
               "accepted_count": 20
             }
           ]
@@ -971,7 +1007,7 @@
               "attempt": 1,
               "status": "success",
               "requested_count": 20,
-              "returned_count": 25,
+              "returned_count": 21,
               "accepted_count": 20
             }
           ]
@@ -986,7 +1022,7 @@
               "attempt": 1,
               "status": "success",
               "requested_count": 20,
-              "returned_count": 20,
+              "returned_count": 23,
               "accepted_count": 20
             }
           ]
@@ -1016,7 +1052,7 @@
               "attempt": 1,
               "status": "success",
               "requested_count": 20,
-              "returned_count": 20,
+              "returned_count": 24,
               "accepted_count": 20
             }
           ]
@@ -1031,7 +1067,7 @@
               "attempt": 1,
               "status": "success",
               "requested_count": 20,
-              "returned_count": 20,
+              "returned_count": 22,
               "accepted_count": 20
             }
           ]
@@ -1046,7 +1082,7 @@
               "attempt": 1,
               "status": "success",
               "requested_count": 20,
-              "returned_count": 20,
+              "returned_count": 23,
               "accepted_count": 20
             }
           ]
@@ -1061,7 +1097,7 @@
               "attempt": 1,
               "status": "success",
               "requested_count": 20,
-              "returned_count": 20,
+              "returned_count": 23,
               "accepted_count": 20
             }
           ]
@@ -1076,7 +1112,7 @@
               "attempt": 1,
               "status": "success",
               "requested_count": 20,
-              "returned_count": 20,
+              "returned_count": 21,
               "accepted_count": 20
             }
           ]
@@ -1091,7 +1127,7 @@
               "attempt": 1,
               "status": "success",
               "requested_count": 13,
-              "returned_count": 13,
+              "returned_count": 15,
               "accepted_count": 13
             }
           ]
@@ -1099,5 +1135,5 @@
       ]
     }
   ],
-  "generated_total": 1205
+  "generated_total": 1315
 }

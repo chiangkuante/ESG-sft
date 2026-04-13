@@ -34,7 +34,7 @@ step4_cv:
       - Corporate Governance
     output_filename: synthetic_data.json
     provider: openai
-    model: gpt-5.4-nano-2026-03-17
+    model: gpt-5.4-mini-2026-03-17
     api_key_env: OPENAI_API_KEY
     max_samples_per_call: 20
     max_retries: 5
@@ -55,7 +55,7 @@ step5_reasoning:
     enabled: true
     run_reasoning_generation: true
     provider: openai
-    model: gpt-5.4-nano-2026-03-17
+    model: gpt-5.4-mini-2026-03-17
     api_key_env: OPENAI_API_KEY
     batch_size: 10
     max_retries: 3
