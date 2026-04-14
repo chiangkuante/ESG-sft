@@ -7,6 +7,7 @@ import logging
 import os
 import multiprocessing as mp
 import re
+import shutil
 import statistics
 import sys
 from pathlib import Path
@@ -109,6 +110,8 @@ def apply_model_overrides(finetune_cfg: dict, model_type: str) -> dict:
         merged["runtime"] = {**finetune_cfg.get("runtime", {}), **model_override["runtime"]}
     if "inference" in model_override and isinstance(model_override["inference"], dict):
         merged["inference"] = {**finetune_cfg.get("inference", {}), **model_override["inference"]}
+    if "checkpointing" in model_override and isinstance(model_override["checkpointing"], dict):
+        merged["checkpointing"] = {**finetune_cfg.get("checkpointing", {}), **model_override["checkpointing"]}
     return merged
 
 
@@ -349,6 +352,95 @@ def get_inference_cfg(finetune_cfg: dict) -> dict:
     }
 
 
+def parse_config_bool(raw, default: bool, field_name: str) -> bool:
+    if raw is None:
+        return default
+    if isinstance(raw, bool):
+        return raw
+    value = str(raw).strip().lower()
+    if value in {"true", "1", "yes", "y", "on"}:
+        return True
+    if value in {"false", "0", "no", "n", "off"}:
+        return False
+    raise ValueError(f"Unsupported boolean value for {field_name}: {raw}")
+
+
+def parse_optional_positive_int(raw, field_name: str) -> int | None:
+    if raw is None:
+        return None
+    value = int(raw)
+    if value < 1:
+        raise ValueError(f"{field_name} must be a positive integer when set")
+    return value
+
+
+def get_checkpointing_cfg(finetune_cfg: dict) -> dict:
+    raw = finetune_cfg.get("checkpointing", {})
+    if not isinstance(raw, dict):
+        raw = {}
+
+    raw_strategy = str(raw.get("save_strategy", "auto")).strip().lower() or "auto"
+    if raw_strategy in {"none", "off", "false", "final"}:
+        raw_strategy = "no"
+    if raw_strategy not in {"auto", "no", "epoch", "steps"}:
+        raise ValueError(f"Unsupported finetune.checkpointing.save_strategy: {raw.get('save_strategy')}")
+
+    inference_strategy = str(
+        finetune_cfg.get("inference", {}).get("checkpoint_strategy", "final")
+    ).strip().lower() or "final"
+    xyz_plot_cfg = get_xyz_plot_cfg(finetune_cfg)
+    xyz_plot_enabled = bool(xyz_plot_cfg.get("enabled"))
+
+    if raw_strategy == "auto":
+        needs_epoch_checkpoints = xyz_plot_enabled or inference_strategy in {"latest", "epoch", "best_epoch"}
+        save_strategy = "epoch" if needs_epoch_checkpoints else "no"
+    else:
+        save_strategy = raw_strategy
+
+    save_total_limit = parse_optional_positive_int(raw.get("save_total_limit"), "finetune.checkpointing.save_total_limit")
+    if save_total_limit is None and raw_strategy == "auto" and save_strategy == "epoch" and inference_strategy == "latest":
+        save_total_limit = 1
+    save_steps = parse_optional_positive_int(raw.get("save_steps"), "finetune.checkpointing.save_steps")
+    if save_strategy == "steps" and save_steps is None:
+        raise ValueError("finetune.checkpointing.save_steps must be set when save_strategy=steps")
+
+    return {
+        "save_strategy": save_strategy,
+        "save_total_limit": save_total_limit,
+        "save_steps": save_steps,
+        "save_final_checkpoint_copy": parse_config_bool(
+            raw.get("save_final_checkpoint_copy"),
+            False,
+            "finetune.checkpointing.save_final_checkpoint_copy",
+        ),
+        "minimum_free_space_gb": float(raw.get("minimum_free_space_gb", 2.0)),
+    }
+
+
+def build_checkpoint_args(checkpointing_cfg: dict) -> dict:
+    args = {"save_strategy": checkpointing_cfg["save_strategy"]}
+    if checkpointing_cfg["save_total_limit"] is not None:
+        args["save_total_limit"] = int(checkpointing_cfg["save_total_limit"])
+    if checkpointing_cfg["save_strategy"] == "steps":
+        args["save_steps"] = int(checkpointing_cfg["save_steps"])
+    return args
+
+
+def assert_minimum_free_space(path: Path, minimum_free_space_gb: float) -> None:
+    if minimum_free_space_gb <= 0:
+        return
+    path.mkdir(parents=True, exist_ok=True)
+    free_bytes = shutil.disk_usage(path).free
+    required_bytes = int(minimum_free_space_gb * 1024**3)
+    if free_bytes < required_bytes:
+        free_gb = free_bytes / 1024**3
+        raise RuntimeError(
+            f"Insufficient free disk space for training output `{path}`: "
+            f"{free_gb:.2f} GB available, {minimum_free_space_gb:.2f} GB required. "
+            "Free old checkpoints or lower finetune.checkpointing.minimum_free_space_gb in config.yaml."
+        )
+
+
 def resolve_inference_run_suffix(inference_cfg: dict) -> str:
     strategy = str(inference_cfg.get("checkpoint_strategy", "final")).strip().lower() or "final"
     if strategy in {"final", "last"}:
@@ -367,6 +459,7 @@ def resolve_inference_run_suffix(inference_cfg: dict) -> str:
 
 
 def log_effective_runtime_config(model_type: str, train_cfg: dict, finetune_cfg: dict, inference_cfg: dict) -> None:
+    checkpointing_cfg = get_checkpointing_cfg(finetune_cfg)
     message = (
         f"Effective config for {model_type}: "
         f"batch={train_cfg.get('per_device_train_batch_size')} "
@@ -379,7 +472,10 @@ def log_effective_runtime_config(model_type: str, train_cfg: dict, finetune_cfg:
         f"checkpoint_strategy={inference_cfg.get('checkpoint_strategy')} "
         f"checkpoint_epoch={inference_cfg.get('checkpoint_epoch')} "
         f"best_epoch_metric={inference_cfg.get('best_epoch_metric')} "
-        f"inference_vram_fraction={inference_cfg.get('vram_fraction')}"
+        f"inference_vram_fraction={inference_cfg.get('vram_fraction')} "
+        f"trainer_save_strategy={checkpointing_cfg.get('save_strategy')} "
+        f"trainer_save_total_limit={checkpointing_cfg.get('save_total_limit')} "
+        f"save_final_checkpoint_copy={checkpointing_cfg.get('save_final_checkpoint_copy')}"
     )
     logger.info(message)
     print(message, flush=True)
@@ -428,19 +524,25 @@ def resolve_inference_checkpoint_dir(
     models_root: Path,
     fold_idx: int,
     inference_cfg: dict,
+    checkpointing_cfg: dict | None = None,
 ) -> tuple[Path, dict]:
     strategy = str(inference_cfg.get("checkpoint_strategy", "final")).strip().lower() or "final"
     adapter_dir = models_root / f"fold_{fold_idx}" / "adapter"
     final_checkpoint_dir = models_root / f"fold_{fold_idx}" / "checkpoints" / "checkpoint-final"
     checkpoints_root = models_root / f"fold_{fold_idx}" / "checkpoints"
+    prefer_final_checkpoint_copy = True
+    if checkpointing_cfg is not None:
+        prefer_final_checkpoint_copy = bool(checkpointing_cfg.get("save_final_checkpoint_copy", True))
     checkpoint_info = {
         "checkpoint_strategy": strategy,
         "checkpoint_epoch": None,
-        "checkpoint_dir": str(final_checkpoint_dir if final_checkpoint_dir.exists() else adapter_dir),
+        "checkpoint_dir": str(
+            final_checkpoint_dir if prefer_final_checkpoint_copy and final_checkpoint_dir.exists() else adapter_dir
+        ),
     }
 
     if strategy in {"final", "last"}:
-        if final_checkpoint_dir.exists():
+        if prefer_final_checkpoint_copy and final_checkpoint_dir.exists():
             checkpoint_info["checkpoint_dir"] = str(final_checkpoint_dir)
             return final_checkpoint_dir, checkpoint_info
         return adapter_dir, checkpoint_info
@@ -529,10 +631,14 @@ def save_final_checkpoint_snapshot(
     adapter_dir: Path,
     fold_idx: int,
     model_type: str,
+    save_checkpoint_copy: bool = True,
 ) -> Path:
     adapter_dir.mkdir(parents=True, exist_ok=True)
     model.save_pretrained(str(adapter_dir))
     tokenizer.save_pretrained(str(adapter_dir))
+
+    if not save_checkpoint_copy:
+        return adapter_dir
 
     final_checkpoint_dir = adapter_dir.parent / "checkpoints" / "checkpoint-final"
     final_checkpoint_dir.mkdir(parents=True, exist_ok=True)
@@ -945,6 +1051,18 @@ def train_single_fold(
         logger.info("Dry run enabled for fold %s: using %s train samples", fold_idx, len(dataset_sft))
 
     use_gc = resolve_gradient_checkpointing(finetune_cfg)
+    checkpointing_cfg = get_checkpointing_cfg(finetune_cfg)
+    checkpoints_dir = adapter_dir.parent / "checkpoints"
+    assert_minimum_free_space(adapter_dir.parent, checkpointing_cfg["minimum_free_space_gb"])
+    checkpoint_args = build_checkpoint_args(checkpointing_cfg)
+    logger.info(
+        "Trainer checkpointing for %s fold %s: save_strategy=%s save_total_limit=%s final_copy=%s",
+        model_type,
+        fold_idx,
+        checkpointing_cfg["save_strategy"],
+        checkpointing_cfg["save_total_limit"],
+        checkpointing_cfg["save_final_checkpoint_copy"],
+    )
     model, tokenizer, formatting_func, response_cfg, api_class = setup_model(model_type, train_cfg, finetune_cfg)
     per_device_train_batch_size = resolve_train_batch_size(model_type, train_cfg)
 
@@ -985,9 +1103,8 @@ def train_single_fold(
                 lr_scheduler_type=str(train_cfg["lr_scheduler_type"]),
                 seed=int(train_cfg["random_state"]),
                 max_steps=int(dry_run_cfg["max_steps"]) if dry_run_enabled else -1,
-                output_dir=str(adapter_dir.parent / "checkpoints"),
-                save_strategy="epoch",
-                save_total_limit=20,
+                output_dir=str(checkpoints_dir),
+                **checkpoint_args,
                 report_to="none",
                 gradient_checkpointing=bool(use_gc),
                 fp16=fp16,
@@ -1027,9 +1144,8 @@ def train_single_fold(
                 lr_scheduler_type=str(train_cfg["lr_scheduler_type"]),
                 seed=int(train_cfg["random_state"]),
                 max_steps=int(dry_run_cfg["max_steps"]) if dry_run_enabled else -1,
-                output_dir=str(adapter_dir.parent / "checkpoints"),
-                save_strategy="epoch",
-                save_total_limit=20,
+                output_dir=str(checkpoints_dir),
+                **checkpoint_args,
                 report_to="none",
                 remove_unused_columns=False,
                 dataset_text_field="",
@@ -1050,9 +1166,10 @@ def train_single_fold(
         adapter_dir=adapter_dir,
         fold_idx=fold_idx,
         model_type=model_type,
+        save_checkpoint_copy=checkpointing_cfg["save_final_checkpoint_copy"],
     )
     logger.info(
-        "Saved inference-ready weights for %s fold %s: adapter=%s final_checkpoint=%s",
+        "Saved inference-ready weights for %s fold %s: adapter=%s selected_final=%s",
         model_type,
         fold_idx,
         adapter_dir,
@@ -1269,6 +1386,13 @@ def is_fold_complete(results_root: Path, models_root: Path, fold_idx: int, resum
     return fold_mtime >= resume_anchor_mtime
 
 
+def is_adapter_complete(models_root: Path, fold_idx: int) -> bool:
+    adapter_dir = models_root / f"fold_{fold_idx}" / "adapter"
+    adapter_config = adapter_dir / "adapter_config.json"
+    adapter_weights = adapter_dir / "adapter_model.safetensors"
+    return adapter_config.exists() and adapter_weights.exists() and adapter_weights.stat().st_size > 0
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="Formal Step 5 CV fine-tuning and inference")
     parser.add_argument("--model", required=True, choices=["gemma", "llama", "qwen", "ministral"])
@@ -1366,13 +1490,17 @@ def main() -> None:
     for fold_entry in fold_entries:
         fold_idx = fold_entry["fold"]
         adapter_dir = models_root / f"fold_{fold_idx}" / "adapter"
-        if resume_enabled and is_fold_complete(results_root, models_root, fold_idx, resume_anchor_mtime):
-            fold_metrics = load_json(results_root / f"fold_{fold_idx}_metrics.json")
-            if "fold" not in fold_metrics:
-                fold_metrics["fold"] = fold_idx
-            fold_summaries.append(fold_metrics)
-            logger.info("Skipping completed fold %s (resume=true)", fold_idx)
-            continue
+        if resume_enabled:
+            if is_fold_complete(results_root, models_root, fold_idx, resume_anchor_mtime):
+                fold_metrics = load_json(results_root / f"fold_{fold_idx}_metrics.json")
+                if "fold" not in fold_metrics:
+                    fold_metrics["fold"] = fold_idx
+                fold_summaries.append(fold_metrics)
+                logger.info("Skipping completed fold %s (resume=true)", fold_idx)
+                continue
+            if is_adapter_complete(models_root, fold_idx):
+                logger.info("Skipping trained fold %s because adapter already exists (resume=true)", fold_idx)
+                continue
 
         train_process = mp.Process(
             target=training_worker,
