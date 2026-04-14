@@ -1,0 +1,201 @@
+step4_cv:
+  annotator: p2                     # p1 | p2
+  annotators:
+    p1:
+      csv: data/origin_data/10k_1A/project-16-at-2026-03-31-11-52-a8826fd3.csv
+    p2:
+      csv: data/origin_data/10k_1A/chiang_500.csv
+
+
+# 實驗1: (blance)balance_500 只加入 train : 1、0
+# 實驗2: ()balance_500 不加入: 0、0
+# 實驗3: (combined)balance_500 合併後再 split : 1、1
+  balance:
+    enabled: false                   # 是否使用 blance_500 平衡資料集 true=實驗1、實驗3; false=實驗2
+    include_in_cv: false            # false=僅加入 train (實驗1); true=合併後再 split (實驗3)
+    csv: data/origin_data/10k_1A/blance_500.csv
+
+  paths:
+    classified_json: data/processed/step2_classification/classified.json
+    output_dir: data/processed/step4_cv
+    folds_path: data/processed/step4_cv/cv_folds.json
+
+  folds:
+    n_splits: 3
+    shuffle: true
+    random_state: 42
+
+  thresholds:
+    target_accuracy: 0.95
+    min_samples_global: 30
+    min_samples_per_class: 8
+
+  pseudo_labels:
+    enabled: false
+    total_target: 2500
+    allocation_alpha: 0.5
+    caps:
+      Non-ESG: 1000
+
+  balancing:
+    alpha: 0.5
+    total_budget: 4000
+
+  synthetic_generation:
+    enabled: false
+    seed_examples_per_class: 3
+    boundary_focus_labels:
+      - Product Liability
+      - Climate Change
+      - Corporate Governance
+    output_filename: synthetic_data.json
+    provider: openai
+    model: gpt-5.4-mini-2026-03-17
+    api_key_env: OPENAI_API_KEY
+    max_samples_per_call: 20
+    max_retries: 5
+    reasoning_effort: low
+    sleep_seconds: 0.05
+    retry_backoff_seconds: 0.5
+    refresh_after_generation: true
+    report_filename: synthetic_generation_report.json
+    max_output_tokens: 16000
+
+step5_reasoning:
+  paths:
+    step4_output_dir: data/processed/step4_cv
+    output_dir: data/processed/step5_reasoning
+    sft_output_dir: data/processed/step5_sft
+
+  generation:
+    enabled: true
+    run_reasoning_generation: true
+    provider: openai
+    model: gpt-5.4-mini-2026-03-17
+    api_key_env: OPENAI_API_KEY
+    batch_size: 10
+    max_retries: 3
+    max_output_tokens: 12000
+    reasoning_effort: low
+    sleep_seconds: 0.05
+    retry_backoff_seconds: 0.5
+    min_reasoning_chars: 80
+    max_reasoning_chars: 2000
+
+  sft:
+    run_sft_build: false
+    shuffle_seed: 3407
+
+step5_cv:
+  finbert:
+    step4_output_dir: data/processed/step4_cv
+    results_dir: results/step5_cv/finbert
+
+  api_llm:
+    enabled: true
+    step4_output_dir: data/processed/step4_cv
+    results_root: results/step5_cv
+    label_only: true
+    max_output_tokens: 64
+    max_retries: 3
+    retry_backoff_seconds: 1.0
+    models:
+      gemini_3_flash_preview:
+        enabled: true
+        provider: gemini
+        model: gemini-3-flash-preview
+        api_key_env: GEMINI_API_KEY
+        max_output_tokens: 256
+        thinking_level: minimal
+        rate_limits:
+          rpm: 1000
+          tpm: 2000000
+          rpd: 10000
+      gpt_5_4_mini_2026_03_17:
+        enabled: true
+        provider: openai
+        model: gpt-5.4-mini-2026-03-17
+        api_key_env: OPENAI_API_KEY
+        rate_limits:
+          rpm: 10000
+          tpm: 10000000
+          tpd: 1000000000
+      claude_sonnet_4_6:
+        enabled: true
+        provider: anthropic
+        model: claude-sonnet-4-6
+        api_key_env: ANTHROPIC_API_KEY
+        rate_limits:
+          rpm: 1000
+          input_tpm: 450000
+          output_tpm: 90000
+
+  finetune:
+    sft_output_dir: data/processed/step5_sft
+    results_root: results/step5_cv
+    models_root: models/step5_cv
+    model_registry:
+      gemma: unsloth/gemma-4-E4B-it
+      llama: unsloth/Llama-3.2-3B-Instruct
+      qwen: unsloth/Qwen3.5-4B
+      ministral: unsloth/Ministral-3-3B-Instruct-2512
+
+    model_overrides: {}
+
+    training:
+      lora_r: 32
+      lora_alpha: 32
+      lora_dropout: 0
+      per_device_train_batch_size: 2
+      gradient_accumulation_steps: 4
+      warmup_steps: 5
+      num_train_epochs: 15
+      learning_rate: 2e-4
+      optim: adamw_8bit
+      weight_decay: 0.01
+      lr_scheduler_type: linear
+      random_state: 3407
+      max_seq_length: 2048
+
+    runtime:
+      dtype: auto
+      use_gradient_checkpointing: auto
+      vision_attn_implementation: auto
+
+    ablation:
+      # human_only: false
+      # label_only: false
+      # synthetic_only: false
+      # variant_name: default
+      # human_only: true
+      # label_only: true
+      synthetic_only: true
+      # variant_name: label_only_human_only
+      # variant_name: label_only
+      # variant_name: human_only
+      variant_name: synthetic_only
+      non_esg_cap: 150
+
+    xyz_plot:
+      enabled: false
+      epochs: [17, 20, 25]
+
+    inference:
+      checkpoint_strategy: final
+      checkpoint_epoch: null
+      best_epoch_metric: macro_f1
+      vram_fraction: null
+      max_new_tokens: 512
+      max_new_tokens_label_only: 16
+
+    dry_run:
+      enabled: false
+      fold: 0
+      train_samples: 8
+      val_samples: 4
+      max_steps: 1
+      results_subdir: dry_run
+
+
+  evaluation:
+    results_root: results/step5_cv

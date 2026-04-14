@@ -12,6 +12,9 @@ wheels/
 # Environment variables (API keys)
 .env
 
+# config
+config/config.yaml
+
 # Unsloth caches and training checkpoints
 unsloth_compiled_cache/
 unsloth_training_checkpoints/
