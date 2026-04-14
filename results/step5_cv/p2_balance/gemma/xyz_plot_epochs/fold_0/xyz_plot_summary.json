@@ -1,0 +1,43 @@
+{
+  "mode": "default",
+  "fold": 0,
+  "epochs_tested": [
+    15
+  ],
+  "runs": [
+    {
+      "samples": 168,
+      "accuracy": 0.8155,
+      "macro_f1": 0.5664,
+      "weighted_f1": 0.8264,
+      "kappa": 0.7139,
+      "epoch_value": 15
+    }
+  ],
+  "summary": {
+    "accuracy_mean": 0.8155,
+    "accuracy_std": 0.0,
+    "accuracy_best_epoch": 15,
+    "accuracy_best_value": 0.8155,
+    "macro_f1_mean": 0.5664,
+    "macro_f1_std": 0.0,
+    "macro_f1_best_epoch": 15,
+    "macro_f1_best_value": 0.5664,
+    "weighted_f1_mean": 0.8264,
+    "weighted_f1_std": 0.0,
+    "weighted_f1_best_epoch": 15,
+    "weighted_f1_best_value": 0.8264,
+    "kappa_mean": 0.7139,
+    "kappa_std": 0.0,
+    "kappa_best_epoch": 15,
+    "kappa_best_value": 0.7139
+  },
+  "sweet_spot_macro_f1": {
+    "samples": 168,
+    "accuracy": 0.8155,
+    "macro_f1": 0.5664,
+    "weighted_f1": 0.8264,
+    "kappa": 0.7139,
+    "epoch_value": 15
+  }
+}

@@ -1,0 +1,2 @@
+epoch_value,samples,accuracy,macro_f1,weighted_f1,kappa
+15,168,0.8155,0.5664,0.8264,0.7139
