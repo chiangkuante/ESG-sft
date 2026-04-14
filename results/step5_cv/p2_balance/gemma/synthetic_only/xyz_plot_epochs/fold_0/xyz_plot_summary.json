@@ -2,60 +2,60 @@
   "mode": "synthetic_only",
   "fold": 0,
   "epochs_tested": [
-    7,
-    10,
-    15
+    17,
+    20,
+    25
   ],
   "runs": [
     {
       "samples": 168,
-      "accuracy": 0.7679,
-      "macro_f1": 0.5255,
-      "weighted_f1": 0.7793,
-      "kappa": 0.6551,
-      "epoch_value": 7
+      "accuracy": 0.7262,
+      "macro_f1": 0.4737,
+      "weighted_f1": 0.7419,
+      "kappa": 0.5975,
+      "epoch_value": 17
     },
     {
       "samples": 168,
-      "accuracy": 0.7738,
-      "macro_f1": 0.5391,
-      "weighted_f1": 0.7866,
-      "kappa": 0.6587,
-      "epoch_value": 10
+      "accuracy": 0.7381,
+      "macro_f1": 0.5164,
+      "weighted_f1": 0.7527,
+      "kappa": 0.6191,
+      "epoch_value": 20
     },
     {
       "samples": 168,
-      "accuracy": 0.7917,
-      "macro_f1": 0.5577,
-      "weighted_f1": 0.811,
-      "kappa": 0.6857,
-      "epoch_value": 15
+      "accuracy": 0.756,
+      "macro_f1": 0.5062,
+      "weighted_f1": 0.768,
+      "kappa": 0.6411,
+      "epoch_value": 25
     }
   ],
   "summary": {
-    "accuracy_mean": 0.7778,
-    "accuracy_std": 0.0101,
-    "accuracy_best_epoch": 15,
-    "accuracy_best_value": 0.7917,
-    "macro_f1_mean": 0.5408,
-    "macro_f1_std": 0.0132,
-    "macro_f1_best_epoch": 15,
-    "macro_f1_best_value": 0.5577,
-    "weighted_f1_mean": 0.7923,
-    "weighted_f1_std": 0.0136,
-    "weighted_f1_best_epoch": 15,
-    "weighted_f1_best_value": 0.811,
-    "kappa_mean": 0.6665,
-    "kappa_std": 0.0137,
-    "kappa_best_epoch": 15,
-    "kappa_best_value": 0.6857
+    "accuracy_mean": 0.7401,
+    "accuracy_std": 0.0122,
+    "accuracy_best_epoch": 25,
+    "accuracy_best_value": 0.756,
+    "macro_f1_mean": 0.4988,
+    "macro_f1_std": 0.0182,
+    "macro_f1_best_epoch": 20,
+    "macro_f1_best_value": 0.5164,
+    "weighted_f1_mean": 0.7542,
+    "weighted_f1_std": 0.0107,
+    "weighted_f1_best_epoch": 25,
+    "weighted_f1_best_value": 0.768,
+    "kappa_mean": 0.6192,
+    "kappa_std": 0.0178,
+    "kappa_best_epoch": 25,
+    "kappa_best_value": 0.6411
   },
   "sweet_spot_macro_f1": {
     "samples": 168,
-    "accuracy": 0.7917,
-    "macro_f1": 0.5577,
-    "weighted_f1": 0.811,
-    "kappa": 0.6857,
-    "epoch_value": 15
+    "accuracy": 0.7381,
+    "macro_f1": 0.5164,
+    "weighted_f1": 0.7527,
+    "kappa": 0.6191,
+    "epoch_value": 20
   }
 }

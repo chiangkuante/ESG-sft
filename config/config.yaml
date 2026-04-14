@@ -6,8 +6,12 @@ step4_cv:
     p2:
       csv: data/origin_data/10k_1A/chiang_500.csv
 
+
+# 實驗1: balance_500 只加入 train : 1、0
+# 實驗2: balance_500 不加入: 0、0
+# 實驗3: balance_500 合併後再 split : 1、1
   balance:
-    enabled: true                   # 是否使用 blance_500 平衡資料集
+    enabled: false                   # 是否使用 blance_500 平衡資料集 true=實驗1、實驗3; false=實驗2
     include_in_cv: false            # false=僅加入 train (實驗1); true=合併後再 split (實驗3)
     csv: data/origin_data/10k_1A/blance_500.csv
 
@@ -173,7 +177,7 @@ step5_cv:
       non_esg_cap: 150
 
     xyz_plot:
-      enabled: true
+      enabled: false
       epochs: [17, 20, 25]
 
     inference:
