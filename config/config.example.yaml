@@ -134,6 +134,7 @@ step5_cv:
     sft_output_dir: data/processed/step5_sft
     results_root: results/step5_cv
     models_root: models/step5_cv
+    resume: true
     model_registry:
       gemma: unsloth/gemma-4-E4B-it
       llama: unsloth/Llama-3.2-3B-Instruct
@@ -162,18 +163,25 @@ step5_cv:
       use_gradient_checkpointing: auto
       vision_attn_implementation: auto
 
+    checkpointing:
+      save_strategy: auto
+      save_total_limit: null
+      save_steps: null
+      save_final_checkpoint_copy: false
+      minimum_free_space_gb: 2
+
     ablation:
-      # human_only: false
-      # label_only: false
-      # synthetic_only: false
-      # variant_name: default
+      human_only: false
+      label_only: false
+      synthetic_only: false
+      variant_name: default
       # human_only: true
       # label_only: true
-      synthetic_only: true
+      #synthetic_only: true
       # variant_name: label_only_human_only
       # variant_name: label_only
       # variant_name: human_only
-      variant_name: synthetic_only
+      # variant_name: synthetic_only
       non_esg_cap: 150
 
     xyz_plot:

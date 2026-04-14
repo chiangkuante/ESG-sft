@@ -1,0 +1,55 @@
+{
+  "train_pool_size": 332,
+  "source_counts": {
+    "human": 332
+  },
+  "label_counts": {
+    "Climate Change": 12,
+    "Natural Capital": 1,
+    "Pollution & Waste": 4,
+    "Human Capital": 21,
+    "Product Liability": 43,
+    "Community Relations": 0,
+    "Corporate Governance": 24,
+    "Business Ethics & Values": 17,
+    "Non-ESG": 210
+  },
+  "by_source_and_label": {
+    "human": {
+      "Climate Change": 12,
+      "Natural Capital": 1,
+      "Pollution & Waste": 4,
+      "Human Capital": 21,
+      "Product Liability": 43,
+      "Community Relations": 0,
+      "Corporate Governance": 24,
+      "Business Ethics & Values": 17,
+      "Non-ESG": 210
+    },
+    "pseudo": {
+      "Climate Change": 0,
+      "Natural Capital": 0,
+      "Pollution & Waste": 0,
+      "Human Capital": 0,
+      "Product Liability": 0,
+      "Community Relations": 0,
+      "Corporate Governance": 0,
+      "Business Ethics & Values": 0,
+      "Non-ESG": 0
+    },
+    "synthetic": {
+      "Climate Change": 0,
+      "Natural Capital": 0,
+      "Pollution & Waste": 0,
+      "Human Capital": 0,
+      "Product Liability": 0,
+      "Community Relations": 0,
+      "Corporate Governance": 0,
+      "Business Ethics & Values": 0,
+      "Non-ESG": 0
+    }
+  },
+  "requested_synthetic_total": 0,
+  "actual_synthetic_total": 0,
+  "synthetic_complete": true
+}

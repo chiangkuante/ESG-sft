@@ -17,6 +17,7 @@ from src.step5_cv.run_cv_finetune import (
     compute_overall_metrics,
     find_epoch_checkpoints,
     get_ablation_cfg,
+    get_checkpointing_cfg,
     get_inference_cfg,
     get_xyz_plot_cfg,
     inference_worker,
@@ -50,6 +51,7 @@ def run_inference_only(model_type: str) -> None:
     ablation_cfg = get_ablation_cfg(cfg)
     xyz_plot_cfg = get_xyz_plot_cfg(cfg)
     inference_cfg = get_inference_cfg(cfg)
+    checkpointing_cfg = get_checkpointing_cfg(cfg)
     dry_run_cfg = cfg.get("dry_run", {})
     dry_run_enabled = bool(dry_run_cfg.get("enabled"))
     xyz_plot_enabled = bool(xyz_plot_cfg.get("enabled"))
@@ -194,6 +196,7 @@ def run_inference_only(model_type: str) -> None:
                 models_root=models_root,
                 fold_idx=fold_idx,
                 inference_cfg=inference_cfg,
+                checkpointing_cfg=checkpointing_cfg,
             )
             
         logger.info(
