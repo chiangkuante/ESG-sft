@@ -1,0 +1,11 @@
+{
+  "samples": 168,
+  "accuracy": 0.7738,
+  "macro_f1": 0.5785,
+  "weighted_f1": 0.7841,
+  "kappa": 0.6533,
+  "fold": 0,
+  "checkpoint_strategy": "final",
+  "checkpoint_epoch": null,
+  "checkpoint_dir": "/home/wa1ter/ESG-sft/models/step5_cv/p2/qwen/fold_0/checkpoints/checkpoint-final"
+}
