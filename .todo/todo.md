@@ -219,18 +219,64 @@ S&P 500 × 5 年（2021-2025）≈ 2,500 份 filing。每份 HTML 約 1-5 MB，�
 
 標註者會看到：頂部顯示 ticker、filing_date、FinBERT 預測結果和信心分數作為參考資訊。FinBERT 的預測會自動預選在選項中（來自 predictions），標註者可以直接確認或改選其他類別。
 
-### 3.4 單一 Project 設定
+### 3.4 標註者設定
 
-**Project 16：500 筆完整標註（單一標注者）**
+**標註者 p1（Project 16）：500 筆完整標註（單一標注者）**
 匯入 500 筆（完整隨機集），含 FinBERT 預標註，由一位標注者完成全部標註。
 
 標註產出檔案：`data/origin_data/10k_1A/project-16-at-2026-03-31-11-52-a8826fd3.csv`
+
+**標註者 p2：500 筆完整標註（第二標注者）**
+對同批 500 筆段落由第二位標注者獨立標註。
+
+標註產出檔案：`data/origin_data/10k_1A/chiang_500.csv`
+
+**額外平衡資料集：blance_500**
+針對類別不平衡問題另行標註的平衡資料集。
+
+資料檔案：`data/origin_data/10k_1A/blance_500.csv`
 
 ### 3.5 標註注意事項
 
 預標註是輔助工具，不是答案。標註者必須依據自己對類別定義的理解做最終判斷。特別注意 FinBERT 信心分數低（< 0.5）的筆數——這些是模型不確定的案例，需要標註者更仔細地判斷。
 
 標註完成後計算 FinBERT 預標註與最終人工標籤的一致率，以量化 FinBERT 的預測品質。FinBERT 與人工標註的一致率為 95.6%（500 筆中僅 22 筆不一致），其系統性弱點集中於將 ESG 類別誤判為 Non-ESG（22 筆中 16 筆屬此模式）。
+
+### 3.6 多標註者配置（config.yaml）
+
+透過 `config.yaml` 的 `step4_cv.annotator` 切換標註者，`step4_cv.balance` 控制平衡資料集：
+
+```yaml
+step4_cv:
+  annotator: p1                     # p1 | p2
+  annotators:
+    p1:
+      csv: data/origin_data/10k_1A/project-16-at-2026-03-31-11-52-a8826fd3.csv
+    p2:
+      csv: data/origin_data/10k_1A/chiang_500.csv
+  balance:
+    enabled: false
+    include_in_cv: false
+    csv: data/origin_data/10k_1A/blance_500.csv
+```
+
+所有中間產出、模型、結果以 annotator_name 為子目錄區分：
+
+| annotator | balance.enabled | balance.include_in_cv | annotator_name |
+|-----------|----------------|----------------------|----------------|
+| p1        | false          | -                    | `p1`           |
+| p2        | false          | -                    | `p2`           |
+| p2        | true           | false                | `p2_balance`   |
+| p2        | true           | true                 | `p2_combined`  |
+
+目錄結構範例：
+```
+data/processed/step4_cv/{annotator_name}/
+data/processed/step5_reasoning/{annotator_name}/
+data/processed/step5_sft/{annotator_name}/
+models/step5_cv/{annotator_name}/
+results/step5_cv/{annotator_name}/
+```
 
 ---
 
@@ -477,6 +523,8 @@ assistant 的回覆格式範例：
 
 ## 消融實驗
 
+### 資料組成消融（p1 標註者）
+
 進一步進行以下消融實驗以驗證各組件的貢獻：
 
 - **無偽標籤**：僅用 333 筆人工標註 + LLM 合成，評估偽標籤的貢獻
@@ -484,9 +532,34 @@ assistant 的回覆格式範例：
 - **不同 alpha 值**：比較 alpha = 0.3、0.5、0.7 的效果
 - **不同基座模型**：比較 Gemma 3 4B、Qwen 3.5 4B、Llama 3.2 3B、Ministral 3B
 
+### Reasoning 消融
+
+- **label_only**：移除訓練資料中的 `<reasoning>` 標籤，assistant 回應格式簡化為 `Label: {label}`，測試 chain-of-thought 推理的貢獻
+- 配置：`step5_cv.finetune.ablation.label_only: true`
+
+### 第二標註者 (p2) 實驗
+
+使用 `chiang_500.csv`（標註者 p2）進行三種實驗，皆不生成偽標籤與合成資料：
+
+**實驗 1 (p2_balance)**：chiang_500 做 3-fold CV split，blance_500 全部加入 train 訓練
+- config：`annotator: p2`, `balance.enabled: true`, `balance.include_in_cv: false`
+- `pseudo_labels.enabled: false`, `synthetic_generation.enabled: false`
+- blance_500 作為獨立資料來源加入每個 fold 的 train（source="balance"），不進入 val
+
+**實驗 2 (p2)**：chiang_500 做 3-fold CV split，僅用 ~333 筆 train 訓練
+- config：`annotator: p2`, `balance.enabled: false`
+- `pseudo_labels.enabled: false`, `synthetic_generation.enabled: false`
+
+**實驗 3 (p2_combined)**：chiang_500 + blance_500 合併後做 3-fold CV split
+- config：`annotator: p2`, `balance.enabled: true`, `balance.include_in_cv: true`
+- `pseudo_labels.enabled: false`, `synthetic_generation.enabled: false`
+- 合併後的 1,000 筆資料一起做 StratifiedKFold split，train 和 val 都可能包含兩個來源的資料
+
 ---
 
 ## 資料流摘要
+
+### p1 標註者（完整 pipeline）
 
 ```
 [步驟 0] SEC EDGAR 下載 [x]
@@ -501,11 +574,11 @@ assistant 的回覆格式範例：
  隨機抽樣 500 筆（已帶 FinBERT 預測）
     |
 [步驟 3] Label Studio 人工標註（含 FinBERT 預標註）[x]
- Project 16: 500 筆（單一標注者）含預標註
+ p1 (Project 16): 500 筆（單一標注者）含預標註
  FinBERT 與人工標註一致率 95.6%
  -> 最終 500 筆人工標籤
     |
-[步驟 4-5] 整合為 Stratified 3-Fold CV Pipeline
+[步驟 4-5] 整合為 Stratified 3-Fold CV Pipeline (annotator_name=p1)
  |
  對每個 Fold (k=1,2,3)：
  |
@@ -538,6 +611,32 @@ assistant 的回覆格式範例：
  |
  └── 5.4.10 API LLM 對驗證集直接推論
      3 個 closed-weight 模型 x 3 折 = 9 輪 API 推論
+```
+
+### p2 標註者實驗（三種配置）
+
+```
+[步驟 3] p2 標註者 (chiang_500.csv) + 平衡資料集 (blance_500.csv)
+
+------- 實驗 1 (annotator_name=p2_balance) -------
+chiang_500 做 3-fold split
+ -> 訓練集 ~333 筆 + 驗證集 ~167 筆
+ -> 訓練集 + blance_500 全量加入 train
+ -> 生成 reasoning -> 組裝 SFT -> 微調 + 推論
+
+------- 實驗 2 (annotator_name=p2) -------
+chiang_500 做 3-fold split
+ -> 訓練集 ~333 筆 + 驗證集 ~167 筆
+ -> 僅用 ~333 筆 train
+ -> 生成 reasoning -> 組裝 SFT -> 微調 + 推論
+
+------- 實驗 3 (annotator_name=p2_combined) -------
+chiang_500 + blance_500 合併（~1,000 筆）做 3-fold split
+ -> 訓練集 ~667 筆 + 驗證集 ~333 筆
+ -> 生成 reasoning -> 組裝 SFT -> 微調 + 推論
+
+* 三種實驗皆不生成偽標籤與合成資料
+* pseudo_labels.enabled: false, synthetic_generation.enabled: false
 ```
 
 ---

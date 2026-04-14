@@ -1,0 +1,42 @@
+[
+  {
+    "paragraph_id": "IR_2022_RISK_046",
+    "combined_text": "Risks Related to Our Business\nWe urge our stockholders to consult with their legal and tax advisors with respect to any such legislation and the potential tax consequences of investing in our common stock.",
+    "label": "Corporate Governance",
+    "source": "human",
+    "reasoning": "",
+    "failed": true
+  },
+  {
+    "paragraph_id": "PODD_2022_RISK_014",
+    "combined_text": "Risks Related to Product Development, Market Access and Competition\nThe medical device industry is intensely competitive, subject to rapid change resulting from technological advances and scientific discoveries as well as other market activities of industry participants. The Omnipod System competes with several existing insulin delivery devices as well as other methods for the treatment of diabetes. We also compete with Medtronic and Tandem, among others. Medtronic has been the insulin pump market leader for many years. The competitive landscape in our industry continues to undergo significant change. In addition to the established insulin pump competitors, several companies are working to develop and market new insulin “patch” pumps, smart pens, and other methods for the treatment of diabetes. These companies are at various stages of development and the number of such companies continuously changes as they enter or exit the market on an ongoing basis. Some of our competitors are large, well-capitalized companies with more resources than we have. These companies may have competitive advantages over us, including:•significantly greater name recognition;•different and more complete reimbursement profiles;•established relations with healthcare professionals, customers and third-party payors;•larger and more established distribution networks;•greater experience in conducting research and development, clinical trials, manufacturing, marketing and obtaining regulatory approval; and•greater financial and human resources for product development, sales and marketing, and patent litigation. As a result, we may not be able to compete effectively against these companies or their products, which may adversely impact our business. We also compete with MDI therapy, including smart pens, which is substantially less expensive than pump therapy.",
+    "label": "Non-ESG",
+    "source": "human",
+    "reasoning": "",
+    "failed": true
+  },
+  {
+    "paragraph_id": "POOL_2022_RISK_028",
+    "combined_text": "Risks Relating to Legal, Regulatory and Compliance Matters\nThe nature of our business subjects us to compliance with employment, environmental, health, transportation, safety and other governmental regulations.  Our costs of doing business could increase as a result of changes in, expanded enforcement of, or adoption of new federal, state or local laws and regulations.",
+    "label": "Non-ESG",
+    "source": "human",
+    "reasoning": "",
+    "failed": true
+  },
+  {
+    "paragraph_id": "COO_2021_RISK_016",
+    "combined_text": "Cybersecurity threats continue to increase in frequency and sophistication; a successful cybersecurity attack could interrupt or disrupt our information technology systems, or those of our third-party service providers, or cause the loss of confidential or protected data which could disrupt our business, force us to incur excessive costs or cause reputational harm.\nThe techniques used by cybercriminals change frequently, may not be recognized until launched and can originate from a wide variety of sources, including outside groups such as external service providers, organized crime affiliates, terrorist organizations or hostile foreign governments or agencies. We cannot assure that our data protection efforts and our investment in information technology will prevent significant breakdowns, data leakages or breaches in our systems or those of our third-party services providers or partners. Any such interruption or breach of our systems could adversely affect our business operations and/or result in the loss of critical or sensitive confidential information or intellectual property, and could result in financial, legal, business and reputational harm to us. We maintain cyber liability insurance; however, this insurance may not be sufficient to cover the financial, legal, business or reputational losses that may result from an interruption or breach of our systems.",
+    "label": "Product Liability",
+    "source": "human",
+    "reasoning": "",
+    "failed": true
+  },
+  {
+    "paragraph_id": "EMR_2021_RISK_010",
+    "combined_text": "Security and/or Data Privacy Breaches, or Disruptions of Our Information Technology Systems Could Adversely Affect Our Business\nThe Company relies on information technology networks and systems, including the internet, to process, transmit and store electronic information, and to manage or support a variety of business processes and activities. These technology networks and systems may be susceptible to damage, disruptions or shutdowns due to failures during the process of upgrading or replacing software, databases or components; power outages; telecommunications or system failures; terrorist attacks; natural disasters; employee error or malfeasance; server or cloud provider breaches; and computer viruses or cyberattacks. Cybersecurity threats and incidents can range from uncoordinated individual attempts to gain unauthorized access to information technology networks and systems to more sophisticated and targeted measures, known as advanced persistent threats, directed at the Company, its products, its customers and/or its third-party service providers. Despite the implementation of cybersecurity measures (including access controls, data encryption, vulnerability assessments, continuous monitoring, and maintenance of backup and protective systems), the Company’s information technology systems may still be vulnerable to cybersecurity threats and other electronic security breaches. It is possible for such vulnerabilities to remain undetected for an extended period. In addition, it is possible a security breach could result in theft of trade secrets or other intellectual property or disclosure of confidential customer, supplier or employee information. Should the Company be unable to prevent security breaches or other damage to our information technology systems, disruptions could have an adverse effect on our operations, as well as expose the Company to litigation, liability or penalties under privacy laws, increased cybersecurity protection costs, reputational damage and product failure.",
+    "label": "Product Liability",
+    "source": "human",
+    "reasoning": "",
+    "failed": true
+  }
+]

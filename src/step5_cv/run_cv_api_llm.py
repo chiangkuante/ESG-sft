@@ -14,6 +14,7 @@ from dotenv import load_dotenv
 if __package__ in {None, ""}:
     sys.path.append(str(Path(__file__).resolve().parents[2]))
 
+from src.step4_cv.common import load_step4_config, resolve_annotator_name
 from src.step5_cv.common import (
     build_eval_messages,
     compute_overall_metrics,
@@ -331,8 +332,9 @@ def evaluate_model(model_key: str, model_cfg: dict[str, Any], api_cfg: dict[str,
     if not api_key:
         raise ValueError(f"Missing API key env var for {model_key}: {model_cfg['api_key_env']}")
 
-    step4_output_dir = resolve_path(api_cfg["step4_output_dir"])
-    results_root = resolve_path(api_cfg["results_root"]) / "api_llm" / model_key
+    annotator_name = resolve_annotator_name(load_step4_config())
+    step4_output_dir = resolve_path(api_cfg["step4_output_dir"]) / annotator_name
+    results_root = resolve_path(api_cfg["results_root"]) / annotator_name / "api_llm" / model_key
     results_root.mkdir(parents=True, exist_ok=True)
 
     label_only = bool(api_cfg.get("label_only", True))

@@ -20,6 +20,7 @@ from transformers import StoppingCriteria, StoppingCriteriaList
 if __package__ in {None, ""}:
     sys.path.append(str(Path(__file__).resolve().parents[2]))
 
+from src.step4_cv.common import load_step4_config, resolve_annotator_name
 from src.step5_cv.common import (
     LABELS,
     LABELS_SORTED,
@@ -1285,9 +1286,10 @@ def main() -> None:
     dry_run_cfg = cfg.get("dry_run", {})
     dry_run_enabled = bool(dry_run_cfg.get("enabled"))
     resume_enabled = bool(cfg.get("resume", False))
-    sft_output_dir = resolve_path(cfg["sft_output_dir"])
-    results_root = resolve_path(cfg["results_root"]) / args.model
-    models_root = resolve_path(cfg["models_root"]) / args.model
+    annotator_name = resolve_annotator_name(load_step4_config())
+    sft_output_dir = resolve_path(cfg["sft_output_dir"]) / annotator_name
+    results_root = resolve_path(cfg["results_root"]) / annotator_name / args.model
+    models_root = resolve_path(cfg["models_root"]) / annotator_name / args.model
     variant_name = resolve_variant_name(ablation_cfg)
     if variant_name != "default":
         results_root = results_root / variant_name

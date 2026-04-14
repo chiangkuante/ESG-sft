@@ -4,7 +4,7 @@
   "existing_complete": 4148,
   "pending_count": 0,
   "generation_enabled": true,
-  "failed_only": true,
+  "failed_only": false,
   "batches": [],
   "completed_count": 4148,
   "failed_count": 0

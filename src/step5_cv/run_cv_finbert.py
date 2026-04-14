@@ -7,6 +7,7 @@ from pathlib import Path
 if __package__ in {None, ""}:
     sys.path.append(str(Path(__file__).resolve().parents[2]))
 
+from src.step4_cv.common import load_step4_config, resolve_annotator_name
 from src.step5_cv.common import (
     compute_overall_metrics,
     load_json,
@@ -23,8 +24,9 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s - [%(levelname)s] - 
 def main() -> None:
     config = load_step5_cv_config()
     cfg = config["finbert"]
-    step4_output_dir = resolve_path(cfg["step4_output_dir"])
-    results_dir = resolve_path(cfg["results_dir"])
+    annotator_name = resolve_annotator_name(load_step4_config())
+    step4_output_dir = resolve_path(cfg["step4_output_dir"]) / annotator_name
+    results_dir = resolve_path(cfg["results_dir"]) / annotator_name
 
     manifest = load_json(step4_output_dir / "manifest.json")
     fold_summaries = []

@@ -71,6 +71,16 @@ def canonicalize_label(label: str | None) -> str | None:
     return None
 
 
+def resolve_annotator_name(config: dict[str, Any]) -> str:
+    annotator = config.get("annotator", "p1")
+    balance_cfg = config.get("balance", {})
+    if not balance_cfg.get("enabled", False):
+        return annotator
+    if balance_cfg.get("include_in_cv", False):
+        return f"{annotator}_combined"
+    return f"{annotator}_balance"
+
+
 def load_json(path: Path) -> Any:
     with path.open("r", encoding="utf-8") as handle:
         return json.load(handle)

@@ -8,6 +8,7 @@ from pathlib import Path
 if __package__ in {None, ""}:
     sys.path.append(str(Path(__file__).resolve().parents[2]))
 
+from src.step4_cv.common import load_step4_config, resolve_annotator_name
 from src.step5_reasoning.common import load_json, load_step5_config, resolve_path, save_json
 from src.step5_reasoning.reason import (
     CATEGORY_DEFINITIONS,
@@ -48,9 +49,10 @@ def main() -> None:
     paths_cfg = config["paths"]
     sft_cfg = config["sft"]
 
-    step4_output_dir = resolve_path(paths_cfg["step4_output_dir"])
-    reasoning_output_dir = resolve_path(paths_cfg["output_dir"])
-    sft_output_dir = resolve_path(paths_cfg["sft_output_dir"])
+    annotator_name = resolve_annotator_name(load_step4_config())
+    step4_output_dir = resolve_path(paths_cfg["step4_output_dir"]) / annotator_name
+    reasoning_output_dir = resolve_path(paths_cfg["output_dir"]) / annotator_name
+    sft_output_dir = resolve_path(paths_cfg["sft_output_dir"]) / annotator_name
 
     manifest = load_json(step4_output_dir / "manifest.json")
     shuffle_seed = int(sft_cfg["shuffle_seed"])

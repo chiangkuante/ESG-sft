@@ -1,6 +1,17 @@
 step4_cv:
+  annotator: p2                     # p1 | p2
+  annotators:
+    p1:
+      csv: data/origin_data/10k_1A/project-16-at-2026-03-31-11-52-a8826fd3.csv
+    p2:
+      csv: data/origin_data/10k_1A/chiang_500.csv
+
+  balance:
+    enabled: true                   # 是否使用 blance_500 平衡資料集
+    include_in_cv: false            # false=僅加入 train (實驗1); true=合併後再 split (實驗3)
+    csv: data/origin_data/10k_1A/blance_500.csv
+
   paths:
-    human_annotations_csv: data/origin_data/10k_1A/project-16-at-2026-03-31-11-52-a8826fd3.csv
     classified_json: data/processed/step2_classification/classified.json
     output_dir: data/processed/step4_cv
     folds_path: data/processed/step4_cv/cv_folds.json
@@ -16,6 +27,7 @@ step4_cv:
     min_samples_per_class: 8
 
   pseudo_labels:
+    enabled: false
     total_target: 2500
     allocation_alpha: 0.5
     caps:
@@ -26,7 +38,7 @@ step4_cv:
     total_budget: 4000
 
   synthetic_generation:
-    enabled: true
+    enabled: false
     seed_examples_per_class: 3
     boundary_focus_labels:
       - Product Liability
@@ -133,7 +145,7 @@ step5_cv:
       per_device_train_batch_size: 2
       gradient_accumulation_steps: 4
       warmup_steps: 5
-      num_train_epochs: 5
+      num_train_epochs: 15
       learning_rate: 2e-4
       optim: adamw_8bit
       weight_decay: 0.01
@@ -151,18 +163,18 @@ step5_cv:
       # label_only: false
       # synthetic_only: false
       # variant_name: default
-      human_only: true
+      # human_only: true
       # label_only: true
-      # synthetic_only: true
+      synthetic_only: true
       # variant_name: label_only_human_only
       # variant_name: label_only
-      variant_name: human_only
-      # variant_name: synthetic_only
+      # variant_name: human_only
+      variant_name: synthetic_only
       non_esg_cap: 150
 
     xyz_plot:
       enabled: true
-      epochs: [3,5,7]
+      epochs: [17, 20, 25]
 
     inference:
       checkpoint_strategy: final

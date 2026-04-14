@@ -10,7 +10,7 @@ from typing import Any
 if __package__ in {None, ""}:
     sys.path.append(str(Path(__file__).resolve().parents[2]))
 
-from src.step4_cv.common import ESG_CATEGORIES, load_json, load_step4_config, resolve_path, save_json
+from src.step4_cv.common import ESG_CATEGORIES, load_json, load_step4_config, resolve_annotator_name, resolve_path, save_json
 from src.step4_cv.assemble import (
     assemble_train_pool,
     build_synthetic_requests,
@@ -19,7 +19,7 @@ from src.step4_cv.assemble import (
     load_synthetic_records,
 )
 from src.step4_cv.create_folds import create_and_save_folds
-from src.step4_cv.data import count_by_label, load_classified_pool, load_human_annotations
+from src.step4_cv.data import count_by_label, load_balance_records, load_classified_pool, load_human_annotations
 from src.step4_cv.prompts import build_synthetic_user_prompt
 
 logger = logging.getLogger(__name__)
@@ -330,11 +330,14 @@ def prepare_fold_outputs(
     human_records: list[dict[str, Any]],
     unlabeled_pool: list[dict[str, Any]],
     config: dict[str, Any],
+    balance_records: list[dict[str, Any]] | None = None,
 ) -> dict[str, Any]:
     thresholds_cfg = config["thresholds"]
     pseudo_cfg = config["pseudo_labels"]
     balancing_cfg = config["balancing"]
     synthetic_cfg = config["synthetic_generation"]
+    pseudo_enabled = bool(pseudo_cfg.get("enabled", True))
+    synthetic_enabled = bool(synthetic_cfg.get("enabled", True))
 
     fold_idx = fold["fold"]
     fold_dir = output_dir / f"fold_{fold_idx}"
@@ -344,52 +347,70 @@ def prepare_fold_outputs(
     human_val = subset_by_indices(human_records, fold["val_indices"])
 
     human_train_counts = count_by_label(human_train)
-    global_threshold, thresholds_by_label = calibrate_thresholds_by_class(
-        train_records=human_train,
-        target_accuracy=float(thresholds_cfg["target_accuracy"]),
-        min_samples_global=int(thresholds_cfg["min_samples_global"]),
-        min_samples_per_class=int(thresholds_cfg["min_samples_per_class"]),
-    )
 
-    pseudo_records, pseudo_summary = select_pseudo_labels(
-        unlabeled_pool=unlabeled_pool,
-        thresholds_by_label=thresholds_by_label,
-        base_counts=human_train_counts,
-        cap_by_label={label: int(cap) for label, cap in pseudo_cfg.get("caps", {}).items()},
-        total_target=(
-            int(pseudo_cfg["total_target"])
-            if pseudo_cfg.get("total_target") is not None
-            else None
-        ),
-        allocation_alpha=float(pseudo_cfg.get("allocation_alpha", balancing_cfg["alpha"])),
-    )
+    if pseudo_enabled:
+        global_threshold, thresholds_by_label = calibrate_thresholds_by_class(
+            train_records=human_train,
+            target_accuracy=float(thresholds_cfg["target_accuracy"]),
+            min_samples_global=int(thresholds_cfg["min_samples_global"]),
+            min_samples_per_class=int(thresholds_cfg["min_samples_per_class"]),
+        )
+        pseudo_records, pseudo_summary = select_pseudo_labels(
+            unlabeled_pool=unlabeled_pool,
+            thresholds_by_label=thresholds_by_label,
+            base_counts=human_train_counts,
+            cap_by_label={label: int(cap) for label, cap in pseudo_cfg.get("caps", {}).items()},
+            total_target=(
+                int(pseudo_cfg["total_target"])
+                if pseudo_cfg.get("total_target") is not None
+                else None
+            ),
+            allocation_alpha=float(pseudo_cfg.get("allocation_alpha", balancing_cfg["alpha"])),
+        )
+    else:
+        global_threshold = None
+        thresholds_by_label = {}
+        pseudo_records = []
+        pseudo_summary = {"selected_total": 0, "skipped": "pseudo_labels disabled"}
 
-    balancing_plan = compute_balancing_plan(
-        human_train_records=human_train,
-        pseudo_records=pseudo_records,
-        alpha=float(balancing_cfg["alpha"]),
-        total_budget=int(balancing_cfg["total_budget"]),
-    )
+    if pseudo_enabled and synthetic_enabled:
+        balancing_plan = compute_balancing_plan(
+            human_train_records=human_train,
+            pseudo_records=pseudo_records,
+            alpha=float(balancing_cfg["alpha"]),
+            total_budget=int(balancing_cfg["total_budget"]),
+        )
+        synthetic_requests = build_synthetic_requests(
+            balancing_plan=balancing_plan,
+            human_train=human_train,
+            seed_examples_per_class=int(synthetic_cfg["seed_examples_per_class"]),
+            boundary_focus_labels=list(synthetic_cfg.get("boundary_focus_labels", [])),
+            random_state=int(config["folds"]["random_state"]) + fold_idx,
+            prompt_builder=build_synthetic_user_prompt,
+        )
+        synthetic_data_path = fold_dir / str(synthetic_cfg["output_filename"])
+        ensure_placeholder_synthetic_file(synthetic_data_path)
+        synthetic_records = load_synthetic_records(synthetic_data_path)
+    else:
+        balancing_plan = {"effective_synthetic_total": 0, "skipped": "disabled"}
+        synthetic_requests = []
+        synthetic_records = []
 
-    synthetic_requests = build_synthetic_requests(
-        balancing_plan=balancing_plan,
-        human_train=human_train,
-        seed_examples_per_class=int(synthetic_cfg["seed_examples_per_class"]),
-        boundary_focus_labels=list(synthetic_cfg.get("boundary_focus_labels", [])),
-        random_state=int(config["folds"]["random_state"]) + fold_idx,
-        prompt_builder=build_synthetic_user_prompt,
-    )
-    synthetic_data_path = fold_dir / str(synthetic_cfg["output_filename"])
-    ensure_placeholder_synthetic_file(synthetic_data_path)
-    synthetic_records = load_synthetic_records(synthetic_data_path)
+    # balance records 作為獨立資料來源加入 train_pool（不參與 fold split）
+    extra_balance = balance_records if balance_records else []
+
     train_pool = assemble_train_pool(
         human_train=human_train,
         pseudo_records=pseudo_records,
         synthetic_records=synthetic_records,
     )
+    if extra_balance:
+        train_pool = train_pool + extra_balance
+        logger.info("Fold %s: added %s balance records to train_pool", fold_idx, len(extra_balance))
+
     train_pool_summary = build_train_pool_summary(
         train_pool=train_pool,
-        requested_synthetic_total=int(balancing_plan["effective_synthetic_total"]),
+        requested_synthetic_total=int(balancing_plan.get("effective_synthetic_total", 0)),
     )
 
     save_json(fold_dir / "human_train.json", human_train)
@@ -403,6 +424,7 @@ def prepare_fold_outputs(
         "fold": fold_idx,
         "human_train_size": len(human_train),
         "human_val_size": len(human_val),
+        "balance_records_size": len(extra_balance),
         "human_train_distribution": human_train_counts,
         "human_val_distribution": count_by_label(human_val),
         "global_threshold": global_threshold,
@@ -410,7 +432,7 @@ def prepare_fold_outputs(
         "pseudo_label_summary": pseudo_summary,
         "balancing_plan": balancing_plan,
         "synthetic_request_count": len(synthetic_requests),
-        "synthetic_data_path": synthetic_cfg["output_filename"],
+        "synthetic_data_path": synthetic_cfg.get("output_filename"),
         "train_pool_summary": train_pool_summary,
     }
     save_json(fold_dir / "summary.json", summary)
@@ -422,19 +444,55 @@ def main() -> None:
 
     paths_cfg = config["paths"]
     folds_cfg = config["folds"]
-    output_dir = resolve_path(paths_cfg["output_dir"])
-    human_csv_path = resolve_path(paths_cfg["human_annotations_csv"])
-    classified_path = resolve_path(paths_cfg["classified_json"])
-    folds_path = resolve_path(paths_cfg["folds_path"])
+    annotator_name = resolve_annotator_name(config)
+    balance_cfg = config.get("balance", {})
+    pseudo_enabled = bool(config.get("pseudo_labels", {}).get("enabled", True))
 
+    # 從 annotators 對照表取得 CSV 路徑
+    annotator_key = config.get("annotator", "p1")
+    annotators_cfg = config.get("annotators", {})
+    if annotator_key not in annotators_cfg:
+        raise ValueError(f"Unknown annotator '{annotator_key}' — check step4_cv.annotators in config.yaml")
+    human_csv_path = resolve_path(annotators_cfg[annotator_key]["csv"])
+
+    output_dir = resolve_path(paths_cfg["output_dir"]) / annotator_name
+    classified_path = resolve_path(paths_cfg["classified_json"])
+    folds_path = output_dir / "cv_folds.json"
+
+    logger.info("Annotator: %s (annotator_name=%s)", annotator_key, annotator_name)
+
+    # 載入人工標註
     human_records = load_human_annotations(human_csv_path)
-    classified_pool = load_classified_pool(load_json(classified_path))
     logger.info("Loaded %s human-labeled records from %s", len(human_records), human_csv_path)
-    logger.info("Loaded %s FinBERT pool records from %s", len(classified_pool), classified_path)
+
+    # 載入 balance 資料集
+    balance_records: list[dict[str, Any]] = []
+    balance_in_cv = False
+    if balance_cfg.get("enabled", False):
+        balance_csv_path = resolve_path(balance_cfg["csv"])
+        balance_records = load_balance_records(balance_csv_path)
+        balance_in_cv = bool(balance_cfg.get("include_in_cv", False))
+        logger.info("Loaded %s balance records from %s (include_in_cv=%s)", len(balance_records), balance_csv_path, balance_in_cv)
+
+    # 實驗3：合併後再 split
+    fold_human_records = human_records
+    if balance_in_cv and balance_records:
+        fold_human_records = human_records + balance_records
+        logger.info("Combined human + balance records for CV split: %s total", len(fold_human_records))
+
+    # 載入 FinBERT pool（偽標籤啟用時才需要）
+    if pseudo_enabled:
+        classified_pool = load_classified_pool(load_json(classified_path))
+        logger.info("Loaded %s FinBERT pool records from %s", len(classified_pool), classified_path)
+    else:
+        classified_pool = []
+        logger.info("Pseudo-labels disabled, skipping FinBERT pool loading")
+
+    output_dir.mkdir(parents=True, exist_ok=True)
 
     if not folds_path.exists():
         folds = create_and_save_folds(
-            human_records=human_records,
+            human_records=fold_human_records,
             output_path=folds_path,
             n_splits=int(folds_cfg["n_splits"]),
             shuffle=bool(folds_cfg.get("shuffle", True)),
@@ -445,32 +503,41 @@ def main() -> None:
         folds = load_json(folds_path)
         logger.info("Loaded %s existing CV folds from %s", len(folds), folds_path)
 
-    human_paragraph_ids = {record["paragraph_id"] for record in human_records}
+    human_paragraph_ids = {record["paragraph_id"] for record in fold_human_records}
     unlabeled_pool = [record for record in classified_pool if record["paragraph_id"] not in human_paragraph_ids]
-    logger.info("Filtered unlabeled pool down to %s records", len(unlabeled_pool))
+    if pseudo_enabled:
+        logger.info("Filtered unlabeled pool down to %s records", len(unlabeled_pool))
+
+    # 實驗1：balance records 不參與 split，全部加入 train
+    extra_balance = balance_records if (balance_cfg.get("enabled", False) and not balance_in_cv) else None
 
     fold_summaries = []
     for fold in folds:
         fold_summary = prepare_fold_outputs(
             output_dir=output_dir,
             fold=fold,
-            human_records=human_records,
+            human_records=fold_human_records,
             unlabeled_pool=unlabeled_pool,
             config=config,
+            balance_records=extra_balance,
         )
         fold_summaries.append(fold_summary)
         logger.info(
-            "Fold %s ready: human_train=%s human_val=%s pseudo=%s synthetic_needed=%s",
+            "Fold %s ready: human_train=%s human_val=%s balance=%s pseudo=%s synthetic_needed=%s",
             fold_summary["fold"],
             fold_summary["human_train_size"],
             fold_summary["human_val_size"],
-            fold_summary["pseudo_label_summary"]["selected_total"],
-            fold_summary["balancing_plan"]["effective_synthetic_total"],
+            fold_summary.get("balance_records_size", 0),
+            fold_summary["pseudo_label_summary"].get("selected_total", 0),
+            fold_summary["balancing_plan"].get("effective_synthetic_total", 0),
         )
 
     manifest = {
+        "annotator": annotator_key,
+        "annotator_name": annotator_name,
         "folds_path": str(folds_path.relative_to(Path.cwd())) if folds_path.is_relative_to(Path.cwd()) else str(folds_path),
         "human_records": len(human_records),
+        "balance_records": len(balance_records),
         "classified_pool_records": len(classified_pool),
         "unlabeled_pool_records": len(unlabeled_pool),
         "n_folds": len(fold_summaries),

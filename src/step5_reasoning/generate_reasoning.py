@@ -14,6 +14,7 @@ from dotenv import load_dotenv
 if __package__ in {None, ""}:
     sys.path.append(str(Path(__file__).resolve().parents[2]))
 
+from src.step4_cv.common import load_step4_config, resolve_annotator_name
 from src.step5_reasoning.common import (
     ESG_CATEGORIES,
     load_json,
@@ -187,8 +188,9 @@ def main() -> None:
     paths_cfg = config["paths"]
     generation_cfg = config["generation"]
 
-    step4_output_dir = resolve_path(paths_cfg["step4_output_dir"])
-    output_dir = resolve_path(paths_cfg["output_dir"])
+    annotator_name = resolve_annotator_name(load_step4_config())
+    step4_output_dir = resolve_path(paths_cfg["step4_output_dir"]) / annotator_name
+    output_dir = resolve_path(paths_cfg["output_dir"]) / annotator_name
 
     manifest = load_json(step4_output_dir / "manifest.json")
     batch_size = int(generation_cfg["batch_size"])

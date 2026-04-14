@@ -1,0 +1,96 @@
+{
+  "fold": 1,
+  "human_train_size": 333,
+  "human_val_size": 166,
+  "balance_records_size": 480,
+  "human_train_distribution": {
+    "Climate Change": 14,
+    "Natural Capital": 1,
+    "Pollution & Waste": 5,
+    "Human Capital": 21,
+    "Product Liability": 45,
+    "Community Relations": 0,
+    "Corporate Governance": 21,
+    "Business Ethics & Values": 21,
+    "Non-ESG": 205
+  },
+  "human_val_distribution": {
+    "Climate Change": 4,
+    "Natural Capital": 1,
+    "Pollution & Waste": 2,
+    "Human Capital": 10,
+    "Product Liability": 19,
+    "Community Relations": 1,
+    "Corporate Governance": 14,
+    "Business Ethics & Values": 5,
+    "Non-ESG": 110
+  },
+  "global_threshold": null,
+  "thresholds_by_label": {},
+  "pseudo_label_summary": {
+    "selected_total": 0,
+    "skipped": "pseudo_labels disabled"
+  },
+  "balancing_plan": {
+    "effective_synthetic_total": 0,
+    "skipped": "disabled"
+  },
+  "synthetic_request_count": 0,
+  "synthetic_data_path": "synthetic_data.json",
+  "train_pool_summary": {
+    "train_pool_size": 813,
+    "source_counts": {
+      "human": 333,
+      "balance": 480
+    },
+    "label_counts": {
+      "Climate Change": 62,
+      "Natural Capital": 30,
+      "Pollution & Waste": 62,
+      "Human Capital": 76,
+      "Product Liability": 100,
+      "Community Relations": 11,
+      "Corporate Governance": 56,
+      "Business Ethics & Values": 66,
+      "Non-ESG": 350
+    },
+    "by_source_and_label": {
+      "human": {
+        "Climate Change": 14,
+        "Natural Capital": 1,
+        "Pollution & Waste": 5,
+        "Human Capital": 21,
+        "Product Liability": 45,
+        "Community Relations": 0,
+        "Corporate Governance": 21,
+        "Business Ethics & Values": 21,
+        "Non-ESG": 205
+      },
+      "pseudo": {
+        "Climate Change": 0,
+        "Natural Capital": 0,
+        "Pollution & Waste": 0,
+        "Human Capital": 0,
+        "Product Liability": 0,
+        "Community Relations": 0,
+        "Corporate Governance": 0,
+        "Business Ethics & Values": 0,
+        "Non-ESG": 0
+      },
+      "synthetic": {
+        "Climate Change": 0,
+        "Natural Capital": 0,
+        "Pollution & Waste": 0,
+        "Human Capital": 0,
+        "Product Liability": 0,
+        "Community Relations": 0,
+        "Corporate Governance": 0,
+        "Business Ethics & Values": 0,
+        "Non-ESG": 0
+      }
+    },
+    "requested_synthetic_total": 0,
+    "actual_synthetic_total": 0,
+    "synthetic_complete": true
+  }
+}

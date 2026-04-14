@@ -1,0 +1,38 @@
+{
+  "folds": [
+    {
+      "samples": 168,
+      "accuracy": 0.8155,
+      "macro_f1": 0.4732,
+      "weighted_f1": 0.8104,
+      "kappa": 0.7009,
+      "fold": 0
+    },
+    {
+      "samples": 166,
+      "accuracy": 0.8614,
+      "macro_f1": 0.5662,
+      "weighted_f1": 0.8581,
+      "kappa": 0.7379,
+      "fold": 1
+    },
+    {
+      "samples": 165,
+      "accuracy": 0.7939,
+      "macro_f1": 0.476,
+      "weighted_f1": 0.7914,
+      "kappa": 0.6149,
+      "fold": 2
+    }
+  ],
+  "summary": {
+    "accuracy_mean": 0.8236,
+    "accuracy_std": 0.0281,
+    "macro_f1_mean": 0.5051,
+    "macro_f1_std": 0.0432,
+    "weighted_f1_mean": 0.82,
+    "weighted_f1_std": 0.0281,
+    "kappa_mean": 0.6846,
+    "kappa_std": 0.0515
+  }
+}

@@ -1,0 +1,28 @@
+fold,label,precision,recall,f1,support
+0,Climate Change,0.6667,0.8,0.7273,5
+0,Natural Capital,0.0,0.0,0.0,0
+0,Pollution & Waste,1.0,1.0,1.0,1
+0,Human Capital,0.7273,0.7273,0.7273,11
+0,Product Liability,0.7333,0.9167,0.8148,24
+0,Community Relations,0.0,0.0,0.0,0
+0,Corporate Governance,0.6522,0.8824,0.75,17
+0,Business Ethics & Values,0.5556,0.4167,0.4762,12
+0,Non-ESG,0.9176,0.7959,0.8525,98
+1,Climate Change,0.8,1.0,0.8889,4
+1,Natural Capital,0.0,0.0,0.0,1
+1,Pollution & Waste,0.6667,1.0,0.8,2
+1,Human Capital,0.6923,0.9,0.7826,10
+1,Product Liability,0.7143,0.7895,0.75,19
+1,Community Relations,0.0,0.0,0.0,1
+1,Corporate Governance,0.5789,0.7857,0.6667,14
+1,Business Ethics & Values,0.375,0.6,0.4615,5
+1,Non-ESG,0.9072,0.8,0.8502,110
+2,Climate Change,0.5455,0.6667,0.6,9
+2,Natural Capital,0.0,0.0,0.0,1
+2,Pollution & Waste,0.6667,0.5,0.5714,4
+2,Human Capital,0.75,0.9,0.8182,10
+2,Product Liability,0.8182,0.8571,0.8372,21
+2,Community Relations,0.0,0.0,0.0,0
+2,Corporate Governance,0.2857,0.5,0.3636,4
+2,Business Ethics & Values,0.625,0.5556,0.5882,9
+2,Non-ESG,0.9184,0.8411,0.878,107

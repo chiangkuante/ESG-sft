@@ -8,6 +8,7 @@ from pathlib import Path
 if __package__ in {None, ""}:
     sys.path.append(str(Path(__file__).resolve().parents[2]))
 
+from src.step4_cv.common import load_step4_config, resolve_annotator_name
 from src.step5_cv.common import (
     compute_overall_metrics,
     compute_per_class_metrics,
@@ -37,7 +38,8 @@ def summarize_overall(rows: list[dict]) -> dict:
 def main() -> None:
     config = load_step5_cv_config()
     eval_cfg = config["evaluation"]
-    results_root = resolve_path(eval_cfg["results_root"])
+    annotator_name = resolve_annotator_name(load_step4_config())
+    results_root = resolve_path(eval_cfg["results_root"]) / annotator_name
 
     model_dirs = [path for path in results_root.iterdir() if path.is_dir()]
     for model_dir in sorted(model_dirs):
