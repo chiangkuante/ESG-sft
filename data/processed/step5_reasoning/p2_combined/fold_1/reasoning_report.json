@@ -1,0 +1,26 @@
+{
+  "fold": 1,
+  "train_pool_size": 653,
+  "existing_complete": 652,
+  "pending_count": 1,
+  "generation_enabled": true,
+  "failed_only": false,
+  "batches": [
+    {
+      "batch_index": 0,
+      "requested_count": 1,
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "returned_count": 1,
+          "accepted_count": 1
+        }
+      ],
+      "accepted_count": 1,
+      "failed_count": 0
+    }
+  ],
+  "completed_count": 653,
+  "failed_count": 0
+}

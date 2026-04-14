@@ -7,9 +7,9 @@ step4_cv:
       csv: data/origin_data/10k_1A/chiang_500.csv
 
 
-# 實驗1: balance_500 只加入 train : 1、0
-# 實驗2: balance_500 不加入: 0、0
-# 實驗3: balance_500 合併後再 split : 1、1
+# 實驗1: (blance)balance_500 只加入 train : 1、0
+# 實驗2: ()balance_500 不加入: 0、0
+# 實驗3: (combined)balance_500 合併後再 split : 1、1
   balance:
     enabled: false                   # 是否使用 blance_500 平衡資料集 true=實驗1、實驗3; false=實驗2
     include_in_cv: false            # false=僅加入 train (實驗1); true=合併後再 split (實驗3)
