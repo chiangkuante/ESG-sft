@@ -1,0 +1,998 @@
+[
+  {
+    "paragraph_id": "SPG_2022_RISK_015",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph describes retail store closures, tenant re-tenanting, customer traffic declines, and tenant payment defaults. These are property management and sales risks tied to location and tenant performance. The text does not discuss any ESG subject such as labor, environment, product safety, or governance.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "SWK_2021_RISK_058",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph is about long-term debt and financing arrangements and the effect of the LIBOR benchmark rate discontinuation. It speaks to uncertainty over financing conditions and potential adverse effects on the company. This is a financial and market-risk disclosure rather than an ESG-related issue. There is no substantive discussion of environmental, social, or governance topics in the body.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "ODFL_2022_RISK_018",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because this paragraph focuses on competitive pressures, pricing, information technology, fleet selection, shipping patterns, and customer behavior in the transportation industry. It discusses how competitors may have better equipment, global networks, and pricing abilities, and how customers may consolidate shipments or acquire fleets. Although the last sentence mentions ESG profiles, it only serves as a possible differentiator among competitors and does not develop a substantive environmental or social issue. Most of the paragraph is about business strategy and operational risk.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "HUM_2022_RISK_006",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph discusses failure to implement initiatives, Medicare initiatives, state-based contracts, and maintaining or improving Star ratings. These are business performance and regulatory contracting issues, not ESG topics. The text does not mention patient safety, quality care, or community access in a way that would align with Product Liability or Community Relations. It is best classified as general business risk.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "CRM_2022_RISK_046",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph describes competitive and technological risk in the enterprise applications market. The key phrases about “highly competitive,” “rapidly evolving,” “low barriers to entry,” and customers being reluctant to migrate away from their current solution are business and strategic risks rather than ESG issues. There is no discussion of environmental, social, or governance topics such as labor, climate, safety, or governance practices. The paragraph is therefore a general industry and market risk rather than ESG.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "LYB_2022_RISK_033",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because this paragraph focuses on global economic and operational risks, not on any specific ESG topic. It mentions compliance costs, customs and currency control regulations, transfer pricing regulations, and possible challenges to its operations, which are broad business and legal risks. Although it references raw materials from international sources, the discussion is not about sourcing standards or environmental impacts in the ESG taxonomy.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "LULU_2021_RISK_025",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph discusses difficulty opening new store locations in a timely manner, or at all, and the harm to results of operations. This is a store expansion and location opening issue, likely involving logistics and real estate planning, but it does not address any ESG category. There is no mention of labor, sustainability, product safety, or governance. The paragraph is a standard business risk disclosure.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "TJX_2021_RISK_053",
+    "raw_output": "Reasoning: The gold label of Climate Change is correct because the paragraph directly discusses “carbon taxes or other emissions management systems” and how increased regulation could affect costs. It also mentions a “carbon tax or other emissions management systems” as a source of environmental cost disruption. While it mentions oil and gasoline price increases, the climate-related regulations are the stated cause of the operational risk. This is more specific to climate policy than general energy costs.\nLabel: Climate Change",
+    "parsed_label": "Climate Change",
+    "ground_truth_label": "Climate Change"
+  },
+  {
+    "paragraph_id": "TTWO_2022_RISK_082",
+    "raw_output": "Reasoning: The gold label of Product Liability is correct because the paragraph discusses piracy, unauthorized copying, and vulnerabilities in software that could lead to lost revenues or increased development costs. It also specifically mentions “cheating” programs that could harm fair players, which is a product-related safety and quality issue. The intellectual property and protection measures are framed as a consumer protection and business impact problem, not as a general security or privacy risk.\nLabel: Product Liability",
+    "parsed_label": "Product Liability",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "HII_2022_RISK_006",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph deals with contract recovery, unfunded backlog, and termination liabilities in government contracting. It describes how termination exposure could affect financial condition, results of operations, or cash flows. This is a business and economic risk, not a governance or programmatic ESG issue, since it focuses on cost and competition rather than ethical conduct or community impact.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "CVS_2023_RISK_068",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph announces that the company’s litigation and regulatory risk profile is changing due to new products, services, and expanded business areas. This is a general legal and business-expansion risk, not a discussion of product liability, human capital, or community relations. It also does not mention environmental, governance, or ethics issues. The paragraph is therefore not specifically ESG-related.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "FDX_2021_RISK_025",
+    "raw_output": "Reasoning: The gold label of Human Capital is correct because the paragraph frequently refers to labor-intensive business conditions, qualified persons, unemployment levels, prevailing wage rates, insurance costs, and safety levels. It also discusses new employment and labor laws, minimum wage requirements, and regulatory compliance, all of which are workforce and labor-management risks. The mention of additional personnel and wage costs shows the company is directly managing human capital costs. This is not primarily governance or community-related; it is about labor availability and workforce expense.\nLabel: Human Capital",
+    "parsed_label": "Human Capital",
+    "ground_truth_label": "Human Capital"
+  },
+  {
+    "paragraph_id": "CRL_2023_RISK_018",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph focuses on acquisition and integration risks, including difficulty achieving financial success, assimilating operations, and discovering undiscovered liabilities. It also mentions loss of key employees, adequate internal controls, and disputes with prior owners, which are operational and transactional concerns. Although differences in foreign business practices and language barriers are mentioned, they do not fit a specific ESG category. The paragraph is primarily about business risk, not governance, labor, or environmental issues.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "HLT_2023_RISK_006",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because this paragraph broadens ordinary government shutdown and travel budget risks into a business disruption discussion. It mentions decreased corporate travel, convention cancellations, cyber-attacks, natural disasters, and labor shortages, which are still primarily business and operational risks. The reference to climate change and natural resources is indirect and not the main focus of this passage.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "F_2022_RISK_030",
+    "raw_output": "Reasoning: The gold label of Climate Change is correct because the paragraph focuses on fuel economy standards, emission testing, and the cost to comply with regulatory requirements. It specifically mentions “comply with fuel economy standards,” “new regulations,” “field service actions,” and the risk of “negative perception regarding the performance of our vehicles subjected to such tests.” These are all tied to emissions testing and regulatory compliance, which are core climate-related risks for automakers. The mention of autonomous vehicle regulations is secondary and does not alter the primary label of Climate Change.\nLabel: Climate Change",
+    "parsed_label": "Climate Change",
+    "ground_truth_label": "Product Liability"
+  },
+  {
+    "paragraph_id": "ULTA_2021_RISK_033",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph is too broad and generic to fit any specific ESG category. It states that the company and vendors are subject to laws and regulations that could modify business practices and incur increased costs, which is a general legal and operational risk. The text does not discuss ethics, labor, environmental impacts, or product-related issues in a substantive way. It is therefore not enough to classify as Business Ethics and Values or Human Capital, but rather is a general regulatory risk.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "TECH_2021_RISK_008",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph discusses acquisition and investment risks in a joint venture. The key phrases about possible divergence in interests, inability to direct or influence management, and exposure to additional risk are business strategy and control concerns rather than ESG topics. There is no substantive discussion of labor, environment, governance, or ethics.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "ALL_2022_RISK_027",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph focuses on capital and credit market conditions, liquidity needs, credit ratings, and lenders’ perceptions of financial prospects. It describes how adverse conditions may limit access to financing or raise costs, which is a standard financial risk. There is no discussion of environmental, social, or governance issues beyond general market disruption.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "MPC_2022_RISK_047",
+    "raw_output": "Reasoning: The gold label of Corporate Governance is correct because the paragraph describes provisions in corporate governance documents that could delay or prevent a change in control, such as board class structures, stockholder action barriers, and supermajority vote rights. These are clearly governance and control-structure issues, not ethics or labor matters. The mention of advanced notice requirements and preferred stock issuance further supports a governance classification.\nLabel: Corporate Governance",
+    "parsed_label": "Corporate Governance",
+    "ground_truth_label": "Corporate Governance"
+  },
+  {
+    "paragraph_id": "ADSK_2022_RISK_070",
+    "raw_output": "Reasoning: The gold label of Product Liability is correct because the paragraph is centered on data protection regulation, particularly the UK GDPR and the risk of fines and enforcement actions. It also discusses standard contractual clauses, compliance burdens, and the possibility of requiring new contract negotiations involving personal data. This is a privacy and data security risk, not a human capital or governance issue, since the text is about data protection consequences of operations.\nLabel: Product Liability",
+    "parsed_label": "Product Liability",
+    "ground_truth_label": "Product Liability"
+  },
+  {
+    "paragraph_id": "NVDA_2021_RISK_006",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph discusses reliance on third parties and supply chain intermediaries for manufacturing, testing, and packaging. It emphasizes loss of control over product quantity and quality, as well as the risk of supply chain disruptions and component shortages. This is a standard operational and supply chain risk, not a discussion of environmental, social, or governance issues.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Product Liability"
+  },
+  {
+    "paragraph_id": "AFL_2022_RISK_030",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph mainly addresses COVID-19’s economic disruption and remote work effects on operations and investments. The language about public health issues and employee return-to-work plans is not enough to make Human Capital the primary category, since the passage ultimately focuses on financial and business continuity risks. It is more accurately described as a general operational and macroeconomic risk disclosure.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Human Capital"
+  },
+  {
+    "paragraph_id": "LUV_2023_RISK_003",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph discusses dependence on Boeing, FAA certifications, supplier parts, labor unions, aircraft parts, and service interruptions. While it mentions employees and labor unions, the labor reference is part of operational dependence rather than a standalone human capital issue. The main risks are manufacturing delays, part quality, supplier availability, security concerns, and weather disruptions. These are broad business and operational risks rather than a specific ESG category.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Human Capital"
+  },
+  {
+    "paragraph_id": "CPAY_2022_RISK_006",
+    "raw_output": "Reasoning: The gold label of Product Liability is correct because the paragraph discusses sensitive customer information, unauthorized access to systems, and the risk of theft or publication of confidential data. It also mentions computer viruses and sabotage, which are part of the broader privacy and data security risk. The reference to not disclosing “a previously disclosed unauthorized access incident” further supports a data security issue being framed as product liability-like.\nLabel: Product Liability",
+    "parsed_label": "Product Liability",
+    "ground_truth_label": "Product Liability"
+  },
+  {
+    "paragraph_id": "MCHP_2021_RISK_070",
+    "raw_output": "Reasoning: The gold label of Product Liability is incorrect because the paragraph actually focuses on patents, trademarks, copyrights, interference proceedings, and infringement of intellectual property rights. The discussions of expensive patent protection, possible commercial advantage, and successful defense or failure are legal and intellectual property related, not product safety or privacy. The correct label should be Product Liability only if the taxonomy treats IP rights as a subset of product-related risks, but based on the body, it is more accurately described as a general legal and intellectual property risk.\nLabel: Product Liability",
+    "parsed_label": "Product Liability",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "ADBE_2022_RISK_044",
+    "raw_output": "Reasoning: The gold label of Human Capital is correct because the paragraph discusses retaining and recruiting personnel, employee satisfaction, and the risk of losing key employees through acquisitions or growth. It also mentions the challenge of maintaining corporate culture and the company's ability to retain and recruit essential employees. These are direct human capital concerns.\nLabel: Human Capital",
+    "parsed_label": "Human Capital",
+    "ground_truth_label": "Human Capital"
+  },
+  {
+    "paragraph_id": "MGM_2022_RISK_045",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph discusses expansion strategies such as acquisitions, alliances, and investments, along with risks like integrating systems, retaining key employees, and realizing synergies. These are ordinary business and integration risks and do not primarily involve any ESG category. The text does not focus on governance, ethics, labor, or environmental issues.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "BMY_2022_RISK_080",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph discusses COVID-19-related delays in clinical trial enrollment and pipeline development. It explains that new variants and enrollment difficulties could affect timing of revenues and cash flows. This is a business and operational pandemic risk disclosure, not a human capital or community relations discussion. The content is similar to other 10-K pandemic-related risk disclosures.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "EXR_2022_RISK_014",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph discusses competition from self-storage operators and other storage alternatives. It focuses on occupancy levels, rental rates, operating expenses, and competitor development, which are store performance and market conditions. There is no discussion of environmental building design, community impacts, or labor standards that would fit an ESG category. The risk is therefore operational and real estate related, not climate, natural capital, or human capital.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "POOL_2022_RISK_028",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph states that the business is subject to compliance with employment, environmental, health, transportation, safety, and other governmental regulations. While it mentions changes in laws and enforcement, the language is broad and does not specify a particular ESG theme. The paragraph is primarily about regulatory and compliance risk, not the detailed treatment of any one ESG category.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "J_2021_RISK_142",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph focuses on indebtedness, credit market disruptions, contract performance issues, and payment delays. It discusses customers, suppliers, subcontractors, and government budget deficits that could cancel contracts or slow spending. These are financial and operational liquidity risks rather than ESG topics. There is no substantive discussion of environmental, social, or governance issues.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "PPG_2022_RISK_025",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph only says that the security of information technology systems could be compromised and that it could adversely affect the company’s ability to operate. This is a broad cybersecurity risk statement about the ability of attackers to gain access to systems or data. It does not specify privacy, data security, consumer protection, or any other ESG-related cybersecurity issue. The content is general and operational, so Non-ESG is the best fit.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Product Liability"
+  },
+  {
+    "paragraph_id": "APD_2021_RISK_018",
+    "raw_output": "Reasoning: The gold label of Climate Change is correct because the paragraph says legislative, regulatory, and societal responses to global climate change create financial risk. It specifically mentions GHG emissions, CO2, and the risk of more international and federal regulations to reduce or mitigate emissions. The references to steam methane reforming, gasification, and cleaner energy are framed as climate-related business risk rather than ordinary operating activity. The paragraph is therefore primarily about climate policy and emissions risk.\nLabel: Climate Change",
+    "parsed_label": "Climate Change",
+    "ground_truth_label": "Climate Change"
+  },
+  {
+    "paragraph_id": "FANG_2023_RISK_084",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph focuses on tax legislation affecting oil and natural gas industry expenses, including intangible drilling credits and the amortization of geological and geophysical expenditures. The references to possible legislative changes and the corporate alternative minimum tax (CAMT) are financial and regulatory risks specific to the industry. This is not primarily about climate, natural capital, or product liability.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "DPZ_2021_RISK_040",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph focuses on indebtedness, debt obligations, and the risk of being unable to make interest payments or fund fixed costs due to LIBOR replacement. It discusses how substantial debt could reduce availability of cash flow and limit flexibility in planning. These are classic financial leverage risks rather than ESG concerns. There is no substantive discussion of environmental, social, or governance issues.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "PGR_2023_RISK_102",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because this is a standard financial risk-factor about access to capital. The paragraph says that if the company cannot obtain capital when needed, its financial condition and growth could be adversely affected. This is a broad credit and liquidity risk, not a discussion of any ESG category. There is no mention of environmental, social, or governance concerns.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "UNH_2022_RISK_043",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph discusses financing constraints arising from the company’s holding company structure and regulatory requirements around subsidiary capitalization. It emphasizes dependence on dividends and reimbursements from subsidiaries and the risk of not obtaining sufficient funds to fund obligations. This is a financial and regulatory liquidity issue, not a governance, ethics, or broader ESG topic.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Corporate Governance"
+  },
+  {
+    "paragraph_id": "APH_2022_RISK_030",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph discusses intellectual property infringement, misappropriation, employment disputes, tax controversies, government investigations, and product safety and liability. While it mentions product safety and liability, those are only mentioned as part of a broader legal and regulatory matters disclosure. The paragraph is primarily about litigation exposure and business proceedings, not a specific ESG category.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "IBM_2022_RISK_021",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because this paragraph is about the lack of a market for IBM securities, or the liquidity and value of debt and equity holdings. That is an ownership and capital markets risk, not an ESG issue. There is no discussion of board practices, shareholder rights, executive pay, or internal controls that would support Corporate Governance. The paragraph is therefore purely financial and non-ESG.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "ECL_2022_RISK_007",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph focuses on input-cost volatility and raw material supply availability. It states that results could be affected by difficulties in securing the supply of certain raw materials or by fluctuations in the cost of raw materials. This is a general operational risk with no specific environmental, social, or governance content. The closest alternative would be Natural Capital, but the text does not discuss biodiversity, land use, or responsible sourcing practices.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "ETN_2022_RISK_010",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph focuses on raw material shortages, price increases, and supplier insolvencies as operators on cost and competition. It does mention using “a variety of raw materials and components,” which could seem to open Natural Capital or Human Capital categories, but the main risk is financial and supply-chain rather than environmental sourcing policies or labor standards. There is no discussion of biodiversity, land use, seafood sourcing, timber, or other natural resource-specific ESG issues. The paragraph therefore remains general operational risk.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "MSFT_2021_RISK_016",
+    "raw_output": "Reasoning: The gold label of Product Liability is correct because the paragraph discusses defensive measures against “the improper disclosure or misuse of customer or user data” and the resulting “legal exposure to customers or users” or “liability under laws that protect personal data.” It also mentions transparency around government orders for data and constraints on operating datacenters based on customer expectations, all of which point to privacy and data security risk. This is more specific than Corporate Governance because the core issue is data protection and user harm, not board or control structure.\nLabel: Product Liability",
+    "parsed_label": "Product Liability",
+    "ground_truth_label": "Product Liability"
+  },
+  {
+    "paragraph_id": "EXPE_2026_RISK_004",
+    "raw_output": "Reasoning: The gold label of Product Liability is incorrect because the paragraph describes cybersecurity employee training, regular reviews of cybersecurity policies, and assessments of information security control environment. It also states that no risks from cybersecurity threats have materially adversely affected the business, which is consistent with a governance and operational risk framing rather than a privacy or data security product issue. The correct label should be Corporate Governance because the paragraph shows oversight and management of cybersecurity programs and internal controls.\nLabel: Product Liability",
+    "parsed_label": "Product Liability",
+    "ground_truth_label": "Product Liability"
+  },
+  {
+    "paragraph_id": "CAG_2021_RISK_049",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph only says that information technology systems failing to perform adequately could disrupt operations. It does not mention a specific privacy, data security, or governance issue, nor any external threat such as malware or hacking. The statement is a general technology risk about system reliability and performance. As written, it does not fit any ESG category.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Product Liability"
+  },
+  {
+    "paragraph_id": "AMZN_2022_RISK_013",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph discusses rapid expansion and the strain it puts on management, personnel, systems, and financial resources. It emphasizes the need for effective growth management to avoid reputational damage and operating results issues. This is a standard business expansion risk and does not primarily involve any ESG category.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "PWR_2022_RISK_020",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph only discusses operational and project execution risks, such as “additional costs,” “reductions or delays in revenues,” and the possibility of “liquidated damages or project termination.” There is no mention of environmental, social, or governance issues, and the language is generic and business-focused. This is more appropriately classified as a general operating risk than any ESG category.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "VRTX_2022_RISK_074",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph only says that business development activities are crucial to executing the company's long-term strategy. It focuses on transactions, collaborations, and pipeline creation for commercial opportunities. There is no mention of environmental, social, or governance issues, or any ESG-related subject matter. The risk is general and strategic, not ESG-specific.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "LII_2022_RISK_008",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph addresses licensing and enforcement of intellectual property rights and third-party assertions of infringement. It is about legal and operational risks tied to IP protection and commercialization, not any ESG topic. There are no references to environmental, social, or governance issues in the body.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "VRTX_2023_RISK_126",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph discusses fluctuations in stock price, market volatility, FDA actions, regulatory policy, and competitor drugs. These are traditional financial and industry risks, not product safety, governance, or ethics issues. The mention of “public concern as to the safety of drugs developed by us or our competitors” is still framed as a market and regulatory risk rather than a product liability concern.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "UHS_2022_RISK_002",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph only states that the company owns hospitals and facilities, but does not provide any ESG-related risk discussion. The references to \"inpatient acute care hospitals\" and \"inpatient behavioral healthcare facilities\" are operational and clinical in nature, but they do not address labor, patient safety, community access, or governance concerns. This is simply a hospital ownership disclosure, so it is not ESG-related.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "PWR_2023_RISK_074",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph focuses on material availability, prices, and supply chain issues affecting contracts and profitability. It mentions copper, steel, aluminum, and specialized components, along with tariffs, duties, taxes, and sourcing restrictions that could impact materials and project timing. Although solar panels and renewable energy are mentioned, the discussion is about logistics and material availability rather than environmental strategy or sustainability initiatives. The main risk is operational and financial, not a natural capital or climate-change ESG topic.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "CHD_2022_RISK_051",
+    "raw_output": "Reasoning: The gold label of Product Liability is correct because the paragraph discusses information technology security failures, cyber-attacks, privacy breaches, and data breaches that could harm the business and damage customer trust. It specifically mentions the loss of data, malicious attacks, and the failure to maintain the security of sensitive data. These are classic privacy and data security risks under the Product Liability definition.\nLabel: Product Liability",
+    "parsed_label": "Product Liability",
+    "ground_truth_label": "Product Liability"
+  },
+  {
+    "paragraph_id": "CVX_2022_RISK_003",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph is about oil prices, geopolitical risk, and the effect of low crude oil prices on operations. It mentions weather damage, OPEC action, competing fuel prices, and regulations on oil and gas reserves. While it briefly references “the pace of energy transition” and “lower carbon businesses,” the primary content is still petroleum market risk, not a substantive climate or emissions discussion. The company’s dependence on crude oil and refined product margins is the core concern.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "NRG_2023_RISK_012",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph describes competitive pressures in electricity retail and plant operations. The key risks are lower prices, other incentives, more efficient plants, liquidity, credit access, risk management, subsidies, and response to laws and regulations. These are classic business and market risks, not ESG-related issues such as climate, labor, or governance. NRG is simply competing with other energy providers and may lose plants or customers as a result.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "EOG_2022_RISK_076",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the heading only describes oil and gas exploration and production properties and reserves. It provides operational data about wells acquired and interests held, which is a business model and reserve disclosure rather than an ESG-related risk factor. There is no discussion of environmental impacts, labor issues, or governance concerns in the body text shown.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "DOV_2022_RISK_005",
+    "raw_output": "Reasoning: The gold label of Human Capital is correct because the paragraph focuses on labor disputes, union campaigns, and the ability to hire and retain employees. It specifically mentions \"potential work stoppages,\" \"increased turnover rates,\" and the need to attract and retain employees capable of high performance. The references to skilled personnel competition and higher wages are also workforce management issues. This is not primarily governance or community-related; it is about employee retention and labor productivity.\nLabel: Human Capital",
+    "parsed_label": "Human Capital",
+    "ground_truth_label": "Human Capital"
+  },
+  {
+    "paragraph_id": "LOW_2021_RISK_010",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph is about managing “public image and reputation” and how damage to it could affect relationships with customers, vendors, and associates. While it mentions stakeholders, the focus is on reputation and relationship risk rather than any specific ESG issue. There is no substantive discussion of labor, environmental impacts, product safety, or governance. The paragraph is best classified as a general business risk.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "EA_2021_RISK_014",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because this paragraph is about strategic transactions, cash, debt, equity, and asset sales. The risks described, such as reducing cash, increasing leverage, and potentially selling assets or businesses at unfavorable terms, are ordinary corporate and financing risks. It does not discuss governance, ethics, labor, or environmental issues.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "COO_2021_RISK_016",
+    "raw_output": "Reasoning: The gold label of Product Liability is correct because the paragraph describes cybersecurity threats, successful attacks, and the loss of confidential or protected data. It says such incidents could “cause reputational harm” and “result in financial, legal, business” losses, which fits the privacy and data security portion of Product Liability. This is more specific than general operational risk, since the harm comes from data protection failures and breaches.\nLabel: Product Liability",
+    "parsed_label": "Product Liability",
+    "ground_truth_label": "Product Liability"
+  },
+  {
+    "paragraph_id": "SJM_2021_RISK_048",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph is about tax laws, IRS audits, and effective tax rate uncertainty. It discusses changes in tax rates, deferred tax balances, and potential “material incremental tax liabilities,” which are classic financial and regulatory risks. The mention of regulations and laws is broad and not specifically tied to any ESG category such as governance or ethics.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "LRCX_2021_RISK_017",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph focuses on customer concentration and the financial impact of relying on a few large customers. It emphasizes pricing pressure, cost increases, and credit risk, as well as limitations on sharing technology and compliance with governance standards. However, the governance reference is incidental and not the main subject. The paragraph is primarily about commercial risk and customer relationship risk.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "RJF_2021_RISK_034",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph is about recruiting senior professionals, financial advisors, and associates. The reference to attracting and retaining talent is a general business strategy, not a human capital development program with training and engagement. The second sentence about client data transfer is related to brokerage relationships and potential legal claims, not employee treatment or community impacts. This is primarily a workforce and business development issue, not Human Capital.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Human Capital"
+  },
+  {
+    "paragraph_id": "MTD_2022_RISK_027",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph discusses impairments of goodwill and other intangible assets, including estimates of fair value and possible impairment charges. This is a financial reporting and business acquisition risk, not a governance, ethics, or broader ESG issue. The text does not address board oversight, executive pay, internal controls, or environmental, social, or community impacts.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "IVZ_2022_RISK_004",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph only discusses market value declines, AUM reductions, and corresponding declines in investment management fees. These are business and financial performance risks tied to asset size and market conditions. There is no discussion of environmental, social, or governance issues, and no indication of any ESG-related risk factor. The paragraph does not fit any of the defined ESG categories.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "EVRG_2022_RISK_008",
+    "raw_output": "Reasoning: The gold label of Pollution & Waste is correct because the paragraph focuses on environmental compliance changes from the EPA, including “additional unannounced inspections of suspected non-compliant facilities,” “deploying new assets to monitor air pollution,” and the possibility of new permits or amended permits. It also mentions communities “overburdened by pollution” and the risk of permit delays, opposition, and denials. These are classic pollution and environmental compliance risks rather than broader regulatory risks.\nLabel: Pollution & Waste",
+    "parsed_label": "Pollution & Waste",
+    "ground_truth_label": "Pollution & Waste"
+  },
+  {
+    "paragraph_id": "PLD_2024_RISK_004",
+    "raw_output": "Reasoning: The gold label of Human Capital is correct because, although the paragraph covers currency control regulations and supply chain disruptions, it also mentions that the company’s workforce, including executives, may become ill or have difficulty working remotely. That is a direct human capital risk tied to employee availability and health. The paragraph is not primarily about governance or real estate economics, but about labor shortages and worker availability.\nLabel: Human Capital",
+    "parsed_label": "Human Capital",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "PFE_2022_RISK_008",
+    "raw_output": "Reasoning: The gold label of Product Liability is incorrect because the paragraph is mainly about research and development, including translating advanced science and technologies into therapies that can change patients’ lives. It focuses on pipeline development, new indications, and collaborations with universities and biotechnology companies. The correct label should be Product Liability only if using the privacy/data security subcategory, but the text does not discuss those topics; it is more broadly about medical product development and innovation.\nLabel: Product Liability",
+    "parsed_label": "Product Liability",
+    "ground_truth_label": "Product Liability"
+  },
+  {
+    "paragraph_id": "CNP_2023_RISK_024",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph is about fluctuations in natural gas prices and their effect on suppliers, customers, and operations. It is a conventional market and financial risk disclosure about a utility's supply situation. There is no discussion of emissions, labor, product safety, governance, or ethics that would fit an ESG category.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "FSLR_2022_RISK_045",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph focuses on raw material costs, commodity prices, inflation, and hedging. It discusses aluminum, steel, natural gas, manufacturing equipment, labor, and logistics services, which are operational and financial risks rather than ESG issues. Although natural gas is mentioned, the context is cost and pricing, not emissions or environmental management. There is no discussion of biodiversity, land use, pollution, or other ESG-related topics.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "AWK_2022_RISK_031",
+    "raw_output": "Reasoning: The gold label of Pollution & Waste is correct because the paragraph describes contamination of water supplies or the company’s water service, including exposure to substances not typically found in potable water supplies. The risk of service limitations, interruptions, and government enforcement actions is tied to water pollution and wastewater concerns. This is not a human capital or product liability issue; the contaminant is the water supply itself.\nLabel: Pollution & Waste",
+    "parsed_label": "Pollution & Waste",
+    "ground_truth_label": "Natural Capital"
+  },
+  {
+    "paragraph_id": "VTR_2022_RISK_083",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph is about the potential financial impact of the phasing out of LIBOR and the transition to alternative benchmark rates. It discusses regulatory guidance, discontinued LIBOR settings, and the risk of reduced liquidity or pricing transparency in the credit markets. This is a financing and market-reference-rate risk, not an environmental, social, or governance issue.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "TSCO_2022_RISK_056",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph is about impairment of goodwill and other intangible assets, which is a financial reporting and valuation risk. It does not discuss any ESG subject such as labor, emissions, governance practices, or community impact. The content is purely financial and accounting-related.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "INCY_2024_RISK_100",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because this is a general financial risk statement about tax laws or regulations affecting results of operations and business condition. It does not discuss any ESG topic such as labor, emissions, governance practices, or community impact. The paragraph is focused on financial risk, not on environmental, social, or ethical issues.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "TDG_2021_RISK_012",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph focuses on debt load, financial health, and the risk of failing to service debt. It mentions reducing or delaying capital investments, selling assets, refinancing debt, or seeking additional equity capital as alternatives if debt service is impaired. These are classic financial risk factors rather than ESG concerns. There is no discussion of governance, ethics, or social impacts beyond general liquidity and obligation fulfillment.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "NRG_2022_RISK_056",
+    "raw_output": "Reasoning: The gold label of Human Capital is correct because the paragraph focuses on labor relations and employee availability. It specifically mentions strikes or work stoppages by \"unionized employees\" or the inability to replace employees as they retire, which are workforce management and labor productivity issues. This is not primarily a governance or product issue, but about employee management and operational continuity.\nLabel: Human Capital",
+    "parsed_label": "Human Capital",
+    "ground_truth_label": "Human Capital"
+  },
+  {
+    "paragraph_id": "BBY_2021_RISK_011",
+    "raw_output": "Reasoning: The gold label of Product Liability is correct because the paragraph states that new health-related services could expose the company to “liability risk resulting from failures in the fulfillment of these services.” It also mentions customer data privacy and information security risks from the services and systems used. These are specific product and service-related liability and privacy concerns.\nLabel: Product Liability",
+    "parsed_label": "Product Liability",
+    "ground_truth_label": "Community Relations"
+  },
+  {
+    "paragraph_id": "LUV_2022_RISK_069",
+    "raw_output": "Reasoning: The gold label of Business Ethics & Values is correct because the paragraph describes a series of legal investigations and antitrust lawsuits, including a DOJ CID, state inquiries, and class action complaints alleging collusion to limit capacity and raise fares. The evidence of misconduct is plain: plaintiffs claim the companies conspired to restrict capacity and raise fares, which is a classic antitrust issue. The government and plaintiff litigation show a focus on competitive misconduct and potential fraud on consumers. This is much more consistent with business ethics and antitrust wrongdoing than with corporate governance or human capital issues.\nLabel: Business Ethics & Values",
+    "parsed_label": "Business Ethics & Values",
+    "ground_truth_label": "Business Ethics & Values"
+  },
+  {
+    "paragraph_id": "T_2022_RISK_026",
+    "raw_output": "Reasoning: The gold label of Product Liability is correct because the paragraph focuses on cyberattacks, data and privacy breaches, and the protection of “sensitive personal information of customers or employees.” It also mentions the risk of “legal liability” and “reputation damage” from security incidents, which aligns with privacy and data security exposure. Although the paragraph is not exclusively about data security, the relevant risk is tied to customer information and confidentiality rather than general governance or labor issues.\nLabel: Product Liability",
+    "parsed_label": "Product Liability",
+    "ground_truth_label": "Product Liability"
+  },
+  {
+    "paragraph_id": "ATO_2021_RISK_025",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph is a broad operational risk statement covering natural disasters, terrorist activities, and other significant events. It describes the possibility of adverse effects on operations or financial results without specifying any ESG-related issue. There is no mention of labor, environment, product safety, governance, or ethics beyond general disruption risk. The closest category would be Human Capital if focusing on workforce disruption, but the text does not address employee management or community impacts.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "LKQ_2022_RISK_093",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph discusses delivery risks, fuel availability, transportation infrastructure, and the need for accurate and timely delivery. Although it mentions inclement weather and accidents, these are framed as operational and liability concerns rather than a environmental or safety issue. The paragraph does not primarily address any ESG category.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "EXPD_2022_RISK_016",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph discusses investigations, litigation, and possible fines, penalties, or damages. It is focused on legal and operational costs, not on any ESG issue such as labor, environmental impacts, or governance practices. The references to customer inventory handling and government authority inquiries are not enough to make this a Human Capital or Corporate Governance question.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Business Ethics & Values"
+  },
+  {
+    "paragraph_id": "STX_2022_RISK_003",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph describes demand uncertainty, market changes, production failures, seasonal declines, international disruption, currency fluctuations, and cost control. These are business and operating risks tied to sales, forecasting, and competitiveness. They do not primarily address any ESG category such as pollution, labor, or product safety.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "OXY_2022_RISK_035",
+    "raw_output": "Reasoning: The gold label of Product Liability is correct because the paragraph focuses on cyber-related risks involving digital and industrial control technologies, including breaches of data security and information system failures. It states that such disruptions could cause the “unintentional disclosure of company, partner, customer or employee information,” which fits the privacy and data security portion of Product Liability. This is more specific than Corporate Governance because the main issue is data security and operational impact from cyber attacks, not board or control structure matters.\nLabel: Product Liability",
+    "parsed_label": "Product Liability",
+    "ground_truth_label": "Product Liability"
+  },
+  {
+    "paragraph_id": "CMG_2022_RISK_034",
+    "raw_output": "Reasoning: The gold label of Human Capital is correct because the paragraph mentions “labor availability and wages of restaurant management and employees” along with stock-based compensation and labor-related issues. These are workforce and compensation concerns that can affect employee productivity and retention. Although food safety and supply costs are also mentioned, the labor and wages language is the most prominent human capital reference.\nLabel: Human Capital",
+    "parsed_label": "Human Capital",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "O_2022_RISK_037",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph discusses the illiquidity of real estate investments and the difficulty of selling or exchanging properties quickly. It focuses on the risk of not recognizing full value for properties sold for liquidity reasons. This is a standard business and financial risk, not a discussion of land use, biodiversity, or community impacts. There is no evidence of environmental, social, or governance content.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "TROW_2022_RISK_021",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because this paragraph focuses on international operating risks, including compliance with foreign legal and regulatory requirements and political consequences of foreign jurisdiction operation. Although currency fluctuations are mentioned, it is still framed as a financial and geopolitical risk rather than a specific ESG topic. The main issue is international management and regulatory changes, not community, governance, or environmental risk.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "AON_2023_RISK_090",
+    "raw_output": "Reasoning: The gold label of Corporate Governance is correct because the paragraph discusses Irish corporate law interpretations around “statutory pre-emption rights” and how governance considerations may affect renewal periods or the number of unissued shares. Those are clearly board governance and control issues.\nLabel: Corporate Governance",
+    "parsed_label": "Corporate Governance",
+    "ground_truth_label": "Corporate Governance"
+  },
+  {
+    "paragraph_id": "MSCI_2022_RISK_080",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph only states that share repurchases are not guaranteed, which is a capital returns and buyback policy disclosure. This does not involve any ESG subject matter such as labor, emissions, product safety, or governance practices. The content is purely financial and investor relationsspecific.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Corporate Governance"
+  },
+  {
+    "paragraph_id": "ON_2022_RISK_068",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph concerns indebtedness, settlement options, and potential dilution to stockholders. It is about financing risks and ownership dilution, not any ESG topic. There are no references to labor, environment, governance structures, or ethics beyond general dilution concern.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Corporate Governance"
+  },
+  {
+    "paragraph_id": "GD_2022_RISK_012",
+    "raw_output": "Reasoning: The gold label of Product Liability is incorrect because the paragraph is mainly about cybersecurity, government contractor vaccine mandates, and the effects on employees and supply chains. It states that future threats could expose the company to “potential liability, regulatory actions and loss of business” and that insurance coverage may not be adequate for cybersecurity attacks. The correct label should be Product Liability only if focusing on the privacy and data security portion, but the paragraph is more broadly an operational business risk discussion.\nLabel: Product Liability",
+    "parsed_label": "Product Liability",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "BRO_2022_RISK_011",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph discusses dependence on a limited number of insurance companies and the risk of losing commissions or market share if those companies terminate arrangements. This is a business model and revenue-risk disclosure rather than an ESG issue. It does not address environmental, social, or governance topics such as labor, climate, safety, or ethics.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "PAYX_2021_RISK_017",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph focuses on litigation, indemnity, breach of contract, tortious conduct, and employment/labor law issues. It discusses possible substantial judgments, fines, legal fees, and costs, as well as insurance coverage limits and business disruption from claims. These are legal and operational risks rather than ESG-specific topics like product liability or human capital. The mention of COVID-19 is only as general business disruption, not as a community relations or environmental issue.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Business Ethics & Values"
+  },
+  {
+    "paragraph_id": "MRK_2022_RISK_016",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph discusses competition from lower-cost generic products, patent protection weaknesses, and legislation encouraging generic use. It focuses on how loss of patent protection and generic substitutes could reduce sales and cash flow. This is a pharmaceutical competition and market risk, not a product liability or climate change issue. The text does not mention any ESG themes such as patient safety, environmental impacts, or governance practices.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "LDOS_2022_RISK_052",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph focuses on cost and pricing risk management, specifically on “costs at completion, fees earned on the contract, or both” and the need to adjust estimates as work progresses. This is a business operational risk rather than an ESG issue. There is no discussion of environmental, social, or governance topics in the body.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "EFX_2022_RISK_040",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph focuses on foreign currency exchange rate risk, hedging, and compliance with laws and regulations such as anti-corruption laws and tax laws. While it mentions labor laws and data privacy requirements, these are only part of a broader operational and legal risk discussion. The main issue is the financial effect of dollar movements and foreign currency translation, not a standalone human capital or product liability concern.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "IRM_2022_RISK_055",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph concerns debt repurchase obligations tied to a “change of control” and sufficient funds to make required repurchases. This is a financing and indenture risk, not an ESG issue. The text does not mention any environmental, social, or governance topic.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Corporate Governance"
+  },
+  {
+    "paragraph_id": "GIS_2021_RISK_019",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph focuses on valuation assumptions, useful lives of assets, impairment testing, and brand value modeling. These are financial reporting and enterprise value concerns, not ESG topics. The references to “future performance of our businesses,” “weighted-average cost of capital,” and “fair value of the brands” are all financial in nature. There is no discussion of environmental, social, or governance issues beyond standard intangible asset valuation procedures.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "CI_2022_RISK_049",
+    "raw_output": "Reasoning: The gold label of Product Liability is correct because the paragraph describes unauthorized dissemination of sensitive personal information, proprietary information, and confidential information, along with cyber-incident remediation costs and enforcement proceedings. The references to loss of customers, reputational harm, and material fines and penalties show a privacy and data security risk framing consistent with Product Liability. This is not Human Capital or Corporate Governance because the core issue is protection of sensitive information and contractual compliance.\nLabel: Product Liability",
+    "parsed_label": "Product Liability",
+    "ground_truth_label": "Product Liability"
+  },
+  {
+    "paragraph_id": "XOM_2022_RISK_006",
+    "raw_output": "Reasoning: The gold label of Business Ethics & Values is correct because the paragraph focuses on litigation, enforcement proceedings, and security concerns as sources of adverse effect. The references to “punitive damage awards,” “government enforcement proceedings,” and “security concerns” all point to ethical and legal conduct issues. This is not a product or consumer-safety concern, but rather business liability and political exposure. The corporate ethics framework is well supported by the text.\nLabel: Business Ethics & Values",
+    "parsed_label": "Business Ethics & Values",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "OTIS_2022_RISK_059",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph concerns potential inability to engage in “desirable capital-raising or strategic transactions” due to the Separation and TMA. This is a financing and transaction risk, not an ESG issue. The text does not reference any environmental, social, or governance topic.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "IR_2022_RISK_046",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph is a legal and tax-consultation message urging stockholders to seek advice on legislative compliance. It does not discuss any ESG topic such as governance, ethics, or social issues. The content is purely informational and tied to tax consequences of investing in the company’s stock. This is not a substantive ESG risk but a stockholder disclosure.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Corporate Governance"
+  },
+  {
+    "paragraph_id": "HST_2022_RISK_049",
+    "raw_output": "Reasoning: The gold label of Corporate Governance is correct because the paragraph describes charter provisions that limit transfer and ownership of stock, including exculpation and indemnification of directors. The references to board size, removal of directors, and special stockholder meetings are clear governance matters. This is not primarily about controls for ordinary business risk, but about shareholder and board-related oversight.\nLabel: Corporate Governance",
+    "parsed_label": "Corporate Governance",
+    "ground_truth_label": "Corporate Governance"
+  },
+  {
+    "paragraph_id": "CRM_2021_RISK_037",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph describes subscription renewal rates, customer retention, pricing changes, and sales efforts. These are operational and commercial risks tied to the service business and product offerings. The text does not discuss any ESG theme such as labor, environment, product safety, or governance. It is best classified as general business risk.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "JBL_2021_RISK_044",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph is about tax laws, transfer pricing rules, and the risk that tax authorities may not accept documentation. It also mentions OECD guidelines on Base Erosion and Profit Shifting and legislative changes that could shape international tax rules. These are tax and regulatory risks, not ESG concerns.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "APA_2022_RISK_024",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because this risk factor is about reserve discoveries and leasehold acreage volume. It focuses on whether additional reserves can avoid a decline in production, which is a conventional petroleum reserve estimate and production risk. There is no mention of environmental impacts, community relations, or governance issues. The content is purely operational and financial in nature.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "WRB_2022_RISK_013",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph focuses on COVID-19’s operational and regulatory impacts, including adverse legislative and regulatory action, claim losses related to COVID-19, and underwriting losses. The discussions are about business effects, insurance coverage, and legal challenges following the pandemic, which do not primarily fit an ESG category. The closest alternative would be Human Capital or Community Relations, but the text does not address workforce management, safety, or community relations in a substantive way.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "CINF_2022_RISK_016",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph discusses loss reserves, accounting estimates, and the possibility that reserves may be inadequate to cover actual losses. This is a financial and regulatory liability disclosure about property casualty insurance underwriting and financial statement accuracy. It does not mention claims handling, customer harm, or any ESG-related subject matter.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "SLB_2022_RISK_013",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph mainly describes the operational and financial impacts of COVID-19 on oil and gas activities. It mentions disruptions to drilling, customer shutdowns, supply chain issues, and limitations on raw materials, all of which are business continuity and market risks. While the paragraph briefly references employee impacts from illness and community response measures, those are framed as operational disruptions rather than a dedicated human capital or community relations discussion. The dominant theme is the pandemic's effect on finances and operations.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "DOW_2022_RISK_008",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph focuses on pension plan obligations, investment returns, and funding requirements. It discusses how changes in market value, investment returns, and mortality rates could affect the funded status of the plans. This is a financial and actuarial risk rather than an ESG issue such as labor management or environmental impacts.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "AXP_2022_RISK_071",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph is about protecting intellectual property and defending against infringement or misappropriation assertions. It directly affects revenue and profitability. This is a legal and commercial risk rather than an ESG issue such as product safety, labor, governance, or ethics. The content does not mention environmental, social, or governance themes more broadly.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "PHM_2022_RISK_030",
+    "raw_output": "Reasoning: The gold label of Corporate Governance is correct because the paragraph focuses on ownership changes, shareholder rights plans, and Section 382 limitations. It explains how those events could limit utilization of deferred tax assets and affect marketability of common stock. The by-law amendments and shareholder rights plan are governance and ownership-structure matters rather than ESG topics like labor, climate, or product risk.\nLabel: Corporate Governance",
+    "parsed_label": "Corporate Governance",
+    "ground_truth_label": "Corporate Governance"
+  },
+  {
+    "paragraph_id": "MTB_2023_RISK_035",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph focuses on regulatory capital adequacy, liquidity requirements, and Basel III-based capital rules. It explains that failure to meet minimum requirements could limit business activities, require the company to increase regulatory capital, or limit its ability to pay dividends. These are compliance and financial regulation issues, not ESG topics such as governance, ethics, or social matters.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "AWK_2023_RISK_092",
+    "raw_output": "Reasoning: The gold label of Human Capital is correct because the paragraph explicitly discusses the company’s ability to “attract, hire and retain highly qualified, skilled and/or diverse talent.” That is a direct human capital management risk, involving workforce development and retention. There is no stronger fit among the other ESG categories.\nLabel: Human Capital",
+    "parsed_label": "Human Capital",
+    "ground_truth_label": "Human Capital"
+  },
+  {
+    "paragraph_id": "COF_2022_RISK_029",
+    "raw_output": "Reasoning: The gold label of Product Liability is correct because the paragraph focuses on cybersecurity and data privacy risks that could affect customers and the broader financial system. It mentions agreements with service providers, responsibility for cyber incidents, and the need to invest in protective security measures and new technology. The reference to high-profile cyber incidents and loss of customer confidence is consistent with privacy and data security exposure rather than human capital or governance.\nLabel: Product Liability",
+    "parsed_label": "Product Liability",
+    "ground_truth_label": "Product Liability"
+  },
+  {
+    "paragraph_id": "PEP_2022_RISK_009",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph is about competitive risk and market performance. It describes competition from “international beverage and convenient food companies,” loss of sales or category share, and failure to effectively promote products or adopt new technologies. Although “digital marketing” appears as one of the risks, it is still framed as business competition rather than a human capital or product liability issue. The main risk is inability to compete effectively.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "GM_2022_RISK_011",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph centers on regulatory requirements unique to the Chinese market, joint ventures, and strategic business relationships. The risks described involve increased costs, limited business conditions, and failure to source and execute on relationships successfully. These are business and international regulatory risks rather than ESG topics as defined here. There is no primary discussion of labor, environmental impacts, governance, or ethics.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "NDSN_2021_RISK_007",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph focuses on supply chain, raw material, and pricing risks rather than any ESG issue. It discusses disruptions in supply, shortages, price increases, and the possibility of passing costs on to customers, all of which are operational and financial risks. The mention of natural or man-made disruptions is broad and not specifically framed as a natural capital or community relations issue. The dominant theme is business continuity and profitability.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "AMP_2022_RISK_008",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because this paragraph is about interest-rate risk and financial condition. It says changes in interest rates, prolonged low interest rates, and even negative interest rates may harm the company's financial condition and results of operations. There is no discussion of environmental, social, or governance matters in the body text.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "IVZ_2023_RISK_054",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph concerns perpetual preferred stock, its value, and the impact on capital management and liquidity. It specifically says the issue could affect the company's ability to raise additional capital and fund other priorities. This is a financial structure and capital markets risk, not an ESG issue. There is no discussion of environmental, social, or governance topics in the body.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "AMCR_2021_RISK_062",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph is about tax complexity, tax disputes, and the risk of changes in tax law. It mentions income tax returns, tax authorities disagreeing with positions, and effects from OECD and G20 BEPS policies. This is a legal and financial compliance issue, not a governance, ethics, or community-relations topic.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "TRMB_2021_RISK_051",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph states that the company is involved in “litigation arising in the ordinary course of our business” and that there are no material legal proceedings. This is a general legal activity statement and does not disclose any ESG-related issues such as board misconduct, labor matters, or environmental controversies. The mention of routine litigation does not make the paragraph ESG-related; it simply states business litigation exposure. Therefore, Non-ESG is the best label.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "IQV_2022_RISK_040",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph addresses intellectual property infringement claims and the resulting litigation, licensing agreements, and potential damages. The content is about legal disputes over IP rights and the operational impact of defending those claims, not about data security, product safety, or any other ESG category. Indemnity provisions are mentioned as another expense, but the main issue is intellectual property infringement.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "EQR_2022_RISK_070",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph discusses information technology systems, vendor reliance, and the risk of failing to select appropriate systems. It is about operational technology capability and competitive advantage, not data security, privacy, or any ESG issue. The mention of third-party vendors and maintenance upgrades is standard technical risk, not a climate, human capital, or governance topic.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "BAX_2023_RISK_003",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because this is a financial and capital structure risk disclosure. It discusses global economic conditions, inflation, supply chain disruptions, debt, exchange rates, interest rates, operating results, liquidity, and possible impairments in long-lived assets. These are ordinary business risks, not ESG concerns, and the text does not indicate any environmental, social, or governance content.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "KLAC_2021_RISK_024",
+    "raw_output": "Reasoning: The gold label of Pollution & Waste is correct because the paragraph discusses environmental laws restricting the “use, transportation, emission, discharge, storage and disposal of certain chemicals, gases and other substances.” It also mentions consequences such as fines, remediation, strict liability for releases, and changes requiring pollution control equipment or substitute materials. These are classic pollution and waste risks, not human capital or governance matters.\nLabel: Pollution & Waste",
+    "parsed_label": "Pollution & Waste",
+    "ground_truth_label": "Pollution & Waste"
+  },
+  {
+    "paragraph_id": "CPB_2021_RISK_017",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph concerns acquisition and divestiture execution risk. It identifies possible issues such as diversion of management's attention, loss of suppliers and customers, inadequate separation of businesses, and failure to reduce overhead costs. These are strategic transaction and operating performance risks rather than ESG topics. No ESG-specific language appears in the text.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "HD_2021_RISK_019",
+    "raw_output": "Reasoning: The gold label of Product Liability is correct because the paragraph focuses on the privacy and security of customer, associate, supplier, and company information, and the costs and reputational damage if those protections are compromised. It specifically mentions complying with state consumer privacy laws and the risk of litigation, investigations, and sanctions, which aligns with privacy and data security obligations under the Product Liability category. This is more specific than general cybersecurity risk because the harm comes from exposure of personal information and failure to protect customer data.\nLabel: Product Liability",
+    "parsed_label": "Product Liability",
+    "ground_truth_label": "Product Liability"
+  },
+  {
+    "paragraph_id": "WDC_2021_RISK_012",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph only discusses failure to refinance or breach financing covenants, which is an financial risk. It does not mention any environmental, social, or governance topic. The reference to unreimbursable losses is about financing risk, not ESG.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "CMI_2022_RISK_050",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph focuses on pension plan asset performance and the impact of financial and stock market conditions on results of operations and cash flow. It does not mention employees, health and safety, training, or other ESG-related workforce management topics. The pension reference is financial and plan-related, not a human capital ESG issue.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "AOS_2022_RISK_018",
+    "raw_output": "Reasoning: The gold label of Business Ethics & Values is correct because the paragraph highlights compliance risks tied to “improper payments to government officials,” the Foreign Corrupt Practices Act, and sanctions. These are classic ethics and corruption concerns rather than general regulatory compliance without a specific ESG theme. The reference to international laws and restrictions also underscores geopolitical and ethical risk. Although the heading is broad, the substance is squarely about legal misconduct and compliance violations.\nLabel: Business Ethics & Values",
+    "parsed_label": "Business Ethics & Values",
+    "ground_truth_label": "Business Ethics & Values"
+  },
+  {
+    "paragraph_id": "HWM_2022_RISK_038",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph discusses tax liability arising from the Arconic Inc. Separation Transaction, including acquisitions, indemnity obligations, and possible losses. The text focuses on financial and transactional risk rather than any ESG topic. Phrases like “substantial tax liability,” “related costs and other damages,” and “tax costs” indicate a regulatory and financial exposure. This does not match any ESG category because it does not address environmental, social, or governance issues.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Corporate Governance"
+  },
+  {
+    "paragraph_id": "CL_2022_RISK_010",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph addresses pandemic and public health concerns, but it does not specify any ESG-related health or safety programs or employee welfare issues. The mention of COVID-19 is only as part of a broader widespread public health concern affecting business results and financial condition. This is more a general operational and macroeconomic health risk than Human Capital or Product Liability.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "L_2022_RISK_082",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph describes operational hazards and unforeseen interruptions that may not be adequately insured. It refers to “catastrophic losses,” “operational hazards,” and “unforeseen interruptions,” which are business continuity and underwriting risks rather than ESG topics. There is no mention of environmental, social, or governance concerns.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "JNJ_2021_RISK_052",
+    "raw_output": "Reasoning: The gold label of Corporate Governance is correct because the paragraph lists executive officers and their titles, including Executive Vice President, Chief Global Supply Chain Officer, and Executive Vice President, Chief Financial Officer. It also mentions membership in the Executive Committee, which is a governance structure. Although the body text does not discuss ESG topics directly, the officer listings are clearly about leadership and internal control oversight.\nLabel: Corporate Governance",
+    "parsed_label": "Corporate Governance",
+    "ground_truth_label": "Corporate Governance"
+  },
+  {
+    "paragraph_id": "SWKS_2021_RISK_036",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph only says the company may not achieve the anticipated benefits of acquiring Silicon Labs' Infrastructure and Automotive business. This is a conventional acquisition risk statement focusing on potential deal performance rather than any ESG topic. There is no discussion of labor, environment, governance, or ethics issues, so the paragraph is best classified as ordinary business risk.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "ADSK_2021_RISK_068",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph focuses on protecting patent, copyright, trademark, and trade secret rights, as well as confidentiality and source code secrecy. It discusses the risk that unauthorized use of software, copying, and disclosure of proprietary information could affect financial performance and reputation. This is an intellectual property and security risk rather than an ESG issue.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "STT_2022_RISK_048",
+    "raw_output": "Reasoning: The gold label of Corporate Governance is incorrect because the paragraph is mainly about regulatory approvals for an acquisition, extensive regulation and supervisory oversight, and how that affects activities as a bank holding company. The correct label should be Non-ESG because it focuses on regulatory compliance and business structure rather than governance practices.\nLabel: Corporate Governance",
+    "parsed_label": "Corporate Governance",
+    "ground_truth_label": "Corporate Governance"
+  },
+  {
+    "paragraph_id": "FOXA_2021_RISK_031",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph discusses investment risks and strategic failure. It says that investments in new businesses, products, services, and technologies through acquisitions and other strategic investments could adversely affect the business, financial condition, and results of operations. This is a general business and strategy risk, not a macroeconomic condition ESG topic such as unemployment or inflation. There is no indication of environmental, social, or governance content.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "EW_2022_RISK_005",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph only says that unsuccessful clinical trials or procedures relating to products could harm prospects. That is a product development and regulatory risk, but it does not mention any ESG theme such as safety, privacy, labor, governance, or community impact. The content is entirely about clinical trial failure and product prospects, which fits a general operating risk rather than an ESG category.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "NOC_2022_RISK_033",
+    "raw_output": "Reasoning: The gold label of Human Capital is correct because the paragraph emphasizes that the pandemic will further impact the workforce, including staffing levels, absenteeism, quarantine, isolation, and adjusted work locations and schedules. It also mentions additional costs due to employee health and well-being measures, which is a direct human capital concern. The operational disruption is largely framed as a labor and staffing issue. Product Liability is less likely because the passage is about employee impact and business continuity, not product safety or health trends.\nLabel: Human Capital",
+    "parsed_label": "Human Capital",
+    "ground_truth_label": "Human Capital"
+  },
+  {
+    "paragraph_id": "ZTS_2022_RISK_131",
+    "raw_output": "Reasoning: The gold label of Business Ethics & Values is correct because the paragraph highlights operations in foreign jurisdictions where there is a “high risk of bribery and corruption.” While it also mentions economic, political, legal and business environments, the explicit reference to bribery and corruption makes the ethics controversy very direct. The paragraph does not primarily discuss governance structure or labor issues; it focuses on the risk of corrupt practices. This is more specific than general international regulatory risk.\nLabel: Business Ethics & Values",
+    "parsed_label": "Business Ethics & Values",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "AKAM_2022_RISK_059",
+    "raw_output": "Reasoning: The gold label of Business Ethics & Values is not the best fit because this paragraph is mainly about legal proceedings, including patent, commercial, product liability, breach of contract, and employment litigation. The mention of indemnifying directors and officers is an administrative consequence rather than an ethics or values issue. The correct label should be Non-ESG because the paragraph is a general legal and regulatory risk disclosure.\nLabel: Business Ethics & Values",
+    "parsed_label": "Business Ethics & Values",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "CTRA_2022_RISK_035",
+    "raw_output": "Reasoning: The gold label of Climate Change is correct because the paragraph directly links advocacy group concerns about “climate change impacts of methane and other greenhouse gas emissions” to increased regulation, litigation, and reduced demand for oil and gas production. It also mentions “increasing societal expectations on businesses to address climate change,” which is a clear climate-related business risk. Although the paragraph is not exclusively about emissions or climate policy, the climate change language is prominent and tied to operational impacts.\nLabel: Climate Change",
+    "parsed_label": "Climate Change",
+    "ground_truth_label": "Climate Change"
+  },
+  {
+    "paragraph_id": "NTAP_2021_RISK_014",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph simply states that transitioning to consumption-based business models could harm revenues and profitability. It does not provide any ESG-related detail or discussion, such as environmental impact, labor management, or product safety. The language is business-and-financial, focusing on revenue and profitability risk. As written, it is not specific enough to any ESG category.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "KLAC_2022_RISK_104",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph only says the company is subject to risks from government actions if it breaches settlement arrangement terms. This is a legal/constraints risk tied to settlements and government action, but it does not describe any ESG topic such as pollution, labor, climate, or governance practices. The text does not indicate any environmental, social, or ethics content.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "NXPI_2022_RISK_031",
+    "raw_output": "Reasoning: The gold label of Product Liability is correct because the paragraph discusses security vulnerabilities in products and services, including the risk that vulnerabilities may be exploited and the effect on customer relationships and reputation. It also mentions privacy or safety risks in data-centric applications and the possibility of adverse publicity damaging brand value. While this is not a traditional privacy or data security issue, the product-related nature of the risk makes Product Liability the best fit.\nLabel: Product Liability",
+    "parsed_label": "Product Liability",
+    "ground_truth_label": "Product Liability"
+  },
+  {
+    "paragraph_id": "SRE_2023_RISK_072",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph simply states that any of certain events could reduce expected recovery and harm SDG&E’s and Sempra’s results. It does not specify what those events are or provide enough content to classify as an ESG category. The text is generic and focused on financial and operational risk rather than environmental, social, or governance issues.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "CBRE_2022_RISK_075",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because this paragraph is a forward-looking statements cautionary note. It explains that the annual report contains expectations and projections based on management's beliefs and uncertainties, and that actual results may differ materially. This is a standard securities-law disclosure and not a substantive ESG risk discussion. There is no mention of any ESG-related issue such as labor, climate, governance, or ethics.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "OMC_2022_RISK_019",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because this paragraph is about acquisition risk and the failure to identify material risks in due diligence. It focuses on whether the benefits of acquisitions will be realized, which is a transactional and strategic concern. This is not primarily about governance, ethics, or any environmental or social issue. The paragraph does not mention board oversight, executive pay, labor, community impact, or environmental effects in a substantive way.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "BSX_2022_RISK_004",
+    "raw_output": "Reasoning: The gold label of Product Liability is correct because the paragraph discusses COVID-19-related demand fluctuations and staffing shortages in healthcare facilities. It notes that government authorities recommended or required elective procedures be suspended or canceled to avoid patient exposure to COVID-19, which is a public health risk factor. The timing and availability of medical services also affect demand for the company's products. This is more about health care demand and operational disruption than general economic recovery, so Product Liability fits the data.\nLabel: Product Liability",
+    "parsed_label": "Product Liability",
+    "ground_truth_label": "Human Capital"
+  },
+  {
+    "paragraph_id": "TXT_2021_RISK_043",
+    "raw_output": "Reasoning: The gold label of Climate Change is correct because the paragraph directly identifies both increased regulation related to global climate change and more international, regional, and federal requirements to reduce or mitigate global warming. It also notes possible mandates on greenhouse gas emissions and restrictions on business operations, which are classic climate-risk disclosures. The paragraph is less about broad regulatory change and more about climate-specific compliance and operational impacts.\nLabel: Climate Change",
+    "parsed_label": "Climate Change",
+    "ground_truth_label": "Climate Change"
+  },
+  {
+    "paragraph_id": "ZTS_2023_RISK_058",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph focuses on competition from newly developed or alternative products, including “green” or “holistic” health products or disease-resistant animals. While it mentions animal health and holistic options, the risk is about market acceptance and technological breakthroughs replacing the company’s products, not a targeted natural capital or product liability discussion. The paragraph therefore remains a general business risk.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "ROK_2021_RISK_025",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph is about increasing employee benefit costs and funding requirements potentially harming operating results and financial condition. While it mentions employees and benefits, it does not discuss training, retention, diversity, safety, or other human capital ESG themes. It is a general cost and profitability risk.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "TEL_2021_RISK_035",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph is a broad strategic transactions risk statement. It mentions “material environmental liabilities,” “litigation,” “government enforcement actions,” and “reputational risk,” but does not specify how these relate to acquisition, merger, divesture, or other transactional activity. The language is generic and could apply to many businesses. As written, it does not primarily discuss an ESG category.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "ZBRA_2022_RISK_031",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph focuses on financial and market risks, including third-party insurance coverage, deductibles, policy limits, and self-insurance. It also discusses indebtedness, liquidity, and the possibility of being at a competitive disadvantage or more vulnerable to economic downturns. These are classic financial and business-risk issues rather than ESG topics. There is no substantive discussion of environmental, social, or governance matters in the paragraph.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "DVA_2022_RISK_029",
+    "raw_output": "Reasoning: The gold label of Product Liability is correct because the paragraph discusses commercial insurance reimbursement, patient access to ESRD coverage, and payor contractual relationships. It emphasizes that if payors restrict access or dispute coverage, it could reduce patients covered and affect financial results. Those are product-like business arrangements around healthcare services and insurance coverage. The mention of Medicare as a secondary payor and court review of coverage rules further supports a product-liability-like disclosure.\nLabel: Product Liability",
+    "parsed_label": "Product Liability",
+    "ground_truth_label": "Product Liability"
+  },
+  {
+    "paragraph_id": "IDXX_2022_RISK_007",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph discusses dependence on third-party suppliers, supply chain disruptions, raw material shortages, and supplier-related operational disruptions. The mentions of wage inflation and supply restrictions are part of business continuity and cost risks rather than a targeted natural capital or human capital discussion. The paragraph does not primarily address sourcing policies, biodiversity, land use, or labor standards in a supply chain context.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "NDAQ_2022_RISK_043",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph focuses on geopolitical and operational risks rather than any ESG issue. It discusses uncertainties in countries like Lithuania, India, and the Philippines, along with risks from “terrorist attacks,” “natural disasters,” “pandemics,” and concentration in specific areas. The mention of disaster recovery and business continuity plans is about operational continuity rather than an ESG topic. Currency risk and colocation customer interruption are financial risks tied to geography and systems. This is not primarily Climate Change or Human Capital.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "KVUE_2025_RISK_149",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph only describes that the company is a holding company with equity interests in subsidiaries and depends on dividends and distributions. This is a structure and financing risk, not an ESG issue. It does not mention labor, environment, governance practices, or social impacts in any way.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "SW_2025_RISK_041",
+    "raw_output": "Reasoning: The gold label of Corporate Governance is correct because the paragraph discusses material weaknesses in internal control over financial reporting, the risk of material misstatements, and the possibility of delisting from stock exchanges, regulatory investigations, and civil or criminal sanctions. It also mentions changes in financial accounting standards, new accounting pronouncements, and interpretations of GAAP. These are all control and reporting-related risks that directly affect governance and financial reporting integrity.\nLabel: Corporate Governance",
+    "parsed_label": "Corporate Governance",
+    "ground_truth_label": "Corporate Governance"
+  },
+  {
+    "paragraph_id": "XYL_2022_RISK_059",
+    "raw_output": "Reasoning: The gold label of Business Ethics & Values is correct because the paragraph discusses legal and regulatory proceedings that could create “substantial liability” and damage the company’s reputation. It also mentions violations, settlements, fines, or penalties, along with government contract issues and commercial disputes, which are all ethical and legal conduct concerns. Although the paragraph references many subjects, the core risk is the ethical and legal consequences of violations and proceedings.\nLabel: Business Ethics & Values",
+    "parsed_label": "Business Ethics & Values",
+    "ground_truth_label": "Business Ethics & Values"
+  },
+  {
+    "paragraph_id": "BWA_2022_RISK_017",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph focuses on pricing pressure from OEMs, cost recovery, and manufacturing efficiency. It discusses annual price reductions, improved production processes, and the ability to pass through raw material costs and employee wages and benefits. These are business model and margin risks rather than ESG issues. There is no substantive discussion of environmental, social, or governance topics.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "QCOM_2022_RISK_061",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph is about industry competition and consolidation in wireless communications and semiconductors. The key risks are that competitors may expand product offerings, reduce prices, and gain access to technologies and intellectual property through acquisitions. These are business and market-risk disclosures rather than ESG-related issues.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "paragraph_id": "CZR_2022_RISK_036",
+    "raw_output": "Reasoning: The gold label of Product Liability is correct because the paragraph focuses on cybersecurity insurance coverage for a breach, including “notification, credit monitoring, investigation, crisis management, public relations and legal advice.” That is a classic privacy and data security risk, and the mention of customer impacts through credit monitoring further supports this label rather than Human Capital or Corporate Governance.\nLabel: Product Liability",
+    "parsed_label": "Product Liability",
+    "ground_truth_label": "Product Liability"
+  },
+  {
+    "paragraph_id": "SCHW_2022_RISK_036",
+    "raw_output": "Reasoning: The gold label of Corporate Governance is correct because the paragraph discusses the certificate of incorporation, the authorization of the Board of Directors to issue additional shares, and the risk of dilution from additional equity or convertible securities. These are governance and shareholder-control issues tied to how the company can issue stock without approval. The main subject is not environmental, labor, or product-related risk, but board powers and capital structure influence.\nLabel: Corporate Governance",
+    "parsed_label": "Corporate Governance",
+    "ground_truth_label": "Corporate Governance"
+  },
+  {
+    "paragraph_id": "JCI_2021_RISK_005",
+    "raw_output": "Reasoning: The gold label of Non-ESG is correct because the paragraph simply states that COVID-19 pandemic-related effects could harm business, financial condition, results of operations, and cash flows. It focuses on uncertainty around resurgence, vaccine effectiveness, regulatory actions, and economic activity. This is a general operational and macroeconomic risk disclosure, not a discussion of employee health, supply chain labor issues, or community impacts associated with ESG categories.\nLabel: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  }
+]

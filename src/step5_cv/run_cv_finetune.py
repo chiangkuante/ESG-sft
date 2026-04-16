@@ -1393,16 +1393,13 @@ def is_adapter_complete(models_root: Path, fold_idx: int) -> bool:
     return adapter_config.exists() and adapter_weights.exists() and adapter_weights.stat().st_size > 0
 
 
-def main() -> None:
-    parser = argparse.ArgumentParser(description="Formal Step 5 CV fine-tuning and inference")
-    parser.add_argument("--model", required=True, choices=["gemma", "llama", "qwen", "ministral"])
-    args = parser.parse_args()
-
-
+def run_finetune(model_type: str) -> None:
+    if model_type not in MODEL_NAME_DEFAULTS:
+        raise ValueError(f"Unknown model_type: {model_type}")
 
     config = load_step5_cv_config()
     cfg = config["finetune"]
-    cfg = apply_model_overrides(cfg, args.model)
+    cfg = apply_model_overrides(cfg, model_type)
     train_cfg = cfg["training"]
     ablation_cfg = get_ablation_cfg(cfg)
     xyz_plot_cfg = get_xyz_plot_cfg(cfg)
@@ -1412,8 +1409,8 @@ def main() -> None:
     resume_enabled = bool(cfg.get("resume", False))
     annotator_name = resolve_annotator_name(load_step4_config())
     sft_output_dir = resolve_path(cfg["sft_output_dir"]) / annotator_name
-    results_root = resolve_path(cfg["results_root"]) / annotator_name / args.model
-    models_root = resolve_path(cfg["models_root"]) / annotator_name / args.model
+    results_root = resolve_path(cfg["results_root"]) / annotator_name / model_type
+    models_root = resolve_path(cfg["models_root"]) / annotator_name / model_type
     variant_name = resolve_variant_name(ablation_cfg)
     if variant_name != "default":
         results_root = results_root / variant_name
@@ -1439,7 +1436,7 @@ def main() -> None:
         fold_entries = [entry for entry in fold_entries if int(entry["fold"]) == target_fold]
         if not fold_entries:
             raise ValueError(f"Dry run fold {target_fold} not found in SFT manifest")
-        logger.info("Dry run enabled: model=%s fold=%s", args.model, target_fold)
+        logger.info("Dry run enabled: model=%s fold=%s", model_type, target_fold)
     logger.info(
         "Ablation mode: label_only=%s human_only=%s synthetic_only=%s variant=%s",
         ablation_cfg["label_only"],
@@ -1447,7 +1444,7 @@ def main() -> None:
         ablation_cfg["synthetic_only"],
         variant_name,
     )
-    log_effective_runtime_config(args.model, train_cfg, cfg, inference_cfg)
+    log_effective_runtime_config(model_type, train_cfg, cfg, inference_cfg)
     if xyz_plot_cfg["enabled"]:
         epoch_values = xyz_plot_cfg["epochs"]
         if not epoch_values:
@@ -1455,7 +1452,7 @@ def main() -> None:
         logger.info("X/Y/Z plot mode enabled: fold=0 epochs=%s", epoch_values)
         mp.set_start_method("spawn", force=True)
         run_epoch_sweep(
-            model_type=args.model,
+            model_type=model_type,
             fold_entry=fold_entries[0],
             train_cfg=train_cfg,
             finetune_cfg=cfg,
@@ -1472,7 +1469,7 @@ def main() -> None:
         adapter_dir = models_root / f"fold_{fold_entry['fold']}" / "adapter"
         fold_idx = fold_entry["fold"]
         train_single_fold(
-            model_type=args.model,
+            model_type=model_type,
             fold_idx=fold_idx,
             train_sft_path=resolve_path(fold_entry["sft_path"]),
             adapter_dir=adapter_dir,
@@ -1482,7 +1479,7 @@ def main() -> None:
             dry_run_cfg=dry_run_cfg,
             keep_loaded=False,
         )
-        logger.info("%s dry_run fold %s training complete", args.model, fold_idx)
+        logger.info("%s dry_run fold %s training complete", model_type, fold_idx)
         return
 
     mp.set_start_method("spawn", force=True)
@@ -1505,7 +1502,7 @@ def main() -> None:
         train_process = mp.Process(
             target=training_worker,
             args=(
-                args.model,
+                model_type,
                 fold_idx,
                 str(resolve_path(fold_entry["sft_path"])),
                 str(adapter_dir),
@@ -1521,6 +1518,13 @@ def main() -> None:
             raise RuntimeError(f"Training process for fold {fold_idx} failed with exit code {train_process.exitcode}")
 
     logger.info("Training for all configured folds is complete.")
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description="Formal Step 5 CV fine-tuning and inference")
+    parser.add_argument("--model", required=True, choices=["gemma", "llama", "qwen", "ministral"])
+    args = parser.parse_args()
+    run_finetune(args.model)
 
 
 if __name__ == "__main__":
