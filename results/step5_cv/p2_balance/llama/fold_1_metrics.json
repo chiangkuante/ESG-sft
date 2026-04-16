@@ -1,0 +1,11 @@
+{
+  "samples": 166,
+  "accuracy": 0.8373,
+  "macro_f1": 0.7273,
+  "weighted_f1": 0.8379,
+  "kappa": 0.7032,
+  "fold": 1,
+  "checkpoint_strategy": "final",
+  "checkpoint_epoch": null,
+  "checkpoint_dir": "/home/wa1ter/ESG-sft/models/step5_cv/p2_balance/llama/fold_1/adapter"
+}

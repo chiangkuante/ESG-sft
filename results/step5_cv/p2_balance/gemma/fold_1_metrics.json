@@ -1,0 +1,11 @@
+{
+  "samples": 166,
+  "accuracy": 0.8072,
+  "macro_f1": 0.6133,
+  "weighted_f1": 0.813,
+  "kappa": 0.6466,
+  "fold": 1,
+  "checkpoint_strategy": "final",
+  "checkpoint_epoch": null,
+  "checkpoint_dir": "/home/wa1ter/ESG-sft/models/step5_cv/p2_balance/gemma/fold_1/adapter"
+}
