@@ -2,46 +2,46 @@
   "folds": [
     {
       "samples": 327,
-      "accuracy": 0.7125,
-      "macro_f1": 0.6741,
-      "weighted_f1": 0.719,
-      "kappa": 0.6358,
+      "accuracy": 0.7401,
+      "macro_f1": 0.6856,
+      "weighted_f1": 0.7494,
+      "kappa": 0.6622,
       "fold": 0,
       "checkpoint_strategy": "final",
       "checkpoint_epoch": null,
-      "checkpoint_dir": "/workspace/work/ESG-sft/ESG-sft-master/models/step5_cv/p2_combined/gemma/fold_0/checkpoints/checkpoint-final"
+      "checkpoint_dir": "/workspace/work/ESG-sft/ESG-sft-master/models/step5_cv/p2_combined/gemma/fold_0/adapter"
     },
     {
       "samples": 327,
-      "accuracy": 0.7462,
-      "macro_f1": 0.7161,
-      "weighted_f1": 0.7498,
-      "kappa": 0.6649,
+      "accuracy": 0.7309,
+      "macro_f1": 0.7107,
+      "weighted_f1": 0.7343,
+      "kappa": 0.6514,
       "fold": 1,
       "checkpoint_strategy": "final",
       "checkpoint_epoch": null,
-      "checkpoint_dir": "/workspace/work/ESG-sft/ESG-sft-master/models/step5_cv/p2_combined/gemma/fold_1/checkpoints/checkpoint-final"
+      "checkpoint_dir": "/workspace/work/ESG-sft/ESG-sft-master/models/step5_cv/p2_combined/gemma/fold_1/adapter"
     },
     {
       "samples": 326,
-      "accuracy": 0.7239,
-      "macro_f1": 0.6505,
-      "weighted_f1": 0.7192,
-      "kappa": 0.6369,
+      "accuracy": 0.7331,
+      "macro_f1": 0.6784,
+      "weighted_f1": 0.7366,
+      "kappa": 0.656,
       "fold": 2,
       "checkpoint_strategy": "final",
       "checkpoint_epoch": null,
-      "checkpoint_dir": "/workspace/work/ESG-sft/ESG-sft-master/models/step5_cv/p2_combined/gemma/fold_2/checkpoints/checkpoint-final"
+      "checkpoint_dir": "/workspace/work/ESG-sft/ESG-sft-master/models/step5_cv/p2_combined/gemma/fold_2/adapter"
     }
   ],
   "summary": {
-    "accuracy_mean": 0.7275,
-    "accuracy_std": 0.014,
-    "macro_f1_mean": 0.6802,
-    "macro_f1_std": 0.0271,
-    "weighted_f1_mean": 0.7293,
-    "weighted_f1_std": 0.0145,
-    "kappa_mean": 0.6459,
-    "kappa_std": 0.0135
+    "accuracy_mean": 0.7347,
+    "accuracy_std": 0.0039,
+    "macro_f1_mean": 0.6916,
+    "macro_f1_std": 0.0138,
+    "weighted_f1_mean": 0.7401,
+    "weighted_f1_std": 0.0066,
+    "kappa_mean": 0.6565,
+    "kappa_std": 0.0044
   }
 }
