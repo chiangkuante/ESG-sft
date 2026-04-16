@@ -1,0 +1,11 @@
+{
+  "samples": 327,
+  "accuracy": 0.7768,
+  "macro_f1": 0.7122,
+  "weighted_f1": 0.7693,
+  "kappa": 0.6789,
+  "fold": 0,
+  "checkpoint_strategy": "final",
+  "checkpoint_epoch": null,
+  "checkpoint_dir": "/workspace/work/ESG-sft/ESG-sft-master/models/step5_cv/p2_combined/ministral/fold_0/adapter"
+}
