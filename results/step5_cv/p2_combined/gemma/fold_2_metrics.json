@@ -1,11 +1,11 @@
 {
   "samples": 326,
-  "accuracy": 0.7239,
-  "macro_f1": 0.6505,
-  "weighted_f1": 0.7192,
-  "kappa": 0.6369,
+  "accuracy": 0.7331,
+  "macro_f1": 0.6784,
+  "weighted_f1": 0.7366,
+  "kappa": 0.656,
   "fold": 2,
   "checkpoint_strategy": "final",
   "checkpoint_epoch": null,
-  "checkpoint_dir": "/workspace/work/ESG-sft/ESG-sft-master/models/step5_cv/p2_combined/gemma/fold_2/checkpoints/checkpoint-final"
+  "checkpoint_dir": "/workspace/work/ESG-sft/ESG-sft-master/models/step5_cv/p2_combined/gemma/fold_2/adapter"
 }
