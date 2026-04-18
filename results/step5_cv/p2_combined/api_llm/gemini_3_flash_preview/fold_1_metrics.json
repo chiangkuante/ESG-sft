@@ -1,0 +1,8 @@
+{
+  "samples": 327,
+  "accuracy": 0.7615,
+  "macro_f1": 0.7155,
+  "weighted_f1": 0.7617,
+  "kappa": 0.6956,
+  "fold": 1
+}
