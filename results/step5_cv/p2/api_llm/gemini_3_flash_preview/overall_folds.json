@@ -1,0 +1,26 @@
+[
+  {
+    "samples": 168,
+    "accuracy": 0.7917,
+    "macro_f1": 0.5618,
+    "weighted_f1": 0.7979,
+    "kappa": 0.6659,
+    "fold": 0
+  },
+  {
+    "samples": 167,
+    "accuracy": 0.7964,
+    "macro_f1": 0.5794,
+    "weighted_f1": 0.8046,
+    "kappa": 0.6758,
+    "fold": 1
+  },
+  {
+    "samples": 165,
+    "accuracy": 0.7636,
+    "macro_f1": 0.5195,
+    "weighted_f1": 0.771,
+    "kappa": 0.6091,
+    "fold": 2
+  }
+]

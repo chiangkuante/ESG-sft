@@ -130,6 +130,27 @@ step5_cv:
           input_tpm: 450000
           output_tpm: 90000
 
+  local_slm_baseline:
+    enabled: true
+    sft_output_dir: data/processed/step5_sft
+    results_root: results/step5_cv
+    experiments:
+      - p2_balance
+      - p2
+      - p2_combined
+    label_only: false
+    max_new_tokens: 512
+    resume: true
+    models:
+      gemma:
+        enabled: true
+      llama:
+        enabled: true
+      qwen:
+        enabled: true
+      ministral:
+        enabled: true
+
   finetune:
     sft_output_dir: data/processed/step5_sft
     results_root: results/step5_cv

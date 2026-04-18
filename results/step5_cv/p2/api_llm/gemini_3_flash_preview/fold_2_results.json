@@ -1,0 +1,1157 @@
+[
+  {
+    "fold": 2,
+    "paragraph_id": "HUM_2022_RISK_006",
+    "raw_output": "Label: Product Liability",
+    "parsed_label": "Product Liability",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "EBAY_2022_RISK_057",
+    "raw_output": "Label: Business Ethics & Values",
+    "parsed_label": "Business Ethics & Values",
+    "ground_truth_label": "Business Ethics & Values"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "KR_2021_RISK_008",
+    "raw_output": "Label: Product Liability",
+    "parsed_label": "Product Liability",
+    "ground_truth_label": "Product Liability"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "HII_2022_RISK_006",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "ABBV_2022_RISK_002",
+    "raw_output": "Label: Product Liability",
+    "parsed_label": "Product Liability",
+    "ground_truth_label": "Human Capital"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "STLD_2022_RISK_016",
+    "raw_output": "Label: Pollution & Waste",
+    "parsed_label": "Pollution & Waste",
+    "ground_truth_label": "Pollution & Waste"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "SNA_2021_RISK_011",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "FDX_2021_RISK_025",
+    "raw_output": "Label: Human Capital",
+    "parsed_label": "Human Capital",
+    "ground_truth_label": "Human Capital"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "DELL_2021_RISK_037",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "INCY_2023_RISK_012",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "HLT_2023_RISK_006",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "EMN_2024_RISK_016",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "ULTA_2021_RISK_033",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "PEG_2022_RISK_025",
+    "raw_output": "Label: Natural Capital",
+    "parsed_label": "Natural Capital",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "APO_2023_RISK_001",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "ADSK_2022_RISK_070",
+    "raw_output": "Label: Product Liability",
+    "parsed_label": "Product Liability",
+    "ground_truth_label": "Product Liability"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "LNT_2022_RISK_014",
+    "raw_output": "Label: Climate Change",
+    "parsed_label": "Climate Change",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "HRL_2021_RISK_014",
+    "raw_output": "Label: Product Liability",
+    "parsed_label": "Product Liability",
+    "ground_truth_label": "Business Ethics & Values"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "ITW_2022_RISK_001",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "CRL_2022_RISK_019",
+    "raw_output": "Label: Product Liability",
+    "parsed_label": "Product Liability",
+    "ground_truth_label": "Product Liability"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "AFL_2022_RISK_030",
+    "raw_output": "Label: Human Capital",
+    "parsed_label": "Human Capital",
+    "ground_truth_label": "Human Capital"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "AZO_2021_RISK_011",
+    "raw_output": "Label: Human Capital",
+    "parsed_label": "Human Capital",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "KHC_2022_RISK_064",
+    "raw_output": "Label: Corporate Governance",
+    "parsed_label": "Corporate Governance",
+    "ground_truth_label": "Corporate Governance"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "MGM_2022_RISK_045",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "PPG_2022_RISK_025",
+    "raw_output": "Label: Product Liability",
+    "parsed_label": "Product Liability",
+    "ground_truth_label": "Product Liability"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "ABT_2022_RISK_001",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "DECK_2021_RISK_059",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "CCL_2022_RISK_049",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "TFC_2022_RISK_038",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "KEY_2022_RISK_013",
+    "raw_output": "Label: Business Ethics & Values",
+    "parsed_label": "Business Ethics & Values",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "EG_2022_RISK_015",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "CBOE_2022_RISK_059",
+    "raw_output": "Label: Corporate Governance",
+    "parsed_label": "Corporate Governance",
+    "ground_truth_label": "Corporate Governance"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "GEHC_2024_RISK_107",
+    "raw_output": "Label: Product Liability",
+    "parsed_label": "Product Liability",
+    "ground_truth_label": "Product Liability"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "BEN_2021_RISK_075",
+    "raw_output": "Label: Corporate Governance",
+    "parsed_label": "Corporate Governance",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "BA_2022_RISK_022",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "RF_2022_RISK_048",
+    "raw_output": "Label: Product Liability",
+    "parsed_label": "Product Liability",
+    "ground_truth_label": "Product Liability"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "CNC_2023_RISK_016",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Product Liability"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "GEHC_2023_RISK_147",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "UDR_2022_RISK_039",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "CTVA_2022_RISK_047",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Corporate Governance"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "TXN_2022_RISK_019",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "PWR_2022_RISK_020",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "VRTX_2022_RISK_074",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "ACGL_2022_RISK_045",
+    "raw_output": "Label: Product Liability",
+    "parsed_label": "Product Liability",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "NEM_2022_RISK_031",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "PANW_2022_RISK_132",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "UHS_2022_RISK_002",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "PRU_2022_RISK_043",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Human Capital"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "CHD_2022_RISK_051",
+    "raw_output": "Label: Product Liability",
+    "parsed_label": "Product Liability",
+    "ground_truth_label": "Product Liability"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "NRG_2023_RISK_012",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "EOG_2022_RISK_076",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "KEYS_2021_RISK_065",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Business Ethics & Values"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "DOV_2022_RISK_005",
+    "raw_output": "Label: Human Capital",
+    "parsed_label": "Human Capital",
+    "ground_truth_label": "Human Capital"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "IT_2022_RISK_015",
+    "raw_output": "Label: Product Liability",
+    "parsed_label": "Product Liability",
+    "ground_truth_label": "Product Liability"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "AMGN_2023_RISK_058",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "NTRS_2022_RISK_071",
+    "raw_output": "Label: Climate Change",
+    "parsed_label": "Climate Change",
+    "ground_truth_label": "Climate Change"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "INTU_2021_RISK_055",
+    "raw_output": "Label: Product Liability",
+    "parsed_label": "Product Liability",
+    "ground_truth_label": "Product Liability"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "MTD_2022_RISK_027",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "FDS_2021_RISK_027",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Business Ethics & Values"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "URI_2022_RISK_077",
+    "raw_output": "Label: Human Capital",
+    "parsed_label": "Human Capital",
+    "ground_truth_label": "Human Capital"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "BIIB_2022_RISK_101",
+    "raw_output": "Label: Product Liability",
+    "parsed_label": "Product Liability",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "ZBH_2022_RISK_004",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "CSX_2022_RISK_004",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Business Ethics & Values"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "VTR_2022_RISK_083",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "NFLX_2022_RISK_038",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "FCX_2022_RISK_015",
+    "raw_output": "Label: Human Capital",
+    "parsed_label": "Human Capital",
+    "ground_truth_label": "Human Capital"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "ADM_2022_RISK_015",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Climate Change"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "INCY_2024_RISK_100",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "TDG_2021_RISK_012",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "PSA_2022_RISK_035",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "SNPS_2021_RISK_054",
+    "raw_output": "Label: Business Ethics & Values",
+    "parsed_label": "Business Ethics & Values",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "DRI_2021_RISK_059",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Human Capital"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "STX_2022_RISK_003",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "GWW_2022_RISK_004",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "MOH_2024_RISK_012",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Corporate Governance"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "O_2022_RISK_037",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "ESS_2022_RISK_008",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "PANW_2021_RISK_094",
+    "raw_output": "Label: Product Liability",
+    "parsed_label": "Product Liability",
+    "ground_truth_label": "Product Liability"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "TROW_2022_RISK_021",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "DLR_2022_RISK_061",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Corporate Governance"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "MSCI_2022_RISK_080",
+    "raw_output": "Label: Corporate Governance",
+    "parsed_label": "Corporate Governance",
+    "ground_truth_label": "Corporate Governance"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "LDOS_2022_RISK_052",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "GIS_2021_RISK_019",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "NEM_2023_RISK_102",
+    "raw_output": "Label: Business Ethics & Values",
+    "parsed_label": "Business Ethics & Values",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "OTIS_2022_RISK_059",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "DIS_2021_RISK_022",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "HPE_2021_RISK_048",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "WTW_2022_RISK_084",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "APA_2022_RISK_024",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "VICI_2023_RISK_033",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "AVY_2021_RISK_038",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "RVTY_2021_RISK_018",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "UAL_2022_RISK_056",
+    "raw_output": "Label: Business Ethics & Values",
+    "parsed_label": "Business Ethics & Values",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "SHW_2022_RISK_053",
+    "raw_output": "Label: Product Liability",
+    "parsed_label": "Product Liability",
+    "ground_truth_label": "Product Liability"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "J_2022_RISK_147",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "PHM_2022_RISK_030",
+    "raw_output": "Label: Corporate Governance",
+    "parsed_label": "Corporate Governance",
+    "ground_truth_label": "Corporate Governance"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "ELV_2022_RISK_048",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "RSG_2022_RISK_028",
+    "raw_output": "Label: Climate Change",
+    "parsed_label": "Climate Change",
+    "ground_truth_label": "Climate Change"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "BDX_2021_RISK_046",
+    "raw_output": "Label: Corporate Governance",
+    "parsed_label": "Corporate Governance",
+    "ground_truth_label": "Corporate Governance"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "COF_2022_RISK_029",
+    "raw_output": "Label: Product Liability",
+    "parsed_label": "Product Liability",
+    "ground_truth_label": "Product Liability"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "A_2021_RISK_061",
+    "raw_output": "Label: Climate Change",
+    "parsed_label": "Climate Change",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "ACN_2021_RISK_051",
+    "raw_output": "Label: Business Ethics & Values",
+    "parsed_label": "Business Ethics & Values",
+    "ground_truth_label": "Business Ethics & Values"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "AIZ_2022_RISK_021",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "NEE_2022_RISK_008",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "PEP_2022_RISK_009",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "NDSN_2021_RISK_007",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "PM_2022_RISK_005",
+    "raw_output": "Label: Product Liability",
+    "parsed_label": "Product Liability",
+    "ground_truth_label": "Product Liability"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "KMX_2021_RISK_018",
+    "raw_output": "Label: Human Capital",
+    "parsed_label": "Human Capital",
+    "ground_truth_label": "Human Capital"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "MDT_2021_RISK_068",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "AVB_2022_RISK_060",
+    "raw_output": "Label: Corporate Governance",
+    "parsed_label": "Corporate Governance",
+    "ground_truth_label": "Corporate Governance"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "IVZ_2023_RISK_054",
+    "raw_output": "Label: Corporate Governance",
+    "parsed_label": "Corporate Governance",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "WAB_2022_RISK_005",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "CHRW_2022_RISK_002",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "TRMB_2021_RISK_051",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "FIS_2022_RISK_093",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "BAX_2023_RISK_003",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "MDLZ_2022_RISK_002",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "CMI_2022_RISK_050",
+    "raw_output": "Label: Corporate Governance",
+    "parsed_label": "Corporate Governance",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "FMC_2022_RISK_011",
+    "raw_output": "Label: Product Liability",
+    "parsed_label": "Product Liability",
+    "ground_truth_label": "Product Liability"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "INVH_2024_RISK_135",
+    "raw_output": "Label: Corporate Governance",
+    "parsed_label": "Corporate Governance",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "WAT_2022_RISK_029",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "VLO_2022_RISK_059",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "WMB_2022_RISK_062",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "JNJ_2021_RISK_052",
+    "raw_output": "Label: Corporate Governance",
+    "parsed_label": "Corporate Governance",
+    "ground_truth_label": "Corporate Governance"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "CARR_2022_RISK_021",
+    "raw_output": "Label: Corporate Governance",
+    "parsed_label": "Corporate Governance",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "D_2022_RISK_020",
+    "raw_output": "Label: Human Capital",
+    "parsed_label": "Human Capital",
+    "ground_truth_label": "Pollution & Waste"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "LW_2021_RISK_002",
+    "raw_output": "Label: Human Capital",
+    "parsed_label": "Human Capital",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "MLM_2022_RISK_039",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "NUE_2022_RISK_019",
+    "raw_output": "Label: Climate Change",
+    "parsed_label": "Climate Change",
+    "ground_truth_label": "Climate Change"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "NVR_2022_RISK_020",
+    "raw_output": "Label: Natural Capital",
+    "parsed_label": "Natural Capital",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "UPS_2022_RISK_007",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "SO_2022_RISK_018",
+    "raw_output": "Label: Climate Change",
+    "parsed_label": "Climate Change",
+    "ground_truth_label": "Climate Change"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "FE_2022_RISK_003",
+    "raw_output": "Label: Business Ethics & Values",
+    "parsed_label": "Business Ethics & Values",
+    "ground_truth_label": "Business Ethics & Values"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "DHR_2022_RISK_086",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "FOXA_2021_RISK_031",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "PYPL_2022_RISK_028",
+    "raw_output": "Label: Product Liability",
+    "parsed_label": "Product Liability",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "ZTS_2022_RISK_131",
+    "raw_output": "Label: Business Ethics & Values",
+    "parsed_label": "Business Ethics & Values",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "CTRA_2022_RISK_035",
+    "raw_output": "Label: Climate Change",
+    "parsed_label": "Climate Change",
+    "ground_truth_label": "Climate Change"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "VZ_2022_RISK_013",
+    "raw_output": "Label: Product Liability",
+    "parsed_label": "Product Liability",
+    "ground_truth_label": "Product Liability"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "GEV_2025_RISK_011",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "EMR_2021_RISK_010",
+    "raw_output": "Label: Product Liability",
+    "parsed_label": "Product Liability",
+    "ground_truth_label": "Product Liability"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "ADP_2021_RISK_011",
+    "raw_output": "Label: Product Liability",
+    "parsed_label": "Product Liability",
+    "ground_truth_label": "Product Liability"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "KLAC_2022_RISK_104",
+    "raw_output": "Label: Business Ethics & Values",
+    "parsed_label": "Business Ethics & Values",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "PODD_2022_RISK_014",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "NXPI_2022_RISK_031",
+    "raw_output": "Label: Product Liability",
+    "parsed_label": "Product Liability",
+    "ground_truth_label": "Product Liability"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "SRE_2023_RISK_072",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "OMC_2022_RISK_019",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "VST_2022_RISK_019",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "TMO_2022_RISK_015",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "BSX_2022_RISK_004",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Human Capital"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "PAYC_2022_RISK_063",
+    "raw_output": "Label: Corporate Governance",
+    "parsed_label": "Corporate Governance",
+    "ground_truth_label": "Corporate Governance"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "ROK_2021_RISK_025",
+    "raw_output": "Label: Human Capital",
+    "parsed_label": "Human Capital",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "WDAY_2022_RISK_059",
+    "raw_output": "Label: Product Liability",
+    "parsed_label": "Product Liability",
+    "ground_truth_label": "Product Liability"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "CNP_2022_RISK_095",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "MCO_2022_RISK_028",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "MO_2022_RISK_006",
+    "raw_output": "Label: Product Liability",
+    "parsed_label": "Product Liability",
+    "ground_truth_label": "Product Liability"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "IDXX_2022_RISK_007",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "MAS_2022_RISK_026",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "KVUE_2025_RISK_149",
+    "raw_output": "Label: Corporate Governance",
+    "parsed_label": "Corporate Governance",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "SW_2025_RISK_041",
+    "raw_output": "Label: Corporate Governance",
+    "parsed_label": "Corporate Governance",
+    "ground_truth_label": "Corporate Governance"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "XYL_2022_RISK_059",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Business Ethics & Values"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "CDNS_2021_RISK_030",
+    "raw_output": "Label: Climate Change",
+    "parsed_label": "Climate Change",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "CZR_2022_RISK_036",
+    "raw_output": "Label: Product Liability",
+    "parsed_label": "Product Liability",
+    "ground_truth_label": "Product Liability"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "KVUE_2024_RISK_027",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  },
+  {
+    "fold": 2,
+    "paragraph_id": "BAC_2022_RISK_025",
+    "raw_output": "Label: Non-ESG",
+    "parsed_label": "Non-ESG",
+    "ground_truth_label": "Non-ESG"
+  }
+]

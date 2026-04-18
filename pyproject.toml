@@ -17,7 +17,7 @@ dependencies = [
   "sec-parser>=0.54.0",
   "trl==0.22.2",
   "transformers==5.5.0",
-  "unsloth>=2026.3.1",
+  "unsloth[colab-new]>=2026.3.1",
   "unsloth-zoo>=2026.3.1",
 ]
 
@@ -25,3 +25,7 @@ dependencies = [
 dev = [
     "ipykernel>=7.2.0",
 ]
+
+[tool.uv.sources]
+unsloth = { git = "https://github.com/unslothai/unsloth.git" }
+unsloth-zoo = { git = "https://github.com/unslothai/unsloth-zoo.git" }
