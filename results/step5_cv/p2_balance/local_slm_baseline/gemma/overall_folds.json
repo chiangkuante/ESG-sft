@@ -1,0 +1,38 @@
+[
+  {
+    "samples": 168,
+    "accuracy": 0.6726,
+    "macro_f1": 0.5031,
+    "weighted_f1": 0.692,
+    "kappa": 0.5506,
+    "fold": 0,
+    "baseline": "local_slm_unfinetuned",
+    "model_type": "gemma",
+    "model_name": "unsloth/gemma-4-E4B-it",
+    "experiment": "p2_balance"
+  },
+  {
+    "samples": 166,
+    "accuracy": 0.6867,
+    "macro_f1": 0.5043,
+    "weighted_f1": 0.7043,
+    "kappa": 0.5171,
+    "fold": 1,
+    "baseline": "local_slm_unfinetuned",
+    "model_type": "gemma",
+    "model_name": "unsloth/gemma-4-E4B-it",
+    "experiment": "p2_balance"
+  },
+  {
+    "samples": 165,
+    "accuracy": 0.7091,
+    "macro_f1": 0.4938,
+    "weighted_f1": 0.7443,
+    "kappa": 0.5608,
+    "fold": 2,
+    "baseline": "local_slm_unfinetuned",
+    "model_type": "gemma",
+    "model_name": "unsloth/gemma-4-E4B-it",
+    "experiment": "p2_balance"
+  }
+]
