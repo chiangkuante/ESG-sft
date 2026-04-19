@@ -9,7 +9,7 @@ from pathlib import Path
 if __package__ in {None, ""}:
     sys.path.append(str(Path(__file__).resolve().parents[2]))
 
-from src.step4_cv.common import load_step4_config, resolve_experiment_dir, resolve_experiment_name
+from src.step4_cv.common import load_step4_config, resolve_experiment_dir, resolve_experiment_name, resolve_results_dir
 from src.step6_cv.common import load_json, load_step6_cv_config, resolve_path, save_json
 from src.step6_cv.run_cv_finetune import (
     apply_model_overrides,
@@ -58,7 +58,7 @@ def run_inference_only(model_type: str) -> None:
 
     experiment_name = resolve_experiment_name(load_step4_config())
     sft_output_dir = resolve_experiment_dir(resolve_path(cfg["sft_output_dir"]), experiment_name)
-    results_root = resolve_experiment_dir(resolve_path(cfg["results_root"]), experiment_name) / model_type
+    results_root = resolve_results_dir(resolve_path(cfg["results_root"]), experiment_name) / model_type
     models_root = resolve_experiment_dir(resolve_path(cfg["models_root"]), experiment_name) / model_type
     variant_name = resolve_variant_name(ablation_cfg)
     if variant_name != "default":

@@ -14,7 +14,7 @@ from dotenv import load_dotenv
 if __package__ in {None, ""}:
     sys.path.append(str(Path(__file__).resolve().parents[2]))
 
-from src.step4_cv.common import load_step4_config, resolve_experiment_dir, resolve_experiment_name
+from src.step4_cv.common import load_step4_config, resolve_experiment_dir, resolve_experiment_name, resolve_results_dir
 from src.step6_cv.common import (
     build_eval_messages,
     compute_overall_metrics,
@@ -334,7 +334,7 @@ def evaluate_model(model_key: str, model_cfg: dict[str, Any], api_cfg: dict[str,
 
     experiment_name = resolve_experiment_name(load_step4_config())
     step4_output_dir = resolve_experiment_dir(resolve_path(api_cfg["step4_output_dir"]), experiment_name)
-    results_root = resolve_experiment_dir(resolve_path(api_cfg["results_root"]), experiment_name) / "api_llm" / model_key
+    results_root = resolve_results_dir(resolve_path(api_cfg["results_root"]), experiment_name) / "api_llm" / model_key
     results_root.mkdir(parents=True, exist_ok=True)
 
     label_only = bool(api_cfg.get("label_only", True))
