@@ -17,7 +17,14 @@ if __package__ in {None, ""}:
     sys.path.append(str(Path(__file__).resolve().parents[2]))
 
 from src.step4_cv.assemble import load_synthetic_records, normalize_synthetic_record
-from src.step4_cv.common import load_json, load_step4_config, save_json, resolve_path
+from src.step4_cv.common import (
+    load_json,
+    load_step4_config,
+    resolve_experiment_dir,
+    resolve_experiment_name,
+    resolve_path,
+    save_json,
+)
 from src.step4_cv.prompts import SYNTHETIC_SYSTEM_PROMPT, build_synthetic_user_prompt
 
 
@@ -235,7 +242,7 @@ def main() -> None:
     if not api_key:
         raise ValueError(f"Missing API key env var: {api_key_env}")
 
-    output_dir = resolve_path(paths_cfg["output_dir"])
+    output_dir = resolve_experiment_dir(resolve_path(paths_cfg["output_dir"]), resolve_experiment_name(config))
     manifest = load_json(output_dir / "manifest.json")
     caller = get_caller(provider)
     batch_size = int(synthetic_cfg.get("max_samples_per_call", 20))

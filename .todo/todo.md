@@ -1,12 +1,12 @@
-# ESG 10-K 分類實驗：p2 目前架構
+# ESG 10-K 分類實驗：目前架構
 
-本文件只保留目前實際執行的 p2 實驗。所有流程設定以 `config/config.yaml` 為準，不在命令列傳遞實驗參數。偽標籤與 LLM 合成資料流程不列入本輪 todo。
+本文件只保留目前實際執行的三個實驗。所有流程設定以 `config/config.yaml` 為準，不在命令列傳遞實驗參數。偽標籤與 LLM 合成資料流程不列入本輪 todo。
 
 ---
 
 ## 目前目標
 
-使用第二標註者 p2 的人工標註資料 `chiang_500.csv`，搭配額外平衡資料集 `blance_500.csv`，建立三種 3-fold CV 實驗，並比較：
+使用目前的人工標註資料 `chiang_500.csv`，搭配額外平衡資料集 `blance_500.csv`，建立三種 3-fold CV 實驗，並比較：
 
 - FinBERT baseline
 - API LLM baseline
@@ -17,7 +17,7 @@
 
 ```yaml
 step4_cv:
-  annotator: p2
+  human_csv: data/origin_data/10k_1A/chiang_500.csv
   pseudo_labels:
     enabled: false
   synthetic_generation:
@@ -26,24 +26,24 @@ step4_cv:
 
 ---
 
-## p2 三個實驗
+## 三個實驗
 
-`annotator_name` 由 `src/step4_cv/common.py::resolve_annotator_name` 依照 `step4_cv.balance` 自動決定。
+`experiment_name` 由 `src/step4_cv/common.py::resolve_experiment_name` 依照 `step4_cv.balance` 自動決定。
 
-| 實驗 | annotator_name | balance.enabled | balance.include_in_cv | 資料切法 | 訓練資料 |
+| 實驗 | experiment_name | 路徑位置 | balance.enabled | balance.include_in_cv | 資料切法 | 訓練資料 |
 |---|---|---:|---:|---|---|
-| 實驗 1 | `p2_balance` | true | false | `chiang_500.csv` 做 3-fold | fold train + 全量 `blance_500.csv` |
-| 實驗 2 | `p2` | false | false | `chiang_500.csv` 做 3-fold | fold train only |
-| 實驗 3 | `p2_combined` | true | true | `chiang_500.csv` + `blance_500.csv` 合併後做 3-fold | 合併資料的 fold train |
+| 實驗 1 | `base` | 根目錄 | false | false | `chiang_500.csv` 做 3-fold | fold train only |
+| 實驗 2 | `balance` | `balance/` 子目錄 | true | false | `chiang_500.csv` 做 3-fold | fold train + 全量 `blance_500.csv` |
+| 實驗 3 | `combined` | `combined/` 子目錄 | true | true | `chiang_500.csv` + `blance_500.csv` 合併後做 3-fold | 合併資料的 fold train |
 
-目前 `config/config.yaml` 的 active 設定是實驗 3：
+目前 `config/config.yaml` 的 active 設定是實驗 2：
 
 ```yaml
 step4_cv:
-  annotator: p2
+  human_csv: data/origin_data/10k_1A/chiang_500.csv
   balance:
     enabled: true
-    include_in_cv: true
+    include_in_cv: false
 ```
 
 若要重建另外兩個實驗，僅調整 `step4_cv.balance`，再重跑 Step 4 與 Step 5 reasoning/SFT。
@@ -52,35 +52,35 @@ step4_cv:
 
 ## 目錄與資料流
 
-所有中間檔與結果依 `annotator_name` 分目錄保存：
+所有中間檔與結果依 `experiment_name` 分目錄保存；`base` 實驗直接放在根目錄，不另外建立子資料夾：
 
 ```text
-data/processed/step4_cv/{annotator_name}/
-data/processed/step5_reasoning/{annotator_name}/
-data/processed/step5_sft/{annotator_name}/
-models/step5_cv/{annotator_name}/
-results/step5_cv/{annotator_name}/
+data/processed/step4_cv/
+data/processed/step5_reasoning/
+data/processed/step6_sft/
+models/
+results/
 ```
 
-三個 p2 實驗對應：
+三個實驗對應：
 
 ```text
-data/processed/step4_cv/p2_balance/
-data/processed/step4_cv/p2/
-data/processed/step4_cv/p2_combined/
+data/processed/step4_cv/balance/
+data/processed/step4_cv/
+data/processed/step4_cv/combined/
 
-data/processed/step5_sft/p2_balance/
-data/processed/step5_sft/p2/
-data/processed/step5_sft/p2_combined/
+data/processed/step6_sft/balance/
+data/processed/step6_sft/
+data/processed/step6_sft/combined/
 
-results/step5_cv/p2_balance/
-results/step5_cv/p2/
-results/step5_cv/p2_combined/
+results/balance/
+results/
+results/combined/
 ```
 
 ---
 
-## Step 4：p2 CV Fold 與訓練池組裝
+## Step 4：CV Fold 與訓練池組裝
 
 入口：`src/step4_cv/run.py`
 
@@ -88,26 +88,26 @@ results/step5_cv/p2_combined/
 
 主要責任：
 
-- 載入 p2 標註資料：`data/origin_data/10k_1A/chiang_500.csv`
+- 載入人工標註資料：`data/origin_data/10k_1A/chiang_500.csv`
 - 視 `balance.enabled` 載入 `data/origin_data/10k_1A/blance_500.csv`
 - 依 `balance.include_in_cv` 決定平衡資料是否參與 CV split
 - 建立或讀取 `cv_folds.json`
 - 產生每個 fold 的 `human_train.json`、`human_val.json`、`train_pool.json`
-- 在目前 p2 設定下跳過 FinBERT pseudo-label pool 載入
-- 在目前 p2 設定下不產生 synthetic requests
+- 在目前設定下跳過 FinBERT pseudo-label pool 載入
+- 在目前設定下不產生 synthetic requests
 
 重要輸出：
 
 ```text
-data/processed/step4_cv/{annotator_name}/manifest.json
-data/processed/step4_cv/{annotator_name}/cv_folds.json
-data/processed/step4_cv/{annotator_name}/fold_0/human_train.json
-data/processed/step4_cv/{annotator_name}/fold_0/human_val.json
-data/processed/step4_cv/{annotator_name}/fold_0/train_pool.json
-data/processed/step4_cv/{annotator_name}/fold_0/train_pool_summary.json
+data/processed/step4_cv/manifest.json
+data/processed/step4_cv/cv_folds.json
+data/processed/step4_cv/fold_0/human_train.json
+data/processed/step4_cv/fold_0/human_val.json
+data/processed/step4_cv/fold_0/train_pool.json
+data/processed/step4_cv/fold_0/train_pool_summary.json
 ```
 
-`pseudo_labels.json` 會存在但在本輪 p2 實驗中為空；`synthetic_requests.json` 會存在但不使用。
+`pseudo_labels.json` 會存在但在本輪實驗中為空；`synthetic_requests.json` 會存在但不使用。
 
 ---
 
@@ -121,7 +121,7 @@ data/processed/step4_cv/{annotator_name}/fold_0/train_pool_summary.json
 
 主要責任：
 
-- 讀取 `data/processed/step4_cv/{annotator_name}/manifest.json`
+- 讀取 `data/processed/step4_cv/{experiment_name}/manifest.json`
 - 對每個 fold 的 `train_pool.json` 產生 ESG 分類 reasoning
 - 使用 `step5_reasoning.generation.model` 指定 API 模型
 - 支援既有結果續跑，避免重複生成已完成樣本
@@ -129,9 +129,9 @@ data/processed/step4_cv/{annotator_name}/fold_0/train_pool_summary.json
 重要輸出：
 
 ```text
-data/processed/step5_reasoning/{annotator_name}/fold_0/reasoning_input.json
-data/processed/step5_reasoning/{annotator_name}/fold_0/train_with_reasoning.json
-data/processed/step5_reasoning/{annotator_name}/fold_0/reasoning_report.json
+data/processed/step5_reasoning/{experiment_name}/fold_0/reasoning_input.json
+data/processed/step5_reasoning/{experiment_name}/fold_0/train_with_reasoning.json
+data/processed/step5_reasoning/{experiment_name}/fold_0/reasoning_report.json
 ```
 
 目前 config：
@@ -169,42 +169,42 @@ step5_reasoning:
 重要輸出：
 
 ```text
-data/processed/step5_sft/{annotator_name}/manifest.json
-data/processed/step5_sft/{annotator_name}/fold_0/train_sft_text.json
-data/processed/step5_sft/{annotator_name}/fold_0/val_eval.json
-data/processed/step5_sft/{annotator_name}/fold_0/excluded_items.json
+data/processed/step6_sft/{experiment_name}/manifest.json
+data/processed/step6_sft/{experiment_name}/fold_0/train_sft_text.json
+data/processed/step6_sft/{experiment_name}/fold_0/val_eval.json
+data/processed/step6_sft/{experiment_name}/fold_0/excluded_items.json
 ```
 
 ---
 
-## Step 5C：Baseline 與模型評估
+## Step 6A：Baseline 與模型評估
 
 ### FinBERT Baseline
 
-入口：`src/step5_cv/run_cv_finbert.py`
+入口：`src/step6_cv/run_cv_finbert.py`
 
 設定來源：
 
 ```yaml
-step5_cv:
+step6_cv:
   finbert:
     step4_output_dir: data/processed/step4_cv
-    results_dir: results/step5_cv/finbert
+    results_dir: results/finbert
 ```
 
 輸出：
 
 ```text
-results/step5_cv/finbert/{annotator_name}/fold_0_results.json
-results/step5_cv/finbert/{annotator_name}/fold_0_metrics.json
-results/step5_cv/finbert/{annotator_name}/overall_folds.json
+results/finbert/{experiment_name}/fold_0_results.json
+results/finbert/{experiment_name}/fold_0_metrics.json
+results/finbert/{experiment_name}/overall_folds.json
 ```
 
 ### API LLM Baseline
 
-入口：`src/step5_cv/run_cv_api_llm.py`
+入口：`src/step6_cv/run_cv_api_llm.py`
 
-設定來源：`step5_cv.api_llm`
+設定來源：`step6_cv.api_llm`
 
 目前啟用模型：
 
@@ -215,22 +215,22 @@ results/step5_cv/finbert/{annotator_name}/overall_folds.json
 輸出：
 
 ```text
-results/step5_cv/{annotator_name}/api_llm/{model_key}/fold_0_results.json
-results/step5_cv/{annotator_name}/api_llm/{model_key}/fold_0_metrics.json
-results/step5_cv/{annotator_name}/api_llm/{model_key}/overall_summary.json
-results/step5_cv/{annotator_name}/api_llm/{model_key}/overall_summary.md
+results/{experiment_name}/api_llm/{model_key}/fold_0_results.json
+results/{experiment_name}/api_llm/{model_key}/fold_0_metrics.json
+results/{experiment_name}/api_llm/{model_key}/overall_summary.json
+results/{experiment_name}/api_llm/{model_key}/overall_summary.md
 ```
 
 ### Local SLM LoRA 微調
 
-入口：`src/step5_cv/run_cv_finetune.py`
+入口：`src/step6_cv/run_cv_finetune.py`
 
-設定來源：`step5_cv.finetune`
+設定來源：`step6_cv.finetune`
 
 目前模型 registry：
 
 ```yaml
-step5_cv:
+step6_cv:
   finetune:
     model_registry:
       gemma: unsloth/gemma-4-E4B-it
@@ -257,30 +257,30 @@ training:
 輸出：
 
 ```text
-models/step5_cv/{annotator_name}/{model_type}/fold_0/adapter/
-models/step5_cv/{annotator_name}/{model_type}/fold_0/checkpoints/
-results/step5_cv/{annotator_name}/{model_type}/fold_0_results.json
-results/step5_cv/{annotator_name}/{model_type}/fold_0_metrics.json
-results/step5_cv/{annotator_name}/{model_type}/overall_summary.json
-results/step5_cv/{annotator_name}/{model_type}/overall_summary.md
+models/{experiment_name}/{model_type}/fold_0/adapter/
+models/{experiment_name}/{model_type}/fold_0/checkpoints/
+results/{experiment_name}/{model_type}/fold_0_results.json
+results/{experiment_name}/{model_type}/fold_0_metrics.json
+results/{experiment_name}/{model_type}/overall_summary.json
+results/{experiment_name}/{model_type}/overall_summary.md
 ```
 
 ### Local SLM 未微調 Baseline
 
-入口：`src/step5_cv/run_cv_local_slm_baseline.py`
+入口：`src/step6_cv/run_cv_local_slm_baseline.py`
 
-設定來源：`step5_cv.local_slm_baseline`
+設定來源：`step6_cv.local_slm_baseline`
 
-目前設定會一次讀取三個 p2 實驗的 SFT manifest：
+目前設定會一次讀取三個實驗的 SFT manifest：
 
 ```yaml
-step5_cv:
+step6_cv:
   local_slm_baseline:
     enabled: true
     experiments:
-      - p2_balance
-      - p2
-      - p2_combined
+      - base
+      - balance
+      - combined
     label_only: false
     max_new_tokens: 512
 ```
@@ -290,29 +290,29 @@ step5_cv:
 輸出：
 
 ```text
-results/step5_cv/{annotator_name}/local_slm_baseline/{model_type}/fold_0_results.json
-results/step5_cv/{annotator_name}/local_slm_baseline/{model_type}/fold_0_metrics.json
-results/step5_cv/{annotator_name}/local_slm_baseline/{model_type}/overall_summary.json
-results/step5_cv/{annotator_name}/local_slm_baseline/{model_type}/overall_summary.md
+results/{experiment_name}/local_slm_baseline/{model_type}/fold_0_results.json
+results/{experiment_name}/local_slm_baseline/{model_type}/fold_0_metrics.json
+results/{experiment_name}/local_slm_baseline/{model_type}/overall_summary.json
+results/{experiment_name}/local_slm_baseline/{model_type}/overall_summary.md
 ```
 
 ---
 
-## Step 5D：統一評估彙整
+## Step 6B：統一評估彙整
 
-入口：`src/step5_cv/evaluate_cv_metrics.py`
+入口：`src/step6_cv/evaluate_cv_metrics.py`
 
 設定來源：
 
 ```yaml
-step5_cv:
+step6_cv:
   evaluation:
-    results_root: results/step5_cv
+    results_root: results
 ```
 
 主要責任：
 
-- 讀取目前 active `annotator_name` 底下的 `fold_*_results.json`
+- 讀取目前 active `experiment_name` 底下的 `fold_*_results.json`
 - 重新計算 overall metrics
 - 輸出 per-class 與 pillar-level metrics
 
@@ -325,7 +325,7 @@ per_class_metrics.csv
 pillar_metrics.csv
 ```
 
-注意：此彙整器依目前 `step4_cv` 的 active `annotator_name` 掃描單一實驗。如果要彙整 `p2_balance`、`p2`、`p2_combined`，需分別切換 `step4_cv.balance` 後執行。
+注意：此彙整器依目前 `step4_cv` 的 active `experiment_name` 掃描單一實驗。如果要彙整 `base`、`balance`、`combined`，需分別切換 `step4_cv.balance` 後執行。
 
 ---
 
@@ -333,29 +333,29 @@ pillar_metrics.csv
 
 ### 已完成或已有產物
 
-- `data/processed/step4_cv/p2/manifest.json`
-- `data/processed/step4_cv/p2_balance/manifest.json`
-- `data/processed/step4_cv/p2_combined/manifest.json`
-- `data/processed/step5_sft/p2/manifest.json`
-- `data/processed/step5_sft/p2_balance/manifest.json`
-- `data/processed/step5_sft/p2_combined/manifest.json`
-- `src/step5_cv/run_cv_local_slm_baseline.py`
-- `step5_cv.local_slm_baseline` config
+- `data/processed/step4_cv/manifest.json`
+- `data/processed/step4_cv/balance/manifest.json`
+- `data/processed/step4_cv/combined/manifest.json`
+- `data/processed/step6_sft/manifest.json`
+- `data/processed/step6_sft/balance/manifest.json`
+- `data/processed/step6_sft/combined/manifest.json`
+- `src/step6_cv/run_cv_local_slm_baseline.py`
+- `step6_cv.local_slm_baseline` config
 
 ### 需要確認或執行
 
-- 對三個 p2 實驗確認 `train_with_reasoning.json` 是否完整，缺漏時重跑 Step 5A。
+- 對三個實驗確認 `train_with_reasoning.json` 是否完整，缺漏時重跑 Step 5A。
 - 若 reasoning 更新，將 `step5_reasoning.sft.run_sft_build` 設為 `true` 後重建 SFT manifest。
 - 對四個 local SLM 分別完成 LoRA fine-tune 與 inference。
-- 對三個 API LLM baseline 補齊 `p2_balance`、`p2`、`p2_combined` 結果。
-- 執行未微調 local SLM baseline，補齊三個 p2 實驗與四個 local model 的 36 組 fold 推論。
-- 最後分別對 `p2_balance`、`p2`、`p2_combined` 執行 metric 彙整。
+- 對三個 API LLM baseline 補齊 `base`、`balance`、`combined` 結果。
+- 執行未微調 local SLM baseline，補齊三個實驗與四個 local model 的 36 組 fold 推論。
+- 最後分別對 `base`、`balance`、`combined` 執行 metric 彙整。
 
 ---
 
 ## 評估指標
 
-每個模型與每個 p2 實驗都輸出 3-fold mean/std：
+每個模型與每個實驗都輸出 3-fold mean/std：
 
 - Accuracy
 - Macro F1
@@ -378,7 +378,7 @@ pillar_metrics.csv
 
 ---
 
-## p2 實驗總量
+## 實驗總量
 
 | 類別 | 模型數 | 實驗數 | Fold | 說明 |
 |---|---:|---:|---:|---|
@@ -391,8 +391,8 @@ pillar_metrics.csv
 
 ## 參考架構重點
 
-- Step 4 只負責 fold 與 train pool，不在本輪 p2 實驗中做 pseudo-label 或 synthetic generation。
-- Step 5 reasoning 與 SFT 依 `annotator_name` 讀寫，不跨實驗共用訓練資料。
-- LoRA fine-tune 結果依 `{annotator_name}/{model_type}` 分開保存。
-- 未微調 local baseline 依 `step5_cv.local_slm_baseline.experiments` 一次掃描三個 p2 SFT manifest。
-- 所有模型推論使用 `src/step5_cv/common.py` 中相同的 label list、prompt builder、label parser 與 metric function。
+- Step 4 只負責 fold 與 train pool，不在本輪實驗中做 pseudo-label 或 synthetic generation。
+- Step 5 reasoning 與 SFT 依 `experiment_name` 讀寫，不跨實驗共用訓練資料。
+- LoRA fine-tune 結果依 `{experiment_name}/{model_type}` 分開保存。
+- 未微調 local baseline 依 `step6_cv.local_slm_baseline.experiments` 一次掃描三個實驗的 SFT manifest。
+- 所有模型推論使用 `src/step6_cv/common.py` 中相同的 label list、prompt builder、label parser 與 metric function。

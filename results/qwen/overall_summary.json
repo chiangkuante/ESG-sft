@@ -1,0 +1,47 @@
+{
+  "folds": [
+    {
+      "samples": 168,
+      "accuracy": 0.7738,
+      "macro_f1": 0.5785,
+      "weighted_f1": 0.7841,
+      "kappa": 0.6533,
+      "fold": 0,
+      "checkpoint_strategy": "final",
+      "checkpoint_epoch": null,
+      "checkpoint_dir": "/home/wa1ter/ESG-sft/models/qwen/fold_0/adapter"
+    },
+    {
+      "samples": 166,
+      "accuracy": 0.8313,
+      "macro_f1": 0.5972,
+      "weighted_f1": 0.8251,
+      "kappa": 0.6784,
+      "fold": 1,
+      "checkpoint_strategy": "final",
+      "checkpoint_epoch": null,
+      "checkpoint_dir": "/home/wa1ter/ESG-sft/models/qwen/fold_1/adapter"
+    },
+    {
+      "samples": 165,
+      "accuracy": 0.8121,
+      "macro_f1": 0.5539,
+      "weighted_f1": 0.8051,
+      "kappa": 0.6418,
+      "fold": 2,
+      "checkpoint_strategy": "final",
+      "checkpoint_epoch": null,
+      "checkpoint_dir": "/home/wa1ter/ESG-sft/models/qwen/fold_2/adapter"
+    }
+  ],
+  "summary": {
+    "accuracy_mean": 0.8057,
+    "accuracy_std": 0.0239,
+    "macro_f1_mean": 0.5765,
+    "macro_f1_std": 0.0177,
+    "weighted_f1_mean": 0.8048,
+    "weighted_f1_std": 0.0167,
+    "kappa_mean": 0.6578,
+    "kappa_std": 0.0153
+  }
+}

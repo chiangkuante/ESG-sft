@@ -1,0 +1,11 @@
+{
+  "samples": 327,
+  "accuracy": 0.7462,
+  "macro_f1": 0.7161,
+  "weighted_f1": 0.7498,
+  "kappa": 0.6649,
+  "fold": 1,
+  "checkpoint_strategy": "final",
+  "checkpoint_epoch": null,
+  "checkpoint_dir": "/workspace/work/ESG-sft/ESG-sft-master/models/combined/gemma/fold_1/checkpoints/checkpoint-final"
+}
