@@ -10,7 +10,16 @@ from typing import Any
 if __package__ in {None, ""}:
     sys.path.append(str(Path(__file__).resolve().parents[2]))
 
-from src.step4_cv.common import ESG_CATEGORIES, load_json, load_step4_config, resolve_annotator_name, resolve_path, save_json
+from src.step4_cv.common import (
+    ESG_CATEGORIES,
+    load_json,
+    load_step4_config,
+    resolve_experiment_dir,
+    resolve_experiment_name,
+    resolve_human_csv_path,
+    resolve_path,
+    save_json,
+)
 from src.step4_cv.assemble import (
     assemble_train_pool,
     build_synthetic_requests,
@@ -444,22 +453,17 @@ def main() -> None:
 
     paths_cfg = config["paths"]
     folds_cfg = config["folds"]
-    annotator_name = resolve_annotator_name(config)
+    experiment_name = resolve_experiment_name(config)
     balance_cfg = config.get("balance", {})
     pseudo_enabled = bool(config.get("pseudo_labels", {}).get("enabled", True))
 
-    # 從 annotators 對照表取得 CSV 路徑
-    annotator_key = config.get("annotator", "p1")
-    annotators_cfg = config.get("annotators", {})
-    if annotator_key not in annotators_cfg:
-        raise ValueError(f"Unknown annotator '{annotator_key}' — check step4_cv.annotators in config.yaml")
-    human_csv_path = resolve_path(annotators_cfg[annotator_key]["csv"])
+    human_csv_path = resolve_human_csv_path(config)
 
-    output_dir = resolve_path(paths_cfg["output_dir"]) / annotator_name
+    output_dir = resolve_experiment_dir(resolve_path(paths_cfg["output_dir"]), experiment_name)
     classified_path = resolve_path(paths_cfg["classified_json"])
     folds_path = output_dir / "cv_folds.json"
 
-    logger.info("Annotator: %s (annotator_name=%s)", annotator_key, annotator_name)
+    logger.info("Experiment: %s", experiment_name)
 
     # 載入人工標註
     human_records = load_human_annotations(human_csv_path)
@@ -533,9 +537,17 @@ def main() -> None:
         )
 
     manifest = {
-        "annotator": annotator_key,
-        "annotator_name": annotator_name,
-        "folds_path": str(folds_path.relative_to(Path.cwd())) if folds_path.is_relative_to(Path.cwd()) else str(folds_path),
+        "experiment_name": experiment_name,
+        "human_csv": (
+            str(human_csv_path.relative_to(Path.cwd()))
+            if human_csv_path.is_relative_to(Path.cwd())
+            else str(human_csv_path)
+        ),
+        "folds_path": (
+            str(folds_path.relative_to(Path.cwd()))
+            if folds_path.is_relative_to(Path.cwd())
+            else str(folds_path)
+        ),
         "human_records": len(human_records),
         "balance_records": len(balance_records),
         "classified_pool_records": len(classified_pool),

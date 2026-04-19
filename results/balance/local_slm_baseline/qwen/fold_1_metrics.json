@@ -1,0 +1,12 @@
+{
+  "samples": 166,
+  "accuracy": 0.7831,
+  "macro_f1": 0.5963,
+  "weighted_f1": 0.7753,
+  "kappa": 0.5879,
+  "fold": 1,
+  "baseline": "local_slm_unfinetuned",
+  "model_type": "qwen",
+  "model_name": "unsloth/Qwen3.5-4B",
+  "experiment": "balance"
+}
