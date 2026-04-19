@@ -1,8 +1,0 @@
-{
-  "samples": 167,
-  "accuracy": 0.7186,
-  "macro_f1": 0.467,
-  "weighted_f1": 0.717,
-  "kappa": 0.5436,
-  "epoch_value": 7
-}
