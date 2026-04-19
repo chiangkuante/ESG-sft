@@ -9,12 +9,9 @@ if __package__ in {None, ""}:
     sys.path.append(str(Path(__file__).resolve().parents[2]))
 
 from src.step4_cv.common import (
-    BASE_EXPERIMENT_NAME,
-    BALANCE_EXPERIMENT_NAME,
-    COMBINED_EXPERIMENT_NAME,
     load_step4_config,
-    resolve_experiment_dir,
     resolve_experiment_name,
+    resolve_results_dir,
 )
 from src.step6_cv.common import (
     compute_overall_metrics,
@@ -46,14 +43,9 @@ def main() -> None:
     config = load_step6_cv_config()
     eval_cfg = config["evaluation"]
     experiment_name = resolve_experiment_name(load_step4_config())
-    results_root = resolve_experiment_dir(resolve_path(eval_cfg["results_root"]), experiment_name)
+    results_root = resolve_results_dir(resolve_path(eval_cfg["results_root"]), experiment_name)
 
-    skip_dirs = (
-        {BALANCE_EXPERIMENT_NAME, COMBINED_EXPERIMENT_NAME}
-        if experiment_name == BASE_EXPERIMENT_NAME
-        else set()
-    )
-    model_dirs = [path for path in results_root.iterdir() if path.is_dir() and path.name not in skip_dirs]
+    model_dirs = [path for path in results_root.iterdir() if path.is_dir()]
     for model_dir in sorted(model_dirs):
         if model_dir.name == "xyz_plot_epochs":
             continue
