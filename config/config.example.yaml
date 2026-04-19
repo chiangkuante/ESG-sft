@@ -1,24 +1,18 @@
 step4_cv:
-  annotator: p2                     # p1 | p2
-  annotators:
-    p1:
-      csv: data/origin_data/10k_1A/project-16-at-2026-03-31-11-52-a8826fd3.csv
-    p2:
-      csv: data/origin_data/10k_1A/chiang_500.csv
+  human_csv: data/origin_data/10k_1A/chiang_500.csv
 
 
-# 實驗1: (blance)balance_500 只加入 train : 1、0
-# 實驗2: ()balance_500 不加入: 0、0
+# 實驗1: base，balance_500 不加入: 0、0
+# 實驗2: balance，balance_500 只加入 train : 1、0
 # 實驗3: (combined)balance_500 合併後再 split : 1、1
   balance:
-    enabled: false                   # 是否使用 blance_500 平衡資料集 true=實驗1、實驗3; false=實驗2
-    include_in_cv: false            # false=僅加入 train (實驗1); true=合併後再 split (實驗3)
+    enabled: false                   # 是否使用 blance_500 平衡資料集 true=實驗2、實驗3; false=實驗1
+    include_in_cv: false            # false=僅加入 train (實驗2); true=合併後再 split (實驗3)
     csv: data/origin_data/10k_1A/blance_500.csv
 
   paths:
     classified_json: data/processed/step2_classification/classified.json
     output_dir: data/processed/step4_cv
-    folds_path: data/processed/step4_cv/cv_folds.json
 
   folds:
     n_splits: 3
@@ -65,7 +59,7 @@ step5_reasoning:
   paths:
     step4_output_dir: data/processed/step4_cv
     output_dir: data/processed/step5_reasoning
-    sft_output_dir: data/processed/step5_sft
+    sft_output_dir: data/processed/step6_sft
 
   generation:
     enabled: true
@@ -86,15 +80,15 @@ step5_reasoning:
     run_sft_build: false
     shuffle_seed: 3407
 
-step5_cv:
+step6_cv:
   finbert:
     step4_output_dir: data/processed/step4_cv
-    results_dir: results/step5_cv/finbert
+    results_dir: results/finbert
 
   api_llm:
     enabled: true
     step4_output_dir: data/processed/step4_cv
-    results_root: results/step5_cv
+    results_root: results
     label_only: true
     max_output_tokens: 64
     max_retries: 3
@@ -130,10 +124,31 @@ step5_cv:
           input_tpm: 450000
           output_tpm: 90000
 
+  local_slm_baseline:
+    enabled: true
+    sft_output_dir: data/processed/step6_sft
+    results_root: results
+    experiments:
+      - base
+      - balance
+      - combined
+    label_only: false
+    max_new_tokens: 512
+    resume: true
+    models:
+      gemma:
+        enabled: true
+      llama:
+        enabled: true
+      qwen:
+        enabled: true
+      ministral:
+        enabled: true
+
   finetune:
-    sft_output_dir: data/processed/step5_sft
-    results_root: results/step5_cv
-    models_root: models/step5_cv
+    sft_output_dir: data/processed/step6_sft
+    results_root: results
+    models_root: models
     resume: true
     model_registry:
       gemma: unsloth/gemma-4-E4B-it
@@ -206,4 +221,4 @@ step5_cv:
 
 
   evaluation:
-    results_root: results/step5_cv
+    results_root: results

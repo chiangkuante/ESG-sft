@@ -1,316 +1,95 @@
 {
   "fold": 0,
-  "human_train_size": 333,
-  "human_val_size": 167,
+  "human_train_size": 332,
+  "human_val_size": 168,
+  "balance_records_size": 0,
   "human_train_distribution": {
-    "Climate Change": 17,
-    "Natural Capital": 2,
-    "Pollution & Waste": 3,
-    "Human Capital": 25,
-    "Product Liability": 40,
-    "Community Relations": 3,
-    "Corporate Governance": 26,
-    "Business Ethics & Values": 19,
-    "Non-ESG": 198
+    "Climate Change": 12,
+    "Natural Capital": 1,
+    "Pollution & Waste": 4,
+    "Human Capital": 21,
+    "Product Liability": 43,
+    "Community Relations": 0,
+    "Corporate Governance": 24,
+    "Business Ethics & Values": 17,
+    "Non-ESG": 210
   },
   "human_val_distribution": {
-    "Climate Change": 8,
+    "Climate Change": 6,
     "Natural Capital": 1,
-    "Pollution & Waste": 2,
-    "Human Capital": 12,
-    "Product Liability": 19,
-    "Community Relations": 2,
-    "Corporate Governance": 14,
-    "Business Ethics & Values": 10,
-    "Non-ESG": 99
+    "Pollution & Waste": 3,
+    "Human Capital": 10,
+    "Product Liability": 21,
+    "Community Relations": 1,
+    "Corporate Governance": 11,
+    "Business Ethics & Values": 9,
+    "Non-ESG": 106
   },
-  "global_threshold": {
-    "threshold": 0.3019,
-    "accepted": 333,
-    "correct": 319,
-    "accuracy": 0.958,
-    "coverage": 1.0,
-    "meets_target": true,
-    "candidate_count": 272
-  },
-  "thresholds_by_label": {
-    "Climate Change": {
-      "threshold": 0.3268,
-      "accepted": 15,
-      "correct": 15,
-      "accuracy": 1.0,
-      "coverage": 1.0,
-      "meets_target": true,
-      "candidate_count": 8,
-      "source": "per_class",
-      "label_support": 15
-    },
-    "Natural Capital": {
-      "threshold": 0.3019,
-      "accepted": 333,
-      "correct": 319,
-      "accuracy": 0.958,
-      "coverage": 1.0,
-      "meets_target": true,
-      "candidate_count": 272,
-      "source": "global_fallback",
-      "label_support": 1
-    },
-    "Pollution & Waste": {
-      "threshold": 0.3019,
-      "accepted": 333,
-      "correct": 319,
-      "accuracy": 0.958,
-      "coverage": 1.0,
-      "meets_target": true,
-      "candidate_count": 272,
-      "source": "global_fallback",
-      "label_support": 3
-    },
-    "Human Capital": {
-      "threshold": 0.3785,
-      "accepted": 25,
-      "correct": 24,
-      "accuracy": 0.96,
-      "coverage": 1.0,
-      "meets_target": true,
-      "candidate_count": 18,
-      "source": "per_class",
-      "label_support": 25
-    },
-    "Product Liability": {
-      "threshold": 0.3019,
-      "accepted": 36,
-      "correct": 35,
-      "accuracy": 0.9722,
-      "coverage": 1.0,
-      "meets_target": true,
-      "candidate_count": 28,
-      "source": "per_class",
-      "label_support": 36
-    },
-    "Community Relations": {
-      "threshold": 0.3019,
-      "accepted": 333,
-      "correct": 319,
-      "accuracy": 0.958,
-      "coverage": 1.0,
-      "meets_target": true,
-      "candidate_count": 272,
-      "source": "global_fallback",
-      "label_support": 2
-    },
-    "Corporate Governance": {
-      "threshold": 0.4512,
-      "accepted": 26,
-      "correct": 25,
-      "accuracy": 0.9615,
-      "coverage": 1.0,
-      "meets_target": true,
-      "candidate_count": 19,
-      "source": "per_class",
-      "label_support": 26
-    },
-    "Business Ethics & Values": {
-      "threshold": 0.3821,
-      "accepted": 18,
-      "correct": 18,
-      "accuracy": 1.0,
-      "coverage": 1.0,
-      "meets_target": true,
-      "candidate_count": 11,
-      "source": "per_class",
-      "label_support": 18
-    },
-    "Non-ESG": {
-      "threshold": 0.3478,
-      "accepted": 207,
-      "correct": 197,
-      "accuracy": 0.9517,
-      "coverage": 1.0,
-      "meets_target": true,
-      "candidate_count": 177,
-      "source": "per_class",
-      "label_support": 207
-    }
-  },
+  "global_threshold": null,
+  "thresholds_by_label": {},
   "pseudo_label_summary": {
-    "raw_selected_counts": {
-      "Climate Change": 6969,
-      "Natural Capital": 769,
-      "Pollution & Waste": 1695,
-      "Human Capital": 8425,
-      "Product Liability": 18368,
-      "Community Relations": 426,
-      "Corporate Governance": 12449,
-      "Business Ethics & Values": 8173,
-      "Non-ESG": 100879
-    },
-    "capacities_after_caps": {
-      "Climate Change": 6969,
-      "Natural Capital": 769,
-      "Pollution & Waste": 1695,
-      "Human Capital": 8425,
-      "Product Liability": 18368,
-      "Community Relations": 426,
-      "Corporate Governance": 12449,
-      "Business Ethics & Values": 8173,
-      "Non-ESG": 1000
-    },
-    "selected_counts": {
-      "Climate Change": 235,
-      "Natural Capital": 81,
-      "Pollution & Waste": 99,
-      "Human Capital": 285,
-      "Product Liability": 360,
-      "Community Relations": 99,
-      "Corporate Governance": 291,
-      "Business Ethics & Values": 248,
-      "Non-ESG": 802
-    },
-    "rejected_below_threshold": {
-      "Climate Change": 23,
-      "Natural Capital": 20,
-      "Pollution & Waste": 11,
-      "Human Capital": 215,
-      "Product Liability": 93,
-      "Community Relations": 24,
-      "Corporate Governance": 555,
-      "Business Ethics & Values": 432,
-      "Non-ESG": 401
-    },
-    "selected_total": 2500,
-    "selection_budget": 2500,
-    "allocation_alpha": 0.5
+    "selected_total": 0,
+    "skipped": "pseudo_labels disabled"
   },
   "balancing_plan": {
-    "alpha": 0.5,
-    "total_budget": 4000,
-    "effective_target_total": 4148,
-    "effective_synthetic_total": 1315,
-    "per_label": {
-      "Climate Change": {
-        "human_count": 17,
-        "pseudo_count": 235,
-        "current_count": 252,
-        "target_count": 427,
-        "synthetic_needed": 175
-      },
-      "Natural Capital": {
-        "human_count": 2,
-        "pseudo_count": 81,
-        "current_count": 83,
-        "target_count": 245,
-        "synthetic_needed": 162
-      },
-      "Pollution & Waste": {
-        "human_count": 3,
-        "pseudo_count": 99,
-        "current_count": 102,
-        "target_count": 272,
-        "synthetic_needed": 170
-      },
-      "Human Capital": {
-        "human_count": 25,
-        "pseudo_count": 285,
-        "current_count": 310,
-        "target_count": 474,
-        "synthetic_needed": 164
-      },
-      "Product Liability": {
-        "human_count": 40,
-        "pseudo_count": 360,
-        "current_count": 400,
-        "target_count": 539,
-        "synthetic_needed": 139
-      },
-      "Community Relations": {
-        "human_count": 3,
-        "pseudo_count": 99,
-        "current_count": 102,
-        "target_count": 272,
-        "synthetic_needed": 170
-      },
-      "Corporate Governance": {
-        "human_count": 26,
-        "pseudo_count": 291,
-        "current_count": 317,
-        "target_count": 479,
-        "synthetic_needed": 162
-      },
-      "Business Ethics & Values": {
-        "human_count": 19,
-        "pseudo_count": 248,
-        "current_count": 267,
-        "target_count": 440,
-        "synthetic_needed": 173
-      },
-      "Non-ESG": {
-        "human_count": 198,
-        "pseudo_count": 802,
-        "current_count": 1000,
-        "target_count": 1000,
-        "synthetic_needed": 0
-      }
-    }
+    "effective_synthetic_total": 0,
+    "skipped": "disabled"
   },
-  "synthetic_request_count": 8,
+  "synthetic_request_count": 0,
   "synthetic_data_path": "synthetic_data.json",
   "train_pool_summary": {
-    "train_pool_size": 4148,
+    "train_pool_size": 332,
     "source_counts": {
-      "human": 333,
-      "pseudo": 2500,
-      "synthetic": 1315
+      "human": 332
     },
     "label_counts": {
-      "Climate Change": 427,
-      "Natural Capital": 245,
-      "Pollution & Waste": 272,
-      "Human Capital": 474,
-      "Product Liability": 539,
-      "Community Relations": 272,
-      "Corporate Governance": 479,
-      "Business Ethics & Values": 440,
-      "Non-ESG": 1000
+      "Climate Change": 12,
+      "Natural Capital": 1,
+      "Pollution & Waste": 4,
+      "Human Capital": 21,
+      "Product Liability": 43,
+      "Community Relations": 0,
+      "Corporate Governance": 24,
+      "Business Ethics & Values": 17,
+      "Non-ESG": 210
     },
     "by_source_and_label": {
       "human": {
-        "Climate Change": 17,
-        "Natural Capital": 2,
-        "Pollution & Waste": 3,
-        "Human Capital": 25,
-        "Product Liability": 40,
-        "Community Relations": 3,
-        "Corporate Governance": 26,
-        "Business Ethics & Values": 19,
-        "Non-ESG": 198
+        "Climate Change": 12,
+        "Natural Capital": 1,
+        "Pollution & Waste": 4,
+        "Human Capital": 21,
+        "Product Liability": 43,
+        "Community Relations": 0,
+        "Corporate Governance": 24,
+        "Business Ethics & Values": 17,
+        "Non-ESG": 210
       },
       "pseudo": {
-        "Climate Change": 235,
-        "Natural Capital": 81,
-        "Pollution & Waste": 99,
-        "Human Capital": 285,
-        "Product Liability": 360,
-        "Community Relations": 99,
-        "Corporate Governance": 291,
-        "Business Ethics & Values": 248,
-        "Non-ESG": 802
+        "Climate Change": 0,
+        "Natural Capital": 0,
+        "Pollution & Waste": 0,
+        "Human Capital": 0,
+        "Product Liability": 0,
+        "Community Relations": 0,
+        "Corporate Governance": 0,
+        "Business Ethics & Values": 0,
+        "Non-ESG": 0
       },
       "synthetic": {
-        "Climate Change": 175,
-        "Natural Capital": 162,
-        "Pollution & Waste": 170,
-        "Human Capital": 164,
-        "Product Liability": 139,
-        "Community Relations": 170,
-        "Corporate Governance": 162,
-        "Business Ethics & Values": 173,
+        "Climate Change": 0,
+        "Natural Capital": 0,
+        "Pollution & Waste": 0,
+        "Human Capital": 0,
+        "Product Liability": 0,
+        "Community Relations": 0,
+        "Corporate Governance": 0,
+        "Business Ethics & Values": 0,
         "Non-ESG": 0
       }
     },
-    "requested_synthetic_total": 1315,
-    "actual_synthetic_total": 1315,
+    "requested_synthetic_total": 0,
+    "actual_synthetic_total": 0,
     "synthetic_complete": true
   }
 }

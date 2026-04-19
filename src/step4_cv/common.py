@@ -9,6 +9,9 @@ import yaml
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 CONFIG_PATH = PROJECT_ROOT / "config" / "config.yaml"
+BASE_EXPERIMENT_NAME = "base"
+BALANCE_EXPERIMENT_NAME = "balance"
+COMBINED_EXPERIMENT_NAME = "combined"
 
 ESG_CATEGORIES = [
     "Climate Change",
@@ -71,14 +74,26 @@ def canonicalize_label(label: str | None) -> str | None:
     return None
 
 
-def resolve_annotator_name(config: dict[str, Any]) -> str:
-    annotator = config.get("annotator", "p1")
+def resolve_experiment_name(config: dict[str, Any]) -> str:
     balance_cfg = config.get("balance", {})
     if not balance_cfg.get("enabled", False):
-        return annotator
+        return BASE_EXPERIMENT_NAME
     if balance_cfg.get("include_in_cv", False):
-        return f"{annotator}_combined"
-    return f"{annotator}_balance"
+        return COMBINED_EXPERIMENT_NAME
+    return BALANCE_EXPERIMENT_NAME
+
+
+def resolve_experiment_dir(base_dir: Path, experiment_name: str) -> Path:
+    if experiment_name in {"", ".", BASE_EXPERIMENT_NAME}:
+        return base_dir
+    return base_dir / experiment_name
+
+
+def resolve_human_csv_path(config: dict[str, Any]) -> Path:
+    human_csv = config.get("human_csv")
+    if not human_csv:
+        raise ValueError("Missing `step4_cv.human_csv` in config/config.yaml")
+    return resolve_path(str(human_csv))
 
 
 def load_json(path: Path) -> Any:

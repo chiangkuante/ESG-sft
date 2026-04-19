@@ -1,0 +1,11 @@
+{
+  "samples": 165,
+  "accuracy": 0.7576,
+  "macro_f1": 0.4708,
+  "weighted_f1": 0.7672,
+  "kappa": 0.5747,
+  "fold": 2,
+  "checkpoint_strategy": "final",
+  "checkpoint_epoch": null,
+  "checkpoint_dir": "/home/wa1ter/ESG-sft/models/gemma/fold_2/adapter"
+}

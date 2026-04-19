@@ -1,0 +1,50 @@
+{
+  "folds": [
+    {
+      "samples": 327,
+      "accuracy": 0.7309,
+      "macro_f1": 0.694,
+      "weighted_f1": 0.7279,
+      "kappa": 0.6334,
+      "fold": 0,
+      "baseline": "local_slm_unfinetuned",
+      "model_type": "qwen",
+      "model_name": "unsloth/Qwen3.5-4B",
+      "experiment": "combined"
+    },
+    {
+      "samples": 327,
+      "accuracy": 0.7156,
+      "macro_f1": 0.6864,
+      "weighted_f1": 0.711,
+      "kappa": 0.6154,
+      "fold": 1,
+      "baseline": "local_slm_unfinetuned",
+      "model_type": "qwen",
+      "model_name": "unsloth/Qwen3.5-4B",
+      "experiment": "combined"
+    },
+    {
+      "samples": 326,
+      "accuracy": 0.7117,
+      "macro_f1": 0.6628,
+      "weighted_f1": 0.6922,
+      "kappa": 0.6058,
+      "fold": 2,
+      "baseline": "local_slm_unfinetuned",
+      "model_type": "qwen",
+      "model_name": "unsloth/Qwen3.5-4B",
+      "experiment": "combined"
+    }
+  ],
+  "summary": {
+    "accuracy_mean": 0.7194,
+    "accuracy_std": 0.0083,
+    "macro_f1_mean": 0.6811,
+    "macro_f1_std": 0.0133,
+    "weighted_f1_mean": 0.7104,
+    "weighted_f1_std": 0.0146,
+    "kappa_mean": 0.6182,
+    "kappa_std": 0.0114
+  }
+}
