@@ -1,0 +1,38 @@
+[
+  {
+    "samples": 327,
+    "accuracy": 0.3364,
+    "macro_f1": 0.3296,
+    "weighted_f1": 0.3263,
+    "kappa": 0.2444,
+    "fold": 0,
+    "baseline": "local_slm_unfinetuned",
+    "model_type": "llama",
+    "model_name": "unsloth/Llama-3.2-3B-Instruct",
+    "experiment": "p2_combined"
+  },
+  {
+    "samples": 327,
+    "accuracy": 0.3578,
+    "macro_f1": 0.4164,
+    "weighted_f1": 0.3263,
+    "kappa": 0.2739,
+    "fold": 1,
+    "baseline": "local_slm_unfinetuned",
+    "model_type": "llama",
+    "model_name": "unsloth/Llama-3.2-3B-Instruct",
+    "experiment": "p2_combined"
+  },
+  {
+    "samples": 326,
+    "accuracy": 0.3436,
+    "macro_f1": 0.3458,
+    "weighted_f1": 0.3388,
+    "kappa": 0.245,
+    "fold": 2,
+    "baseline": "local_slm_unfinetuned",
+    "model_type": "llama",
+    "model_name": "unsloth/Llama-3.2-3B-Instruct",
+    "experiment": "p2_combined"
+  }
+]

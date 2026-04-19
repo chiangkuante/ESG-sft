@@ -1,0 +1,12 @@
+{
+  "samples": 165,
+  "accuracy": 0.2545,
+  "macro_f1": 0.2688,
+  "weighted_f1": 0.2988,
+  "kappa": 0.1293,
+  "fold": 2,
+  "baseline": "local_slm_unfinetuned",
+  "model_type": "llama",
+  "model_name": "unsloth/Llama-3.2-3B-Instruct",
+  "experiment": "p2"
+}

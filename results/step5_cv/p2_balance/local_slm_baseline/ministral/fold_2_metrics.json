@@ -1,0 +1,12 @@
+{
+  "samples": 165,
+  "accuracy": 0.6424,
+  "macro_f1": 0.4417,
+  "weighted_f1": 0.6711,
+  "kappa": 0.4427,
+  "fold": 2,
+  "baseline": "local_slm_unfinetuned",
+  "model_type": "ministral",
+  "model_name": "unsloth/Ministral-3-3B-Instruct-2512",
+  "experiment": "p2_balance"
+}
