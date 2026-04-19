@@ -21,6 +21,7 @@ from src.step4_cv.common import (
     load_step4_config,
     resolve_experiment_dir,
     resolve_experiment_name,
+    resolve_results_dir,
 )
 from src.step6_cv.common import (
     compute_overall_metrics,
@@ -190,7 +191,7 @@ def run_model_baseline(
             if not manifest_path.exists():
                 raise FileNotFoundError(f"Missing SFT manifest for local SLM baseline: {manifest_path}")
 
-            results_root = resolve_experiment_dir(results_root_base, experiment_name) / "local_slm_baseline" / model_type
+            results_root = resolve_results_dir(results_root_base, experiment_name) / "local_slm_baseline" / model_type
             results_root.mkdir(parents=True, exist_ok=True)
             manifest = load_json(manifest_path)
             fold_entries = sorted(manifest["folds"], key=lambda item: item["fold"])

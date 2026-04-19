@@ -7,7 +7,7 @@ from pathlib import Path
 if __package__ in {None, ""}:
     sys.path.append(str(Path(__file__).resolve().parents[2]))
 
-from src.step4_cv.common import load_step4_config, resolve_experiment_dir, resolve_experiment_name
+from src.step4_cv.common import load_step4_config, resolve_experiment_dir, resolve_experiment_name, resolve_results_dir
 from src.step6_cv.common import (
     compute_overall_metrics,
     load_json,
@@ -26,7 +26,7 @@ def main() -> None:
     cfg = config["finbert"]
     experiment_name = resolve_experiment_name(load_step4_config())
     step4_output_dir = resolve_experiment_dir(resolve_path(cfg["step4_output_dir"]), experiment_name)
-    results_dir = resolve_experiment_dir(resolve_path(cfg["results_dir"]), experiment_name)
+    results_dir = resolve_results_dir(resolve_path(cfg["results_root"]), experiment_name) / "finbert"
 
     manifest = load_json(step4_output_dir / "manifest.json")
     fold_summaries = []

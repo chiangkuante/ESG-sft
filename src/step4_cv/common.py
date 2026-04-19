@@ -89,6 +89,15 @@ def resolve_experiment_dir(base_dir: Path, experiment_name: str) -> Path:
     return base_dir / experiment_name
 
 
+def resolve_results_dir(base_dir: Path, experiment_name: str) -> Path:
+    """同 resolve_experiment_dir，但 base 實驗也會建立子目錄（results/base/）。
+    用於所有 results/finbert 輸出路徑，確保三個實驗各自獨立。
+    """
+    if experiment_name in {"", "."}:
+        return base_dir
+    return base_dir / experiment_name
+
+
 def resolve_human_csv_path(config: dict[str, Any]) -> Path:
     human_csv = config.get("human_csv")
     if not human_csv:
