@@ -1,0 +1,35 @@
+[
+  {
+    "samples": 168,
+    "accuracy": 0.8155,
+    "macro_f1": 0.5928,
+    "weighted_f1": 0.8192,
+    "kappa": 0.7083,
+    "fold": 0,
+    "checkpoint_strategy": "final",
+    "checkpoint_epoch": null,
+    "checkpoint_dir": "/home/wa1ter/ESG-sft/models/llama/label_only/fold_0/adapter"
+  },
+  {
+    "samples": 166,
+    "accuracy": 0.8494,
+    "macro_f1": 0.6016,
+    "weighted_f1": 0.8411,
+    "kappa": 0.709,
+    "fold": 1,
+    "checkpoint_strategy": "final",
+    "checkpoint_epoch": null,
+    "checkpoint_dir": "/home/wa1ter/ESG-sft/models/llama/label_only/fold_1/adapter"
+  },
+  {
+    "samples": 165,
+    "accuracy": 0.8485,
+    "macro_f1": 0.5641,
+    "weighted_f1": 0.8479,
+    "kappa": 0.7224,
+    "fold": 2,
+    "checkpoint_strategy": "final",
+    "checkpoint_epoch": null,
+    "checkpoint_dir": "/home/wa1ter/ESG-sft/models/llama/label_only/fold_2/adapter"
+  }
+]
