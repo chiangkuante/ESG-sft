@@ -1,0 +1,11 @@
+{
+  "samples": 168,
+  "accuracy": 0.744,
+  "macro_f1": 0.5137,
+  "weighted_f1": 0.751,
+  "kappa": 0.6208,
+  "fold": 0,
+  "checkpoint_strategy": "final",
+  "checkpoint_epoch": null,
+  "checkpoint_dir": "/home/wa1ter/ESG-sft/models/qwen/label_only/fold_0/adapter"
+}

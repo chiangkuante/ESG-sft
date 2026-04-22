@@ -1,0 +1,47 @@
+{
+  "folds": [
+    {
+      "samples": 168,
+      "accuracy": 0.7619,
+      "macro_f1": 0.5348,
+      "weighted_f1": 0.773,
+      "kappa": 0.6571,
+      "fold": 0,
+      "checkpoint_strategy": "final",
+      "checkpoint_epoch": null,
+      "checkpoint_dir": "/home/wa1ter/ESG-sft/models/balance/gemma/label_only/fold_0/adapter"
+    },
+    {
+      "samples": 166,
+      "accuracy": 0.8434,
+      "macro_f1": 0.7123,
+      "weighted_f1": 0.8447,
+      "kappa": 0.7218,
+      "fold": 1,
+      "checkpoint_strategy": "final",
+      "checkpoint_epoch": null,
+      "checkpoint_dir": "/home/wa1ter/ESG-sft/models/balance/gemma/label_only/fold_1/adapter"
+    },
+    {
+      "samples": 165,
+      "accuracy": 0.7394,
+      "macro_f1": 0.4334,
+      "weighted_f1": 0.702,
+      "kappa": 0.4739,
+      "fold": 2,
+      "checkpoint_strategy": "final",
+      "checkpoint_epoch": null,
+      "checkpoint_dir": "/home/wa1ter/ESG-sft/models/balance/gemma/label_only/fold_2/adapter"
+    }
+  ],
+  "summary": {
+    "accuracy_mean": 0.7816,
+    "accuracy_std": 0.0447,
+    "macro_f1_mean": 0.5602,
+    "macro_f1_std": 0.1153,
+    "weighted_f1_mean": 0.7732,
+    "weighted_f1_std": 0.0583,
+    "kappa_mean": 0.6176,
+    "kappa_std": 0.105
+  }
+}

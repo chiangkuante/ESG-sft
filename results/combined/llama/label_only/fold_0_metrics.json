@@ -1,0 +1,11 @@
+{
+  "samples": 327,
+  "accuracy": 0.7951,
+  "macro_f1": 0.7562,
+  "weighted_f1": 0.7964,
+  "kappa": 0.7225,
+  "fold": 0,
+  "checkpoint_strategy": "final",
+  "checkpoint_epoch": null,
+  "checkpoint_dir": "/home/wa1ter/ESG-sft/models/combined/llama/label_only/fold_0/adapter"
+}

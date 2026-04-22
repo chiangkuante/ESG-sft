@@ -1,0 +1,47 @@
+{
+  "folds": [
+    {
+      "samples": 327,
+      "accuracy": 0.7554,
+      "macro_f1": 0.7121,
+      "weighted_f1": 0.7564,
+      "kappa": 0.6703,
+      "fold": 0,
+      "checkpoint_strategy": "final",
+      "checkpoint_epoch": null,
+      "checkpoint_dir": "/home/wa1ter/ESG-sft/models/combined/ministral/label_only/fold_0/adapter"
+    },
+    {
+      "samples": 327,
+      "accuracy": 0.7554,
+      "macro_f1": 0.7071,
+      "weighted_f1": 0.7552,
+      "kappa": 0.6789,
+      "fold": 1,
+      "checkpoint_strategy": "final",
+      "checkpoint_epoch": null,
+      "checkpoint_dir": "/home/wa1ter/ESG-sft/models/combined/ministral/label_only/fold_1/adapter"
+    },
+    {
+      "samples": 326,
+      "accuracy": 0.7822,
+      "macro_f1": 0.763,
+      "weighted_f1": 0.7828,
+      "kappa": 0.7141,
+      "fold": 2,
+      "checkpoint_strategy": "final",
+      "checkpoint_epoch": null,
+      "checkpoint_dir": "/home/wa1ter/ESG-sft/models/combined/ministral/label_only/fold_2/adapter"
+    }
+  ],
+  "summary": {
+    "accuracy_mean": 0.7643,
+    "accuracy_std": 0.0126,
+    "macro_f1_mean": 0.7274,
+    "macro_f1_std": 0.0253,
+    "weighted_f1_mean": 0.7648,
+    "weighted_f1_std": 0.0127,
+    "kappa_mean": 0.6878,
+    "kappa_std": 0.0189
+  }
+}

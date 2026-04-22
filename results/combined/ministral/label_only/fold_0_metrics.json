@@ -1,0 +1,11 @@
+{
+  "samples": 327,
+  "accuracy": 0.7554,
+  "macro_f1": 0.7121,
+  "weighted_f1": 0.7564,
+  "kappa": 0.6703,
+  "fold": 0,
+  "checkpoint_strategy": "final",
+  "checkpoint_epoch": null,
+  "checkpoint_dir": "/home/wa1ter/ESG-sft/models/combined/ministral/label_only/fold_0/adapter"
+}

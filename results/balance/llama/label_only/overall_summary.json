@@ -1,0 +1,47 @@
+{
+  "folds": [
+    {
+      "samples": 168,
+      "accuracy": 0.8274,
+      "macro_f1": 0.6414,
+      "weighted_f1": 0.8338,
+      "kappa": 0.7367,
+      "fold": 0,
+      "checkpoint_strategy": "final",
+      "checkpoint_epoch": null,
+      "checkpoint_dir": "/home/wa1ter/ESG-sft/models/balance/llama/label_only/fold_0/adapter"
+    },
+    {
+      "samples": 166,
+      "accuracy": 0.8072,
+      "macro_f1": 0.7205,
+      "weighted_f1": 0.8088,
+      "kappa": 0.6706,
+      "fold": 1,
+      "checkpoint_strategy": "final",
+      "checkpoint_epoch": null,
+      "checkpoint_dir": "/home/wa1ter/ESG-sft/models/balance/llama/label_only/fold_1/adapter"
+    },
+    {
+      "samples": 165,
+      "accuracy": 0.8667,
+      "macro_f1": 0.635,
+      "weighted_f1": 0.8732,
+      "kappa": 0.7716,
+      "fold": 2,
+      "checkpoint_strategy": "final",
+      "checkpoint_epoch": null,
+      "checkpoint_dir": "/home/wa1ter/ESG-sft/models/balance/llama/label_only/fold_2/adapter"
+    }
+  ],
+  "summary": {
+    "accuracy_mean": 0.8338,
+    "accuracy_std": 0.0247,
+    "macro_f1_mean": 0.6656,
+    "macro_f1_std": 0.0389,
+    "weighted_f1_mean": 0.8386,
+    "weighted_f1_std": 0.0265,
+    "kappa_mean": 0.7263,
+    "kappa_std": 0.0419
+  }
+}
