@@ -1,0 +1,82 @@
+{
+  "dataset_version": "final_v1",
+  "status": "final_ground_truth",
+  "created_at": "2026-06-27T15:32:10+08:00",
+  "integration_policy": {
+    "adjudication_authority": "Label Studio project 19 export",
+    "merge_key": [
+      "dataset",
+      "paragraph_id"
+    ],
+    "base_source": "data/review/annotation_disputes/chiang_500_rebalanced_approved.csv",
+    "blance_source": "data/origin_data/10k_1A/blance_500.csv",
+    "original_sources_overwritten": false,
+    "base_post_adjudication_rebalance": {
+      "reason": "The original Community Relations row was adjudicated as Product Liability; apply approved reserve pair to preserve NC=9, CR=6, total=500.",
+      "added_paragraph_id": "CPRT_2021_RISK_020",
+      "added_label": "Community Relations",
+      "removed_paragraph_id": "FICO_2021_RISK_007",
+      "removed_label": "Non-ESG"
+    }
+  },
+  "adjudication": {
+    "export_csv": "data/review/annotation_disputes/label_studio/project-19-at-2026-06-27-07-25-af1b34b1.csv",
+    "rows": 60,
+    "rows_by_dataset": {
+      "blance": 21,
+      "chiang": 39
+    },
+    "changed_from_original_by_dataset": {
+      "chiang": 29,
+      "blance": 21
+    },
+    "different_from_dn_suggestion": 1
+  },
+  "datasets": {
+    "base": {
+      "path": "data/origin_data/10k_1A/base_500_final_v1.csv",
+      "rows": 500,
+      "label_distribution": {
+        "Business Ethics & Values": 25,
+        "Climate Change": 19,
+        "Community Relations": 6,
+        "Corporate Governance": 36,
+        "Human Capital": 35,
+        "Natural Capital": 9,
+        "Non-ESG": 293,
+        "Pollution & Waste": 7,
+        "Product Liability": 70
+      },
+      "adjudicated_rows_applied": 39,
+      "label_changes_from_rebalanced_staging": 29,
+      "file_sha256": "3b04ca1f9ef34b5b0da08a45ef5d72627f1dbe8bd3e74d56ec48e56e2cebf09b",
+      "content_fingerprint_sha256": "64595697319846e553a99f5f473cc2389dbafdf5dbb45271836af438ab6fbab3"
+    },
+    "blance": {
+      "path": "data/origin_data/10k_1A/blance_500_final_v1.csv",
+      "rows": 480,
+      "label_distribution": {
+        "Business Ethics & Values": 45,
+        "Climate Change": 54,
+        "Community Relations": 12,
+        "Corporate Governance": 33,
+        "Human Capital": 56,
+        "Natural Capital": 29,
+        "Non-ESG": 133,
+        "Pollution & Waste": 58,
+        "Product Liability": 60
+      },
+      "adjudicated_rows_applied": 21,
+      "label_changes_from_source": 21,
+      "file_sha256": "360feb4dcbe155c67e458b54df3216e6545e3849cc575aba86978e0312b30c7f",
+      "content_fingerprint_sha256": "f9a6146775dee16b228633ffe04f4267af6dd8347f46bb483d4a39b3d9d8dc93"
+    }
+  },
+  "source_file_sha256": {
+    "data/review/annotation_disputes/chiang_500_rebalanced_approved.csv": "64d0aa67326a73a10ddecfbbf1fde885a4b25ae63e1e2808db60fe08c5f281d1",
+    "data/origin_data/10k_1A/blance_500.csv": "c2be6517088a8da60a02ddf740a62bf668a696374ccaa72c092587912fd0f1c4",
+    "data/review/annotation_disputes/label_studio/project-19-at-2026-06-27-07-25-af1b34b1.csv": "1b26b64cd3ffc1132ba8a14d8b70df4d63eb76122a3adf897e5d1fae10ea2612",
+    "data/review/annotation_disputes/chiang_rare_class_additions_review.csv": "9dee72b06ab3969efe641f86bb8e68f1321b75860ed41033d3c42b34e8b5fd35",
+    "data/review/annotation_disputes/chiang_non_esg_removals_review.csv": "7bf1983c7727abceae0c36cd28822c355697abb2f1208cd1a0d4bd193eb552a9"
+  }
+}

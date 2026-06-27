@@ -1,0 +1,30 @@
+{
+  "status": "pending_user_review",
+  "target_total_rows": 500,
+  "current_counts": {
+    "Natural Capital": 2,
+    "Community Relations": 1,
+    "Non-ESG": 316
+  },
+  "requested_target_counts": {
+    "Natural Capital": 9,
+    "Community Relations": 6
+  },
+  "planned_primary_additions": {
+    "Natural Capital": 7,
+    "Community Relations": 5
+  },
+  "reserve_additions": {
+    "Community Relations": 1
+  },
+  "planned_primary_non_esg_removals": 12,
+  "reserve_non_esg_removals": 3,
+  "dependency": "Recompute required additions/removals after disputed-label adjudication; BBY_2021_RISK_011 may reduce current Community Relations from 1 to 0.",
+  "addition_review_csv": "data/review/annotation_disputes/chiang_rare_class_additions_review.csv",
+  "removal_review_csv": "data/review/annotation_disputes/chiang_non_esg_removals_review.csv",
+  "source_sha256": {
+    "chiang_500.csv": "e3c19cc8494e1d3183b3f6c43315e330d28067a1319cab468f8ce5ac9226a0e4",
+    "blance_500.csv": "c2be6517088a8da60a02ddf740a62bf668a696374ccaa72c092587912fd0f1c4",
+    "classified.json": "9b7d04d537b699fd7490458b58b8399c89965e1510238a4548d336a9d61d9cd9"
+  }
+}

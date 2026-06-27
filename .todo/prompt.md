@@ -1,5 +1,8 @@
 
 Appendix: Detail description and examples of the eight ESG topics:
+
+---
+
 Climate Change: This topic includes discussions about carbon emissions or climate change, including
 initiatives to increase carbon efficiency, environmental technologies, renewable energy, and the
 development or refurbishment of buildings with leading ecological design features. The following are
@@ -12,6 +15,9 @@ combines clean electricity generation with carbon sequestration and ecosystem re
 • Beginning in 2012 through the end of 2016, we have converted 19 plants from coal to natural
 gas or steam.
 • 40% of our operations are to be certified under a green building standard by 2018.
+
+---
+
 Natural Capital: This topic includes discussions about water stress, biodiversity, land use, and raw
 materials sourcing. For water stress, we include discussions of how companies manage risks of water
 shortages, such as by employing efficient water processes, water recycling, and alternative water
@@ -30,11 +36,12 @@ staff. For example, in 2019, planned maintenance work was adjusted after operato
 protected bird species nesting in equipment.
 • 100% of the paper used in our U.S direct marketing efforts was certified to be from sustainably
 managed forests.
-3
-Allen Huang, Dept of Accounting, HKUST (http://allenhuang.org)
 • During the period, Kimco remediated soil as a part of major development or redevelopment
 projects at the following locations: Dania Pointe (Dania Beach, FL), Suburban Square
 (Ardmore, PA), Lincoln Square (Philadelphia, PA).
+
+---
+
 Pollution and Waste: This topic includes discussions about toxic emissions, packaging materials, and
 electronic waste. For toxic emissions and waste, we include discussions of pollution, contamination,
 and emission of toxic and carcinogenic substances and wastewater. For packaging materials and waste,
@@ -51,6 +58,9 @@ tons a year early.
 can go back into the hands of customers rather than being sent to landfills.
 • Several years ago, we saw an opportunity to create a single streamlined solution for tenants
 that could provide them with more reliable and cost-effective waste services.
+
+---
+
 Human Capital: This topic includes discussions about labor management, health and safety, human
 capital development and training, and supply chain labor standards. For labor management, we include
 discussions workforce management, risk of workflow disruptions, labor productivity issues, employee
@@ -72,8 +82,9 @@ operations.
 specific stages of their careers.
 • This can lead to unfair treatment of workers, which is why we continue our efforts to source
 secondary raw materials in a way that’s aligned with our "Fair and Equal" agenda.
-4
-Allen Huang, Dept of Accounting, HKUST (http://allenhuang.org)
+
+---
+
 Product Liability: This topic includes discussing product safety and quality, privacy and data
 security, chemical safety, consumer financial protection, and health and demographic risk. For product
 safety and quality, we include discussion of product recalls, losing customer trust through product
@@ -94,6 +105,9 @@ respond to, and recover from cyberattacks.
 harm.
 • The Smarter CreditTM Center includes resources to help customers understand, build, and
 improve credit, as well as manage debt and plan for large purchases.
+
+---
+
 Community Relations: This topic includes discussions of a firm’s interaction with its local
 communities, including access to communications, access to finance, and access to healthcare. We
 include discussions about opportunities in historically underserved markets, such as developing
@@ -109,13 +123,14 @@ cancer.
 • Participants volunteer for significant causes such as disaster relief, hunger, medical research,
 home building or youth mentoring, and groups are encouraged to serve together as a means of
 multiplying their impact and fostering team spirit.
+
+---
+
 Corporate Governance: This topic includes discussions on shareholders and ownership, board of
 directors, executive pay, and internal controls. For shareholders and ownership, we include discussions
 regarding ownership structure, control structure, and shareholders. For the board of directors, we
 include discussions of the board’s independence from management, board skills and diversity, and
 board effectiveness. For executive pay, we include CEO and other executives’ pay practices and 
-5
-Allen Huang, Dept of Accounting, HKUST (http://allenhuang.org)
 specific pay figures, performance incentives, and overall pay plan design. For internal control, we
 consider internal controls, audit matters, audit committee matters, and internal audit matters. The
 following are some examples:
@@ -132,6 +147,9 @@ their use of our energy products.
 Directors of PricewaterhouseCoopers LLP, as an independent registered public accounting
 firm for the Company, to audit the financial statements of the Company and its subsidiaries for
 2022 is hereby ratified and approved.
+
+---
+
 Business Ethics and Values: This topic includes discussions about ethical components such as a
 firm’s values and controversies. We include discussions about the ethical conduct of business, fraud,
 corruption, bribery, fiduciary responsibilities, conflicts of interest, misrepresentation, bias, negligence,

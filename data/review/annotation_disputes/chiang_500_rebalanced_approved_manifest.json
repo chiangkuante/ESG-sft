@@ -1,0 +1,175 @@
+{
+  "status": "approved_rebalance_staging",
+  "approval_date": "2026-06-27",
+  "approval_basis": "User approved all primary additions and removals without modification.",
+  "source_csv": "data/origin_data/10k_1A/chiang_500.csv",
+  "output_csv": "data/review/annotation_disputes/chiang_500_rebalanced_approved.csv",
+  "source_rows": 500,
+  "output_rows": 500,
+  "primary_additions": [
+    {
+      "paragraph_id": "NEM_2023_RISK_085",
+      "label": "Natural Capital",
+      "finbert_label": "Natural Capital",
+      "finbert_confidence": 0.988,
+      "subtopic": "Water stewardship and water stress"
+    },
+    {
+      "paragraph_id": "PEP_2022_RISK_012",
+      "label": "Natural Capital",
+      "finbert_label": "Natural Capital",
+      "finbert_confidence": 0.986,
+      "subtopic": "Water scarcity and sourcing"
+    },
+    {
+      "paragraph_id": "FCX_2025_RISK_064",
+      "label": "Natural Capital",
+      "finbert_label": "Natural Capital",
+      "finbert_confidence": 0.9819,
+      "subtopic": "Aquifer, drought, and biodiversity"
+    },
+    {
+      "paragraph_id": "EQT_2025_RISK_079",
+      "label": "Natural Capital",
+      "finbert_label": "Natural Capital",
+      "finbert_confidence": 0.9735,
+      "subtopic": "Wildlife and critical habitat"
+    },
+    {
+      "paragraph_id": "F_2023_RISK_005",
+      "label": "Natural Capital",
+      "finbert_label": "Natural Capital",
+      "finbert_confidence": 0.2949,
+      "subtopic": "Responsible raw-material sourcing"
+    },
+    {
+      "paragraph_id": "KO_2024_RISK_090",
+      "label": "Natural Capital",
+      "finbert_label": "Natural Capital",
+      "finbert_confidence": 0.5634,
+      "subtopic": "Biodiversity and sustainable agriculture"
+    },
+    {
+      "paragraph_id": "KDP_2024_RISK_068",
+      "label": "Natural Capital",
+      "finbert_label": "Natural Capital",
+      "finbert_confidence": 0.9822,
+      "subtopic": "Water scarcity and quality"
+    },
+    {
+      "paragraph_id": "ALGN_2024_RISK_020",
+      "label": "Community Relations",
+      "finbert_label": "Community Relations",
+      "finbert_confidence": 0.9886,
+      "subtopic": "Underserved healthcare access"
+    },
+    {
+      "paragraph_id": "SWK_2025_RISK_012",
+      "label": "Community Relations",
+      "finbert_label": "Community Relations",
+      "finbert_confidence": 0.9879,
+      "subtopic": "Education and local workforce support"
+    },
+    {
+      "paragraph_id": "BIIB_2022_RISK_011",
+      "label": "Community Relations",
+      "finbert_label": "Community Relations",
+      "finbert_confidence": 0.9789,
+      "subtopic": "Patient access and financial assistance"
+    },
+    {
+      "paragraph_id": "FCX_2022_RISK_091",
+      "label": "Community Relations",
+      "finbert_label": "Community Relations",
+      "finbert_confidence": 0.9688,
+      "subtopic": "Indigenous and local-community engagement"
+    },
+    {
+      "paragraph_id": "NEM_2024_RISK_107",
+      "label": "Community Relations",
+      "finbert_label": "Community Relations",
+      "finbert_confidence": 0.961,
+      "subtopic": "Local communities and cultural heritage"
+    }
+  ],
+  "primary_removals": [
+    {
+      "paragraph_id": "IVZ_2022_RISK_004",
+      "label": "Non-ESG"
+    },
+    {
+      "paragraph_id": "ORLY_2022_RISK_024",
+      "label": "Non-ESG"
+    },
+    {
+      "paragraph_id": "NVR_2022_RISK_020",
+      "label": "Non-ESG"
+    },
+    {
+      "paragraph_id": "ESS_2022_RISK_008",
+      "label": "Non-ESG"
+    },
+    {
+      "paragraph_id": "TMO_2022_RISK_015",
+      "label": "Non-ESG"
+    },
+    {
+      "paragraph_id": "AXP_2022_RISK_071",
+      "label": "Non-ESG"
+    },
+    {
+      "paragraph_id": "BAX_2023_RISK_003",
+      "label": "Non-ESG"
+    },
+    {
+      "paragraph_id": "CRM_2022_RISK_046",
+      "label": "Non-ESG"
+    },
+    {
+      "paragraph_id": "USB_2024_RISK_011",
+      "label": "Non-ESG"
+    },
+    {
+      "paragraph_id": "CNP_2022_RISK_095",
+      "label": "Non-ESG"
+    },
+    {
+      "paragraph_id": "PH_2021_RISK_011",
+      "label": "Non-ESG"
+    },
+    {
+      "paragraph_id": "CBOE_2023_RISK_009",
+      "label": "Non-ESG"
+    }
+  ],
+  "reserve_additions_not_applied": [
+    "CPRT_2021_RISK_020"
+  ],
+  "reserve_removals_not_applied": [
+    "FICO_2021_RISK_007",
+    "ZBRA_2022_RISK_031",
+    "ZBH_2022_RISK_004"
+  ],
+  "label_distribution": {
+    "Business Ethics & Values": 26,
+    "Climate Change": 18,
+    "Community Relations": 6,
+    "Corporate Governance": 35,
+    "Human Capital": 31,
+    "Natural Capital": 9,
+    "Non-ESG": 304,
+    "Pollution & Waste": 7,
+    "Product Liability": 64
+  },
+  "sha256": {
+    "source_csv": "e3c19cc8494e1d3183b3f6c43315e330d28067a1319cab468f8ce5ac9226a0e4",
+    "addition_review_csv": "9dee72b06ab3969efe641f86bb8e68f1321b75860ed41033d3c42b34e8b5fd35",
+    "removal_review_csv": "7bf1983c7727abceae0c36cd28822c355697abb2f1208cd1a0d4bd193eb552a9",
+    "output_csv": "64d0aa67326a73a10ddecfbbf1fde885a4b25ae63e1e2808db60fe08c5f281d1"
+  },
+  "notes": [
+    "Original Chiang CSV and review CSVs were not modified.",
+    "New rows have blank Label Studio metadata fields because they were approved outside Label Studio.",
+    "Final rare-class counts must be recalculated after the 39 disputed Chiang labels are adjudicated."
+  ]
+}

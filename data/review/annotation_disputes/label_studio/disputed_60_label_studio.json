@@ -1,0 +1,2402 @@
+[
+  {
+    "data": {
+      "dataset": "chiang",
+      "review_rank": 1,
+      "paragraph_id": "PNW_2022_RISK_004",
+      "ticker": "PNW",
+      "filing_date": "2022-02-25",
+      "risk_heading": "REGULATORY RISKS",
+      "risk_section": "REGULATORY RISKS",
+      "combined_text": "REGULATORY RISKS\nAPS must comply in good faith with all applicable statutes, regulations, rules, tariffs, and orders of agencies that regulate APS’s business, including FERC, NRC, EPA, the ACC, and state and local governmental agencies. These agencies regulate many aspects of APS’s utility operations, including safety and performance, emissions, siting and construction of facilities, customer service and the rates that APS can charge retail and wholesale customers. Failure to comply can subject APS to, among other things, fines and penalties. For example, under the Energy Policy Act of 2005, FERC can impose penalties (approximately $1.2 million per day per violation) for failure to comply with mandatory electric reliability standards. APS is also required to have numerous permits, approvals and certificates from these agencies. APS believes the necessary permits, approvals and certificates have been obtained for its existing operations and that APS’s business is conducted in accordance with applicable laws in all material respects. Changes in laws or regulations that govern APS, new interpretations of law and regulations, or the imposition of new or revised laws or regulations could have an adverse impact on the manner in which we operate our business and our results of operations. In particular, new or revised laws or interpretations of existing laws or regulations may impact or call into question the ACC’s permissive regulatory authority, which may result in uncertainty as to jurisdictional authority within our state, and uncertainty as to whether ACC decisions will be binding or challenged by other agencies or bodies asserting jurisdiction. In November 2021, the Arizona Court of Appeals issued an opinion that called into question the ACC-approved limitation of liability provision found in the APS Service Schedules.",
+      "original_label": "Business Ethics & Values",
+      "api_consensus_label": "Corporate Governance",
+      "codex_suggested_label": "Non-ESG",
+      "finbert_label": "Business Ethics & Values",
+      "finbert_confidence": 0.3936,
+      "dispute_reason": "一般法規遵循為主，未明確落在倫理或公司治理核心定義。"
+    },
+    "meta": {
+      "source_csv": "chiang_500_disputed_39.csv",
+      "review_type": "annotation_dispute_adjudication"
+    },
+    "predictions": [
+      {
+        "model_version": "codex-manual-taxonomy-review-v1",
+        "score": 1.0,
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "combined_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Non-ESG"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "dataset": "chiang",
+      "review_rank": 2,
+      "paragraph_id": "PFG_2022_RISK_033",
+      "ticker": "PFG",
+      "filing_date": "2022-02-11",
+      "risk_heading": "Risks relating to estimates, assumptions and valuations",
+      "risk_section": "Summary of Risk Factors",
+      "combined_text": "Risks relating to estimates, assumptions and valuations\nIt requires financial professionals to act in consumers’ best interest when giving personalized investment advice. Notwithstanding the SEC’s Reg BI, which went into effect in 2020, some states may still consider changes to their own insurance and securities laws and/or regulations. In 2020, Massachusetts promulgated regulations imposing a fiduciary duty on broker-dealers and agents and the NAIC adopted best interest enhancements to its existing annuity suitability model. A number of states have adopted the updated NAIC model and many more are poised to take steps in that direction in 2022. Related state fiduciary or “best interest” legislation and/or regulation could occur in 2022.",
+      "original_label": "Product Liability",
+      "api_consensus_label": "Business Ethics & Values",
+      "codex_suggested_label": "Product Liability",
+      "finbert_label": "Business Ethics & Values",
+      "finbert_confidence": 0.6801,
+      "dispute_reason": "消費者最佳利益屬消費者金融保護，但也涉及受託義務。"
+    },
+    "meta": {
+      "source_csv": "chiang_500_disputed_39.csv",
+      "review_type": "annotation_dispute_adjudication"
+    },
+    "predictions": [
+      {
+        "model_version": "codex-manual-taxonomy-review-v1",
+        "score": 1.0,
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "combined_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Product Liability"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "dataset": "chiang",
+      "review_rank": 3,
+      "paragraph_id": "HRL_2021_RISK_014",
+      "ticker": "HRL",
+      "filing_date": "2021-12-10",
+      "risk_heading": "Legal and Regulatory Risks",
+      "risk_section": "Legal and Regulatory Risks",
+      "combined_text": "Legal and Regulatory Risks\nThe Company’s operations are subject to the general risks of litigation. The Company is involved on an ongoing basis in litigation arising in the ordinary course of business. Trends in litigation may include class actions involving employees, consumers, competitors, suppliers, shareholders, or others, and claims relating to product liability, contract disputes, antitrust regulations, intellectual property, advertising, labeling, wage and hour laws, employment practices or environmental matters. Neither litigation trends nor the outcomes of litigation can be predicted with certainty and adverse litigation trends and outcomes could negatively affect the Company’s financial results. Government regulation, present and future, exposes the Company to potential sanctions and compliance costs that could adversely affect the Company’s business. The Company’s operations are subject to extensive regulation by the U.S. Department of Homeland Security, the U.S. Department of Agriculture, the U.S. Food and Drug Administration, federal and state taxing authorities and other federal, state, and local authorities which oversee workforce immigration, taxation, animal welfare, food safety, and the processing, packaging, storage, distribution, advertising, and labeling of the Company’s products. The Company’s manufacturing facilities and products are subject to ongoing inspection by federal, state and local authorities. Claims or enforcement proceedings could be brought against the Company in the future. The availability of government inspectors due to a government furlough could also cause disruption to the Company’s manufacturing facilities. Additionally, the Company is subject to new or modified laws, regulations, and accounting standards. The Company’s failure or inability to comply with such requirements could subject the Company to civil remedies, including fines, injunctions, recalls or seizures, as well as potential criminal sanctions.",
+      "original_label": "Business Ethics & Values",
+      "api_consensus_label": "Product Liability",
+      "codex_suggested_label": "Product Liability",
+      "finbert_label": "Business Ethics & Values",
+      "finbert_confidence": 0.8906,
+      "dispute_reason": "內容混合法律訴訟、食品安全、標示與勞動議題，主題不單一。"
+    },
+    "meta": {
+      "source_csv": "chiang_500_disputed_39.csv",
+      "review_type": "annotation_dispute_adjudication"
+    },
+    "predictions": [
+      {
+        "model_version": "codex-manual-taxonomy-review-v1",
+        "score": 1.0,
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "combined_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Product Liability"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "dataset": "chiang",
+      "review_rank": 4,
+      "paragraph_id": "MAA_2022_RISK_078",
+      "ticker": "MAA",
+      "filing_date": "2022-02-17",
+      "risk_heading": "Risks Related to the Operating Partnership’s Organization and Ownership of OP Units",
+      "risk_section": "Tennessee Anti-Takeover Statutes",
+      "combined_text": "Risks Related to the Operating Partnership’s Organization and Ownership of OP Units\nIn certain circumstances, certain of the Operating Partnership’s unitholders must approve the Operating Partnership’s sale of certain properties contributed by the unitholders.",
+      "original_label": "Non-ESG",
+      "api_consensus_label": "Corporate Governance",
+      "codex_suggested_label": "Corporate Governance",
+      "finbert_label": "Non-ESG",
+      "finbert_confidence": 0.8895,
+      "dispute_reason": "單位持有人對資產出售的核准權直接涉及所有權治理。"
+    },
+    "meta": {
+      "source_csv": "chiang_500_disputed_39.csv",
+      "review_type": "annotation_dispute_adjudication"
+    },
+    "predictions": [
+      {
+        "model_version": "codex-manual-taxonomy-review-v1",
+        "score": 1.0,
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "combined_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Corporate Governance"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "dataset": "chiang",
+      "review_rank": 5,
+      "paragraph_id": "WYNN_2022_RISK_085",
+      "ticker": "WYNN",
+      "filing_date": "2022-02-28",
+      "risk_heading": "Risks Associated with our Macau Operations",
+      "risk_section": "Risks Associated with our Macau Operations",
+      "combined_text": "Risks Associated with our Macau Operations\nConflicts of interest may arise because certain of our directors and officers are also directors of Wynn Macau, Limited.",
+      "original_label": "Business Ethics & Values",
+      "api_consensus_label": "Corporate Governance",
+      "codex_suggested_label": "Business Ethics & Values",
+      "finbert_label": "Business Ethics & Values",
+      "finbert_confidence": 0.7181,
+      "dispute_reason": "董事兼任造成利益衝突，同時符合倫理與治理邊界。"
+    },
+    "meta": {
+      "source_csv": "chiang_500_disputed_39.csv",
+      "review_type": "annotation_dispute_adjudication"
+    },
+    "predictions": [
+      {
+        "model_version": "codex-manual-taxonomy-review-v1",
+        "score": 1.0,
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "combined_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Business Ethics & Values"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "dataset": "chiang",
+      "review_rank": 6,
+      "paragraph_id": "KEY_2022_RISK_013",
+      "ticker": "KEY",
+      "filing_date": "2022-02-22",
+      "risk_heading": "We are subject to a variety of operational risks.",
+      "risk_section": "III.  Operational Risk",
+      "combined_text": "We are subject to a variety of operational risks.\nIn addition to the other risks discussed in this section, we are subject to operational risk, which represents the risk of loss resulting from human error, inadequate or failed internal processes, internal controls, systems, and external events. Operational risk includes the risk of fraud by employees or others outside of Key, clerical and record-keeping errors, nonperformance by vendors, threats from cyber activity, and computer/telecommunications malfunctions. Fraudulent activity has escalated, become more sophisticated, and is ever evolving as there are more options to access financial services. For instance, in our Form 8-K filed July 16, 2019, we disclosed that on or about July 9, 2019, we discovered fraudulent activity associated with transactions conducted in the third quarter of 2019 by a business customer of KeyBank.  This fraudulent activity resulted in $139 million of net loan charge-offs in 2019. Operational risk also encompasses compliance and legal risk, which is the risk of loss from violations of, or noncompliance with, laws, rules, regulations, prescribed practices, or ethical standards, as well as the risk of our noncompliance with contractual and other obligations. We are also exposed to operational risk through our outsourcing arrangements, and the effect that changes in circumstances or capabilities of our outsourcing vendors can have on our ability to continue to perform operational functions necessary to our business, such as certain loan processing functions. For example, breakdowns or failures of our vendors’ systems or employees could be a source of operational risk to us. Resulting losses from operational risk could take the form of explicit charges, increased operational costs (including remediation costs), harm to our reputation, inability to secure insurance, litigation, regulatory intervention or sanctions, or foregone business opportunities.",
+      "original_label": "Non-ESG",
+      "api_consensus_label": "Business Ethics & Values",
+      "codex_suggested_label": "Business Ethics & Values",
+      "finbert_label": "Business Ethics & Values",
+      "finbert_confidence": 0.5053,
+      "dispute_reason": "段落明確包含詐欺、內控失效與違反倫理標準。"
+    },
+    "meta": {
+      "source_csv": "chiang_500_disputed_39.csv",
+      "review_type": "annotation_dispute_adjudication"
+    },
+    "predictions": [
+      {
+        "model_version": "codex-manual-taxonomy-review-v1",
+        "score": 1.0,
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "combined_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Business Ethics & Values"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "dataset": "chiang",
+      "review_rank": 7,
+      "paragraph_id": "RL_2021_RISK_018",
+      "ticker": "RL",
+      "filing_date": "2021-05-20",
+      "risk_heading": "The loss of the services of Mr. Ralph Lauren or any other changes to our executive and senior management team may be disruptive to, or cause uncertainty in, our business.",
+      "risk_section": "Risks Related to our Business and Operations",
+      "combined_text": "The loss of the services of Mr. Ralph Lauren or any other changes to our executive and senior management team may be disruptive to, or cause uncertainty in, our business.\nMr. Ralph Lauren's leadership in the design and marketing areas of our business has been a critical element of our success since the inception of our Company. Mr. R. Lauren is instrumental to, and closely identified with, our brand that bears his name. Our ability to maintain our brand image and leverage the goodwill associated with Mr. R. Lauren's name may be damaged if we were to lose his services. The death or disability of Mr. R. Lauren or other extended or permanent loss of his services, or any negative market or industry perception with respect to him or arising from his loss, could have a material adverse effect on our business. We also depend on the service and management experience of other key executive officers and members of senior management who have substantial experience and expertise in our industry and our business and have made significant contributions to our growth and success. Competition in our industry to attract and retain these employees is intense and is influenced by our reputation, our ability to offer competitive compensation and benefits, and economic conditions, among other factors. Any changes in our executive and senior management team, including those resulting from our restructuring actions, may be disruptive to, or cause uncertainty in, our business and future strategic direction. The departure of any key individuals and the failure to ensure a smooth transition and effective transfer of knowledge involving senior employees could hinder or delay our strategic planning and execution, as well as adversely affect our ability to attract and retain other experienced and talented employees. Such departures could also impede our ability to maintain an effective system of internal controls and compliance with the requirements under the Sarbanes-Oxley Act of 2002. Any such disruptions could have a material adverse impact on our business.",
+      "original_label": "Corporate Governance",
+      "api_consensus_label": "Human Capital",
+      "codex_suggested_label": "Human Capital",
+      "finbert_label": "Corporate Governance",
+      "finbert_confidence": 0.9694,
+      "dispute_reason": "核心是關鍵高階人員流失、招募與留任。"
+    },
+    "meta": {
+      "source_csv": "chiang_500_disputed_39.csv",
+      "review_type": "annotation_dispute_adjudication"
+    },
+    "predictions": [
+      {
+        "model_version": "codex-manual-taxonomy-review-v1",
+        "score": 1.0,
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "combined_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Human Capital"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "dataset": "chiang",
+      "review_rank": 8,
+      "paragraph_id": "BEN_2021_RISK_075",
+      "ticker": "BEN",
+      "filing_date": "2021-11-19",
+      "risk_heading": "INFORMATION ABOUT OUR EXECUTIVE OFFICERS",
+      "risk_section": "INFORMATION ABOUT OUR EXECUTIVE OFFICERS",
+      "combined_text": "INFORMATION ABOUT OUR EXECUTIVE OFFICERS\nThe following description of our executive officers is included as an unnumbered item in this Part I of this Annual Report in lieu of being included in our definitive proxy statement for our annual meeting of stockholders. Set forth below are the name, age, present title, and certain other information for each of our executive officers as of the filing date of this Annual Report. Each executive officer is appointed by our board of directors and holds his or her office until the earlier of his or her death, resignation, retirement, disqualification or removal.",
+      "original_label": "Non-ESG",
+      "api_consensus_label": "Corporate Governance",
+      "codex_suggested_label": "Corporate Governance",
+      "finbert_label": "Corporate Governance",
+      "finbert_confidence": 0.9932,
+      "dispute_reason": "高階主管由董事會任命，較接近治理資訊。"
+    },
+    "meta": {
+      "source_csv": "chiang_500_disputed_39.csv",
+      "review_type": "annotation_dispute_adjudication"
+    },
+    "predictions": [
+      {
+        "model_version": "codex-manual-taxonomy-review-v1",
+        "score": 1.0,
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "combined_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Corporate Governance"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "dataset": "chiang",
+      "review_rank": 9,
+      "paragraph_id": "HPE_2022_RISK_031",
+      "ticker": "HPE",
+      "filing_date": "2022-12-08",
+      "risk_heading": "Business and Operational Risks",
+      "risk_section": "Business and Operational Risks",
+      "combined_text": "Business and Operational Risks\nIn addition, quality issues can impair our relationships with new or existing customers and adversely affect our brand and reputation, which could, in turn, adversely affect our results of operations.",
+      "original_label": "Non-ESG",
+      "api_consensus_label": "Product Liability",
+      "codex_suggested_label": "Product Liability",
+      "finbert_label": "Non-ESG",
+      "finbert_confidence": 0.9817,
+      "dispute_reason": "產品品質影響客戶與品牌，符合產品品質風險。"
+    },
+    "meta": {
+      "source_csv": "chiang_500_disputed_39.csv",
+      "review_type": "annotation_dispute_adjudication"
+    },
+    "predictions": [
+      {
+        "model_version": "codex-manual-taxonomy-review-v1",
+        "score": 1.0,
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "combined_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Product Liability"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "dataset": "chiang",
+      "review_rank": 10,
+      "paragraph_id": "HSY_2022_RISK_006",
+      "ticker": "HSY",
+      "filing_date": "2022-02-18",
+      "risk_heading": "Risks Related to Our Business and Operations",
+      "risk_section": "Risks Related to Our Business and Operations",
+      "combined_text": "Risks Related to Our Business and Operations\nOur Company’s reputation or brand image might be impacted as a result of issues or concerns relating to the quality and safety of our products, ingredients or packaging, human and workplace rights, and other environmental, social or governance matters, which in turn could result in litigation or otherwise negatively impact our operating results.",
+      "original_label": "Non-ESG",
+      "api_consensus_label": "Product Liability",
+      "codex_suggested_label": "Product Liability",
+      "finbert_label": "Non-ESG",
+      "finbert_confidence": 0.5409,
+      "dispute_reason": "產品、原料與包裝品質安全是主要具體風險。"
+    },
+    "meta": {
+      "source_csv": "chiang_500_disputed_39.csv",
+      "review_type": "annotation_dispute_adjudication"
+    },
+    "predictions": [
+      {
+        "model_version": "codex-manual-taxonomy-review-v1",
+        "score": 1.0,
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "combined_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Product Liability"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "dataset": "chiang",
+      "review_rank": 11,
+      "paragraph_id": "BIIB_2022_RISK_101",
+      "ticker": "BIIB",
+      "filing_date": "2022-02-03",
+      "risk_heading": "Risks Related to Development, Clinical Testing and Regulation of Our Products and Product Candidates",
+      "risk_section": "Risks Related to Intellectual Property",
+      "combined_text": "Risks Related to Development, Clinical Testing and Regulation of Our Products and Product Candidates\nClinical trials and the development of biopharmaceutical products is a lengthy and complex process. If we fail to adequately manage our clinical activities, our clinical trials or potential regulatory approvals may be delayed or denied.",
+      "original_label": "Non-ESG",
+      "api_consensus_label": "Product Liability",
+      "codex_suggested_label": "Product Liability",
+      "finbert_label": "Non-ESG",
+      "finbert_confidence": 0.9805,
+      "dispute_reason": "臨床試驗管理與產品核准屬產品品質／安全邊界。"
+    },
+    "meta": {
+      "source_csv": "chiang_500_disputed_39.csv",
+      "review_type": "annotation_dispute_adjudication"
+    },
+    "predictions": [
+      {
+        "model_version": "codex-manual-taxonomy-review-v1",
+        "score": 1.0,
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "combined_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Product Liability"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "dataset": "chiang",
+      "review_rank": 12,
+      "paragraph_id": "PFE_2022_RISK_008",
+      "ticker": "PFE",
+      "filing_date": "2022-02-24",
+      "risk_heading": "RESEARCH AND DEVELOPMENT",
+      "risk_section": "RESEARCH AND DEVELOPMENT",
+      "combined_text": "RESEARCH AND DEVELOPMENT\nR&D is at the heart of fulfilling our purpose to deliver breakthroughs that change patients’ lives as we work to translate advanced science and technologies into the therapies that may be the most impactful for patients. The discovery and development of drugs, vaccines and biological products are time consuming, costly and unpredictable. In addition to discovering and developing new products, our R&D efforts seek to add value to our existing products by improving their effectiveness and ease of dosing and by discovering potential new indications. Our R&D Priorities and Strategy. Our R&D priorities include:•delivering a pipeline of highly differentiated medicines and vaccines where we have a unique opportunity to bring the most important new therapies to patients in need;•advancing our capabilities that can position us for long-term R&D leadership; and•advancing new models for partnerships with creativity, flexibility and urgency to deliver innovation to patients as quickly as possible. To that end, our R&D primarily focuses on our main therapeutic areas. While a significant portion of our R&D is internal, we also seek promising chemical and biological lead molecules and innovative technologies developed by others to incorporate into our discovery and development processes or projects, as well as our product lines. We do so by entering into collaboration, alliance and license agreements with universities, biotechnology companies and other firms as well as through acquisitions and investments. These collaboration, alliance and license agreements and investments allow us to share knowledge, risk and cost. They also enable us to access external scientific and technological expertise, as well as provide us the opportunity to advance our own products and in-licensed or acquired products. For information on certain of these collaborations, alliances and license arrangements and investments, see Note 2. Our R&D Operations.",
+      "original_label": "Product Liability",
+      "api_consensus_label": "Non-ESG",
+      "codex_suggested_label": "Non-ESG",
+      "finbert_label": "Non-ESG",
+      "finbert_confidence": 0.475,
+      "dispute_reason": "主要是研發策略與合作模式，未聚焦產品安全或責任。"
+    },
+    "meta": {
+      "source_csv": "chiang_500_disputed_39.csv",
+      "review_type": "annotation_dispute_adjudication"
+    },
+    "predictions": [
+      {
+        "model_version": "codex-manual-taxonomy-review-v1",
+        "score": 1.0,
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "combined_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Non-ESG"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "dataset": "chiang",
+      "review_rank": 13,
+      "paragraph_id": "CSX_2022_RISK_004",
+      "ticker": "CSX",
+      "filing_date": "2022-02-16",
+      "risk_heading": "Regulatory, Legislative and Legal",
+      "risk_section": "Regulatory, Legislative and Legal",
+      "combined_text": "Regulatory, Legislative and Legal\nThe Company is subject to the jurisdiction of various regulatory agencies, including the STB, FRA, PHMSA, TSA, EPA and other state, provincial and federal regulatory agencies for a variety of economic, health, safety, labor, environmental, tax, legal and other matters. New or modified rules or regulations by these agencies could increase the Company's operating costs, adversely impact revenue or reduce operating efficiencies and affect service performance. Noncompliance with applicable laws or regulations could erode public confidence in the Company and can subject the Company to fines, penalties and other legal or regulatory sanctions.",
+      "original_label": "Business Ethics & Values",
+      "api_consensus_label": "Non-ESG",
+      "codex_suggested_label": "Non-ESG",
+      "finbert_label": "Business Ethics & Values",
+      "finbert_confidence": 0.7593,
+      "dispute_reason": "廣泛法規變動與營運成本，缺乏明確倫理行為。"
+    },
+    "meta": {
+      "source_csv": "chiang_500_disputed_39.csv",
+      "review_type": "annotation_dispute_adjudication"
+    },
+    "predictions": [
+      {
+        "model_version": "codex-manual-taxonomy-review-v1",
+        "score": 1.0,
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "combined_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Non-ESG"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "dataset": "chiang",
+      "review_rank": 14,
+      "paragraph_id": "ADM_2022_RISK_015",
+      "ticker": "ADM",
+      "filing_date": "2022-02-17",
+      "risk_heading": "Legal Regulations and Compliance Risks",
+      "risk_section": "Legal Regulations and Compliance Risks",
+      "combined_text": "Legal Regulations and Compliance Risks\nAgricultural production and trade flows are subject to government policies, mandates, regulations, and trade agreements, including taxes, tariffs, duties, subsidies, incentives, foreign exchange rates, and import and export restrictions, including policies related to genetically modified organisms, traceability standards, sustainable practices, product safety and labeling, renewable fuels, and low carbon fuel mandates. These policies can influence the planting of certain crops; the location and size of crop production; whether unprocessed or processed commodity products are traded; the volume and types of imports and exports; the availability and competitiveness of feedstocks as raw materials; the viability and volume of production of certain of the Company’s products; and industry profitability. For example, changes in government policies or regulations of ethanol and biodiesel including, but not limited to, changes in the Renewable Fuel Standard program under the Energy Independence and Security Act of 2007 in the United States, including the treatment of small refinery exemptions, can have an impact on the Company’s operating results. International trade regulations can adversely affect agricultural commodity trade flows by limiting or disrupting trade between countries or regions. Regulations of financial markets and instruments, including the Dodd-Frank Act, Consumer Protection Act, and the European Market Infrastructure Regulation, create uncertainty and may lead to additional risks and costs, and could adversely affect the Company’s futures commission merchant business and its agricultural commodity risk management practices. Future government policies may adversely affect the supply of, demand for, and prices of the Company’s products; adversely affect the Company’s ability to deploy adequate hedging programs; restrict the Company’s ability to do business in its existing and target markets; and adversely affect the Company’s revenues and operating results.",
+      "original_label": "Climate Change",
+      "api_consensus_label": "Non-ESG",
+      "codex_suggested_label": "Non-ESG",
+      "finbert_label": "Climate Change",
+      "finbert_confidence": 0.752,
+      "dispute_reason": "低碳燃料只占廣泛農業與貿易政策的一部分，主題是否以氣候為主有疑義。"
+    },
+    "meta": {
+      "source_csv": "chiang_500_disputed_39.csv",
+      "review_type": "annotation_dispute_adjudication"
+    },
+    "predictions": [
+      {
+        "model_version": "codex-manual-taxonomy-review-v1",
+        "score": 1.0,
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "combined_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Non-ESG"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "dataset": "chiang",
+      "review_rank": 15,
+      "paragraph_id": "SNPS_2021_RISK_054",
+      "ticker": "SNPS",
+      "filing_date": "2021-12-13",
+      "risk_heading": "Legal and Regulatory Risks",
+      "risk_section": "Legal and Regulatory Risks",
+      "combined_text": "Legal and Regulatory Risks\nChanges to these and other areas in relation to international tax reform, including future actions taken by foreign governments in response to the Tax Act, could increase uncertainty and may adversely affect our tax rate and cash flow in future years. Our income and non-income tax filings are subject to review or audit by the Internal Revenue Service and state, local and foreign taxing authorities. We exercise significant judgment in determining our worldwide provision for income taxes and, in the ordinary course of our business, there may be transactions and calculations where the ultimate tax determination is uncertain. We may also be liable for potential tax liabilities of businesses we acquire, including future taxes payable related to the transition tax on earnings from their foreign operations, if any, under the Tax Act. Although we believe our tax estimates are reasonable, the final determination in an audit may be materially different than the treatment reflected in our historical income tax provisions and accruals. An assessment of additional taxes because of an audit could adversely affect our income tax provision and net income in the periods for which that determination is made. In July 2017, the Hungarian Tax Authority (HTA) issued a final assessment against our Hungarian subsidiary (Synopsys Hungary) for fiscal years 2011 through 2013. The HTA has applied withholding taxes on certain payments made to affiliates, resulting in an aggregate tax assessment of approximately $25.0 million and interest and penalties of $11.0 million. We paid the tax assessments, penalties and interest in the first quarter of fiscal 2018 as required by law and recorded these amounts as prepaid taxes on our balance sheet. On April 30, 2019, the Hungarian Administrative Court (the Administrative Court) ruled against Synopsys Hungary. We filed an appeal with the Hungarian Supreme Court on July 5, 2019.",
+      "original_label": "Non-ESG",
+      "api_consensus_label": "Business Ethics & Values",
+      "codex_suggested_label": "Non-ESG",
+      "finbert_label": "Non-ESG",
+      "finbert_confidence": 0.929,
+      "dispute_reason": "稅務估計與稅務稽核通常屬一般財稅風險。"
+    },
+    "meta": {
+      "source_csv": "chiang_500_disputed_39.csv",
+      "review_type": "annotation_dispute_adjudication"
+    },
+    "predictions": [
+      {
+        "model_version": "codex-manual-taxonomy-review-v1",
+        "score": 1.0,
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "combined_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Non-ESG"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "dataset": "chiang",
+      "review_rank": 16,
+      "paragraph_id": "BBY_2021_RISK_011",
+      "ticker": "BBY",
+      "filing_date": "2021-03-19",
+      "risk_heading": "The COVID-19 pandemic has subjected our business, operations and financial condition to a number of risks, and those risks may intensify or last for an extended period of time.",
+      "risk_section": "External Risks",
+      "combined_text": "The COVID-19 pandemic has subjected our business, operations and financial condition to a number of risks, and those risks may intensify or last for an extended period of time.\nThis expanded risk increases the complexity of our business and places significant responsibility on our management, employees, operations, systems, technical expertise, financial resources, and internal financial and regulatory control and reporting functions. In addition, new initiatives we test through trials and pilots may not scale or grow effectively or as we expected, which could limit our growth and negatively affect our operating results. They may also involve significant laws or regulations that are beyond our current expertise. In fiscal 2021 we continued to invest in our health strategy and our underlying purpose to enrich lives through technology. The new health-related services offered might expose us to liability risk resulting from failures in the fulfillment of these services. In addition, the services and systems used could expose us to customer data privacy and information security risks, as well as business or system interruption risks. These and other related issues could have a material adverse impact on our financial results. Our focus on services as a strategic priority exposes us to certain risks that could have a material adverse impact on our revenue and profitability as well as our reputation. We offer a full range of services that complement our product offerings, including consultation, delivery, design, installation, memberships, protection plans, repair, set-up, technical support, and health, safety and caregiving monitoring and support. Designing, marketing and executing these services is subject to incremental risks.",
+      "original_label": "Community Relations",
+      "api_consensus_label": "Product Liability",
+      "codex_suggested_label": "Product Liability",
+      "finbert_label": "Product Liability",
+      "finbert_confidence": 0.8457,
+      "dispute_reason": "健康服務責任、客戶隱私與資訊安全均指向產品責任。"
+    },
+    "meta": {
+      "source_csv": "chiang_500_disputed_39.csv",
+      "review_type": "annotation_dispute_adjudication"
+    },
+    "predictions": [
+      {
+        "model_version": "codex-manual-taxonomy-review-v1",
+        "score": 1.0,
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "combined_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Product Liability"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "dataset": "chiang",
+      "review_rank": 17,
+      "paragraph_id": "MOH_2024_RISK_012",
+      "ticker": "MOH",
+      "filing_date": "2024-02-13",
+      "risk_heading": "RISKS RELATED TO OUR BUSINESS",
+      "risk_section": "RISKS RELATED TO OUR BUSINESS",
+      "combined_text": "RISKS RELATED TO OUR BUSINESS\nOur growth strategy includes the pursuit of targeted inorganic growth opportunities that we believe will provide a strategic fit, leverage operational synergies, and lead to incremental earnings accretion. For example, in September 2023 we closed on our acquisition of My Choice Wisconsin and in January 2024 we closed on the acquisition of Bright Health Medicare. The integration of acquired businesses with our existing business is a complex, costly and time-consuming process. The success of acquisitions we make will depend, in part, on our ability to successfully combine our existing business with such acquired businesses and realize the anticipated benefits, including synergies, cost savings, growth in earnings, innovation, and operational efficiencies, from the combinations. If we are unable to achieve these objectives within the anticipated time frame, or at all, the anticipated benefits may not be fully realized, or may take longer to realize than expected.",
+      "original_label": "Corporate Governance",
+      "api_consensus_label": "Non-ESG",
+      "codex_suggested_label": "Non-ESG",
+      "finbert_label": "Non-ESG",
+      "finbert_confidence": 0.9702,
+      "dispute_reason": "併購整合與綜效實現是一般策略與營運風險。"
+    },
+    "meta": {
+      "source_csv": "chiang_500_disputed_39.csv",
+      "review_type": "annotation_dispute_adjudication"
+    },
+    "predictions": [
+      {
+        "model_version": "codex-manual-taxonomy-review-v1",
+        "score": 1.0,
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "combined_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Non-ESG"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "dataset": "chiang",
+      "review_rank": 18,
+      "paragraph_id": "IFF_2022_RISK_006",
+      "ticker": "IFF",
+      "filing_date": "2022-02-28",
+      "risk_heading": "Supply chain disruptions, geopolitical developments or climate-change events may adversely affect our suppliers or our procurement of raw materials, and thus may impact our business and financial results.",
+      "risk_section": "Risks Related to Our Business and Industry",
+      "combined_text": "Supply chain disruptions, geopolitical developments or climate-change events may adversely affect our suppliers or our procurement of raw materials, and thus may impact our business and financial results.\nIn connection with our manufacturing of our products, we often rely on third party suppliers for raw materials. We use many different raw materials for our business, such as essential oils, extracts and concentrates derived from fruits, vegetables, flowers, woods and other botanicals, animal products, raw fruits, organic chemicals and petroleum-based chemicals, as well as, gelatin, glycols, cellulose processed grains, guar, locust bean gum, organic vegetable oils, peels, saccharides, seaweed, soybeans, and sugars and yeasts. Supply chain disruptions, such as the ones related to the COVID-19 pandemic, may impair or delay our ability to obtain sufficient quantities of certain raw materials through our ordinary supply channels and cause us to incur higher costs by procuring raw materials from other sources in order to compensate for such delays or lack of availability. In addition, our suppliers, similar to us, are subject to risks, inherent in agriculture, manufacturing and distribution on a global scale, including industrial accidents, environmental events, climate change, strikes and other labor disputes, disruptions in supply chain or information systems, disruption or loss of key research or manufacturing sites, product quality control, safety and environmental compliance issues, licensing requirements and other regulatory issues, as well as natural disasters, global or local health crisis, international conflicts, terrorist acts, geopolitical developments, trade wars, and other external factors over which neither they nor we have control. These suppliers also could become insolvent or experience other financial distress. For example, in 2017, a fire at the manufacturing facility of BASF Group (“BASF”), one of our suppliers, caused them to declare a force majeure event which resulted in industry disruption due to the lack of availability of certain ingredients used in many fragrance compounds.",
+      "original_label": "Non-ESG",
+      "api_consensus_label": "Natural Capital",
+      "codex_suggested_label": "Non-ESG",
+      "finbert_label": "Product Liability",
+      "finbert_confidence": 0.4464,
+      "dispute_reason": "原料供應雖涉及天然資源，但主要描述一般第三方供應鏈依賴。"
+    },
+    "meta": {
+      "source_csv": "chiang_500_disputed_39.csv",
+      "review_type": "annotation_dispute_adjudication"
+    },
+    "predictions": [
+      {
+        "model_version": "codex-manual-taxonomy-review-v1",
+        "score": 1.0,
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "combined_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Non-ESG"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "dataset": "chiang",
+      "review_rank": 19,
+      "paragraph_id": "KDP_2022_RISK_013",
+      "ticker": "KDP",
+      "filing_date": "2022-02-24",
+      "risk_heading": "RISKS RELATED TO OUR OPERATIONS",
+      "risk_section": "RISKS RELATED TO OUR OPERATIONS",
+      "combined_text": "RISKS RELATED TO OUR OPERATIONS\nConsumers’ preferences continually evolve due to a variety of factors, including changing demographics of the population, social trends, changes in consumer lifestyles and consumption patterns, concerns or perceptions regarding the health effects of products, concerns regarding the location of origin or source of ingredients and products, changes in consumers' spending habits, negative publicity, economic downturn or other factors. For example, consumers are increasingly concerned about health and wellness, focusing on the caloric intake associated with regular CSDs, the use of artificial sweeteners in diet CSDs, and the use of natural, organic or simple ingredients in beverages. The demand for CSDs has therefore decreased as consumers have shifted towards NCBs, such as water, ready-to-drink coffee and teas, and sports drinks. If we do not effectively anticipate and respond to these changing trends and consumer beverage preferences, our sales and growth could suffer. Consumers are also increasingly focused on sustainability, with particular attention to the recyclability of product packaging, reducing consumption of single-use plastics and non-recyclable materials, and the environmental impact of manufacturing operations. If we do not meet consumer demands by continuing to provide recyclable packaging options and focusing on sustainability throughout our manufacturing operations, our sales could suffer. In addition, consumer shopping behavior is rapidly evolving due to both changes in travel, vacation and leisure activity patterns and the acceleration of e-commerce and other methods of purchasing products. If we are unable to meet the consumer where and when they desire their products or if we are unable to respond to changes in distribution channels (including e-commerce), our financial results could be adversely impacted. If we do not innovate rapidly and successfully to respond to shifting consumer demands, our business may suffer.",
+      "original_label": "Non-ESG",
+      "api_consensus_label": "Product Liability",
+      "codex_suggested_label": "Product Liability",
+      "finbert_label": "Product Liability",
+      "finbert_confidence": 0.7387,
+      "dispute_reason": "健康認知與人口變化符合健康及人口風險。"
+    },
+    "meta": {
+      "source_csv": "chiang_500_disputed_39.csv",
+      "review_type": "annotation_dispute_adjudication"
+    },
+    "predictions": [
+      {
+        "model_version": "codex-manual-taxonomy-review-v1",
+        "score": 1.0,
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "combined_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Product Liability"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "dataset": "chiang",
+      "review_rank": 20,
+      "paragraph_id": "IRM_2022_RISK_055",
+      "ticker": "IRM",
+      "filing_date": "2022-02-24",
+      "risk_heading": "RISKS RELATED TO OUR INDEBTEDNESS",
+      "risk_section": "RISKS RELATED TO OUR INDEBTEDNESS",
+      "combined_text": "RISKS RELATED TO OUR INDEBTEDNESS\nUpon the occurrence of a “change of control,” as defined in our indentures, we will be required to offer to repurchase all of our outstanding senior notes. However, it is possible that we will not have sufficient funds at the time of a change of control to make the required repurchase of any outstanding notes or that restrictions in our Credit Agreement will not allow such repurchases. Certain important corporate events, however, such as leveraged recapitalizations that would increase the level of our indebtedness, would not constitute a “change of control” under our indentures.",
+      "original_label": "Corporate Governance",
+      "api_consensus_label": "Non-ESG",
+      "codex_suggested_label": "Non-ESG",
+      "finbert_label": "Non-ESG",
+      "finbert_confidence": 0.6011,
+      "dispute_reason": "債券控制權變更條款主要是融資與負債風險。"
+    },
+    "meta": {
+      "source_csv": "chiang_500_disputed_39.csv",
+      "review_type": "annotation_dispute_adjudication"
+    },
+    "predictions": [
+      {
+        "model_version": "codex-manual-taxonomy-review-v1",
+        "score": 1.0,
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "combined_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Non-ESG"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "dataset": "chiang",
+      "review_rank": 21,
+      "paragraph_id": "IR_2022_RISK_046",
+      "ticker": "IR",
+      "filing_date": "2022-02-25",
+      "risk_heading": "Risks Related to Our Business",
+      "risk_section": "Risks Related to Our Business",
+      "combined_text": "Risks Related to Our Business\nWe urge our stockholders to consult with their legal and tax advisors with respect to any such legislation and the potential tax consequences of investing in our common stock.",
+      "original_label": "Corporate Governance",
+      "api_consensus_label": "Non-ESG",
+      "codex_suggested_label": "Non-ESG",
+      "finbert_label": "Corporate Governance",
+      "finbert_confidence": 0.9539,
+      "dispute_reason": "只有投資普通股的稅務建議，治理內容不足。"
+    },
+    "meta": {
+      "source_csv": "chiang_500_disputed_39.csv",
+      "review_type": "annotation_dispute_adjudication"
+    },
+    "predictions": [
+      {
+        "model_version": "codex-manual-taxonomy-review-v1",
+        "score": 1.0,
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "combined_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Non-ESG"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "dataset": "chiang",
+      "review_rank": 22,
+      "paragraph_id": "GILD_2022_RISK_023",
+      "ticker": "GILD",
+      "filing_date": "2022-02-23",
+      "risk_heading": "Our operations depend on compliance with complex FDA and comparable international regulations. Failure to obtain broad approvals on a timely basis or to maintain compliance could delay or halt commercialization of our products.",
+      "risk_section": "Regulatory and Other Legal Risks",
+      "combined_text": "Our operations depend on compliance with complex FDA and comparable international regulations. Failure to obtain broad approvals on a timely basis or to maintain compliance could delay or halt commercialization of our products.\nFailure to comply with these or other requirements imposed by FDA could result in significant civil monetary penalties, fines, suspensions of regulatory approvals, product recalls, seizure of products and criminal prosecutions.",
+      "original_label": "Business Ethics & Values",
+      "api_consensus_label": "Product Liability",
+      "codex_suggested_label": "Product Liability",
+      "finbert_label": "Non-ESG",
+      "finbert_confidence": 0.4858,
+      "dispute_reason": "FDA 核准、召回與產品扣押直接涉及產品安全及品質。"
+    },
+    "meta": {
+      "source_csv": "chiang_500_disputed_39.csv",
+      "review_type": "annotation_dispute_adjudication"
+    },
+    "predictions": [
+      {
+        "model_version": "codex-manual-taxonomy-review-v1",
+        "score": 1.0,
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "combined_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Product Liability"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "dataset": "chiang",
+      "review_rank": 23,
+      "paragraph_id": "JBL_2021_RISK_044",
+      "ticker": "JBL",
+      "filing_date": "2021-10-22",
+      "risk_heading": "We are subject to the risk of increased taxes.",
+      "risk_section": "Financial Risks",
+      "combined_text": "We are subject to the risk of increased taxes.\nSeveral jurisdictions in which we operate have tax laws with detailed transfer pricing rules that require that all transactions with non-resident related parties be priced using arm’s length pricing principles, and that contemporaneous documentation must exist to support such pricing. There is a risk that the taxing authorities may not deem our transfer pricing documentation acceptable. In addition, the Organization for Economic Cooperation and Development continues to issue guidelines and proposals related to Base Erosion and Profit Shifting which may result in legislative changes that could reshape international tax rules in numerous countries and negatively impact our effective tax rate.",
+      "original_label": "Non-ESG",
+      "api_consensus_label": "Business Ethics & Values",
+      "codex_suggested_label": "Non-ESG",
+      "finbert_label": "Non-ESG",
+      "finbert_confidence": 0.8583,
+      "dispute_reason": "移轉訂價與稅務爭議屬一般稅務風險。"
+    },
+    "meta": {
+      "source_csv": "chiang_500_disputed_39.csv",
+      "review_type": "annotation_dispute_adjudication"
+    },
+    "predictions": [
+      {
+        "model_version": "codex-manual-taxonomy-review-v1",
+        "score": 1.0,
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "combined_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Non-ESG"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "dataset": "chiang",
+      "review_rank": 24,
+      "paragraph_id": "UAL_2022_RISK_056",
+      "ticker": "UAL",
+      "filing_date": "2022-02-18",
+      "risk_heading": "Regulatory, Tax, Litigation and Legal Compliance Risks",
+      "risk_section": "Human Capital Management Risks",
+      "combined_text": "Regulatory, Tax, Litigation and Legal Compliance Risks\nFrom time to time, we are subject to litigation and other legal and regulatory proceedings relating to our business or investigations or other actions by governmental agencies, including as described in Part I, Item 3. Legal Proceedings, of this report. In addition, the Company is subject to an increased risk of litigation and other proceedings as a result of the COVID-19 pandemic and responsive measures. For example, the Company is involved in litigation relating to its vaccination requirements for employees. No assurances can be given that the results of these or new matters will be favorable to us. An adverse resolution of lawsuits, arbitrations, investigations or other proceedings or actions could have a material adverse effect on our financial condition and operating results, including as a result of non-monetary remedies, and could also result in adverse publicity. Defending ourselves in these matters may be time-consuming, expensive and disruptive to normal business operations and may result in significant expense and a diversion of management's time and attention from the operation of our business, which could impede our ability to achieve our business objectives. Additionally, any amount that we may be required to pay to satisfy a judgment, settlement, fine or penalty may not be covered by insurance. If we fail to comply with the terms contained in any settlement, order or agreement with a governmental authority relating to these matters, we could be subject to criminal or civil penalties, which could have a material adverse impact on the Company. Under our charter and certain indemnification agreements that we have entered into (and may in the future enter into) with our officers, directors and certain third parties, we could be required to indemnify and advance expenses to them in connection with their involvement in certain actions, suits, investigations and other proceedings. Any of these payments may be material.",
+      "original_label": "Non-ESG",
+      "api_consensus_label": "Business Ethics & Values",
+      "codex_suggested_label": "Non-ESG",
+      "finbert_label": "Business Ethics & Values",
+      "finbert_confidence": 0.4511,
+      "dispute_reason": "一般訴訟與政府調查，未清楚指出倫理不當行為。"
+    },
+    "meta": {
+      "source_csv": "chiang_500_disputed_39.csv",
+      "review_type": "annotation_dispute_adjudication"
+    },
+    "predictions": [
+      {
+        "model_version": "codex-manual-taxonomy-review-v1",
+        "score": 1.0,
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "combined_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Non-ESG"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "dataset": "chiang",
+      "review_rank": 25,
+      "paragraph_id": "OKE_2022_RISK_042",
+      "ticker": "OKE",
+      "filing_date": "2022-03-01",
+      "risk_heading": "Holders of our common stock may receive dividends that vary from anticipated amounts, or no dividends at all.",
+      "risk_section": "GENERAL RISK FACTORS",
+      "combined_text": "Holders of our common stock may receive dividends that vary from anticipated amounts, or no dividends at all.\nWe may not have sufficient cash each quarter to pay dividends or maintain current or expected levels of dividends. The actual amount of cash we pay in the form of dividends may fluctuate from quarter to quarter and will depend on various factors, some of which are beyond our control, including our working capital needs, our ability to borrow, the restrictions contained in our indentures and credit facility, our debt service requirements and the cost of acquisitions, if any.  A failure either to pay dividends or to pay dividends at expected levels could result in a loss of investor confidence, reputational damage and a decrease in the value of our stock price.",
+      "original_label": "Non-ESG",
+      "api_consensus_label": "Corporate Governance",
+      "codex_suggested_label": "Corporate Governance",
+      "finbert_label": "Non-ESG",
+      "finbert_confidence": 0.6253,
+      "dispute_reason": "股利政策與普通股持有人權益屬股東治理邊界。"
+    },
+    "meta": {
+      "source_csv": "chiang_500_disputed_39.csv",
+      "review_type": "annotation_dispute_adjudication"
+    },
+    "predictions": [
+      {
+        "model_version": "codex-manual-taxonomy-review-v1",
+        "score": 1.0,
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "combined_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Corporate Governance"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "dataset": "chiang",
+      "review_rank": 26,
+      "paragraph_id": "COR_2021_RISK_050",
+      "ticker": "COR",
+      "filing_date": "2021-11-23",
+      "risk_heading": "Litigation and Regulatory Risks",
+      "risk_section": "Litigation and Regulatory Risks",
+      "combined_text": "Litigation and Regulatory Risks\nWe recorded a charge of $6.6 billion in the fiscal year ended September 30, 2020 related to the proposed global settlement and other related opioid litigation and recorded an additional $147.7 million accrual in the fiscal year ended September 30, 2021 in connection with the proposed settlement agreement and related obligations and other opioid-related litigation. Until such time as a plaintiff participates in a global settlement or otherwise resolves its lawsuit, we will continue to litigate and prepare for trial in the cases pending in the MDL, those remanded from the MDL to federal district courts, as well as in state courts where lawsuits have been filed, and we intend to continue to vigorously defend ourselves in all such cases. Since these matters are still developing, we are unable to predict the outcome, but the result of these lawsuits could include excessive monetary verdicts and/or injunctive relief, including changes to our anti-diversion programs, that may affect how we operate our business. Further, any final settlement amongst parties may differ materially from our advanced discussions related to global resolution of the MDL. The inability to reach a global settlement of the MDL and adverse resolution of any of these lawsuits or investigations could have a material adverse effect on our business, results of operations, and cash flows and could result in a lower than historical level of capital available for deployment, including a lower level of capital returned to stockholders.",
+      "original_label": "Product Liability",
+      "api_consensus_label": "Business Ethics & Values",
+      "codex_suggested_label": "Product Liability",
+      "finbert_label": "Non-ESG",
+      "finbert_confidence": 0.5769,
+      "dispute_reason": "鴉片類藥物訴訟可視為產品傷害，也可視為重大爭議事件。"
+    },
+    "meta": {
+      "source_csv": "chiang_500_disputed_39.csv",
+      "review_type": "annotation_dispute_adjudication"
+    },
+    "predictions": [
+      {
+        "model_version": "codex-manual-taxonomy-review-v1",
+        "score": 1.0,
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "combined_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Product Liability"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "dataset": "chiang",
+      "review_rank": 27,
+      "paragraph_id": "MTB_2023_RISK_035",
+      "ticker": "MTB",
+      "filing_date": "2023-02-22",
+      "risk_heading": "Risks Relating to Compliance and the Regulatory Environment",
+      "risk_section": "Market Risk",
+      "combined_text": "Risks Relating to Compliance and the Regulatory Environment\nThe Company may be subject to more stringent capital and liquidity requirements. Bank holding companies, including M&T, are subject to capital and liquidity requirements and standards imposed as a result of the Dodd-Frank Act (as amended by EGRRCPA) and the U.S. Basel III-based capital rules. For additional information, see “Capital Requirements” under Part I, Item 1 — Business. Regulators have implemented and may, from time to time, implement changes to these regulatory capital adequacy and liquidity requirements. If the Company fails to meet these minimum capital adequacy and liquidity requirements and other regulatory requirements, its business activities, including lending, and its ability to expand, either organically or through acquisitions, could be limited. It could also result in M&T being required to take steps to increase its regulatory capital that may be dilutive to shareholders or limit its ability to pay dividends or otherwise return capital to shareholders, or sell or refrain from acquiring assets. In addition, the liquidity-related provisions of the Federal Reserve’s liquidity-related enhanced prudential supervision requirements may reduce the Company’s ability to invest in other longer-term assets even if deemed more desirable from a balance sheet management perspective, which could adversely affect its net interest income and net interest margin. The federal bank regulators have not yet released a proposal to implement the significant revisions of the Basel capital framework announced by the Basel Committee in December 2017, and the impact on the Company of these revisions will depend on the manner in which they are implemented in the U.S. with respect to firms such as M&T.",
+      "original_label": "Non-ESG",
+      "api_consensus_label": "Corporate Governance",
+      "codex_suggested_label": "Non-ESG",
+      "finbert_label": "Non-ESG",
+      "finbert_confidence": 0.8441,
+      "dispute_reason": "銀行資本與流動性要求主要是金融監管風險。"
+    },
+    "meta": {
+      "source_csv": "chiang_500_disputed_39.csv",
+      "review_type": "annotation_dispute_adjudication"
+    },
+    "predictions": [
+      {
+        "model_version": "codex-manual-taxonomy-review-v1",
+        "score": 1.0,
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "combined_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Non-ESG"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "dataset": "chiang",
+      "review_rank": 28,
+      "paragraph_id": "RCL_2022_RISK_040",
+      "ticker": "RCL",
+      "filing_date": "2022-03-01",
+      "risk_heading": "Adverse worldwide economic or other conditions could reduce the demand for cruises and passenger spending, adversely impacting our operating results, cash flows and financial condition including impairing the value of our goodwill, ships,",
+      "risk_section": "COVID-19 and Financial Risks",
+      "combined_text": "Adverse worldwide economic or other conditions could reduce the demand for cruises and passenger spending, adversely impacting our operating results, cash flows and financial condition including impairing the value of our goodwill, ships,\nNatural disasters (e.g. earthquakes, volcanos, wildfires), weather and/or climate events (including hurricanes and typhoons) could impact our source markets and operations resulting in travel restrictions, guest cancellations, an inability to source our crew or our provisions and supplies from certain places. We are often forced to alter itineraries and occasionally cancel a cruise or a series of cruises or to redeploy our ships due to these types of events, which could have an adverse effect on our sales, operating costs and profitability in the current and future periods. Increases in the frequency, severity or duration of these types of events could exacerbate their impact and disrupt our operations or make certain destinations less desirable or unavailable, impacting our revenues and profitability further. Any of the foregoing could have an adverse impact on our results of operations and on industry performance.",
+      "original_label": "Non-ESG",
+      "api_consensus_label": "Climate Change",
+      "codex_suggested_label": "Climate Change",
+      "finbert_label": "Non-ESG",
+      "finbert_confidence": 0.9533,
+      "dispute_reason": "段落明列氣候事件影響旅運與營運。"
+    },
+    "meta": {
+      "source_csv": "chiang_500_disputed_39.csv",
+      "review_type": "annotation_dispute_adjudication"
+    },
+    "predictions": [
+      {
+        "model_version": "codex-manual-taxonomy-review-v1",
+        "score": 1.0,
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "combined_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Climate Change"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "dataset": "chiang",
+      "review_rank": 29,
+      "paragraph_id": "UNP_2025_RISK_016",
+      "ticker": "UNP",
+      "filing_date": "2025-02-07",
+      "risk_heading": "Macroeconomic and Industry Risks",
+      "risk_section": "Macroeconomic and Industry Risks",
+      "combined_text": "Macroeconomic and Industry Risks\nThere can be no assurances we will achieve our emission reduction targets or aspirations, or that the associated costs will not be higher than expected, or that the regulatory landscape will not have a negative impact on our results of operations, financial condition, and liquidity. Government mandates may lead to the premature adoption of unproven and unreliable technology, which could negatively affect operational reliability, customer service and supply chain continuity. Our Business, Financial Condition, and Results of Operations Have Been Adversely Affected, and in The Future, Could Be Materially Adversely Affected by Pandemics or Other Public Health Crises – Pandemics, epidemics, and other outbreaks of disease can have significant and widespread impacts. As we saw during the peaks of the COVID pandemic, outbreaks of disease can cause a global slowdown of economic activity (including the decrease in demand for a broad variety of goods), disruptions in global supply chains, and significant volatility and disruption of financial markets, resulting further in adverse effects on workforces, customers, and regional and local economies.",
+      "original_label": "Non-ESG",
+      "api_consensus_label": "Climate Change",
+      "codex_suggested_label": "Climate Change",
+      "finbert_label": "Human Capital",
+      "finbert_confidence": 0.3785,
+      "dispute_reason": "減排目標與相關監管成本直接屬氣候變遷。"
+    },
+    "meta": {
+      "source_csv": "chiang_500_disputed_39.csv",
+      "review_type": "annotation_dispute_adjudication"
+    },
+    "predictions": [
+      {
+        "model_version": "codex-manual-taxonomy-review-v1",
+        "score": 1.0,
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "combined_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Climate Change"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "dataset": "chiang",
+      "review_rank": 30,
+      "paragraph_id": "INVH_2024_RISK_135",
+      "ticker": "INVH",
+      "filing_date": "2024-02-21",
+      "risk_heading": "Risks Related to our REIT Status and Certain Other Tax Items",
+      "risk_section": "Risks Related to Our Indebtedness",
+      "combined_text": "Risks Related to our REIT Status and Certain Other Tax Items\nWe believe that we have been organized and have operated in conformity with the requirements for qualification and taxation as a REIT and that our current organization and proposed method of operation enable us to continue to qualify as a REIT. However, qualification as a REIT involves the application of highly technical and complex Code provisions for which only a limited number of judicial or administrative interpretations exist, and we cannot assure you that we qualify or that we will remain qualified as a REIT. Our qualification as a REIT depends upon our satisfaction of certain asset, income, organizational, distribution, stockholder ownership, and other requirements on a continuing basis, and even a technical or inadvertent violation of these requirements could jeopardize our REIT qualification. In addition, our qualification as a REIT may depend upon the qualification as a REIT of certain subsidiary entities of our investments in unconsolidated joint ventures that have also elected to be treated as a REIT.",
+      "original_label": "Non-ESG",
+      "api_consensus_label": "Corporate Governance",
+      "codex_suggested_label": "Non-ESG",
+      "finbert_label": "Corporate Governance",
+      "finbert_confidence": 0.5502,
+      "dispute_reason": "REIT 資格與稅法測試主要是稅務風險。"
+    },
+    "meta": {
+      "source_csv": "chiang_500_disputed_39.csv",
+      "review_type": "annotation_dispute_adjudication"
+    },
+    "predictions": [
+      {
+        "model_version": "codex-manual-taxonomy-review-v1",
+        "score": 1.0,
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "combined_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Non-ESG"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "dataset": "chiang",
+      "review_rank": 31,
+      "paragraph_id": "ZTS_2022_RISK_131",
+      "ticker": "ZTS",
+      "filing_date": "2022-02-15",
+      "risk_heading": "Risks related to operating in foreign jurisdictions",
+      "risk_section": "Risks related to manufacturing",
+      "combined_text": "Risks related to operating in foreign jurisdictions\nA significant portion of our operations are conducted in foreign jurisdictions, including jurisdictions presenting a high risk of bribery and corruption, and are subject to the economic, political, legal and business environments of the countries in which we do business.",
+      "original_label": "Non-ESG",
+      "api_consensus_label": "Business Ethics & Values",
+      "codex_suggested_label": "Business Ethics & Values",
+      "finbert_label": "Non-ESG",
+      "finbert_confidence": 0.5554,
+      "dispute_reason": "明確指出賄賂與貪腐風險。"
+    },
+    "meta": {
+      "source_csv": "chiang_500_disputed_39.csv",
+      "review_type": "annotation_dispute_adjudication"
+    },
+    "predictions": [
+      {
+        "model_version": "codex-manual-taxonomy-review-v1",
+        "score": 1.0,
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "combined_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Business Ethics & Values"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "dataset": "chiang",
+      "review_rank": 32,
+      "paragraph_id": "EQIX_2022_RISK_052",
+      "ticker": "EQIX",
+      "filing_date": "2022-02-18",
+      "risk_heading": "Sales or issuances of shares of our common stock may adversely affect the market price of our common stock.",
+      "risk_section": "Risks Related to Our Expansion Plans",
+      "combined_text": "Sales or issuances of shares of our common stock may adversely affect the market price of our common stock.\nFuture sales or issuances of common stock or other equity related securities may adversely affect the market price of our common stock, including any shares of our common stock issued to finance capital expenditures, finance acquisitions or repay debt. In October 2020, we established an \"at the market\" equity offering program (the \"2020 ATM Program\") in the amount of $1.5 billion under which we may, from time to time, issue and sell shares of our common stock to or through sales agents up to established limits. As of December 31, 2021, we had $1.0 billion available for sale under the 2020 ATM Program. We expect to refresh our ATM program periodically, which could lead to additional dilution for our stockholders in the future. We may also seek authorization to sell additional shares of common stock through other means which could lead to additional dilution for our stockholders. Please see Note 12 within the Consolidated Financial Statements of this Annual Report on Form 10-K for sales of our common stock under our ATM programs.",
+      "original_label": "Non-ESG",
+      "api_consensus_label": "Corporate Governance",
+      "codex_suggested_label": "Corporate Governance",
+      "finbert_label": "Non-ESG",
+      "finbert_confidence": 0.9471,
+      "dispute_reason": "股票發行與普通股股東直接涉及所有權結構。"
+    },
+    "meta": {
+      "source_csv": "chiang_500_disputed_39.csv",
+      "review_type": "annotation_dispute_adjudication"
+    },
+    "predictions": [
+      {
+        "model_version": "codex-manual-taxonomy-review-v1",
+        "score": 1.0,
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "combined_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Corporate Governance"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "dataset": "chiang",
+      "review_rank": 33,
+      "paragraph_id": "KLAC_2022_RISK_104",
+      "ticker": "KLAC",
+      "filing_date": "2022-08-05",
+      "risk_heading": "Risks Related to Our Business Model and Capital Structure",
+      "risk_section": "Risks Related to Our Business Model and Capital Structure",
+      "combined_text": "Risks Related to Our Business Model and Capital Structure\nWe are subject to the risks of additional government actions in the event we were to breach the terms of any settlement arrangement into which we have entered.",
+      "original_label": "Non-ESG",
+      "api_consensus_label": "Business Ethics & Values",
+      "codex_suggested_label": "Business Ethics & Values",
+      "finbert_label": "Non-ESG",
+      "finbert_confidence": 0.9477,
+      "dispute_reason": "違反和解條款與政府處分具有倫理爭議成分。"
+    },
+    "meta": {
+      "source_csv": "chiang_500_disputed_39.csv",
+      "review_type": "annotation_dispute_adjudication"
+    },
+    "predictions": [
+      {
+        "model_version": "codex-manual-taxonomy-review-v1",
+        "score": 1.0,
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "combined_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Business Ethics & Values"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "dataset": "chiang",
+      "review_rank": 34,
+      "paragraph_id": "EPAM_2022_RISK_011",
+      "ticker": "EPAM",
+      "filing_date": "2022-02-25",
+      "risk_heading": "Risks Related to Our Personnel and Growth",
+      "risk_section": "Risks Related to COVID-19",
+      "combined_text": "Risks Related to Our Personnel and Growth\nOur success depends substantially on the continuing efforts of our senior executives and other key personnel, and our business may be severely disrupted if we lose their services.",
+      "original_label": "Non-ESG",
+      "api_consensus_label": "Human Capital",
+      "codex_suggested_label": "Human Capital",
+      "finbert_label": "Non-ESG",
+      "finbert_confidence": 0.6613,
+      "dispute_reason": "關鍵人員留任是典型人力資本風險。"
+    },
+    "meta": {
+      "source_csv": "chiang_500_disputed_39.csv",
+      "review_type": "annotation_dispute_adjudication"
+    },
+    "predictions": [
+      {
+        "model_version": "codex-manual-taxonomy-review-v1",
+        "score": 1.0,
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "combined_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Human Capital"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "dataset": "chiang",
+      "review_rank": 35,
+      "paragraph_id": "ROK_2021_RISK_025",
+      "ticker": "ROK",
+      "filing_date": "2021-11-09",
+      "risk_heading": "Business and Operational Risks",
+      "risk_section": "Business and Operational Risks",
+      "combined_text": "Business and Operational Risks\nIncreasing employee benefit costs and funding requirements could have a negative effect on our operating results and financial condition.",
+      "original_label": "Non-ESG",
+      "api_consensus_label": "Human Capital",
+      "codex_suggested_label": "Human Capital",
+      "finbert_label": "Non-ESG",
+      "finbert_confidence": 0.9874,
+      "dispute_reason": "員工福利成本直接屬人力資本管理。"
+    },
+    "meta": {
+      "source_csv": "chiang_500_disputed_39.csv",
+      "review_type": "annotation_dispute_adjudication"
+    },
+    "predictions": [
+      {
+        "model_version": "codex-manual-taxonomy-review-v1",
+        "score": 1.0,
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "combined_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Human Capital"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "dataset": "chiang",
+      "review_rank": 36,
+      "paragraph_id": "TEL_2021_RISK_035",
+      "ticker": "TEL",
+      "filing_date": "2021-11-09",
+      "risk_heading": "Risks Relating to Strategic Transactions",
+      "risk_section": "",
+      "combined_text": "Risks Relating to Strategic Transactions\nOur operations expose us to the risk of material environmental liabilities, litigation, government enforcement actions, and reputational risk.",
+      "original_label": "Non-ESG",
+      "api_consensus_label": "Pollution & Waste",
+      "codex_suggested_label": "Non-ESG",
+      "finbert_label": "Non-ESG",
+      "finbert_confidence": 0.9176,
+      "dispute_reason": "僅泛稱環境責任，未具體描述污染、廢棄物或排放。"
+    },
+    "meta": {
+      "source_csv": "chiang_500_disputed_39.csv",
+      "review_type": "annotation_dispute_adjudication"
+    },
+    "predictions": [
+      {
+        "model_version": "codex-manual-taxonomy-review-v1",
+        "score": 1.0,
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "combined_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Non-ESG"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "dataset": "chiang",
+      "review_rank": 37,
+      "paragraph_id": "AMGN_2022_RISK_045",
+      "ticker": "AMGN",
+      "filing_date": "2022-02-16",
+      "risk_heading": "—Government and commercial payer actions outside the United States have affected and will continue to affect access to and sales of our products",
+      "risk_section": "General Risk Factors",
+      "combined_text": "—Government and commercial payer actions outside the United States have affected and will continue to affect access to and sales of our products\nWe are subject to income and other taxes in the United States and other jurisdictions in which we do business. As a result, our provision for income taxes is derived from a combination of applicable tax rates in the various places we operate. Significant judgment is required for determining our provision for income tax. One or more of our legal entities file income tax returns in the U.S. federal jurisdiction, various U.S. state jurisdictions and certain foreign jurisdictions. Our income tax returns are routinely examined by tax authorities in those jurisdictions. Significant disputes can arise with tax authorities involving issues regarding the timing and amount of deductions, the use of tax credits and allocations of income and expenses among various tax jurisdictions because of differing interpretations of tax laws, regulations and relevant facts, and such tax authorities (including the IRS) are becoming more aggressive in their audits and are particularly focused on such matters. In 2017, we received an RAR and a modified RAR from the IRS for the years 2010, 2011 and 2012, proposing significant adjustments that primarily relate to the allocation of profits between certain of our entities in the United States and the U.S. territory of Puerto Rico. We disagreed with the proposed adjustments and calculations and pursued resolution with the IRS administrative appeals office but were unable to reach resolution. In July 2021, we filed a petition in the U.S. Tax Court to contest two duplicate Statutory Notices of Deficiency (Notices) for 2010, 2011 and 2012 that we received in May and July 2021 which seek to increase our U.S. taxable income. We firmly believe that the IRS’s positions set forth in the Notices are without merit, and are contesting the Notices through the judicial process. See Part II, Item 7.",
+      "original_label": "Non-ESG",
+      "api_consensus_label": "Business Ethics & Values",
+      "codex_suggested_label": "Non-ESG",
+      "finbert_label": "Non-ESG",
+      "finbert_confidence": 0.8661,
+      "dispute_reason": "段落主體是跨國所得稅估計，通常屬一般財稅風險。"
+    },
+    "meta": {
+      "source_csv": "chiang_500_disputed_39.csv",
+      "review_type": "annotation_dispute_adjudication"
+    },
+    "predictions": [
+      {
+        "model_version": "codex-manual-taxonomy-review-v1",
+        "score": 1.0,
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "combined_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Non-ESG"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "dataset": "chiang",
+      "review_rank": 38,
+      "paragraph_id": "KVUE_2025_RISK_149",
+      "ticker": "KVUE",
+      "filing_date": "2025-02-24",
+      "risk_heading": "Risks Related to Ownership of Our Common Stock",
+      "risk_section": "Risks Related to Financial and Economic Market Conditions",
+      "combined_text": "Risks Related to Ownership of Our Common Stock\nWe are a holding company and our only material assets are our equity interests in our subsidiaries. As a consequence, we depend on the ability of our subsidiaries to pay dividends and make other payments and distributions to us in order to meet our obligations.",
+      "original_label": "Non-ESG",
+      "api_consensus_label": "Corporate Governance",
+      "codex_suggested_label": "Corporate Governance",
+      "finbert_label": "Non-ESG",
+      "finbert_confidence": 0.9261,
+      "dispute_reason": "控股公司與子公司股利依賴涉及所有權結構，但也可視為一般財務風險。"
+    },
+    "meta": {
+      "source_csv": "chiang_500_disputed_39.csv",
+      "review_type": "annotation_dispute_adjudication"
+    },
+    "predictions": [
+      {
+        "model_version": "codex-manual-taxonomy-review-v1",
+        "score": 1.0,
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "combined_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Corporate Governance"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "dataset": "chiang",
+      "review_rank": 39,
+      "paragraph_id": "CTAS_2021_RISK_030",
+      "ticker": "CTAS",
+      "filing_date": "2021-07-28",
+      "risk_heading": "Legal and Regulatory Risks",
+      "risk_section": "Legal and Regulatory Risks",
+      "combined_text": "Legal and Regulatory Risks\nOur business is subject to complex and stringent state and federal regulations, including employment laws and regulations, minimum wage requirements, overtime requirements, working condition requirements, citizenship requirements, transportation and other laws and regulations. In particular, we are subject to the regulations promulgated by the U.S. Department of Transportation (USDOT) and under the Occupational Safety and Health Act of 1970, as amended (OSHA Act). We have incurred, and will continue to incur, capital and operating expenditures and other costs in the ordinary course of our business in complying with the USDOT regulations, the OSHA Act and other laws and regulations to which we are subject. Changes in laws, regulations and the related interpretations, including any laws or regulations that may be enacted by the current U.S. presidential administration and Congress, may alter the landscape in which we do business and may affect our costs of doing business. The impact of new laws and regulations cannot be predicted. Compliance with new laws and regulations may increase our operating costs or require significant capital expenditures. Any failure to comply with applicable laws or regulations could result in substantial fines by government authorities, payment of damages to private litigants, or possible revocation of our authority to conduct our operations, which could adversely affect our ability to service customers and our consolidated results of operations.",
+      "original_label": "Business Ethics & Values",
+      "api_consensus_label": "Human Capital",
+      "codex_suggested_label": "Human Capital",
+      "finbert_label": "Business Ethics & Values",
+      "finbert_confidence": 0.4704,
+      "dispute_reason": "就業、工時、工作條件與職安法規均屬人力資本。"
+    },
+    "meta": {
+      "source_csv": "chiang_500_disputed_39.csv",
+      "review_type": "annotation_dispute_adjudication"
+    },
+    "predictions": [
+      {
+        "model_version": "codex-manual-taxonomy-review-v1",
+        "score": 1.0,
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "combined_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Human Capital"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "dataset": "blance",
+      "review_rank": 1,
+      "paragraph_id": "NXPI_2025_RISK_049",
+      "ticker": "NXPI",
+      "filing_date": "2025-02-20",
+      "risk_heading": "Risks related to regulatory or legal challenges",
+      "risk_section": "Risks related to our business operations",
+      "combined_text": "Risks related to regulatory or legal challenges\nOur manufacturing operations are subject to environmental laws and regulations and initiatives to address climate change.",
+      "original_label": "Non-ESG",
+      "api_consensus_label": "Climate Change",
+      "codex_suggested_label": "Climate Change",
+      "finbert_label": "Climate Change",
+      "finbert_confidence": 0.9946,
+      "dispute_reason": "明確提及因應氣候變遷的環境法規與倡議。"
+    },
+    "meta": {
+      "source_csv": "blance_500_disputed_21.csv",
+      "review_type": "annotation_dispute_adjudication"
+    },
+    "predictions": [
+      {
+        "model_version": "codex-manual-taxonomy-review-v1",
+        "score": 1.0,
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "combined_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Climate Change"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "dataset": "blance",
+      "review_rank": 2,
+      "paragraph_id": "MKC_2026_RISK_037",
+      "ticker": "MKC",
+      "filing_date": "2026-01-22",
+      "risk_heading": "Risks Related to Our Company, Business and Operations",
+      "risk_section": "",
+      "combined_text": "Risks Related to Our Company, Business and Operations\nClimate change, or legal, regulatory or market measures to address climate change, may negatively affect our business, financial condition and results of operations.",
+      "original_label": "Non-ESG",
+      "api_consensus_label": "Climate Change",
+      "codex_suggested_label": "Climate Change",
+      "finbert_label": "Climate Change",
+      "finbert_confidence": 0.9936,
+      "dispute_reason": "段落主體直接是氣候變遷及其法規、市場措施。"
+    },
+    "meta": {
+      "source_csv": "blance_500_disputed_21.csv",
+      "review_type": "annotation_dispute_adjudication"
+    },
+    "predictions": [
+      {
+        "model_version": "codex-manual-taxonomy-review-v1",
+        "score": 1.0,
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "combined_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Climate Change"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "dataset": "blance",
+      "review_rank": 3,
+      "paragraph_id": "NUE_2022_RISK_018",
+      "ticker": "NUE",
+      "filing_date": "2022-02-28",
+      "risk_heading": "Industry Specific Risk Factors",
+      "risk_section": "Industry Specific Risk Factors",
+      "combined_text": "Industry Specific Risk Factors\nEmerging customer preferences for greater product transparency and less GHG intensive materials may put us at a competitive disadvantage or reduce demand for our products.",
+      "original_label": "Non-ESG",
+      "api_consensus_label": "Climate Change",
+      "codex_suggested_label": "Climate Change",
+      "finbert_label": "Climate Change",
+      "finbert_confidence": 0.9938,
+      "dispute_reason": "溫室氣體密集度與低碳材料偏好屬氣候轉型風險。"
+    },
+    "meta": {
+      "source_csv": "blance_500_disputed_21.csv",
+      "review_type": "annotation_dispute_adjudication"
+    },
+    "predictions": [
+      {
+        "model_version": "codex-manual-taxonomy-review-v1",
+        "score": 1.0,
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "combined_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Climate Change"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "dataset": "blance",
+      "review_rank": 4,
+      "paragraph_id": "BA_2022_RISK_047",
+      "ticker": "BA",
+      "filing_date": "2022-01-31",
+      "risk_heading": "Risks Related to Legal and Regulatory Matters",
+      "risk_section": "Risks Related to Our Contracts",
+      "combined_text": "Risks Related to Legal and Regulatory Matters\nWe may be adversely affected by global climate change or by legal, regulatory or market responses to such change.",
+      "original_label": "Non-ESG",
+      "api_consensus_label": "Climate Change",
+      "codex_suggested_label": "Climate Change",
+      "finbert_label": "Climate Change",
+      "finbert_confidence": 0.992,
+      "dispute_reason": "明確陳述全球氣候變遷及其政策、市場回應。"
+    },
+    "meta": {
+      "source_csv": "blance_500_disputed_21.csv",
+      "review_type": "annotation_dispute_adjudication"
+    },
+    "predictions": [
+      {
+        "model_version": "codex-manual-taxonomy-review-v1",
+        "score": 1.0,
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "combined_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Climate Change"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "dataset": "blance",
+      "review_rank": 5,
+      "paragraph_id": "CCI_2025_RISK_043",
+      "ticker": "CCI",
+      "filing_date": "2025-03-14",
+      "risk_heading": "Risks Relating to Our Business and Industry",
+      "risk_section": "Risks Relating to Our Business and Industry",
+      "combined_text": "Risks Relating to Our Business and Industry\nOur business may be adversely impacted by climate-related events, natural disasters, including wildfires, and other unforeseen events.",
+      "original_label": "Non-ESG",
+      "api_consensus_label": "Climate Change",
+      "codex_suggested_label": "Climate Change",
+      "finbert_label": "Climate Change",
+      "finbert_confidence": 0.9748,
+      "dispute_reason": "明列氣候相關事件與野火對營運的影響。"
+    },
+    "meta": {
+      "source_csv": "blance_500_disputed_21.csv",
+      "review_type": "annotation_dispute_adjudication"
+    },
+    "predictions": [
+      {
+        "model_version": "codex-manual-taxonomy-review-v1",
+        "score": 1.0,
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "combined_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Climate Change"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "dataset": "blance",
+      "review_rank": 6,
+      "paragraph_id": "CSCO_2023_RISK_067",
+      "ticker": "CSCO",
+      "filing_date": "2023-09-07",
+      "risk_heading": "Risks Related to our Business and Industry",
+      "risk_section": "Risks Related to our Business and Industry",
+      "combined_text": "Risks Related to our Business and Industry\nOur corporate headquarters, including certain of our research and development operations are located in the Silicon Valley area of Northern California, a region known for seismic activity. Additionally, a certain number of our facilities are located near rivers that have experienced flooding in the past. Also certain of our customers, suppliers and logistics centers are located in regions that have been or may be affected by earthquake, tsunami and flooding or other weather-related activity which in the past has disrupted, and in the future could disrupt, the flow of supply chain components and delivery of products. In addition, global climate change may result in significant natural disasters occurring more frequently and/or with greater intensity, such as drought, wildfires, storms, sea-level rise, changing precipitation, and flooding. We have not to date experienced a material event as a result of these kinds of natural disasters; however, the occurrence of any such event in the future could have a material adverse impact on our business, operating results, and financial condition.",
+      "original_label": "Non-ESG",
+      "api_consensus_label": "Climate Change",
+      "codex_suggested_label": "Climate Change",
+      "finbert_label": "Climate Change",
+      "finbert_confidence": 0.9134,
+      "dispute_reason": "明確連結全球氣候變遷與災害頻率、強度。"
+    },
+    "meta": {
+      "source_csv": "blance_500_disputed_21.csv",
+      "review_type": "annotation_dispute_adjudication"
+    },
+    "predictions": [
+      {
+        "model_version": "codex-manual-taxonomy-review-v1",
+        "score": 1.0,
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "combined_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Climate Change"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "dataset": "blance",
+      "review_rank": 7,
+      "paragraph_id": "RSG_2026_RISK_010",
+      "ticker": "RSG",
+      "filing_date": "2026-02-18",
+      "risk_heading": "Risks Related to Our Business and Operations",
+      "risk_section": "Risks Related to Our Business and Operations",
+      "combined_text": "Risks Related to Our Business and Operations\nWe purchase or collect and process recyclable materials such as paper, cardboard, plastics, aluminum and other metals for sale to third parties. Our results of operations may be affected by changing prices or market requirements for recyclable materials. The resale and purchase prices of, and market demand for, recyclable materials are volatile due to changes in economic conditions and numerous other factors beyond our control. For instance, several states have passed legislation commonly referred to as Extended Producer Responsibility. These laws are intended to shift the cost of recycling from consumers to producers while also mandating increased supply, which could lead to lower commodity prices. Significant price fluctuations or increased operating costs may affect our consolidated financial condition, results of operations and cash flows. At current volumes and mix of materials, we believe a $10 per ton change in the price of recycled commodities change both annual revenue and operating income by approximately $13 million. Accordingly, a substantial rise or drop in recycled commodity prices could materially affect our revenue and operating income. Although we have entered into hedging agreements to help offset volatility in recycled commodity prices in the past, we do not have any such hedging agreements currently, and we may not enter into these agreements in the future.",
+      "original_label": "Non-ESG",
+      "api_consensus_label": "Pollution & Waste",
+      "codex_suggested_label": "Pollution & Waste",
+      "finbert_label": "Pollution & Waste",
+      "finbert_confidence": 0.4563,
+      "dispute_reason": "回收材料與延伸生產者責任直接屬廢棄物／回收。"
+    },
+    "meta": {
+      "source_csv": "blance_500_disputed_21.csv",
+      "review_type": "annotation_dispute_adjudication"
+    },
+    "predictions": [
+      {
+        "model_version": "codex-manual-taxonomy-review-v1",
+        "score": 1.0,
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "combined_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Pollution & Waste"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "dataset": "blance",
+      "review_rank": 8,
+      "paragraph_id": "BMY_2023_RISK_037",
+      "ticker": "BMY",
+      "filing_date": "2023-02-14",
+      "risk_heading": "revenues that we generate by the health insurance exchanges and Medicaid expansion under the ACA are not material, so the impact of the change in law and similar recent administration actions is expected to be limited. Any future replacement, modification or repeal of the ACA may adversely affect our business and financial results, particularly if the legislation reduces incentives for employer-sponsored insurance coverage. We cannot predict how other future federal or state legislative or administrative changes relating to healthcare reform will affect our business. For additional information, refer to “Item 1. Business—Government Regulation” and “Item 1. Business—Pricing, Price Constraints and Market Access.”",
+      "risk_section": "Product, Industry and Operational Risks",
+      "combined_text": "revenues that we generate by the health insurance exchanges and Medicaid expansion under the ACA are not material, so the impact of the change in law and similar recent administration actions is expected to be limited. Any future replacement, modification or repeal of the ACA may adversely affect our business and financial results, particularly if the legislation reduces incentives for employer-sponsored insurance coverage. We cannot predict how other future federal or state legislative or administrative changes relating to healthcare reform will affect our business. For additional information, refer to “Item 1. Business—Government Regulation” and “Item 1. Business—Pricing, Price Constraints and Market Access.”\nIncreased use of social media platforms presents risks and challenges. We are increasing our use of social media to communicate Company news and events. The inappropriate and/or unauthorized use of social media could cause brand damage or information leakage and may give rise to liability, including from the improper collection and/or dissemination of personally identifiable information from employees, patients, healthcare professionals or other stakeholders. In addition, negative or inaccurate posts or comments about us on any social networking website could damage our reputation, brand image and goodwill and may cause significant volatility in our stock price. Further, the disclosure of non-public Company-sensitive information by our workforce or others, whether intentional or unintentional, through external media channels could lead to loss of trade secrets or other intellectual property, as well as the Company’s commercially sensitive information.",
+      "original_label": "Non-ESG",
+      "api_consensus_label": "Product Liability",
+      "codex_suggested_label": "Product Liability",
+      "finbert_label": "Human Capital",
+      "finbert_confidence": 0.4983,
+      "dispute_reason": "個資不當蒐集、散布與資訊洩漏屬隱私及資料安全。"
+    },
+    "meta": {
+      "source_csv": "blance_500_disputed_21.csv",
+      "review_type": "annotation_dispute_adjudication"
+    },
+    "predictions": [
+      {
+        "model_version": "codex-manual-taxonomy-review-v1",
+        "score": 1.0,
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "combined_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Product Liability"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "dataset": "blance",
+      "review_rank": 9,
+      "paragraph_id": "GOOG_2025_RISK_038",
+      "ticker": "GOOG",
+      "filing_date": "2025-02-05",
+      "risk_heading": "Risks Related to our Industry",
+      "risk_section": "Risks Related to our Industry",
+      "combined_text": "Risks Related to our Industry\nAny of the foregoing consequences could harm our business, reputation, financial condition, and operating results. While we have dedicated significant resources to privacy and security incident response capabilities, including dedicated worldwide incident response teams, our response process, particularly during times of a natural disaster or pandemic, may not be adequate, may fail to accurately assess the severity of an incident, may not be fast enough to prevent or limit harm, or may fail to sufficiently remediate an incident. As a result, we may suffer significant legal, reputational, or financial exposure, which could harm our business, financial condition, and operating results. For additional information, see also our risk factor on privacy and data protection regulations under ‘Risks Related to Laws, Regulations, and Policies’ below.",
+      "original_label": "Non-ESG",
+      "api_consensus_label": "Product Liability",
+      "codex_suggested_label": "Product Liability",
+      "finbert_label": "Product Liability",
+      "finbert_confidence": 0.6579,
+      "dispute_reason": "核心是隱私與資安事件回應失敗。"
+    },
+    "meta": {
+      "source_csv": "blance_500_disputed_21.csv",
+      "review_type": "annotation_dispute_adjudication"
+    },
+    "predictions": [
+      {
+        "model_version": "codex-manual-taxonomy-review-v1",
+        "score": 1.0,
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "combined_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Product Liability"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "dataset": "blance",
+      "review_rank": 10,
+      "paragraph_id": "ABNB_2022_RISK_145",
+      "ticker": "ABNB",
+      "filing_date": "2022-02-25",
+      "risk_heading": "Host Damage Protection Program",
+      "risk_section": "Host Damage Protection Program",
+      "combined_text": "Host Damage Protection Program\nOur ability to provide high-quality support to our community of Hosts and guests is important for the growth of our business and any failure to maintain such standards of community support, or any perception that we do not provide high-quality service, could affect our ability to retain and attract Hosts and guests. Meeting the community support expectations of our Hosts and guests requires significant time and resources from our community support team and significant investment in staffing, technology, including automation and machine learning to improve efficiency, infrastructure, policies, and community support tools. The failure to develop the appropriate technology, infrastructure, policies, and community support tools, or to manage or properly train our community support team, could compromise our ability to resolve questions and complaints quickly and effectively. The number of our Hosts and guests has grown significantly and such growth, as well as any future growth, will put additional pressure on our community support organization and our technology organization. In addition, as we service a global customer base and continue to grow outside of North America and Europe, we need to be able to provide effective support that meets our Hosts’ and guests’ needs and languages globally at scale. As part of our reduction in force announced in May 2020, we significantly reduced the number of employees in our community support organization and our technology organization, which impacted our ability to provide effective support to our Hosts and guests. Our service is staffed based on complex algorithms that map to our business forecasts. Any volatility in those forecasts could lead to staffing gaps that could impact the quality of our service.",
+      "original_label": "Non-ESG",
+      "api_consensus_label": "Human Capital",
+      "codex_suggested_label": "Human Capital",
+      "finbert_label": "Community Relations",
+      "finbert_confidence": 0.723,
+      "dispute_reason": "客服團隊的人力、訓練、裁員與人員缺口是主要風險。"
+    },
+    "meta": {
+      "source_csv": "blance_500_disputed_21.csv",
+      "review_type": "annotation_dispute_adjudication"
+    },
+    "predictions": [
+      {
+        "model_version": "codex-manual-taxonomy-review-v1",
+        "score": 1.0,
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "combined_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Human Capital"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "dataset": "blance",
+      "review_rank": 11,
+      "paragraph_id": "DVA_2022_RISK_030",
+      "ticker": "DVA",
+      "filing_date": "2022-02-11",
+      "risk_heading": "If the number or percentage of patients with higher-paying commercial insurance declines, if the average rates that commercial payors pay us decline, if patients in commercial plans are subject to restriction in plan designs, if we are unable to maintain contracts with payors with competitive terms, including, without limitation, reimbursement rates, scope and duration of coverage and in-network benefits, it could have a material adverse effect on our business, results of operations, financial condition and cash flows.",
+      "risk_section": "General Risks",
+      "combined_text": "If the number or percentage of patients with higher-paying commercial insurance declines, if the average rates that commercial payors pay us decline, if patients in commercial plans are subject to restriction in plan designs, if we are unable to maintain contracts with payors with competitive terms, including, without limitation, reimbursement rates, scope and duration of coverage and in-network benefits, it could have a material adverse effect on our business, results of operations, financial condition and cash flows.\nIf the Court declines to uphold the protections of the MSPA such that more plans seek to implement plan designs that discourage patients from retaining their commercial coverage, it may lead to a significant decrease in the number of patients with commercial plans, the duration of benefits for patients under commercial plans and/or a significant decrease in the payment rates we receive, any of which would have a material adverse effect on our business, results of operations, financial condition and cash flows. In addition, some commercial payors are pursuing or have incorporated policies into their provider manuals limiting or refusing to accept charitable premium assistance from non-profit organizations, such as the American Kidney Fund, which may impact the number of patients who are able to afford commercial plans. Paying for coverage is a significant financial burden for many patients, and ESRD disproportionately affects the low-income population. Charitable premium assistance supports continuity of coverage and access to care for patients, many of whom are unable to continue working full-time as a result of their severe health condition. Many patients with commercial and government insurance also rely on financial assistance from charitable organizations, such as the American Kidney Fund. Certain payors have challenged our patients' and other providers' patients' ability to utilize assistance from charitable organizations for the payment of premiums, including, without limitation, through litigation and other legal proceedings. The use of charitable premium assistance for ESRD patients has also faced challenges and inquiries from legislators, regulators and other governmental authorities, and this may continue. In addition, CMS or another regulatory agency or legislative authority may issue a new rule or guidance that challenges or restricts charitable premium assistance.",
+      "original_label": "Product Liability",
+      "api_consensus_label": "Community Relations",
+      "codex_suggested_label": "Community Relations",
+      "finbert_label": "Community Relations",
+      "finbert_confidence": 0.9013,
+      "dispute_reason": "低收入病患的保險負擔、慈善補助與醫療可近性符合社區關係。"
+    },
+    "meta": {
+      "source_csv": "blance_500_disputed_21.csv",
+      "review_type": "annotation_dispute_adjudication"
+    },
+    "predictions": [
+      {
+        "model_version": "codex-manual-taxonomy-review-v1",
+        "score": 1.0,
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "combined_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Community Relations"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "dataset": "blance",
+      "review_rank": 12,
+      "paragraph_id": "ALGN_2022_RISK_002",
+      "ticker": "ALGN",
+      "filing_date": "2022-02-25",
+      "risk_heading": "Research and Development",
+      "risk_section": "Research and Development",
+      "combined_text": "Research and Development\nWe are committed to investing in world-class digital technology development, which we believe is critical to achieving our goal of establishing the Invisalign system as the standard method for treating malocclusion, our intraoral scanners as the preferred scanning technology for digital dental scans, and our exocad CAD/CAM software as the solution of choice for dental labs. Our research and development activities are directed toward developing digital technology innovations that we believe will deliver our next generation of products and solutions to enable the Align digital platform. These activities range from accelerating product and clinical innovation to developing manufacturing process improvements to researching future technologies, products and software. In an effort to demonstrate the broad treatment capabilities of the Invisalign system, various clinical case studies and articles have been published that highlight the clinical applicability of Invisalign treatment to malocclusion cases, including those of severe complexity. Similarly, various studies have also been published demonstrating the capabilities of our scanners, including advanced features such as our NIRI technology. We undertake pre-commercialization trials and testing of our technological improvements to our products and manufacturing process. We furthermore fund research in the field of orthodontics and dentistry through initiatives such as our Annual Research Award Program, which was in its 12th year in 2021, our donations to the American Association of Orthodontists Foundation and our partnership with MedTech Innovator Asia Pacific, a nonprofit startup accelerator for the medical technology industry that connects healthcare industry leaders with innovative medical technology startups for mentorship and support.",
+      "original_label": "Community Relations",
+      "api_consensus_label": "Non-ESG",
+      "codex_suggested_label": "Non-ESG",
+      "finbert_label": "Community Relations",
+      "finbert_confidence": 0.448,
+      "dispute_reason": "主體是產品研發，捐款與非營利合作僅為附帶內容。"
+    },
+    "meta": {
+      "source_csv": "blance_500_disputed_21.csv",
+      "review_type": "annotation_dispute_adjudication"
+    },
+    "predictions": [
+      {
+        "model_version": "codex-manual-taxonomy-review-v1",
+        "score": 1.0,
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "combined_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Non-ESG"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "dataset": "blance",
+      "review_rank": 13,
+      "paragraph_id": "WRB_2022_RISK_061",
+      "ticker": "WRB",
+      "filing_date": "2022-02-24",
+      "risk_heading": "Risks Relating to Limitations on Dividends from Subsidiaries and Anti-Takeover Provisions",
+      "risk_section": "Risks Relating to Our Investments",
+      "combined_text": "Risks Relating to Limitations on Dividends from Subsidiaries and Anti-Takeover Provisions\nGenerally, United States insurance holding company laws require that, before a person can acquire control of an insurance company, prior written approval must be obtained from the insurance regulatory authorities in the state in which that insurance company is domiciled. Pursuant to applicable laws and regulations, “control” over an insurer is generally presumed to exist if any person, directly or indirectly, owns, controls, holds the power to vote, or holds proxies representing 10% or more of the voting securities of that insurer or any parent company of such insurer. Indirect ownership includes ownership of the shares of our common stock. Thus, the insurance regulatory authorities of the states in which our insurance subsidiaries are domiciled are likely to apply these restrictions on acquisition of control to any proposed acquisition of our common stock. Some states require a person seeking to acquire control of an insurer licensed but not domiciled in that state to make a filing prior to completing an acquisition if the acquirer and its affiliates, on the one hand, and the target insurer and its affiliates, on the other hand, have specified market shares in the same lines of insurance in that state. Additionally, many foreign jurisdictions where we conduct business impose similar restrictions and requirements. These provisions can also lead to the imposition of conditions on an acquisition that could delay or prevent its consummation. These laws may discourage potential acquisition proposals and may delay, deter or prevent a change in control of us through transactions, and in particular unsolicited transactions, that some or all of our stockholders might consider to be desirable.",
+      "original_label": "Non-ESG",
+      "api_consensus_label": "Corporate Governance",
+      "codex_suggested_label": "Corporate Governance",
+      "finbert_label": "Corporate Governance",
+      "finbert_confidence": 0.982,
+      "dispute_reason": "控制權取得、表決權與反收購條款直接屬公司治理。"
+    },
+    "meta": {
+      "source_csv": "blance_500_disputed_21.csv",
+      "review_type": "annotation_dispute_adjudication"
+    },
+    "predictions": [
+      {
+        "model_version": "codex-manual-taxonomy-review-v1",
+        "score": 1.0,
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "combined_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Corporate Governance"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "dataset": "blance",
+      "review_rank": 14,
+      "paragraph_id": "CPRT_2025_RISK_045",
+      "ticker": "CPRT",
+      "filing_date": "2025-09-26",
+      "risk_heading": "Our amended and restated certificate of incorporation designates the Court of Chancery of the State of Delaware as the exclusive forum for certain disputes between us and our stockholders, which could limit our stockholders’ ability to choose the judicial forum for disputes with us or our directors, officers, or employees.",
+      "risk_section": "Risks Related to Our Business and Industry",
+      "combined_text": "Our amended and restated certificate of incorporation designates the Court of Chancery of the State of Delaware as the exclusive forum for certain disputes between us and our stockholders, which could limit our stockholders’ ability to choose the judicial forum for disputes with us or our directors, officers, or employees.\nOur amended and restated certificate of incorporation provides that, unless we consent in writing to the selection of an alternative forum, the sole and exclusive forum for (i) any derivative action or proceeding brought on our behalf, (ii) any action or proceeding asserting a claim of breach of a fiduciary duty owed by any of our directors, officers, or other employees to us or our stockholders, (iii) any action or proceeding asserting a claim arising pursuant to any provision of the Delaware General Corporation Law, our amended and restated certificate of incorporation, or our amended and restated bylaws, or (iv) any action or proceeding asserting a claim that is governed by the internal affairs doctrine, shall be the Court of Chancery of the State of Delaware. This provision does not apply to suits brought to enforce a duty or liability created by the Exchange Act, for which the U.S. federal courts have exclusive jurisdiction, or the Securities Act. Any person or entity purchasing or otherwise acquiring or holding or owning (or continuing to hold or own) any interest in any of our securities shall be deemed to have notice of and consented to the foregoing provisions. Although we believe this exclusive forum provision benefits us by providing increased consistency in the application of Delaware law in the types of lawsuits to which it applies, the exclusive forum provision may (i) increase the costs for a stockholder, and/or (ii) limit a stockholder’s ability to bring a claim in a judicial forum of its choosing for disputes with us or any of our directors, officers, other employees, stockholders, or others which may discourage lawsuits with respect to such claims. Our stockholders will not be deemed to have waived our compliance with the federal securities laws and the rules and regulations thereunder as a result of our exclusive forum provision.",
+      "original_label": "Non-ESG",
+      "api_consensus_label": "Corporate Governance",
+      "codex_suggested_label": "Corporate Governance",
+      "finbert_label": "Corporate Governance",
+      "finbert_confidence": 0.9835,
+      "dispute_reason": "股東訴訟、受託責任與專屬法院條款屬公司治理。"
+    },
+    "meta": {
+      "source_csv": "blance_500_disputed_21.csv",
+      "review_type": "annotation_dispute_adjudication"
+    },
+    "predictions": [
+      {
+        "model_version": "codex-manual-taxonomy-review-v1",
+        "score": 1.0,
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "combined_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Corporate Governance"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "dataset": "blance",
+      "review_rank": 15,
+      "paragraph_id": "COR_2025_RISK_086",
+      "ticker": "COR",
+      "filing_date": "2025-11-25",
+      "risk_heading": "Risk Management and Strategy",
+      "risk_section": "Risk Management and Strategy",
+      "combined_text": "Risk Management and Strategy\nUnder the leadership of our CDIO and CISO, and with oversight, as appropriate, from the Board’s Audit Committee, we have developed a Cybersecurity Incident Response Process (the “Response Process”), which sets forth a framework for the actions to be taken in response to a cybersecurity incident and includes appropriate escalations to the Company’s senior management, including our ECCRT (as defined below), and the Board. Under the guidance of our CISO, the Response Process is routinely evaluated, tested and updated as appropriate. In addition to our Response Process, which is employed in the event of a cybersecurity incident, we take preventative measures that are designed to mitigate the likelihood and prevalence of cybersecurity incidents. For example, we believe that enterprise-wide cybersecurity and privacy training serve an important role in risk reduction. Accordingly, we require employees to complete periodic access-based and role-based privacy and cybersecurity training. These trainings are routinely updated to reflect changes in the threat environment, assessment, and/or audit findings, laws, and regulations. We also engage and educate employees through cybersecurity and privacy awareness programs and communication campaigns. We recognize that our cybersecurity risk profile extends beyond our organization. As such, we strive to manage cybersecurity risks associated with our third-party business partners and external users of our systems. Our third-party business partner risk management program is built upon, informed by, and responsive to industry best practices. This program is designed to conduct appropriate due diligence on the third-party business partners with whom we engage and conduct business, as well as on the systems and the cybersecurity controls of such third-party business partners. Specifically, to evaluate third-",
+      "original_label": "Corporate Governance",
+      "api_consensus_label": "Product Liability",
+      "codex_suggested_label": "Product Liability",
+      "finbert_label": "Corporate Governance",
+      "finbert_confidence": 0.8959,
+      "dispute_reason": "主要描述資安事件應變、隱私訓練與第三方資安風險。"
+    },
+    "meta": {
+      "source_csv": "blance_500_disputed_21.csv",
+      "review_type": "annotation_dispute_adjudication"
+    },
+    "predictions": [
+      {
+        "model_version": "codex-manual-taxonomy-review-v1",
+        "score": 1.0,
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "combined_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Product Liability"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "dataset": "blance",
+      "review_rank": 16,
+      "paragraph_id": "WAT_2025_RISK_038",
+      "ticker": "WAT",
+      "filing_date": "2025-02-25",
+      "risk_heading": "Cybersecurity",
+      "risk_section": "Cybersecurity",
+      "combined_text": "Cybersecurity\nWe have a longstanding information security risk management framework structured according to the National Institute of Standards and Technology Cybersecurity Framework, industry best practices, privacy legislation, and other global and local standards and regulations. This risk management framework is under the specific oversight of the Company’s Vice President and Chief Information Officer (the “CIO”) and includes a defense-in-depth approach with multiple layers of security controls, including network segmentation, security monitoring, endpoint protection, and identity and access management, as well as data protection best practices and data loss prevention controls. Our Audit and Finance Committee is updated on the overall performance of our information security risk management framework on an annual basis by the CIO.",
+      "original_label": "Corporate Governance",
+      "api_consensus_label": "Product Liability",
+      "codex_suggested_label": "Product Liability",
+      "finbert_label": "Corporate Governance",
+      "finbert_confidence": 0.8213,
+      "dispute_reason": "資安框架、資料保護與防外洩控制是主要內容。"
+    },
+    "meta": {
+      "source_csv": "blance_500_disputed_21.csv",
+      "review_type": "annotation_dispute_adjudication"
+    },
+    "predictions": [
+      {
+        "model_version": "codex-manual-taxonomy-review-v1",
+        "score": 1.0,
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "combined_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Product Liability"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "dataset": "blance",
+      "review_rank": 17,
+      "paragraph_id": "F_2025_RISK_059",
+      "ticker": "F",
+      "filing_date": "2025-02-06",
+      "risk_heading": "Cybersecurity Strategy and Risk Management",
+      "risk_section": "Legal and Regulatory Risks",
+      "combined_text": "Cybersecurity Strategy and Risk Management\nWhen a cybersecurity threat or incident is identified, our policy is to review and triage the threat or incident, and to then manage it to conclusion in accordance with our cybersecurity incident response processes.  When a cybersecurity incident is determined to be significant, it is addressed by management committees using processes that leverage subject-matter expertise from across the Company.  Further, we have in the past and may in the future engage with third-party advisors and government and law enforcement agencies as part of our incident management processes.  All cybersecurity incidents that are identified as reasonably having the potential to be highly significant to the Company are brought to the attention of both the Chief Enterprise Technology Officer and Chief Policy Officer and General Counsel by the Chief Information Security Officer as part of our cybersecurity incident response processes.",
+      "original_label": "Corporate Governance",
+      "api_consensus_label": "Product Liability",
+      "codex_suggested_label": "Product Liability",
+      "finbert_label": "Corporate Governance",
+      "finbert_confidence": 0.9198,
+      "dispute_reason": "核心是資安事件識別、分級與應變流程。"
+    },
+    "meta": {
+      "source_csv": "blance_500_disputed_21.csv",
+      "review_type": "annotation_dispute_adjudication"
+    },
+    "predictions": [
+      {
+        "model_version": "codex-manual-taxonomy-review-v1",
+        "score": 1.0,
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "combined_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Product Liability"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "dataset": "blance",
+      "review_rank": 18,
+      "paragraph_id": "PSA_2026_RISK_053",
+      "ticker": "PSA",
+      "filing_date": "2026-02-12",
+      "risk_heading": "Containment, Eradication, Recovery, and Reporting",
+      "risk_section": "Detection and Analysis",
+      "combined_text": "Containment, Eradication, Recovery, and Reporting\nFollowing the conclusion of an incident, the incident response team will generally assess the effectiveness of the cybersecurity program and IRP and make adjustments as appropriate.",
+      "original_label": "Non-ESG",
+      "api_consensus_label": "Product Liability",
+      "codex_suggested_label": "Product Liability",
+      "finbert_label": "Corporate Governance",
+      "finbert_confidence": 0.474,
+      "dispute_reason": "事件後的資安復原及計畫改善屬資料安全管理。"
+    },
+    "meta": {
+      "source_csv": "blance_500_disputed_21.csv",
+      "review_type": "annotation_dispute_adjudication"
+    },
+    "predictions": [
+      {
+        "model_version": "codex-manual-taxonomy-review-v1",
+        "score": 1.0,
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "combined_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Product Liability"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "dataset": "blance",
+      "review_rank": 19,
+      "paragraph_id": "UBER_2023_RISK_052",
+      "ticker": "UBER",
+      "filing_date": "2023-02-21",
+      "risk_heading": "Operational Risks",
+      "risk_section": "Operational Risks",
+      "combined_text": "Operational Risks\nFor example, in light of the conflict between Russia and Ukraine, members of our management team resigned from the board of our Yandex. Taxi joint venture, and we announced that we are actively looking for opportunities to accelerate the sale of our remaining holdings in the joint venture. The broader consequences of this conflict, which may include additional international sanctions, embargoes, regional instability, and geopolitical shifts, increased tensions between the United States and countries in which we operate, and the extent of the conflict’s effect on the global economy, cannot be predicted. Any of these risks could materially affect the value of our assets, which could have an adverse effect on our business, financial condition, operating results, or the trading price of our common stock. Further, we are contractually limited in our ability to sell or transfer these assets. For example, in connection with Aurora’s November 2021 initial public offering, we are subject to a 4-year lock-up with respect to our shares in Aurora. Furthermore, we may be required to sell these assets at a time at which we would not be able to realize what we believe to be the long-term value of these assets. For example, if we were deemed an investment company under the Investment Company Act of 1940, as amended (the “Investment Company Act”), we may be required to sell some or all of such assets so that we would not be subject to the requirements of the Investment Company Act. Additionally, we may have to pay significant taxes upon the sale or transfer of these assets. Accordingly, we may never realize the value of these assets relative to the contributions we made to these businesses.",
+      "original_label": "Corporate Governance",
+      "api_consensus_label": "Non-ESG",
+      "codex_suggested_label": "Non-ESG",
+      "finbert_label": "Corporate Governance",
+      "finbert_confidence": 0.5552,
+      "dispute_reason": "核心是地緣政治、資產出售與投資價值，董事辭任只是事件背景。"
+    },
+    "meta": {
+      "source_csv": "blance_500_disputed_21.csv",
+      "review_type": "annotation_dispute_adjudication"
+    },
+    "predictions": [
+      {
+        "model_version": "codex-manual-taxonomy-review-v1",
+        "score": 1.0,
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "combined_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Non-ESG"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "dataset": "blance",
+      "review_rank": 20,
+      "paragraph_id": "NOC_2022_RISK_017",
+      "ticker": "NOC",
+      "filing_date": "2022-01-27",
+      "risk_heading": "Legal and Regulatory Risks",
+      "risk_section": "Legal and Regulatory Risks",
+      "combined_text": "Legal and Regulatory Risks\n▪The improper conduct of employees, agents, subcontractors, suppliers, business partners or joint ventures in which we participate can impact our reputation, our ability to do business and our financial position, results of operations and/or cash flows.",
+      "original_label": "Non-ESG",
+      "api_consensus_label": "Business Ethics & Values",
+      "codex_suggested_label": "Business Ethics & Values",
+      "finbert_label": "Business Ethics & Values",
+      "finbert_confidence": 0.9254,
+      "dispute_reason": "明確聚焦員工、代理商與合作方的不當行為。"
+    },
+    "meta": {
+      "source_csv": "blance_500_disputed_21.csv",
+      "review_type": "annotation_dispute_adjudication"
+    },
+    "predictions": [
+      {
+        "model_version": "codex-manual-taxonomy-review-v1",
+        "score": 1.0,
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "combined_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Business Ethics & Values"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "dataset": "blance",
+      "review_rank": 21,
+      "paragraph_id": "RF_2026_RISK_084",
+      "ticker": "RF",
+      "filing_date": "2026-02-24",
+      "risk_heading": "Legal, Regulatory and Compliance Risks",
+      "risk_section": "Legal, Regulatory and Compliance Risks",
+      "combined_text": "Legal, Regulatory and Compliance Risks\nThe CRA, the Equal Credit Opportunity Act, the Fair Housing Act, and other fair lending laws and regulations (collectively, fair lending laws) impose community investment and nondiscriminatory lending requirements on financial institutions. The CFPB, the DOJ and other federal and state agencies are responsible for enforcing these federal laws and regulations and comparable state provisions. Due to legal challenges, the federal banking agencies are enjoined from enforcing and are reconsidering the 2023 CRA regulations; the federal banking agencies are continuing to apply the 1995 CRA regulations. Federal, state or local consumer lending laws may restrict our ability to originate certain mortgage loans or increase our risk of liability with respect to such loans. A successful regulatory challenge to an institution's performance under the fair lending laws could result in a wide variety of sanctions, including damages and civil money penalties, injunctive relief, restrictions on mergers and acquisitions, restrictions on expansion, and restrictions on entering new business lines. Private parties may also have the ability to challenge an institution's performance under fair lending laws in private class action litigation. Such actions could have a material adverse effect on our business, financial condition, and results of operations.",
+      "original_label": "Business Ethics & Values",
+      "api_consensus_label": "Community Relations",
+      "codex_suggested_label": "Community Relations",
+      "finbert_label": "Business Ethics & Values",
+      "finbert_confidence": 0.3726,
+      "dispute_reason": "社區投資、公平放貸及弱勢金融可近性較符合社區關係，但亦接近消費者金融保護。"
+    },
+    "meta": {
+      "source_csv": "blance_500_disputed_21.csv",
+      "review_type": "annotation_dispute_adjudication"
+    },
+    "predictions": [
+      {
+        "model_version": "codex-manual-taxonomy-review-v1",
+        "score": 1.0,
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "combined_text",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Community Relations"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

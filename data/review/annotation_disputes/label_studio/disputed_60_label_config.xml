@@ -1,0 +1,22 @@
+<View>
+  <View style="display:flex; gap:12px; margin-bottom:12px;">
+    <View style="background:#fff3cd; padding:10px 14px; border-radius:4px;">
+      <Text name="chiang_label" value="chiang: $original_label" />
+    </View>
+    <View style="background:#d4edda; padding:10px 14px; border-radius:4px;">
+      <Text name="dn_label" value="dn: $codex_suggested_label" />
+    </View>
+  </View>
+  <Text name="combined_text" value="$combined_text" />
+  <Choices name="label" toName="combined_text" choice="single" required="true" showInLine="false">
+    <Choice value="Climate Change" />
+    <Choice value="Natural Capital" />
+    <Choice value="Pollution &amp; Waste" />
+    <Choice value="Human Capital" />
+    <Choice value="Product Liability" />
+    <Choice value="Community Relations" />
+    <Choice value="Corporate Governance" />
+    <Choice value="Business Ethics &amp; Values" />
+    <Choice value="Non-ESG" />
+  </Choices>
+</View>
