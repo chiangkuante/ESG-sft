@@ -1,0 +1,50 @@
+{
+  "stage": "step2_classification",
+  "run_id": "final_v1",
+  "created_at": "2026-06-27T17:15:56.410345+08:00",
+  "ground_truth": {
+    "base_file_sha256": "3b04ca1f9ef34b5b0da08a45ef5d72627f1dbe8bd3e74d56ec48e56e2cebf09b",
+    "blance_file_sha256": "360feb4dcbe155c67e458b54df3216e6545e3849cc575aba86978e0312b30c7f"
+  },
+  "config_fingerprint": "05329112d654e6aca8dba6671a338e32a5e0645de599a0eb2fb0cc03f39e5b43",
+  "upstream": {
+    "step1_paragraphs": {
+      "path": "data/processed/step1_parsing/paragraphs.json",
+      "sha256": "9d83b7b4b54755e505acf963b023eb54632828c64f97697de43b4b1a0bbbf69c",
+      "count": 160427
+    }
+  },
+  "code_fingerprint": {
+    "combined": "34b6178c1e8519fb43ac4770ded90bd793fbb5f39e9498d718f4089d5fd4a500",
+    "files": {
+      "src/common/fingerprint.py": "6ac11948c1a4821fef45a0316a8aa9da264907378ab4af3defc6527485b61779",
+      "src/step2_classification/classify.py": "353a59989bd3d8ebebf8f53ee957bb871c5a41ead30486c9624e8296e3b5aa11",
+      "src/step2_classification/run.py": "336ae11f2ac838fdb598cb6d182b6f4a3a3fb45913b1c37c6f2f0924da79831a"
+    }
+  },
+  "outputs": {
+    "classified": {
+      "path": "data/processed/step2_classification/final_v1/classified.json",
+      "sha256": "991355723b7225bdd7caca3e902c291dd8f40ef2e3d5718e8610fd61a528dd7b",
+      "bytes": 443686508
+    },
+    "classification_stats": {
+      "path": "data/processed/step2_classification/final_v1/classification_stats.json",
+      "sha256": "d60c091f36ddda723ce5dc351d996e93fd2f448f477baf054e5e94d07ad619e7",
+      "bytes": 784
+    }
+  },
+  "total": 160427,
+  "label_distribution": {
+    "Climate Change": 7013,
+    "Natural Capital": 791,
+    "Pollution & Waste": 1710,
+    "Human Capital": 8676,
+    "Product Liability": 18516,
+    "Community Relations": 454,
+    "Corporate Governance": 13043,
+    "Business Ethics & Values": 8633,
+    "Non-ESG": 101591
+  },
+  "mode": "full_rerun"
+}

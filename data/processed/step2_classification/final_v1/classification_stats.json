@@ -1,0 +1,44 @@
+{
+  "total": 160427,
+  "category_distribution": {
+    "Climate Change": {
+      "count": 7013,
+      "pct": 4.37
+    },
+    "Natural Capital": {
+      "count": 791,
+      "pct": 0.49
+    },
+    "Pollution & Waste": {
+      "count": 1710,
+      "pct": 1.07
+    },
+    "Human Capital": {
+      "count": 8676,
+      "pct": 5.41
+    },
+    "Product Liability": {
+      "count": 18516,
+      "pct": 11.54
+    },
+    "Community Relations": {
+      "count": 454,
+      "pct": 0.28
+    },
+    "Corporate Governance": {
+      "count": 13043,
+      "pct": 8.13
+    },
+    "Business Ethics & Values": {
+      "count": 8633,
+      "pct": 5.38
+    },
+    "Non-ESG": {
+      "count": 101591,
+      "pct": 63.33
+    }
+  },
+  "esg_count": 58836,
+  "non_esg_count": 101591,
+  "avg_confidence": 0.854
+}

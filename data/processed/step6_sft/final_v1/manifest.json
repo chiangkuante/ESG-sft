@@ -1,0 +1,18 @@
+{
+  "stage": "step5_reasoning_sft",
+  "run_id": "final_v1",
+  "experiments": {
+    "base": {
+      "folds": 3,
+      "reasoning_failed_total": 0
+    },
+    "balance": {
+      "folds": 3,
+      "reasoning_failed_total": 0
+    },
+    "combined": {
+      "folds": 3,
+      "reasoning_failed_total": 0
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "fold": 2,
+  "human_train_size": 654,
+  "human_val_size": 326,
+  "train_pool_size": 654,
+  "leakage_ok": true,
+  "val_distribution": {
+    "Climate Change": 24,
+    "Natural Capital": 13,
+    "Pollution & Waste": 21,
+    "Human Capital": 30,
+    "Product Liability": 43,
+    "Community Relations": 6,
+    "Corporate Governance": 23,
+    "Business Ethics & Values": 24,
+    "Non-ESG": 142
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "fold": 1,
+  "train_pool_size": 333,
+  "cache_hit": 333,
+  "cache_miss_at_start": 333,
+  "api_generated_total": 500,
+  "invalid_total": 14,
+  "failed": 0
+}

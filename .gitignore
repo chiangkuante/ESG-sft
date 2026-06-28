@@ -23,6 +23,7 @@ unsloth_training_checkpoints/
 data/origin_data/10k_raw/
 data/processed/step1_parsing/paragraphs.json
 data/processed/step2_classification/classified.json
+data/processed/step2_classification/*/classified.json
 
 # Large intermediate files (can be regenerated from pipeline)
 data/origin_data/10k_1A/paragraphs.csv
@@ -47,3 +48,7 @@ unsloth_compiled_cache/
 # 系統層級或暫存設定 (System files & caches)
 .DS_Store
 .pyre_configuration
+
+# log
+log/
+artifacts/

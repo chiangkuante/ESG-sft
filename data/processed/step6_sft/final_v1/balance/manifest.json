@@ -1,0 +1,89 @@
+{
+  "stage": "step5_reasoning_sft",
+  "run_id": "final_v1",
+  "created_at": "2026-06-27T17:31:39.646061+08:00",
+  "ground_truth": {
+    "base_path": "data/origin_data/10k_1A/base_500_final_v1.csv",
+    "base_file_sha256": "3b04ca1f9ef34b5b0da08a45ef5d72627f1dbe8bd3e74d56ec48e56e2cebf09b",
+    "base_content_fingerprint_sha256": "64595697319846e553a99f5f473cc2389dbafdf5dbb45271836af438ab6fbab3",
+    "blance_path": "data/origin_data/10k_1A/blance_500_final_v1.csv",
+    "blance_file_sha256": "360feb4dcbe155c67e458b54df3216e6545e3849cc575aba86978e0312b30c7f",
+    "blance_content_fingerprint_sha256": "f9a6146775dee16b228633ffe04f4267af6dd8347f46bb483d4a39b3d9d8dc93"
+  },
+  "config_fingerprint": "af0ad6c7b9841f90192adfc7e63c95d9d018c64bdaf9842bbeb82e214b3521d3",
+  "upstream": {
+    "step4_manifest": {
+      "path": "data/processed/step4_cv/final_v1/balance/manifest.json",
+      "sha256": "b8fdfbf588d7452aeff9deb916502d9447d97692b0d787ba8c7c93e87b2561d7",
+      "bytes": 6308
+    }
+  },
+  "code_fingerprint": {
+    "combined": "fddbae7cfd2526135ec9b3daf10e65dcc8e26ab97e203d05ad1ba50a108f6210",
+    "files": {
+      "src/common/fingerprint.py": "6ac11948c1a4821fef45a0316a8aa9da264907378ab4af3defc6527485b61779",
+      "src/step5_reasoning/common.py": "7081060eb84faa947b69ec41eb50bb9b7b79e84aec7ff761bce0890446a0390e",
+      "src/step5_reasoning/generate_reasoning.py": "4741ff39753d8446fce718969209ffad4466a892ded54827860b28a90faf5ecf",
+      "src/step5_reasoning/reason.py": "0f78bf50917fc3da11ec710e03c2e7c21ec3dd1c621e52be90b5017bdefd220a",
+      "src/step5_reasoning/run_final_v1.py": "dc8facf1ab946e5e6932376ce6c0ad60b8c87d310f34f606940551225ae0f9ab"
+    }
+  },
+  "outputs": {
+    "folds": [
+      {
+        "fold": 0,
+        "sft_size": 814,
+        "val_size": 166,
+        "reasoning_failed": 0,
+        "train_sft_text": {
+          "path": "data/processed/step6_sft/final_v1/balance/fold_0/train_sft_text.json",
+          "sha256": "bc0406aec40eaf87183920b98f4d44445c1e023f852b01f313edec1e196fe208",
+          "bytes": 7288547
+        },
+        "val_eval": {
+          "path": "data/processed/step6_sft/final_v1/balance/fold_0/val_eval.json",
+          "sha256": "6e30d27a4f9781b4b7fe982da636c2a5818203854b6602faa65a574092d48cfb",
+          "bytes": 297052
+        }
+      },
+      {
+        "fold": 1,
+        "sft_size": 813,
+        "val_size": 167,
+        "reasoning_failed": 0,
+        "train_sft_text": {
+          "path": "data/processed/step6_sft/final_v1/balance/fold_1/train_sft_text.json",
+          "sha256": "d2fcd53b0909a17f52bc37033862f2c3c444963ff84964255c64e8dcabf05e51",
+          "bytes": 7283007
+        },
+        "val_eval": {
+          "path": "data/processed/step6_sft/final_v1/balance/fold_1/val_eval.json",
+          "sha256": "715d5d8e70b8d1ef5244ffbb8328332d0ef6bd12cd62f9097a22f4d94c9593ae",
+          "bytes": 294970
+        }
+      },
+      {
+        "fold": 2,
+        "sft_size": 812,
+        "val_size": 167,
+        "reasoning_failed": 0,
+        "train_sft_text": {
+          "path": "data/processed/step6_sft/final_v1/balance/fold_2/train_sft_text.json",
+          "sha256": "f4b4d5673b2a70439317bad903d6f75333d9d441a38b0a95c8b083b64775b8bf",
+          "bytes": 7271874
+        },
+        "val_eval": {
+          "path": "data/processed/step6_sft/final_v1/balance/fold_2/val_eval.json",
+          "sha256": "bf994cf0ce2d6a67a55555b88e568f5fc68368c57ebb0c757f452583e8e011ec",
+          "bytes": 297812
+        }
+      }
+    ]
+  },
+  "experiment_name": "balance",
+  "reasoning_failed_total": 0,
+  "gen_stats": {
+    "api_generated": 471,
+    "invalid": 14
+  }
+}

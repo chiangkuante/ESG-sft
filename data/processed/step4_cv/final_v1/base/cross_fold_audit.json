@@ -1,0 +1,7 @@
+{
+  "population_size": 500,
+  "validation_covered": 500,
+  "duplicated_validation_indices": [],
+  "missing_validation_indices": [],
+  "ok": true
+}

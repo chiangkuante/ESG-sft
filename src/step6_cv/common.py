@@ -14,7 +14,12 @@ if __package__ in {None, ""}:
     sys.path.append(str(Path(__file__).resolve().parents[2]))
 
 from src.step4_cv.common import load_yaml_config
-from src.step5_reasoning.reason import CATEGORY_DEFINITIONS, CLASSIFY_SYSTEM_PROMPT, CLASSIFY_USER_TEMPLATE
+from src.step5_reasoning.reason import (
+    CATEGORY_DEFINITIONS,
+    CLASSIFY_SYSTEM_PROMPT,
+    CLASSIFY_USER_TEMPLATE,
+    CLASSIFY_USER_TEMPLATE_XML,
+)
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
@@ -104,6 +109,13 @@ def extract_label(text: str | None) -> str | None:
     if not text:
         return None
 
+    # final_v1：優先解析 XML <label>...</label>
+    xml_match = re.search(r"(?is)<label>\s*(.*?)\s*</label>", text)
+    if xml_match:
+        candidate = canonicalize_label(xml_match.group(1).strip(" .:*_`"))
+        if candidate is not None:
+            return candidate
+
     match = re.search(r"(?im)^\s*label\s*:\s*([^\n]+)", text)
     if match:
         return canonicalize_label(match.group(1).strip(" .:*_`"))
@@ -150,8 +162,10 @@ def extract_label(text: str | None) -> str | None:
     return None
 
 
-def build_eval_messages(item: dict[str, Any], model_type: str) -> list[dict[str, Any]]:
-    user_content = CLASSIFY_USER_TEMPLATE.format(
+def build_eval_messages(item: dict[str, Any], model_type: str, answer_format: str = "xml") -> list[dict[str, Any]]:
+    # final_v1：SFT 以 XML 格式訓練，推論必須使用相同 user 模板以對齊 train/inference
+    template = CLASSIFY_USER_TEMPLATE_XML if answer_format == "xml" else CLASSIFY_USER_TEMPLATE
+    user_content = template.format(
         definitions=CATEGORY_DEFINITIONS,
         text=item["combined_text"],
     )

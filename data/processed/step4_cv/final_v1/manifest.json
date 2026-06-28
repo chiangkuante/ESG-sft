@@ -1,0 +1,38 @@
+{
+  "stage": "step4_cv",
+  "run_id": "final_v1",
+  "ground_truth": {
+    "base_path": "data/origin_data/10k_1A/base_500_final_v1.csv",
+    "base_file_sha256": "3b04ca1f9ef34b5b0da08a45ef5d72627f1dbe8bd3e74d56ec48e56e2cebf09b",
+    "base_content_fingerprint_sha256": "64595697319846e553a99f5f473cc2389dbafdf5dbb45271836af438ab6fbab3",
+    "blance_path": "data/origin_data/10k_1A/blance_500_final_v1.csv",
+    "blance_file_sha256": "360feb4dcbe155c67e458b54df3216e6545e3849cc575aba86978e0312b30c7f",
+    "blance_content_fingerprint_sha256": "f9a6146775dee16b228633ffe04f4267af6dd8347f46bb483d4a39b3d9d8dc93"
+  },
+  "experiments": {
+    "base": {
+      "cv_population_size": 500,
+      "fold_directories": [
+        "fold_0",
+        "fold_1",
+        "fold_2"
+      ]
+    },
+    "balance": {
+      "cv_population_size": 500,
+      "fold_directories": [
+        "fold_0",
+        "fold_1",
+        "fold_2"
+      ]
+    },
+    "combined": {
+      "cv_population_size": 980,
+      "fold_directories": [
+        "fold_0",
+        "fold_1",
+        "fold_2"
+      ]
+    }
+  }
+}

@@ -1,0 +1,175 @@
+{
+  "stage": "step4_cv",
+  "run_id": "final_v1",
+  "created_at": "2026-06-27T17:15:57.604399+08:00",
+  "ground_truth": {
+    "base_path": "data/origin_data/10k_1A/base_500_final_v1.csv",
+    "base_file_sha256": "3b04ca1f9ef34b5b0da08a45ef5d72627f1dbe8bd3e74d56ec48e56e2cebf09b",
+    "base_content_fingerprint_sha256": "64595697319846e553a99f5f473cc2389dbafdf5dbb45271836af438ab6fbab3",
+    "blance_path": "data/origin_data/10k_1A/blance_500_final_v1.csv",
+    "blance_file_sha256": "360feb4dcbe155c67e458b54df3216e6545e3849cc575aba86978e0312b30c7f",
+    "blance_content_fingerprint_sha256": "f9a6146775dee16b228633ffe04f4267af6dd8347f46bb483d4a39b3d9d8dc93"
+  },
+  "config_fingerprint": "6c2af31e278526bfb07a251ae826346bff767a2819ddf2daddde2199ff4fc4d6",
+  "upstream": {
+    "base_csv": {
+      "path": "data/origin_data/10k_1A/base_500_final_v1.csv",
+      "sha256": "3b04ca1f9ef34b5b0da08a45ef5d72627f1dbe8bd3e74d56ec48e56e2cebf09b"
+    },
+    "balance_csv": {
+      "path": "data/origin_data/10k_1A/blance_500_final_v1.csv",
+      "sha256": "360feb4dcbe155c67e458b54df3216e6545e3849cc575aba86978e0312b30c7f"
+    }
+  },
+  "code_fingerprint": {
+    "combined": "72f85dcbce1e0ee3560047623f86222973ee7f3294f146abe5088517b547cb4f",
+    "files": {
+      "src/common/fingerprint.py": "6ac11948c1a4821fef45a0316a8aa9da264907378ab4af3defc6527485b61779",
+      "src/step4_cv/common.py": "49312a2601ac8b81c26891a506ff26aca2cea95769429a6e9ce52d6829b5d1c5",
+      "src/step4_cv/data.py": "f8c51a0ddd60e0c1b6b313effc399c9cc53325e3d96096694a9c6fb41f9ac397",
+      "src/step4_cv/group_folds.py": "4511aa350824311726c796022f7165719a705225b0ece2668756c5049248885f",
+      "src/step4_cv/run_final_v1.py": "e2899031d56bfd3f494c35409e14ca26e75fabf9636e13d0d6bc98d381f2d63e"
+    }
+  },
+  "outputs": {
+    "cv_folds": {
+      "path": "data/processed/step4_cv/final_v1/base/cv_folds.json",
+      "sha256": "0b1b84ab687e7bde85bab81902ba96c30aace9ba65da0538f93f4ded8951737e",
+      "bytes": 59204
+    },
+    "cross_fold_audit": {
+      "path": "data/processed/step4_cv/final_v1/base/cross_fold_audit.json",
+      "sha256": "8d79f2353927ccd4651662c07c4a6b7152adae5c5d26f0300de4381038483d71",
+      "bytes": 146
+    },
+    "folds": {
+      "fold_0": {
+        "train_pool": {
+          "path": "data/processed/step4_cv/final_v1/base/fold_0/train_pool.json",
+          "sha256": "ff3bb73d6592448cef7730c2fdd057167597830908d0f7f4e813517e32ead50e",
+          "bytes": 592780
+        },
+        "human_val": {
+          "path": "data/processed/step4_cv/final_v1/base/fold_0/human_val.json",
+          "sha256": "6e30d27a4f9781b4b7fe982da636c2a5818203854b6602faa65a574092d48cfb",
+          "bytes": 297052
+        },
+        "leakage_audit": {
+          "path": "data/processed/step4_cv/final_v1/base/fold_0/leakage_audit.json",
+          "sha256": "3beeb6dd51d736707a86e200b244b8f6e50187ede922b413f679d72137c1cfc9",
+          "bytes": 798
+        }
+      },
+      "fold_1": {
+        "train_pool": {
+          "path": "data/processed/step4_cv/final_v1/base/fold_1/train_pool.json",
+          "sha256": "7e507c54db2a6f395192e2d2fb06fad503980eca8f23ab4977551e9f549e0328",
+          "bytes": 594862
+        },
+        "human_val": {
+          "path": "data/processed/step4_cv/final_v1/base/fold_1/human_val.json",
+          "sha256": "715d5d8e70b8d1ef5244ffbb8328332d0ef6bd12cd62f9097a22f4d94c9593ae",
+          "bytes": 294970
+        },
+        "leakage_audit": {
+          "path": "data/processed/step4_cv/final_v1/base/fold_1/leakage_audit.json",
+          "sha256": "c8bfcbc1558c24d635061195b78e135db5962a36d24b493093ee3b60f5cb1a91",
+          "bytes": 798
+        }
+      },
+      "fold_2": {
+        "train_pool": {
+          "path": "data/processed/step4_cv/final_v1/base/fold_2/train_pool.json",
+          "sha256": "e9bda0b0a492efda7e8c615fdebf0407d26f81398e0c992544707a4180a8b95a",
+          "bytes": 592020
+        },
+        "human_val": {
+          "path": "data/processed/step4_cv/final_v1/base/fold_2/human_val.json",
+          "sha256": "bf994cf0ce2d6a67a55555b88e568f5fc68368c57ebb0c757f452583e8e011ec",
+          "bytes": 297812
+        },
+        "leakage_audit": {
+          "path": "data/processed/step4_cv/final_v1/base/fold_2/leakage_audit.json",
+          "sha256": "42a29a4a26e8ca7fdc99248af9c3f01db4d0eccd2fdecda4c1a36a03365bb6ed",
+          "bytes": 798
+        }
+      }
+    }
+  },
+  "experiment_name": "base",
+  "cv_population_size": 500,
+  "cv_population_distribution": {
+    "Climate Change": 19,
+    "Natural Capital": 9,
+    "Pollution & Waste": 7,
+    "Human Capital": 35,
+    "Product Liability": 70,
+    "Community Relations": 6,
+    "Corporate Governance": 36,
+    "Business Ethics & Values": 25,
+    "Non-ESG": 293
+  },
+  "balance_records_total": 0,
+  "n_folds": 3,
+  "fold_directories": [
+    "fold_0",
+    "fold_1",
+    "fold_2"
+  ],
+  "fold_summaries": [
+    {
+      "fold": 0,
+      "human_train_size": 334,
+      "human_val_size": 166,
+      "train_pool_size": 334,
+      "leakage_ok": true,
+      "val_distribution": {
+        "Climate Change": 6,
+        "Natural Capital": 3,
+        "Pollution & Waste": 2,
+        "Human Capital": 12,
+        "Product Liability": 24,
+        "Community Relations": 2,
+        "Corporate Governance": 12,
+        "Business Ethics & Values": 8,
+        "Non-ESG": 97
+      }
+    },
+    {
+      "fold": 1,
+      "human_train_size": 333,
+      "human_val_size": 167,
+      "train_pool_size": 333,
+      "leakage_ok": true,
+      "val_distribution": {
+        "Climate Change": 6,
+        "Natural Capital": 3,
+        "Pollution & Waste": 3,
+        "Human Capital": 11,
+        "Product Liability": 23,
+        "Community Relations": 2,
+        "Corporate Governance": 12,
+        "Business Ethics & Values": 9,
+        "Non-ESG": 98
+      }
+    },
+    {
+      "fold": 2,
+      "human_train_size": 333,
+      "human_val_size": 167,
+      "train_pool_size": 333,
+      "leakage_ok": true,
+      "val_distribution": {
+        "Climate Change": 7,
+        "Natural Capital": 3,
+        "Pollution & Waste": 2,
+        "Human Capital": 12,
+        "Product Liability": 23,
+        "Community Relations": 2,
+        "Corporate Governance": 12,
+        "Business Ethics & Values": 8,
+        "Non-ESG": 98
+      }
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "fold": 0,
+  "train_pool_size": 334,
+  "source_counts": {
+    "human": 334
+  },
+  "label_counts": {
+    "Climate Change": 13,
+    "Natural Capital": 6,
+    "Pollution & Waste": 5,
+    "Human Capital": 23,
+    "Product Liability": 46,
+    "Community Relations": 4,
+    "Corporate Governance": 24,
+    "Business Ethics & Values": 17,
+    "Non-ESG": 196
+  }
+}

@@ -139,3 +139,23 @@ def build_reasoning_batch_prompt(batch: list[dict[str, str]]) -> str:
 def build_structured_answer(reasoning: str, label: str) -> str:
     cleaned_reasoning = " ".join(str(reasoning).split())
     return f"Reasoning: {cleaned_reasoning}\nLabel: {label}"
+
+
+# final_v1：SFT assistant 固定使用 XML 標籤格式
+CLASSIFY_USER_TEMPLATE_XML = dedent(
+    """\
+    Classify the following paragraph from a 10-K filing into one of the 9 ESG categories.
+
+    === OUTPUT FORMAT ===
+    - Respond with exactly these two XML tags and nothing else:
+      <reasoning>brief explanation referencing the paragraph body</reasoning>
+      <label>one valid category name</label>
+
+    === PARAGRAPH TO CLASSIFY ===
+    {text}"""
+)
+
+
+def build_xml_answer(reasoning: str, label: str) -> str:
+    cleaned_reasoning = " ".join(str(reasoning).split())
+    return f"<reasoning>{cleaned_reasoning}</reasoning>\n<label>{label}</label>"

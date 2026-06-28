@@ -1,0 +1,33 @@
+{
+  "fold": 1,
+  "train_pool_size": 653,
+  "human_train_size": 653,
+  "human_val_size": 327,
+  "added_balance": 0,
+  "excluded_balance_val_leak": 0,
+  "paragraph_id_overlap": [],
+  "text_fingerprint_overlap": [],
+  "train_label_distribution": {
+    "Climate Change": 49,
+    "Natural Capital": 25,
+    "Pollution & Waste": 43,
+    "Human Capital": 61,
+    "Product Liability": 86,
+    "Community Relations": 12,
+    "Corporate Governance": 46,
+    "Business Ethics & Values": 47,
+    "Non-ESG": 284
+  },
+  "val_label_distribution": {
+    "Climate Change": 24,
+    "Natural Capital": 13,
+    "Pollution & Waste": 22,
+    "Human Capital": 30,
+    "Product Liability": 44,
+    "Community Relations": 6,
+    "Corporate Governance": 23,
+    "Business Ethics & Values": 23,
+    "Non-ESG": 142
+  },
+  "ok": true
+}
