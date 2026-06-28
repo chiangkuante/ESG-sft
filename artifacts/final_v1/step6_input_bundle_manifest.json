@@ -1,0 +1,149 @@
+{
+  "stage": "step6_input_bundle",
+  "run_id": "final_v1",
+  "created_at": "2026-06-27T17:31:41.042085+08:00",
+  "experiments": [
+    "base",
+    "balance",
+    "combined"
+  ],
+  "folds": [
+    0,
+    1,
+    2
+  ],
+  "fold_count": 9,
+  "fold_files": [
+    {
+      "experiment": "base",
+      "fold": 0,
+      "train_sft_text": {
+        "path": "/home/wa1ter/ESG-sft/data/processed/step6_sft/final_v1/base/fold_0/train_sft_text.json",
+        "sha256": "96d2cfa8c143fa348516332620801ae55cda4b28a31c8a6e032ddc4bccd8ae28",
+        "rows": 334
+      },
+      "val_eval": {
+        "path": "/home/wa1ter/ESG-sft/data/processed/step6_sft/final_v1/base/fold_0/val_eval.json",
+        "sha256": "6e30d27a4f9781b4b7fe982da636c2a5818203854b6602faa65a574092d48cfb",
+        "rows": 166
+      }
+    },
+    {
+      "experiment": "base",
+      "fold": 1,
+      "train_sft_text": {
+        "path": "/home/wa1ter/ESG-sft/data/processed/step6_sft/final_v1/base/fold_1/train_sft_text.json",
+        "sha256": "813cf95b2972056e2aac9511f76d0a289c40d05959de434be55f5592cc860b51",
+        "rows": 333
+      },
+      "val_eval": {
+        "path": "/home/wa1ter/ESG-sft/data/processed/step6_sft/final_v1/base/fold_1/val_eval.json",
+        "sha256": "715d5d8e70b8d1ef5244ffbb8328332d0ef6bd12cd62f9097a22f4d94c9593ae",
+        "rows": 167
+      }
+    },
+    {
+      "experiment": "base",
+      "fold": 2,
+      "train_sft_text": {
+        "path": "/home/wa1ter/ESG-sft/data/processed/step6_sft/final_v1/base/fold_2/train_sft_text.json",
+        "sha256": "0e114f2f0696d8b5a2e67aa13bcf40e5b58869a0e66d15efdd26a2d837bc8216",
+        "rows": 333
+      },
+      "val_eval": {
+        "path": "/home/wa1ter/ESG-sft/data/processed/step6_sft/final_v1/base/fold_2/val_eval.json",
+        "sha256": "bf994cf0ce2d6a67a55555b88e568f5fc68368c57ebb0c757f452583e8e011ec",
+        "rows": 167
+      }
+    },
+    {
+      "experiment": "balance",
+      "fold": 0,
+      "train_sft_text": {
+        "path": "/home/wa1ter/ESG-sft/data/processed/step6_sft/final_v1/balance/fold_0/train_sft_text.json",
+        "sha256": "bc0406aec40eaf87183920b98f4d44445c1e023f852b01f313edec1e196fe208",
+        "rows": 814
+      },
+      "val_eval": {
+        "path": "/home/wa1ter/ESG-sft/data/processed/step6_sft/final_v1/balance/fold_0/val_eval.json",
+        "sha256": "6e30d27a4f9781b4b7fe982da636c2a5818203854b6602faa65a574092d48cfb",
+        "rows": 166
+      }
+    },
+    {
+      "experiment": "balance",
+      "fold": 1,
+      "train_sft_text": {
+        "path": "/home/wa1ter/ESG-sft/data/processed/step6_sft/final_v1/balance/fold_1/train_sft_text.json",
+        "sha256": "d2fcd53b0909a17f52bc37033862f2c3c444963ff84964255c64e8dcabf05e51",
+        "rows": 813
+      },
+      "val_eval": {
+        "path": "/home/wa1ter/ESG-sft/data/processed/step6_sft/final_v1/balance/fold_1/val_eval.json",
+        "sha256": "715d5d8e70b8d1ef5244ffbb8328332d0ef6bd12cd62f9097a22f4d94c9593ae",
+        "rows": 167
+      }
+    },
+    {
+      "experiment": "balance",
+      "fold": 2,
+      "train_sft_text": {
+        "path": "/home/wa1ter/ESG-sft/data/processed/step6_sft/final_v1/balance/fold_2/train_sft_text.json",
+        "sha256": "f4b4d5673b2a70439317bad903d6f75333d9d441a38b0a95c8b083b64775b8bf",
+        "rows": 812
+      },
+      "val_eval": {
+        "path": "/home/wa1ter/ESG-sft/data/processed/step6_sft/final_v1/balance/fold_2/val_eval.json",
+        "sha256": "bf994cf0ce2d6a67a55555b88e568f5fc68368c57ebb0c757f452583e8e011ec",
+        "rows": 167
+      }
+    },
+    {
+      "experiment": "combined",
+      "fold": 0,
+      "train_sft_text": {
+        "path": "/home/wa1ter/ESG-sft/data/processed/step6_sft/final_v1/combined/fold_0/train_sft_text.json",
+        "sha256": "0588936c3fcb5cbd8e1c29942ef7504051c5f4116ed504d2ca80552c81b12957",
+        "rows": 653
+      },
+      "val_eval": {
+        "path": "/home/wa1ter/ESG-sft/data/processed/step6_sft/final_v1/combined/fold_0/val_eval.json",
+        "sha256": "ba38c30d3deeb6a78aaae139bc5559db14243065081f4160f2502fe61639257a",
+        "rows": 327
+      }
+    },
+    {
+      "experiment": "combined",
+      "fold": 1,
+      "train_sft_text": {
+        "path": "/home/wa1ter/ESG-sft/data/processed/step6_sft/final_v1/combined/fold_1/train_sft_text.json",
+        "sha256": "c4f170455888c3e9c6a6153b7f76e82b7db4f3f4f489d5f26b4323cb26011a27",
+        "rows": 653
+      },
+      "val_eval": {
+        "path": "/home/wa1ter/ESG-sft/data/processed/step6_sft/final_v1/combined/fold_1/val_eval.json",
+        "sha256": "9fcfd5473404d7391ac60fc2912277019d2583cce732c14cdbe14a7886feab10",
+        "rows": 327
+      }
+    },
+    {
+      "experiment": "combined",
+      "fold": 2,
+      "train_sft_text": {
+        "path": "/home/wa1ter/ESG-sft/data/processed/step6_sft/final_v1/combined/fold_2/train_sft_text.json",
+        "sha256": "fbc08cf6d65cf33a1e71157bd5238f6c30f0bdc273fac36d5a34554c0a9f50e5",
+        "rows": 654
+      },
+      "val_eval": {
+        "path": "/home/wa1ter/ESG-sft/data/processed/step6_sft/final_v1/combined/fold_2/val_eval.json",
+        "sha256": "4b039b04e1fb9dc5571cce77273a4c32ef663b9f0d12eb6e4aec53da6b9918bb",
+        "rows": 326
+      }
+    }
+  ],
+  "bundle": {
+    "path": "artifacts/final_v1/step6_input_bundle.zip",
+    "sha256": "94eedba373d98f6a252bf69d5a7cb6adb00890890a8049f257ed603a098c5d11",
+    "bytes": 4829358
+  }
+}
